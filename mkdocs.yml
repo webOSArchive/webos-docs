@@ -1,0 +1,16 @@
+site_name: webOS Documentation
+nav:
+    - Home: index.md
+    - Getting Started:
+      - Activating a webOS Device: activate.md
+      - Installing Apps on your webOS Device: appstores.md
+      - Using the webOS Archive Proxy: proxysetup.md
+    - Next Steps:
+      - Shell Access: bash.md
+      - Time Synchronization: timesync.md
+      - Root Certs and Hosts: rootcerts.md
+theme:
+  name: readthedocs
+  favicon: images/icon.ico
+  icon: 
+    logo: material/book-check
