@@ -9,12 +9,14 @@ If you can live with these considerations, please visit this form to agree to th
 
 Your credentials will be sent to you at the e-mail address you supplied, and can be used to set-up the Proxy on your webOS device.
 
-## Easy Install (New!)
+## Easy Install
 
 ![webOS Archive Proxy](images/proxyicon.png)
 
-The easiest way to get started is with the new **webOS Archive Proxy** app.
+The easiest way to get started is with the NEW **webOS Archive Proxy** app.
 To download, install [webOS App Museum II](Installing Apps on your webOS Device) and search for "Proxy".
+
+Or [download manually](http://www.webosarchive.com/proxy/com.palm.wosa.proxysetter_1.1.2_all.ipk).
 
 ## Manual Install
 
