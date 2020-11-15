@@ -9,8 +9,10 @@ nav:
       - Shell Access: bash.md
       - Time Synchronization: timesync.md
       - Root Certs and Hosts: rootcerts.md
+      - Build Your Own Apps: sdkpdk.md
 theme:
   name: readthedocs
   favicon: images/icon.ico
   icon: 
     logo: material/book-check
+  custom_dir: overrides
