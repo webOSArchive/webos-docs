@@ -12,11 +12,11 @@ This process works on Mac, Linux and Windows, but requires Java to be installed:
 
 Next you will need the Novacomm driver for your computer:
 
-* Windows 32-bit (Tested on Windows 7): Installer MSI
-* Windows 64-bit (Tested on Windows 10): Installer MSI
-* Mac (Tested up to Mojave): Installer PKG
-* Linux 32-bit: DEB Package
-* Linux 64-bit (Tested on Ubunutu): DEB Package
+* Windows 32-bit (Tested on Windows 7): [Installer MSI](http://www.webosarchive.com/activation/drivers/novacom-win-32/)
+* Windows 64-bit (Tested on Windows 10): [Installer MSI](http://www.webosarchive.com/activation/drivers/novacom-win-64/)
+* Mac 32-bit (Tested up to Mojave): [Installer PKG](http://www.webosarchive.com/activation/drivers/novacom-mac/)
+* Linux 32-bit (Tested on Ubunutu): [DEB Package](http://www.webosarchive.com/activation/drivers/novacom-linux-32/)
+* Linux 64-bit (Tested on Ubunutu): [DEB Package](http://www.webosarchive.com/activation/drivers/novacom-linux-64/)
 
 ## Download the Doctor Tool for your Device
 
