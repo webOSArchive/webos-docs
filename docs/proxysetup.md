@@ -13,7 +13,7 @@ Your credentials will be sent to you at the e-mail address you supplied, and can
 
 ![webOS Archive Proxy](images/proxyicon.png)
 
-The easiest way to get started is with the NEW **webOS Archive Proxy** app.
+If you're using a TouchPad, The easiest way to get started is with the NEW **webOS Archive Proxy** app.
 To download, install [webOS App Museum II](Installing Apps on your webOS Device) and search for "Proxy".
 
 Or use the [direct download](http://www.webosarchive.com/proxy/com.palm.wosa.proxysetter_1.1.2_all.ipk) and install it yourself.
@@ -41,9 +41,10 @@ The webOS Archive Certificate is a single certificate you must install in order 
 
 A Proxy switch app adds a feature to webOS allowing you to turn on (and off) a global proxy. Once activated, this proxy works for any app on the device -- including email!
 
-* From Preware, install the app `Proxy Set Basic`
-* Launch the app, and press the "Manual" button at the top
-* Fill in the fields as follows:
+* Install a Proxy app
+    + For TouchPads: Install the app **Proxy Set Basic** from Preware, or [download directly here](http://www.webosarchive.com/proxy/com.palm.com.verusora.touchpad.proxysetbasic_1.1.1_all.ipk).
+    + For Phones: Install the app **ProxySwitcher** from Preware, or [download directly here](http://www.webosarchive.com/proxy/com.palm.proxyswitcher_1.2.0_all.ipk).
+* Launch the app, and configure the fields as follows:
 * Server: `proxy.webosarchive.com`
 * Port: `3128`
 * Username: `<yourusername>`

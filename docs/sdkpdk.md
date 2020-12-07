@@ -21,3 +21,5 @@ Visit [http://sdk.webosarchive.com](http://sdk.webosarchive.com) to get access n
 In 2009, O'Reilly Press released a book on Mojo development called "Palm webOS: The Insider's Guide to Developing Applications in Javascript using the Palm Mojo Framework."
 
 The book is available on [Google Books](https://books.google.com/books?id=sHT6PeMp1k8C&printsec=frontcover) in its entirety, and on Amazon and most online bookstores in paperback.
+
+Tuts+ still hosts a 5-part [Introduction to webOS Development](https://code.tutsplus.com/series/introduction-to-webos-sdk-development--mobile-22879) series, focused on Mojo development on the Pre. It remains a worthwhile resource for new developers.
