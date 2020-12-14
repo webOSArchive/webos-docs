@@ -5,6 +5,10 @@ It also assumes you've joined a WiFi network using the built-in Settings, and th
 
 The built-in web browser is dated, and has some limitations, but with a little help, there's still a lot you can do online!
 
+## Set Date and Time
+
+Believe it or not, this is a critical step! Web encryption requires a reasonable delta from UTC (Coordinated Universal Time) time or you'll end up with errors and failures. Use the built-in Settings app to set the date, time and time zone manually. Optionally, you can [sync the time with a network server](timesync.md) once you're online.
+
 ## Updating Certificates
 
 The root certificates used to establish trust on the Internet are out-of-date in webOS and need to be updated. Fortunately, the community has made it really easy to solve this problem!
