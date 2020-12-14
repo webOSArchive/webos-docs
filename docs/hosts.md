@@ -1,15 +1,5 @@
 # Root Certificates and Hosts
 
-## Root Certificate Update
-If you're using a [Proxy](proxysetup) you don't strictly need to update your root certs, but its still a good idea to freshen up the root certs. Fortunately, this has been done fairly recently through a Patch available in Preware:
-
-* Launch Preware and wait while it syncs
-* Use the built-in search feature to search for `root`
-* Select "RootCertsUpdate" by frantid in the search results
-* Tap the button to install
-
-Note that this patch won't install any icons you can see, but when you install it, it will clean out old certificates and pull down new ones. This process takes a couple minutes -- be patient!
-
 ## Hosts Files
 With the latest updates from the community, there's less need to update the hosts file. However, some restoration efforts and Preware sources require that you trick you webOS device into looking for Palm/HP content from archived servers, rather than trying to reach dead servers. The easiest way to do this is with an App from Preware:
 

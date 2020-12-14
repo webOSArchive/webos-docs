@@ -2,13 +2,24 @@
 
 There's a vibrant community rescuing, archiving, restoring and even building apps for webOS. Since the actual HP App Catalog is gone, you'll need your computer one more time to "side-load" one app that gives you access to the rest of this "after-life" ecosystem.
 
-## Getting webOS Quick Install
+## Prepare Your Computer
 
-Like the activation process, this tool works on Mac, Linux and Windows, but requires Java to be installed:
+This tool works on Mac, Linux and Windows, and requires Java and the devices drivers to be installed. If you've completed the [activation process documented here](activate.md), you can skip this step, because you've already installed these pieces:
 
 * Install Java (JDK) for Windows: [https://www.oracle.com/java/technologies/javase-downloads.html](https://www.oracle.com/java/technologies/javase-downloads.html)
 * Install Java for Mac: [https://support.apple.com/en-us/HT204036](https://support.apple.com/en-us/HT204036)
 * Install Java for Linux: [https://java.com/en/download/manual.jsp](https://java.com/en/download/manual.jsp)
+
+Next you will need the Novacomm driver for your computer:
+
+* Windows 32-bit (Tested on Windows 7): [Installer MSI](http://www.webosarchive.com/activation/drivers/novacom-win-32/)
+* Windows 64-bit (Tested on Windows 10): [Installer MSI](http://www.webosarchive.com/activation/drivers/novacom-win-64/)
+* macOS 32-bit (Tested up to Mojave): [Installer PKG](http://www.webosarchive.com/activation/drivers/novacom-mac/)
+* macOS 64-bit (For Catalina and Later): [GitHub Release](https://github.com/incidentist/novacomd/releases/tag/macos64)
+* Linux 32-bit (Tested on Ubunutu): [DEB Package](http://www.webosarchive.com/activation/drivers/novacom-linux-32/)
+* Linux 64-bit (Tested on Ubunutu): [DEB Package](http://www.webosarchive.com/activation/drivers/novacom-linux-64/)
+
+## Download WOSQI
 
 Once you have Java, you will need to download the webOS Quick Install (WOSQI) tool:
 
@@ -40,12 +51,18 @@ The original App Museum was a listing of the original Palm/HP App Catalog, and p
 
 App Museum II pulls together multiple sources into a single interface for downloading App Catalog apps that have been rescued or archived by the community. Its a mostly historical source of apps, but curated sections of the Museum contain patched versions and instructions to making some important apps work again.
 
-These instructions assume you've already installed Preware, so you no longer need a computer to install apps...
+Note that App Museum II requires Preware, so install that first!
 
-* Launch Preware on your webOS Device, and wait while it syncs
-* From the Preware menu in the top left of the screen, choose "Install Package"
-* Enter the URL: `http://appcatalog.webosarchive.com/latest.ipk`
-* Wait while App Museum II is installed!
+You can use WOSI to Install webOS App Museum II, just like you did with Preware.
+
+* Download the Museum to your computer:
+    + [Download Latest Version](http://appcatalog.webosarchive.com/latest.php)
+* Drag the Museum IPK you just downloaded onto the WOSQI window (or hit the + button and browse for it)
+* Press the Install button to install Preware on your device
+
+## Use Your Device to Install Apps
+
+Now that you have a couple App stores on your device, you won't need WOSQI or your computer any more. Make sure you're on WiFi, then just launch Preware or App Museum II and find and download apps there!
 
 ## Alternate Instructions
 
