@@ -47,6 +47,7 @@ The Preware app is the original Homebrew App Store for webOS, and contains many 
 
 ## Install webOS App Museum II
 
+<i>Note: Works for webOS 2.0 only</i><br>
 The original App Museum was a listing of the original Palm/HP App Catalog, and provided a way to link to FTP archives and install some of those apps.
 
 App Museum II pulls together multiple sources into a single interface for downloading App Catalog apps that have been rescued or archived by the community. Its a mostly historical source of apps, but curated sections of the Museum contain patched versions and instructions to making some important apps work again.
@@ -63,6 +64,9 @@ You can use WOSI to Install webOS App Museum II, just like you did with Preware.
 ## Use Your Device to Install Apps
 
 Now that you have a couple App stores on your device, you won't need WOSQI or your computer any more. Make sure you're on WiFi, then just launch Preware or App Museum II and find and download apps there!
+<br>Just look for these icons in your Launcher...
+
+![Preware](images/preware-icon.png) &nbsp;&nbsp;![App Museum II](images/appmuseum-icon.png)
 
 ## Alternate Instructions
 
