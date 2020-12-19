@@ -19,7 +19,6 @@ These instructions assume that you've completed the [Shell Access](bash.md) step
 * Launch Xecutah and click the "Start XTerm" button
 * If you're on a TouchPad, tap on the screen with 3 fingers to open the keyboard
 * Enter these commands:
-    + `cd /media/internal`
     + `wget http://www.webosarchive.com/activation/fix-ntp.sh`
     + `chmod +x fix-ntp.sh`
     + `./fix-ntp.sh`
