@@ -4,11 +4,12 @@ nav:
     - Getting Started:
       - Activating a webOS Device: activate.md
       - Installing Apps on your webOS Device: appstores.md
+      - Getting Online: online.md
       - Using the webOS Archive Proxy: proxysetup.md
     - Next Steps:
       - Shell Access: bash.md
       - Time Synchronization: timesync.md
-      - Root Certs and Hosts: rootcerts.md
+      - Update Hosts: hosts.md
       - Build Your Own Apps: sdkpdk.md
 theme:
   name: readthedocs

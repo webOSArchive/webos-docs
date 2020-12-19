@@ -2,6 +2,22 @@
 
 webOS is a combination of Linux and Javascript technologies, that provide incredible power and flexibility, while remaining remarkably easy to to learn. If you are new to software development, or if you've been doing it for awhile, you'll find the restored SDK and PDK to be a tremendous asset.
 
+## Activate Developer Mode
+
+#### webOS 1.0
+
+* From the Launcher, start typing: `webos20090606`
+
+* Tap the "Developer Mode" icon that appears in the search results, and turn it On.
+
+#### webOS 2.0
+
+* Use the built-in "Just Type" search feature on the Launcher, and type: `upupdowndownleftrightleftrightbastart`
+
+* Tap the "Developer Mode" icon that appears in the search results, and turn it On.
+
+![Developer Mode](images/developermode.png)
+
 ## SDK
 
 The SDK refers to apps built in Javascript frameworks. On the front-end (the part you see) both older and newer webOS Devices support a framework called Mojo. Later, HP introduced a framework called Enyo. On the back-end, services could use NodeJS and access some platform capabilities through services known as Luna.
@@ -12,7 +28,7 @@ The PDK refers to Linux binaries that had more direct access to the underlying h
 
 ## Getting Started
 
-[webOS Archive](http://www.webosarchive.com) has restored the SDK/PDK almost entirely, including the online documentation, emulators, and other tools you'll need to get started.
+[webOS Archive](http://www.webosarchive.com) has restored key portions of the SDK/PDK almost entirely, including the online documentation, emulators, and other tools you'll need to get started.
 
 Visit [http://sdk.webosarchive.com](http://sdk.webosarchive.com) to get access now!
 
