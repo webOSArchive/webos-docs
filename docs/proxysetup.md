@@ -25,7 +25,7 @@ Or use the [direct download](http://www.webosarchive.com/proxy/com.palm.wosa.pro
 The webOS Archive Certificate is a single certificate you must install in order to bypass certificate warnings from other websites: one certificate (or: cert) that covers the whole Internet.
 
 * On your computer, download the cert:
-    + [http://www.webosarchive.com/proxy/servicecert.der](http://www.webosarchive.com/proxy/servicecert.der) 
+    + [http://www.webosarchive.com/proxy/wOSAServiceCert.der](http://www.webosarchive.com/proxy/wOSAServiceCert.der) 
 * Plug your webOS device into your computer with a USB cable, and enter USB Disk mode on the device
 * Copy the cert you downloaded onto root directory of the USB device
 * Launch the built-in webOS app "Device Info"
