@@ -16,7 +16,7 @@ Your credentials will be sent to you at the e-mail address you supplied, and can
 If you're using a TouchPad, The easiest way to get started is with the NEW **webOS Archive Proxy** app.
 To download, install [webOS App Museum II](Installing Apps on your webOS Device) and search for "Proxy".
 
-Or use the [direct download](http://www.webosarchive.com/proxy/com.palm.wosa.proxysetter_1.1.2_all.ipk) and install it yourself.
+Or use the [direct download](http://appcatalog.webosarchive.com/showMuseumDetails.php?app=1005768) and install it yourself.
 
 ## Manual Configuration
 
