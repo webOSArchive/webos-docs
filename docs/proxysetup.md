@@ -13,12 +13,18 @@ Your credentials will be sent to you at the e-mail address you supplied, and can
 
 ![webOS Archive Proxy](images/proxyicon.png)
 
-If you're using a TouchPad, The easiest way to get started is with the NEW **webOS Archive Proxy** app.
+If you're using a TouchPad or Pre3, The easiest way to get started is with the NEW **webOS Archive Proxy** app.
 To download, install [webOS App Museum II](Installing Apps on your webOS Device) and search for "Proxy".
 
 Or use the [direct download](http://appcatalog.webosarchive.com/showMuseumDetails.php?app=1005768) and install it yourself.
 
+As well as letting you enable or disable the proxy, this app makes it easy to download the certificate and install it in the right place. Its a good idea to perform a full reboot after installing the certificate.
+
 ## Manual Configuration
+
+If Easy Install doesn't work for you, or you still get certificate prompts, you can do all the steps manually. Make sure you start from a clean slate by removing any existing certs shown in the Certificate Manager app, and deleting downloaded certs from `/media/internal/`.
+
+Also, it never hurts to do a full reboot between clean-up and manual install.
 
 ### Adding the Certificate
 
@@ -42,8 +48,8 @@ The webOS Archive Certificate is a single certificate you must install in order 
 A Proxy switch app adds a feature to webOS allowing you to turn on (and off) a global proxy. Once activated, this proxy works for any app on the device -- including email!
 
 * Install a Proxy app
-    + For TouchPads: Install the app **Proxy Set Basic** from Preware, or [download directly here](http://www.webosarchive.com/proxy/com.palm.com.verusora.touchpad.proxysetbasic_1.1.1_all.ipk).
-    + For Phones: Install the app **ProxySwitcher** from Preware, or [download directly here](http://www.webosarchive.com/proxy/com.palm.proxyswitcher_1.2.0_all.ipk).
+    + Install the app **webOS Archive Proxy** app from App Museum II, or [download directly here](http://appcatalog.webosarchive.com/showMuseumDetails.php?app=1005768).
+    + Install the app **Proxy Set Basic** from Preware, or [download directly here](http://www.webosarchive.com/proxy/com.palm.com.verusora.touchpad.proxysetbasic_1.1.1_all.ipk).
 * Launch the app, and configure the fields as follows:
 * Server: `proxy.webosarchive.com`
 * Port: `3128`
