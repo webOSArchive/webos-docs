@@ -1,4 +1,4 @@
-site_name: webOS Documentation
+site_name: webOS Docs
 nav:
     - Home: index.md
     - Getting Started:
