@@ -9,6 +9,10 @@ If you can live with these considerations, please visit this form to agree to th
 
 Your credentials will be sent to you at the e-mail address you supplied, and can be used to set-up the Proxy on your webOS device.
 
+## Prerequisites
+
+This section assumes you've completed the previous steps to [getting online](online.md), and [update the root certs](online.md#updating-certificates).<br>
+
 ## Easy Install
 
 ![webOS Archive Proxy](images/proxyicon.png)
