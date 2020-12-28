@@ -30,7 +30,7 @@ Once you have Java, you will need to download the webOS Quick Install (WOSQI) to
 
 * With your webOS device plugged into your computer:
 * Using your computer's command line, navigate to the directory where you downloaded WOSQI
-* Run the command: `java -jar wosqi.jar`
+* Run the command: `java -jar WebOS-Quick-Install-4-7-2.jar`
 * The webOS Quick Install app should open on your computer
 
 ## Install Preware
@@ -67,6 +67,13 @@ Now that you have a couple App stores on your device, you won't need WOSQI or yo
 <br>Just look for these icons in your Launcher...
 
 ![Preware](images/preware-icon.png) &nbsp;&nbsp;![App Museum II](images/appmuseum-icon.png)
+
+## Video Tutorial
+
+A video showing [activation](activate.md) and app installation is available on YouTube...
+
+[![Video Tutorial](images/videotutorial.png)](https://www.youtube.com/watch?v=enQB3Tygebg "Activating a HP Touchpad")
+
 
 ## Alternate Instructions
 

@@ -59,6 +59,12 @@ You'll need a command line in your operating system of choice. On a Mac or Ubunt
 Once the device restarts, it will have bypassed activation, and you're ready to begin using it.<br>
 Use the built-in settings to join your WiFi -- webOS works with 2.4ghz WiFi networks and all common wireless security schemes, including WPA.
 
+## Video Tutorial
+
+A video showing activation and [app installation](appstores.md) is available on YouTube...
+
+[![Video Tutorial](images/videotutorial.png)](https://www.youtube.com/watch?v=enQB3Tygebg "Activating a HP Touchpad")
+
 ## Alternate Instructions
 
 This documentation attempts to update and simplify information available from older, archived sources. You may find that material to be useful as reference:
