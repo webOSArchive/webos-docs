@@ -6,7 +6,8 @@ nav:
       - Installing Apps on your webOS Device: appstores.md
       - Getting Online: online.md
       - Using the webOS Archive Proxy: proxysetup.md
-    - Next Steps:
+    - Things To Try: thingstotry.md
+    - Taking Control:
       - Shell Access: bash.md
       - Time Synchronization: timesync.md
       - Update Hosts: hosts.md
