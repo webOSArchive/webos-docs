@@ -5,9 +5,10 @@ webOS is *not* a dead platform! There's still plenty of things you can on your w
 
 More and more websites are moving to newer encryption over HTTPS as the only way to access the site. On webOS 3.x, including the Pre3 and Touchpad, you can work-around this with a proxy. With Pre 2 and older, you are more limited. Here are some common websites that work, or ways to work around:
 
-* [Facebook](http://m.facebook.com) the mobile version still works on all devices
-* [Google](http://www.google.com) still works on all devices
-* Wikipedia only works with a proxy. For older devices, webOS archive provides a "tiny" version that is periodically updated at [http://wikipedia.webosarchive.com](http://wikipedia.webosarchive.com)
+* **[Facebook](http://m.facebook.com)** the mobile version still works on all devices (and webOS doesn't support most of their tracking!)
+* **[Google](http://www.google.com)** still works on all devices
+* **Wikipedia** only works with a proxy. For older devices, webOS archive provides a "tiny" version that is periodically updated at [http://wikipedia.webosarchive.com](http://wikipedia.webosarchive.com)
+* **Other sites:** many sites can be access through their RSS Feed using the [FeedSpider](http://appcatalog.webosarchive.com/showMuseum.php?search=feedspider) app, and a service like [InoReader](http://www.inoreader.com).
 
 ## Apps
 
