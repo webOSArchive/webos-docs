@@ -8,14 +8,14 @@ More and more websites are moving to newer encryption over HTTPS as the only way
 * **Facebook** [mobile](http://m.facebook.com) still works on all devices (and webOS doesn't support most of their tracking!)
 * **Google** still works on all devices
 * **Reddit** still works on all devices through [old.reddit.com](old.reddit.com) or the excellent IAmA Reddit App - [Homebrew](https://preware.pivotce.com/package/com.tehtorq.reddit-hb) and [App Catalog](http://appcatalog.webosarchive.com/showMuseumDetails.php?search=iama&app=10842) versions are available. Reddit videos can be watched in [MeTube](#metube)
-* **Wikipedia** only works with a proxy. For older devices, webOS archive provides a "tiny" version that is periodically updated at [http://wikipedia.webosarchive.com](http://wikipedia.webosarchive.com)
+* **Wikipedia** only works with a proxy. For older devices, webOS archive provides a "tiny" version that is periodically updated at [http://wikipedia.webosarchive.com](wikipedia.webosarchive.com)
 * **Other sites:** many sites can be accessed through their RSS Feed using the [FeedSpider](http://appcatalog.webosarchive.com/showMuseum.php?search=feedspider) app, and a service like [InoReader](http://www.inoreader.com)
 
 ## Apps
 
 All of the Apps listed below can be found on [App Museum II](appstores.md), but there's direct download links as well.
 
-### <a name="metube">YouTube</a>
+### <a name="metube" style="color:#404040">YouTube</a>
 <img src="https://www.jonandnic.com/webos/metube/icon.png" align="right" style="padding-left: 8px">YouTube doesn't officially support webOS (or most retro platforms) but thanks to the open source community, its still available. An app called **MeTube**, available in App Museum II, works with a pair of back-end services to fetch YouTube videos for you on demand. The services are hosted by webOS Archive, but you can also run them yourself, if you prefer.
 
 * [Download the App](http://appcatalog.webosarchive.com/showMuseumDetails.php?search=metube&app=1005774)
