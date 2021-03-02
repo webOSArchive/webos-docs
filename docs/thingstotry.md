@@ -9,6 +9,7 @@ More and more websites are moving to newer encryption over HTTPS as the only way
 * **YouTube**'s website no longer works, but there's an [app for that](#youtube)
 * **Reddit** still works on all devices through [old.reddit.com](http://old.reddit.com) or the excellent IAmA Reddit App - [Homebrew](https://preware.pivotce.com/package/com.tehtorq.reddit-hb) and [App Catalog](http://appcatalog.webosarchive.com/showMuseumDetails.php?search=iama&app=10842) versions are available. Reddit videos can be watched in [MeTube](#youtube)
 * **Facebook** [mobile](http://m.facebook.com) still works on all devices (and webOS doesn't support most of their tracking!)
+* **Twitter** blocks the webOS browser, but [Project Macaw](https://preware.pivotce.com/package/net.minego.phnx) delivers a pretty great Twitter experience via a Homebrew App.
 * **Wikipedia** only works with a proxy. For older devices, webOS archive provides a "tiny" version that is periodically updated at [wikipedia.webosarchive.com](http://wikipedia.webosarchive.com)
 * **Other sites:** many sites can be accessed through their RSS Feed using the [FeedSpider](http://appcatalog.webosarchive.com/showMuseum.php?search=feedspider) app, and a service like [InoReader](http://www.inoreader.com)
 
