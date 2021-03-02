@@ -3,25 +3,26 @@ webOS is *not* a dead platform! There's still plenty of things you can on your w
 
 ## Websites
 
-More and more websites are moving to newer encryption over HTTPS as the only way to access the site. On webOS 3.x, including the Pre3 and Touchpad, you can work-around this with a proxy. With Pre 2 and older, you are more limited. Here are some common websites that work, or ways to work around:
+More and more websites are moving to newer encryption over HTTPS as the only way to access the site. On webOS 3.x, including the Pre3 and Touchpad, you can work-around this with a [proxy](proxysetup.md). With Pre 2 and older, you are more limited. Here are some common websites that work, or ways to work around:
 
-* **[Facebook](http://m.facebook.com)** the mobile version still works on all devices (and webOS doesn't support most of their tracking!)
-* **[Google](http://www.google.com)** still works on all devices
+* **Facebook** the [mobile version](http://m.facebook.com) still works on all devices (and webOS doesn't support most of their tracking!)
+* **Google** still works on all devices.
+* **Reddit** still works on all devices through [old.reddit.com](old.reddit.com) or the excellent IAmA Reddit App - [Homebrew](https://preware.pivotce.com/package/com.tehtorq.reddit-hb) and [App Catalog](http://appcatalog.webosarchive.com/showMuseumDetails.php?search=iama&app=10842) versions are available. Reddit videos can be watched in [MeTube](#metube).
 * **Wikipedia** only works with a proxy. For older devices, webOS archive provides a "tiny" version that is periodically updated at [http://wikipedia.webosarchive.com](http://wikipedia.webosarchive.com)
-* **Other sites:** many sites can be access through their RSS Feed using the [FeedSpider](http://appcatalog.webosarchive.com/showMuseum.php?search=feedspider) app, and a service like [InoReader](http://www.inoreader.com).
+* **Other sites:** many sites can be accessed through their RSS Feed using the [FeedSpider](http://appcatalog.webosarchive.com/showMuseum.php?search=feedspider) app, and a service like [InoReader](http://www.inoreader.com).
 
 ## Apps
 
 All of the Apps listed below can be found on [App Museum II](appstores.md), but there's direct download links as well.
 
-### YouTube
-<img src="https://www.jonandnic.com/webos/metube/icon.png" align="right" style="padding-left: 8px">YouTube doesn't officially support webOS (or most retro platforms) but thanks to the open source community, its still available. An app called MeTube, available in App Museum II, works with a pair of back-end services to fetch YouTube videos for you on demand. The services are hosted by webOS Archive, but you can also run them yourself, if you prefer.
+### <a name="metube">YouTube</a>
+<img src="https://www.jonandnic.com/webos/metube/icon.png" align="right" style="padding-left: 8px">YouTube doesn't officially support webOS (or most retro platforms) but thanks to the open source community, its still available. An app called **MeTube**, available in App Museum II, works with a pair of back-end services to fetch YouTube videos for you on demand. The services are hosted by webOS Archive, but you can also run them yourself, if you prefer.
 
 * [Download the App](http://appcatalog.webosarchive.com/showMuseumDetails.php?search=metube&app=1005774)
 * [Self-host the services](https://github.com/codepoet80/metube-php-servicewrapper)
 
 ### Podcasts
-webOS devices make great Podcast listening tools -- whether its a Touchpad setting in Touchstone, maybe connected to a nice Bluetooth speaker, or a tiny little Pre or Veer, slipped in your pocket as you go about your routine. Many Podcasts have switched to HTTPS, which causes problems for older, encryption-challenged devices, but a Retro Podcast service, hosted by webOS Archive (or you, if you want) solves this, and many other problems. Combined with a stand-alone Podcast Directory app, and a number of Podcast players available in the Museum, you can download and listen to thousands of popular podcasts right on your device.
+webOS devices make great Podcast listening tools -- whether its a Touchpad setting in Touchstone, maybe connected to a nice Bluetooth speaker, or a tiny little Pre or Veer, slipped in your pocket as you go about your routine. Many Podcasts have switched to HTTPS, which causes problems for older, encryption-challenged devices, but a **Retro Podcast Service**, hosted by webOS Archive (or you, if you want) solves this, and many other problems. Combined with a stand-alone Podcast Directory app, and a number of Podcast players available in the Museum, you can download and listen to thousands of popular podcasts right on your device.
 
 ![Podcasts](images/retropodcasts.png)
 
@@ -34,7 +35,7 @@ Philips Hue lights are some of the best smart bulbs out there -- whether you use
 
 <img src="http://www.jonandnic.com/webos/onenightstand/LampsPrePhoto.png" style="width:300px">
 
-One Night Stand is a night table clock that switches to a light controller with just a tap. It connects your smart home to webOS with a classy app that turn your Pre, Veer or Touchpad into an elegant controller.
+**One Night Stand** is a night table clock that switches to a light controller with just a tap. It connects your smart home to webOS with a classy app that turn your Pre, Veer or Touchpad into an elegant controller.
 
 * Download [One Night Stand](http://appcatalog.webosarchive.com/showMuseumDetails.php?search=one+night&app=1005771)
 * Learn more about [Philips Hue](https://www.usa.philips.com/c-e/smartsleep/wake-up-light-portfolio.html) 
@@ -42,7 +43,7 @@ One Night Stand is a night table clock that switches to a light controller with 
 ### Be an Exhibitionist
 webOS 2.0 and above have a mode called Exhibition, that allows your device to continuously show content while on its charging dock. A photo slide show is an obvious choice -- load up your device with your favorite pictures of family, pets, or scenery, and let the exhibit roll by.
 
-If you'd rather get some information, Accuweather still works on all devices, and on the Touchpad includes a gorgeous Exhibition mode that shows the weather where you are, or in other locations of your choosing.
+If you'd rather get some information, **Accuweather** still works on all devices, and on the Touchpad includes a gorgeous Exhibition mode that shows the weather where you are, or in other locations of your choosing.
 
 * Download [Accuweather](http://appcatalog.webosarchive.com/showMuseum.php?search=accuweather)
 
