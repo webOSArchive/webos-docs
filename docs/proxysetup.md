@@ -1,4 +1,10 @@
-# webOS Archive Proxy
+# Proxy Setup
+
+Modern encryption isn't available on webOS mobile devices, and efforts to port it haven't panned out. Fortunately, on most webOS Devices, you can work-around by using a SSL-bump proxy. Outlined here are some options for proxies that can help you get your device online. Fair warning: SSL-bumping defeats the security of modern encryption, and shouldn't be used for anything highly private.
+
+Unfortunately API to set a proxy wasn't added until webOS 2.2.4. If you're on an original Pre or Pixi, you're out of luck. If you're on a Pre2 or Veer, it IS possible to update them to webOS 2.2.4, but depending on carrier, it requires some extra work to [build and run a Super Doctor](https://github.com/webos-internals/meta-doctor/). If you're on a Pre3 or TouchPad, you're ready to go.
+
+## webOS Archive Proxy
 
 The webOS Archive Proxy is a service offered to legacy webOS device users who agree to a convenant of behavior. It enables retro devices with older encryption libraries to browse the modern web by "bumping" the SSL encryption from the source. It is insecure by design, running on a shared resource, and should not be used for any purpose beyond the nostalgia and utility of a dead platform.
 
@@ -9,28 +15,30 @@ If you can live with these considerations, please visit this form to agree to th
 
 Your credentials will be sent to you at the e-mail address you supplied, and can be used to set-up the Proxy on your webOS device.
 
-## Prerequisites
+If you'd rather not use a public proxy, see below for [alternate options](http://www.webosarchive.com/docs/proxysetup/#alternate-proxies).
 
-This section assumes you've completed the previous steps to [getting online](online.md), and [update the root certs](online.md#updating-certificates).<br>
+### Prerequisites
 
-## Easy Install
+This section assumes you've completed the previous steps to [get online](online.md), and [update the root certs](online.md#updating-certificates).
+
+### Easy Install
 
 ![webOS Archive Proxy](images/proxyicon.png)
 
-If you're using a TouchPad or Pre3, The easiest way to get started is with the NEW **webOS Archive Proxy** app.
+If you're using webOS 2.2.4 or higher, The easiest way to get started is with the NEW **webOS Archive Proxy** app.
 To download, install [webOS App Museum II](Installing Apps on your webOS Device) and search for "Proxy".
 
 Or use the [direct download](http://appcatalog.webosarchive.com/showMuseumDetails.php?app=1005768) and install it yourself.
 
 As well as letting you enable or disable the proxy, this app makes it easy to download the certificate and install it in the right place. Its a good idea to perform a full reboot after installing the certificate.
 
-## Manual Configuration
+### Manual Configuration
 
 If Easy Install doesn't work for you, or you still get certificate prompts, you can do all the steps manually. Make sure you start from a clean slate by removing any existing certs shown in the Certificate Manager app, and deleting downloaded certs from `/media/internal/`.
 
 Also, it never hurts to do a full reboot between clean-up and manual install.
 
-### Adding the Certificate
+#### Adding the Certificate
 
 The webOS Archive Certificate is a single certificate you must install in order to bypass certificate warnings from other websites: one certificate (or: cert) that covers the whole Internet.
 
@@ -47,7 +55,7 @@ The webOS Archive Certificate is a single certificate you must install in order 
 
 ![Certificate Manager](images/certmanager.png)
 
-### Configure the Proxy
+#### Configure the Proxy
 
 A Proxy switch app adds a feature to webOS allowing you to turn on (and off) a global proxy. Once activated, this proxy works for any app on the device -- including email!
 
