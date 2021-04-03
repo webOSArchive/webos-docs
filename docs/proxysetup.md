@@ -2,7 +2,7 @@
 
 Modern encryption isn't available on webOS mobile devices, and efforts to port it haven't panned out. Fortunately, on most webOS Devices, you can work-around by using a SSL-bump proxy. Outlined here are some options for proxies that can help you get your device online. Fair warning: SSL-bumping defeats the security of modern encryption, and shouldn't be used for anything highly private.
 
-Unfortunately API to set a proxy wasn't added until webOS 2.2.4. If you're on an original Pre or Pixi, you're out of luck. If you're on a Pre2 or Veer, it IS possible to update them to webOS 2.2.4, but depending on carrier, it requires some extra work to [build and run a Super Doctor](https://github.com/webos-internals/meta-doctor/). If you're on a Pre3 or TouchPad, you're ready to go.
+Unfortunately API to set a proxy wasn't added for most devices until webOS 2.2.4 (2.2.0 on Pre3). If you're on an original Pre or Pixi, you're out of luck. If you're on a Pre2 or Veer, it IS possible to update them to webOS 2.2.4, but depending on carrier, it requires some extra work to [build and run a Super Doctor](https://github.com/webos-internals/meta-doctor/). If you're on a Pre3 or TouchPad, you're ready to go.
 
 ## webOS Archive Proxy
 
@@ -20,6 +20,8 @@ If you'd rather not use a public proxy, see below for [alternate options](http:/
 ### Prerequisites
 
 This section assumes you've completed the previous steps to [get online](online.md), and [update the root certs](online.md#updating-certificates).
+
+Make sure the time on your device is at least close to accurate. Certificates are based on dates, so if your internal clock is wrong, you will get errors!
 
 ### Easy Install
 
