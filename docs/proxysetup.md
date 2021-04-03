@@ -21,7 +21,7 @@ If you'd rather not use a public proxy, see below for [alternate options](http:/
 
 This section assumes you've completed the previous steps to [get online](online.md), and [update the root certs](online.md#updating-certificates).
 
-Make sure the time on your device is at least close to accurate. Certificates are based on dates, so if your internal clock is wrong, you will get errors!
+**Important Note** Make sure the time on your device is at least close to accurate. Certificates are based on dates, so if your internal clock is wrong, you will get errors!
 
 ### Easy Install
 
