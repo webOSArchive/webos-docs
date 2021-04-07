@@ -5,13 +5,25 @@ webOS is *not* a dead platform! There's still plenty of things you can on your w
 
 More and more websites are moving to newer encryption over HTTPS as the only way to access the site. On webOS 3.x, including the Pre3 and Touchpad, you can work-around this with a [proxy](proxysetup.md). With Pre 2 and older, you are more limited. Here are some common websites that work, or ways to work around:
 
+### Common Sites
 * **Google** still works on all devices
-* **YouTube**'s website no longer works, but there's an [app for that](#youtube)
-* **Reddit** still works on all devices through [old.reddit.com](http://old.reddit.com) or the excellent IAmA Reddit App - [Homebrew](https://preware.pivotce.com/package/com.tehtorq.reddit-hb) and [App Catalog](http://appcatalog.webosarchive.com/showMuseumDetails.php?search=iama&app=10842) versions are available. Reddit videos can be watched in [MeTube](#youtube)
-* **Facebook** [mobile](http://m.facebook.com) still works on all devices (and webOS doesn't support most of their tracking!)
-* **Twitter** blocks the webOS browser, but [Project Macaw](https://preware.pivotce.com/package/net.minego.phnx) delivers a pretty great Twitter experience via a Homebrew App.
+* **YouTube**'s website no longer works, but there's an app for that called [MeTube](#youtube)
+* **Reddit** still works on all devices through [old.reddit.com](http://old.reddit.com) or the excellent IAmA Reddit App - [Homebrew](https://preware.pivotce.com/package/com.tehtorq.reddit-hb) and [App Catalog](http://appcatalog.webosarchive.com/showMuseumDetails.php?search=iama&app=10842) versions are available. Reddit videos can also be watched in [MeTube](#youtube)
+* **Facebook** [mobile](http://m.facebook.com) still works on all devices (and webOS doesn't support most of their tracking!), and the [PreBook app](http://appcatalog.webosarchive.com/showMuseumDetails.php?search=prebook&app=1005784) makes the experience a little nicer
+* **Twitter** blocks the webOS browser, but [Project Macaw](https://preware.pivotce.com/package/net.minego.phnx) delivers a pretty great Twitter experience via a Homebrew App
 * **Wikipedia** only works with a proxy. For older devices, webOS archive provides a "tiny" version that is periodically updated at [wikipedia.webosarchive.com](http://wikipedia.webosarchive.com)
-* **Other sites:** many sites can be accessed through their RSS Feed using the [FeedSpider](http://appcatalog.webosarchive.com/showMuseum.php?search=feedspider) app, and a service like [InoReader](http://www.inoreader.com)
+
+### Alternatives
+* **RSS:** many sites can be accessed through their RSS Feed using the [FeedSpider](http://appcatalog.webosarchive.com/showMuseum.php?search=feedspider) app, and a service like [InoReader](http://www.inoreader.com)
+* **Google News:** retro-computer enthusiast [Action Retro](https://www.youtube.com/channel/UCoL8olX-259lS1N6QPyP4IQ) has built an excellent text-only Google News web app that works on almost anything. Check out [68k.news](http://68k.news/)
+* **Text-Only Web:** many popular sites have a text-only version that works well on a variety of retro devices. Sijmen J. Mulder has assembled a good list here: [https://sjmulder.nl/en/textonly.html](https://sjmulder.nl/en/textonly.html)
+
+## Community
+There's still an active webOS Community, swapping notes on devices and patches, and even building new apps...
+
+* **Forums:** [webOS Nation](https://forums.webosnation.com) Forums are still up, and you can expect roughly weekly interactions from both long-term experts, and newer users. There's even a [Forums app](http://appcatalog.webosarchive.com/showMuseumDetails.php?search=forums&app=1005770) you can use to participate from your webOS device.
+<img src="https://www.jonandnic.com/webos/simplechat/icon.png" align="right" style="padding-left: 8px">
+* **Discord + SimpleChat:** the most active community of webOS Users is on a [2021 webOS app called SimpleChat](http://appcatalog.webosarchive.com/showMuseum.php?search=simplechat) -- which is also connected to a [Discord server](discord.gg/7NrrT8exrn). Join in the conversation!
 
 ## Apps
 
