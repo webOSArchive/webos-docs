@@ -72,4 +72,4 @@ If you'd rather get some information, **Accuweather** still works on all devices
 * [Miriel](http://appcatalog.webosarchive.com/showMuseum.php?search=Miriel) - These games keep my youngest daughter busy for hours
 
 ### Make Something New
-<img src="https://www.jonandnic.com/webos/webos-sdk.png" align="left" style="padding-right: 8px">webOS is an easy platform to learn to develop on. Based on Javascript, and powered by Linux, is an easy environment to explore, reverse engineer and build upon. If you can make a web page, you can make an App for webOS! Check out the [SDK section](sdkpdk.md) for more info about getting started!
+<img src="https://www.jonandnic.com/webos/webos-sdk.png" align="left" style="padding-right: 8px">webOS is an easy platform to learn to develop on. Based on Javascript, and powered by Linux, its an easy environment to explore, reverse engineer and build upon. If you can make a web page, you can make an App for webOS! Check out the [SDK section](sdkpdk.md) for more info about getting started!
