@@ -7,7 +7,7 @@ The built-in web browser is dated, and has some limitations, but with a little h
 
 ## Set Date and Time
 
-Believe it or not, this is a critical step! Web encryption requires a reasonable delta from UTC (Coordinated Universal Time) time or you'll end up with errors and failures. Use the built-in Settings app to set the date, time and time zone manually. Optionally, you can [sync the time with a network server](timesync.md) once you're online.
+Believe it or not, this is a critical step! Web encryption requires a reasonable delta from UTC (Coordinated Universal Time) time or you'll end up with errors and failures. Use the built-in Settings app to set the date, time and time zone manually. Depending on your device, you may want to [sync the time with a remote server](timesync.md) once you're online.
 
 ## Updating Certificates
 
