@@ -24,7 +24,7 @@ The SDK refers to apps built in Javascript frameworks. On the front-end (the par
 
 ## PDK
 
-The PDK refers to Linux binaries that had more direct access to the underlying hardware and platform. This was commonly used in games or some media players that needed high performance graphics.
+The PDK refers to C and C++ binaries that had more direct access to the underlying hardware and platform. This was commonly used in games or some media players that needed high performance graphics.
 
 ## Getting Started
 

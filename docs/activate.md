@@ -63,7 +63,7 @@ Use the built-in settings to join your WiFi -- webOS works with 2.4ghz WiFi netw
 
 A video showing activation and [app installation](appstores.md) is available on YouTube...
 
-[![Video Tutorial](images/videotutorial.png)](https://www.youtube.com/watch?v=enQB3Tygebg "Activating a HP Touchpad")
+[![Video Tutorial](images/videotutorial.png)](https://www.youtube.com/watch?v=enQB3Tygebg "Activating a HP TouchPad")
 
 ## Alternate Instructions
 

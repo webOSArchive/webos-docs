@@ -8,9 +8,9 @@ nav:
       - Using a SSL Proxy: proxysetup.md
     - Things To Try: thingstotry.md
     - Taking Control:
-      - Shell Access: bash.md
       - Time Synchronization: timesync.md
       - Update Hosts: hosts.md
+      - Shell Access: bash.md
       - Build Your Own Apps: sdkpdk.md
 theme:
   name: readthedocs
