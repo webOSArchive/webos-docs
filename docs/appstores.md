@@ -72,7 +72,7 @@ Now that you have a couple App stores on your device, you won't need WOSQI or yo
 
 A video showing [activation](activate.md) and app installation is available on YouTube...
 
-[![Video Tutorial](images/videotutorial.png)](https://www.youtube.com/watch?v=enQB3Tygebg "Activating a HP Touchpad")
+[![Video Tutorial](images/videotutorial.png)](https://www.youtube.com/watch?v=enQB3Tygebg "Activating a HP TouchPad")
 
 
 ## Alternate Instructions

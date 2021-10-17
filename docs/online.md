@@ -16,7 +16,7 @@ The root certificates used to establish trust on the Internet are out-of-date in
 * On your device, launch Preware, and wait for it to update sources.
 * Search for "Certs" using Preware's built-in search tool
     + On a phone, just start typing
-    + On a Touchpad, use the Search icon in the toolbar at the top of the main scene
+    + On a TouchPad, use the Search icon in the toolbar at the top of the main scene
 * Find the app "Root Certs Update" in the search results, tap on it
 * Hit the Install button, and wait while it installs and runs the necessary scripts (this process takes a few minutes!)
     + If you have trouble downloading, try this alternate link:<br>

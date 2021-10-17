@@ -20,7 +20,7 @@ Although multiple apps will be installed, the only one you can actually use is X
 
 * Tap the Xecutah icon from the Launcher of your webOS device
 * Give it a few seconds to startup
-* On the Touchpad, you will need to tap with three fingers on the screen to bring up the keyboard
+* On the TouchPad, you will need to tap with three fingers on the screen to bring up the keyboard
     + Tapping again with three fingers will hide the keyboard again
     + Type `clear` at any time if the screen gets too full
 * Try typing some commands:
