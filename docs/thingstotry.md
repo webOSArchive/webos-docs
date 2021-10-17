@@ -8,9 +8,9 @@ More and more websites are moving to newer encryption over HTTPS as the only way
 ### Common Sites
 * **Google** still works on all devices
 * **YouTube**'s website no longer works, but there's an app for that called [MeTube](#youtube)
-* **Reddit** still works on all devices through [old.reddit.com](http://old.reddit.com) or the excellent IAmA Reddit App - [Homebrew](https://preware.pivotce.com/package/com.tehtorq.reddit-hb) and [App Catalog](http://appcatalog.webosarchive.com/showMuseumDetails.php?search=iama&app=10842) versions are available. Reddit videos can also be watched in [MeTube](#youtube)
+* **Reddit** still works with an [HTTPS proxy enabled](proxysetup.md) on all devices through [old.reddit.com](http://old.reddit.com) or the excellent IAmA Reddit App - [Homebrew](https://preware.pivotce.com/package/com.tehtorq.reddit-hb) and [App Catalog](http://appcatalog.webosarchive.com/showMuseumDetails.php?search=iama&app=10842) versions are available. Reddit videos can also be watched in [MeTube](#youtube)
 * **Facebook** [mobile](http://m.facebook.com) still works on all devices (and webOS doesn't support most of their tracking!), and the [PreBook app](http://appcatalog.webosarchive.com/showMuseumDetails.php?search=prebook&app=1005784) makes the experience a little nicer
-* **Twitter** blocks the webOS browser, but [Project Macaw](https://preware.pivotce.com/package/net.minego.phnx) delivers a pretty great Twitter experience via a Homebrew App
+* **Twitter** blocks the webOS browser, but [Project Macaw](https://preware.pivotce.com/package/net.minego.phnx) delivers a pretty great Twitter experience via a Homebrew App and a [HTTPS proxy](proxysetup.md).
 * **Wikipedia** only works with a proxy. For older devices, webOS archive provides a "tiny" version that is periodically updated at [wikipedia.webosarchive.com](http://wikipedia.webosarchive.com)
 
 ### Alternatives
