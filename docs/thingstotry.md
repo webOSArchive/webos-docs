@@ -7,7 +7,7 @@ More and more websites are moving to newer encryption over HTTPS as the only way
 
 ### Common Sites
 * **Google** still works on all devices
-* **YouTube**'s website no longer works, but there's an app for that called [MeTube](#youtube)
+* **YouTube**'s website no longer works, but there's an app for that called [MeTube](#youtube), or you can try the retro-friendly website [Invidious](https://ytprivate.com).
 * **Reddit** still works with an [HTTPS proxy enabled](proxysetup.md) on all devices through [old.reddit.com](http://old.reddit.com) or the excellent IAmA Reddit App - [Homebrew](https://preware.pivotce.com/package/com.tehtorq.reddit-hb) and [App Catalog](http://appcatalog.webosarchive.com/showMuseumDetails.php?search=iama&app=10842) versions are available. Reddit videos can also be watched in [MeTube](#youtube)
 * **Facebook** [mobile](http://m.facebook.com) still works on all devices (and webOS doesn't support most of their tracking!), and the [PreBook app](http://appcatalog.webosarchive.com/showMuseumDetails.php?search=prebook&app=1005784) makes the experience a little nicer
 * **Twitter** blocks the webOS browser, but [Project Macaw](https://preware.pivotce.com/package/net.minego.phnx) delivers a pretty great Twitter experience via a Homebrew App and a [HTTPS proxy](proxysetup.md).
@@ -30,7 +30,7 @@ There's still an active webOS Community, swapping notes on devices and patches, 
 All of the Apps listed below can be found on [App Museum II](appstores.md), but there's direct download links as well.
 
 ### YouTube
-<img src="https://www.jonandnic.com/webos/metube/icon.png" align="right" style="padding-left: 8px">YouTube doesn't officially support webOS (or most retro platforms) but thanks to the open source community, its still available. An app called **MeTube**, available in App Museum II, works with a pair of back-end services to fetch YouTube videos for you on demand. The services are hosted by webOS Archive, but you can also run them yourself, if you prefer.
+<img src="http://www.jonandnic.com/webos/metube/icon.png" align="right" style="padding-left: 8px">YouTube doesn't officially support webOS (or most retro platforms) but thanks to the open source community, its still available. An app called **MeTube**, available in App Museum II, works with a pair of back-end services to fetch YouTube videos for you on demand. The services are hosted by webOS Archive, but you can also run them yourself, if you prefer.
 
 * [Download the App](http://appcatalog.webosarchive.com/showMuseumDetails.php?search=metube&app=1005774)
 * [Self-host the services](https://github.com/codepoet80/metube-php-servicewrapper)
@@ -54,6 +54,12 @@ Philips Hue lights are some of the best smart bulbs out there -- whether you use
 * Download [One Night Stand](http://appcatalog.webosarchive.com/showMuseumDetails.php?search=one+night&app=1005771)
 * Learn more about [Philips Hue](https://www.usa.philips.com/c-e/smartsleep/wake-up-light-portfolio.html) 
 
+### Read a Book
+<img src="../images/kindle.png" align="right" style="padding-left: 8px">The TouchPad makes a great reading device (the TouchPad Go is even better -- if you can find one!) and a number of eReader apps were released. The premier app being the Amazon Kindle Beta. Despite the moniker, its fully functional in the U.S. (YMMV in other regions) with only a slight tweak needed to the login experience: when you login with your Amazon credentials, watch your phone or email for a One-Time Password (OTP) from Amazon that you'll use for your second login attempt. Once that's done, your fully library of books will be available: including color illustrations where the book content includes them!
+
+* Download [Amazon Kindle Beta](http://appcatalog.webosarchive.com/showMuseumDetails.php?search=kindle&app=9216)
+* If you prefer open book formats, try [ProBook HD](http://appcatalog.webosarchive.com/showMuseumDetails.php?search=book&app=5139)
+
 ### Be an Exhibitionist
 webOS 2.0 and above have a mode called Exhibition, that allows your device to continuously show content while on its charging dock. A photo slide show is an obvious choice -- load up your device with your favorite pictures of family, pets, or scenery, and let the exhibit roll by. You can even updated your picture frame remotely from a modern phone or computer with **Share Space**.
 
@@ -64,15 +70,15 @@ If you'd rather get some information, **Accuweather** still works on all devices
 * Download [Accuweather](http://appcatalog.webosarchive.com/showMuseum.php?search=accuweather)
 
 ### Play Some Games!
-<img src="../images/angrybirds.jpg" align="right" style="padding-left: 8px">webOS had a great library of games, and you don't have to worry about in-app-purchases and spyware. Just some great mobile classics. No matter which webOS device you have, you'll find some great entertainment in the [games section](http://appcatalog.webosarchive.com/showMuseum.php?category=Games&count=1030) of App Museum II. Here's a couple suggestions to get you started...
+<img src="../images/angrybirds.jpg" align="right" style="padding-left: 8px">webOS had a great library of games, and you don't have to worry about in-app-purchases and spyware. Just some great mobile classics, including offerings from big publishers like Gameloft and EA. No matter which webOS device you have, you'll find some great entertainment in the [games section](http://appcatalog.webosarchive.com/showMuseum.php?category=Games&count=1030) of App Museum II. Here's a couple suggestions to get you started...
 
 * [Angry Birds](http://appcatalog.webosarchive.com/showMuseum.php?search=angry+birds) - The original, and some of the variations, covering every screen size
 * [SCUMMVM](http://appcatalog.webosarchive.com/showMuseumDetails.php?search=scumm&app=1005763) - Play dozens of PC point-and-click adventures on your TouchPad
-* [Radiant Defense](http://appcatalog.webosarchive.com/showMuseum.php?search=radiant) - There's a bunch of great Tower Defense style games, this is a stylish and fun one to start with
+* [The Sims 3](http://appcatalog.webosarchive.com/showMuseumDetails.php?search=sims&app=1100) - The addictive classic had a great offering on the Pre, and has recently been patched to work on TouchPad and Pre 3 as well.
 * [Snes9X EX](http://appcatalog.webosarchive.com/showMuseumDetails.php?search=snes&app=8214) - webOS is home to many emulators, start with this near-perfect Super Nintendo emulator for Pre through to the TouchPad
 * [Assassin's Creed](http://appcatalog.webosarchive.com/showMuseum.php?search=assassin%27s+creed) - A giant adventure for your mobile device
 * [Oregon Trail](http://appcatalog.webosarchive.com/showMuseumDetails.php?search=oregon&app=1097) - The video game that taught a generation how to play video games has a beautiful version for the TouchPad
 * [Miriel](http://appcatalog.webosarchive.com/showMuseum.php?search=Miriel) - These games keep my youngest daughter busy for hours
 
 ### Make Something New
-<img src="https://www.jonandnic.com/webos/webos-sdk.png" align="left" style="padding-right: 8px">webOS is an easy platform to learn to develop on. Based on Javascript, and powered by Linux, its an easy environment to explore, reverse engineer and build upon. If you can make a web page, you can make an App for webOS! Check out the [SDK section](sdkpdk.md) for more info about getting started!
+<img src="http://www.jonandnic.com/webos/webos-sdk.png" align="left" style="padding-right: 8px">webOS is an easy platform to learn to develop on. Based on Javascript, and powered by Linux, its an easy environment to explore, reverse engineer and build upon. If you can make a web page, you can make an App for webOS! Check out the [SDK section](sdkpdk.md) for more info about getting started!
