@@ -1,6 +1,6 @@
 site_name: webOS Docs
 nav:
-    - Home: index.md
+    - Home: home.md
     - Getting Started:
       - Activating a webOS Device: activate.md
       - Installing Apps on your webOS Device: appstores.md
