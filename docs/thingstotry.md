@@ -18,13 +18,6 @@ More and more websites are moving to newer encryption over HTTPS as the only way
 * **Google News:** retro-computer enthusiast [Action Retro](https://www.youtube.com/channel/UCoL8olX-259lS1N6QPyP4IQ) has built an excellent text-only Google News web app that works on almost anything. Check out [68k.news](http://68k.news/)
 * **Text-Only Web:** many popular sites have a text-only version that works well on a variety of retro devices. Sijmen J. Mulder has assembled a good list here: [https://sjmulder.nl/en/textonly.html](https://sjmulder.nl/en/textonly.html)
 
-## Community
-There's still an active webOS Community, swapping notes on devices and patches, and even building new apps...
-
-* **Forums:** [webOS Nation](https://forums.webosnation.com) Forums are still up, and you can expect roughly weekly interactions from both long-term experts, and newer users. There's even a [Forums app](http://appcatalog.webosarchive.com/showMuseumDetails.php?search=forums&app=1005770) you can use to participate from your webOS device.
-<img src="https://www.jonandnic.com/webos/simplechat/icon.png" align="right" style="padding-left: 8px">
-* **Discord + SimpleChat:** the most active community of webOS Users is on a [2021 webOS app called SimpleChat](http://appcatalog.webosarchive.com/showMuseum.php?search=simplechat) -- which is also connected to a [Discord server](discord.gg/7NrrT8exrn). Join in the conversation!
-
 ## Apps
 
 All of the Apps listed below can be found on [App Museum II](appstores.md), but there's direct download links as well.
