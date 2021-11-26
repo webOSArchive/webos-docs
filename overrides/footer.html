@@ -29,7 +29,7 @@
       for(var i=0; i<myURL.length; i++) {
         var currLink = (myURL[i].getAttribute('href'));
         if (currLink.indexOf("..") != -1) {
-          newUrl = location.protocol + "//www.webosarchive.com/docs/" + myURL[i].getAttribute('href');
+          newUrl = location.protocol + "//www.webosarchive.com/docs" + myURL[i].getAttribute('href');
           newUrl = newUrl.replace("..", "");
           if (window.location.host.indexOf("localhost") == -1) {
             myURL[i].setAttribute('href', newUrl);
