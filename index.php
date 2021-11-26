@@ -11,16 +11,27 @@
 </head>
 <body>
 <?php
-$usePath = "home/";
+//Figure out what protocol the client wanted
+if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
+    $protocol = "https://";
+else
+    $protocol = "http://";
+
+//Handle reverse proxy redirects
 $uri = $_SERVER['REQUEST_URI'];
 $uriParts = explode("?", $uri);
-if (isset($uriParts[1])) {
-  $usePath = urldecode($uriParts[1]);
+$uri = end($uriParts);
+$uri = str_replace("/docs/", "", $uri);
+if (!isset($uri) || $uri == "" || $uri == "/") {
+	$uri = "home";
 }
+$usePath = $protocol . "stacks.webosarchive.com/docs/" . urldecode($uri);
 ?>
-<?php include("../menu.php"); ?>
+<?php
+echo file_get_contents($protocol . "www.webosarchive.com/menu.php?content=community");
+?>
 <div class="second-row">
-<iframe src="<?PHP echo $usePath ?>" width="100%" height="100%">
+<iframe src="<?PHP echo $usePath ?>" width="100%" height="100%" />
 </div>
 </body>
 </html>
