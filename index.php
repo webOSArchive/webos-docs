@@ -25,6 +25,7 @@ $uri = str_replace("/docs/", "", $uri);
 if (!isset($uri) || $uri == "" || $uri == "/") {
 	$uri = "home";
 }
+$uri = str_replace("//", "/", $uri);
 $usePath = $protocol . "stacks.webosarchive.com/docs/" . urldecode($uri);
 ?>
 <?php
