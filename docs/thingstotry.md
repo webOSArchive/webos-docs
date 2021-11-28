@@ -3,20 +3,22 @@ webOS is *not* a dead platform! There's still plenty of things you can on your w
 
 ## Websites
 
-More and more websites are moving to newer encryption over HTTPS as the only way to access the site. On webOS 3.x, including the Pre3 and TouchPad, you can work-around this with a [proxy](proxysetup.md). With Pre 2 and older, you are more limited. Here are some common websites that work, or ways to work around:
+More and more websites are moving to newer encryption over HTTPS as the only way to access the site. On webOS 2.2.4, you can work-around this with a [proxy](proxysetup.md). With old versions you are more limited. Here are some common websites that work, or ways to work around:
 
 ### Common Sites
 * **Google** still works on all devices
 * **YouTube**'s website no longer works, but there's an app for that called [MeTube](#youtube), or you can try the retro-friendly website [Invidious](https://ytprivate.com).
-* **Reddit** still works with an [HTTPS proxy enabled](proxysetup.md) on all devices through [old.reddit.com](http://old.reddit.com) or the excellent IAmA Reddit App - [Homebrew](https://preware.pivotce.com/package/com.tehtorq.reddit-hb) and [App Catalog](http://appcatalog.webosarchive.com/showMuseumDetails.php?search=iama&app=10842) versions are available. Reddit videos can also be watched in [MeTube](#youtube)
+* **Reddit** <img src="../images/reddit.png" align="right" style="padding-left: 8px">still works with an [HTTPS proxy enabled](proxysetup.md) on all devices through [old.reddit.com](http://old.reddit.com) or the excellent IAmA Reddit App - [Homebrew](https://preware.pivotce.com/package/com.tehtorq.reddit-hb) and [App Catalog](http://appcatalog.webosarchive.com/showMuseumDetails.php?search=iama&app=10842) versions are available. Reddit videos can also be watched in [MeTube](#youtube)
+
 * **Facebook** [mobile](http://m.facebook.com) still works on all devices (and webOS doesn't support most of their tracking!), and the [PreBook app](http://appcatalog.webosarchive.com/showMuseumDetails.php?search=prebook&app=1005784) makes the experience a little nicer
 * **Twitter** blocks the webOS browser, but [Project Macaw](https://preware.pivotce.com/package/net.minego.phnx) delivers a pretty great Twitter experience via a Homebrew App and a [HTTPS proxy](proxysetup.md).
 * **Wikipedia** only works with a proxy. For older devices, webOS archive provides a "tiny" version that is periodically updated at [wikipedia.webosarchive.com](http://wikipedia.webosarchive.com)
 
 ### Alternatives
 * **RSS:** many sites can be accessed through their RSS Feed using the [FeedSpider](http://appcatalog.webosarchive.com/showMuseum.php?search=feedspider) app, and a service like [InoReader](http://www.inoreader.com)
-* **Google News:** retro-computer enthusiast [Action Retro](https://www.youtube.com/channel/UCoL8olX-259lS1N6QPyP4IQ) has built an excellent text-only Google News web app that works on almost anything. Check out [68k.news](http://68k.news/)
+* **Google News:** retro-computer enthusiast [Action Retro](https://www.youtube.com/ActionRetro) has built an excellent text-only Google News web app that works on almost anything. Check out [68k.news](http://68k.news/)
 * **Text-Only Web:** many popular sites have a text-only version that works well on a variety of retro devices. Sijmen J. Mulder has assembled a good list here: [https://sjmulder.nl/en/textonly.html](https://sjmulder.nl/en/textonly.html)
+* **FrogFind:** also by [Action Retro](https://www.youtube.com/ActionRetro), is [Google for older devices](http://www.frogfind.com/), and renders a simplified version of most websites through its search results. 
 
 ## Apps
 
@@ -29,11 +31,12 @@ All of the Apps listed below can be found on [App Museum II](appstores.md), but 
 * [Self-host the services](https://github.com/codepoet80/metube-php-servicewrapper)
 
 ### Podcasts
-webOS devices make great Podcast listening tools -- whether its a TouchPad sitting in Touchstone, maybe connected to a nice Bluetooth speaker, or a tiny little Pre or Veer, slipped in your pocket as you go about your routine. Many Podcasts have switched to HTTPS, which causes problems for older, encryption-challenged devices, but a **Retro Podcast Service**, hosted by webOS Archive (or you, if you want) solves this, and many other problems. Combined with a stand-alone Podcast Directory app, and a number of Podcast players available in the Museum, you can download and listen to thousands of popular podcasts right on your device.
+webOS devices make great Podcast listening tools -- whether its a TouchPad sitting in Touchstone, maybe connected to a nice Bluetooth speaker, or a tiny little Pre or Veer, slipped in your pocket as you go about your routine. Many Podcasts have switched to HTTPS, which causes problems for older, encryption-challenged devices, but the webOS Archive [Podcast Service](http://podcast.webosarchive.com) solves this, and many other problems. Combined with a stand-alone Podcast Directory app, and a number of Podcast players available in the Museum, you can download and listen to thousands of popular podcasts right on your device.
 
-![Podcasts](images/retropodcasts.png)
+![Podcasts](../images/retropodcasts.png)
 
-* Download the [Podcast Directory](http://appcatalog.webosarchive.com/showMuseumDetails.php?search=podcast&app=1005778) app
+* Search the [Podcast Directory](http://podcast.webosarchive.com)
+* Download the webOS [app](http://appcatalog.webosarchive.com/showMuseumDetails.php?search=podcast&app=1005778)
 * Check out some [Podcast](http://appcatalog.webosarchive.com/showMuseumDetails.php?search=podder&app=2046) Player [Apps](http://appcatalog.webosarchive.com/showMuseumDetails.php?search=video&app=10384)
 * [Self-host the service](https://github.com/codepoet80/webos-podcastdirectory)
 
