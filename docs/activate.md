@@ -6,9 +6,9 @@ The Palm/HP activation services have been down a long time, but that doesn't mea
 
 This process works on Mac, Linux and Windows, but requires Java to be installed:
 
-* Install Java (JDK) for Windows: [https://www.oracle.com/java/technologies/javase-downloads.html](https://www.oracle.com/java/technologies/javase-downloads.html)
-* Install Java for Mac: [https://support.apple.com/en-us/HT204036](https://support.apple.com/en-us/HT204036)
-* Install Java for Linux: [https://java.com/en/download/manual.jsp](https://java.com/en/download/manual.jsp)
+* Install Java (JDK) for Windows: <a href="https://www.oracle.com/java/technologies/javase-downloads.html" target="_blank">https://www.oracle.com/java/technologies/javase-downloads.html</a>
+* Install Java for Mac: <a href="https://support.apple.com/en-us/HT204036" target="_blank">https://support.apple.com/en-us/HT204036</a>
+* Install Java for Linux: <a href="https://java.com/en/download/manual.jsp" target="_blank">https://java.com/en/download/manual.jsp</a>
 
 Next you will need the Novacomm driver for your computer:
 
@@ -63,12 +63,12 @@ Use the built-in settings to join your WiFi -- webOS works with 2.4ghz WiFi netw
 
 A video showing activation and [app installation](appstores.md) is available on YouTube...
 
-[![Video Tutorial](images/videotutorial.png)](https://www.youtube.com/watch?v=enQB3Tygebg "Activating a HP TouchPad")
+<a href="https://www.youtube.com/watch?v=enQB3Tygebg" target="_blank">[![Video Tutorial](images/videotutorial.png)]</a>
 
 ## Alternate Instructions
 
 This documentation attempts to update and simplify information available from older, archived sources. You may find that material to be useful as reference:
 
-* [WebOS Nation Bypass Activation webOS 1.0](https://www.webosnation.com/bypass-activation-webos-1-x)
-* [WebOS Nation Bypass Activation webOS 2.0](https://www.webosnation.com/bypass-activation-webos-2-x)
+* <a href="https://www.webosnation.com/bypass-activation-webos-1-x" target="_blank">WebOS Nation Bypass Activation webOS 1.0</a>
+* <a href="https://www.webosnation.com/bypass-activation-webos-2-x" target="_blank">WebOS Nation Bypass Activation webOS 2.0</a>
 * [Archived HP Forum Post](https://h30434.www3.hp.com/t5/Tablets-and-Mobile-Devices-Archive-Read-Only/How-to-use-the-webOS-Doctor-on-the-TouchPad/td-p/2186473)
