@@ -30,7 +30,7 @@ This section assumes you've completed the previous steps to [get online](online.
 If you're using webOS 2.2.4 or higher, The easiest way to get started is with the NEW **webOS Archive Proxy** app.
 To download, install [webOS App Museum II](appstores.md#install-webos-app-museum-ii) and search for "Proxy".
 
-Or use the [direct download](http://appcatalog.webosarchive.com/showMuseumDetails.php?app=1005768) and install it yourself.
+Or use the <a href="http://appcatalog.webosarchive.com/showMuseumDetails.php?app=1005768" target="_top">direct download</a> and install it yourself.
 
 As well as letting you enable or disable the proxy, this app makes it easy to download the certificate and install it in the right place. Its a good idea to perform a full reboot after installing the certificate.
 

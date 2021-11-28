@@ -35,7 +35,7 @@ All of the Apps listed below can be found on [App Museum II](appstores.md#instal
 <img src="http://www.jonandnic.com/webos/metube/icon.png" align="right" style="padding-left: 8px">YouTube doesn't officially support webOS (or most retro platforms) but thanks to the open source community, its still available. An app called **MeTube**, available in App Museum II, works with a pair of back-end services to fetch YouTube videos for you on demand. The services are hosted by webOS Archive, but you can also run them yourself, if you prefer.
 
 * <a href="http://appcatalog.webosarchive.com/showMuseumDetails.php?search=metube&app=1005774" target="_top">Download the App</a>
-* <a herf="https://github.com/codepoet80/metube-php-servicewrapper" target="_blank">Self-host the services</a>
+* <a href="https://github.com/codepoet80/metube-php-servicewrapper" target="_blank">Self-host the services</a>
 
 ### Podcasts
 webOS devices make great Podcast listening tools -- whether its a TouchPad sitting in Touchstone, maybe connected to a nice Bluetooth speaker, or a tiny little Pre or Veer, slipped in your pocket as you go about your routine. Many Podcasts have switched to HTTPS, which causes problems for older, encryption-challenged devices, but the webOS Archive <a href="http://podcasts.webosarchive.com" target="_top">Podcast Directory</a> service solves this, and many other problems. Combined with a stand-alone Podcast Directory app, and a number of Podcast players available in the Museum, you can download and listen to thousands of popular podcasts right on your device.
@@ -73,7 +73,7 @@ If you'd rather get some information, **Accuweather** still works on all devices
 * Download <a href="http://appcatalog.webosarchive.com/showMuseum.php?search=accuweather" target="_top">Accuweather</a>
 
 ### Play Some Games!
-<img src="../images/angrybirds.jpg" align="right" style="padding-left: 8px">webOS had a great library of games, and you don't have to worry about in-app-purchases and spyware. Just some great mobile classics, including offerings from big publishers like Gameloft and EA. No matter which webOS device you have, you'll find some great entertainment in the [games section](http://appcatalog.webosarchive.com/showMuseum.php?category=Games&count=1030) of App Museum II. Here's a couple suggestions to get you started...
+<img src="../images/angrybirds.jpg" align="right" style="padding-left: 8px">webOS had a great library of games, and you don't have to worry about in-app-purchases and spyware. Just some great mobile classics, including offerings from big publishers like Gameloft and EA. No matter which webOS device you have, you'll find some great entertainment in the <a href="http://appcatalog.webosarchive.com/showMuseum.php?category=Games&count=1030" target="_top">games section of the App Museum</a>. Here's a couple suggestions to get you started...
 
 * <a href="http://appcatalog.webosarchive.com/showMuseum.php?search=angry+birds" target="_top">Angry Birds</a> - The original, and some of the variations, covering every screen size
 * <a href="http://appcatalog.webosarchive.com/showMuseumDetails.php?search=scumm&app=1005763" target="_top">SCUMMVM</a> - Play dozens of PC point-and-click adventures on your TouchPad
