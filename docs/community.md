@@ -3,7 +3,7 @@ There's still an active webOS Community, swapping notes on devices and patches, 
 
 <img src="../images/discord.png" align="right" style="padding-left: 8px">
 
-* **Discord + SimpleChat:** the most active community of webOS Users is on a modern webOS app called [SimpleChat](http://appcatalog.webosarchive.com/showMuseum.php?search=simplechat) -- which is also connected to a [Discord server](discord.gg/7NrrT8exrn). Join in the conversation!<br>
+* **Discord + SimpleChat:** the most active community of webOS Users is on a modern webOS app called [SimpleChat](http://appcatalog.webosarchive.com/showMuseum.php?search=simplechat) which is also connected to a [Discord server](discord.gg/7NrrT8exrn). Join in the conversation from both old and new devices!<br>
  <br>
 <img src="../images/twitter.png" align="right" style="padding-left: 8px">
  
@@ -12,5 +12,5 @@ There's still an active webOS Community, swapping notes on devices and patches, 
  <br>
 <img src="../images/webosnation.jpg" align="right" style="padding-left: 8px">
 
-* **Forums:** [webOS Nation](https://forums.webosnation.com) Forums are still up, and you can expect roughly weekly interactions from both long-term experts, and newer users. There's even a [Forums app](http://appcatalog.webosarchive.com/showMuseumDetails.php?search=forums&app=1005770) you can use to participate from your webOS device.
+* **Forums:** [webOS Nation](https://forums.webosnation.com) Forums are still up, and you can expect roughly weekly interactions from both long-term experts and newer users. There's even a [Forums app](http://appcatalog.webosarchive.com/showMuseumDetails.php?search=forums&app=1005770) you can use to participate from your webOS device.
 
