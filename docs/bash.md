@@ -2,7 +2,7 @@
 
 webOS may have a beautiful user interface, and easy Javascript-based programming environment, but underneath all that is a powerful Linux-based operating system. While normally you wouldn't see this layer, unlocking the command line gives you the ability to control your device in fun and helpful ways.
 
-There's no jailbreaking required, all the steps can be performed right from your device, using bits found in Preware. These instructions assume you've aleady completed [installing the App Stores](appstores).
+There's no jailbreaking required, all the steps can be performed right from your device, using bits found in Preware. These instructions assume you've aleady completed [installing the App Stores](appstores.md).
 
 ## On Device
 
@@ -40,4 +40,4 @@ The official Developer Tools allow shell access from a USB-connected PC or Mac, 
 
 ### SSH Access
 
-The Homebrew Community has built and published the OpenSSH server for webOS. The necessary components can be found and installed from [Preware](http://www.webosarchive.com/docs/appstores/#install-preware) on your device.
+The Homebrew Community has built and published the OpenSSH server for webOS. The necessary components can be found and installed from [Preware](appstores.md#install-preware) on your device.

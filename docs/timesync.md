@@ -4,7 +4,7 @@ Your webOS Device is built to synchronize its time with long-dead servers, and y
 
 ## TouchPad or TouchPad Go
 
-In 2018, the community figured out how to solve the time sync problem permanently on TouchPad; webOS Nation member dkirker [built a script to make it easy](https://forums.webosnation.com/hp-touchpad/331734-network-time-not-keeping-clocks-accurate-2.html). The script has been renamed to make it easier to type on your device, but it is otherwise unchanged.
+In 2018, the community figured out how to solve the time sync problem permanently on TouchPad; webOS Nation member dkirker <a href="https://forums.webosnation.com/hp-touchpad/331734-network-time-not-keeping-clocks-accurate-2.html" target="_blank">built a script to make it easy</a>. The script has been renamed to make it easier to type on your device, but it is otherwise unchanged.
 
 These instructions assume that you've completed the [Shell Access](bash.md) steps, and are comfortable entering a few instructions into the command line.
 
@@ -42,4 +42,4 @@ For other devices, the only way to get time from a carrier is to install a SIM c
 
 Some users have had success using the Clock Sync app available in the App Museum. It can be configured to sync time in the background on a set schedule.
 
-* Download [Clock Sync](http://appcatalog.webosarchive.com/showMuseumDetails.php?search=clock+sync&app=1819)
+* <a href="http://appcatalog.webosarchive.com/showMuseumDetails.php?search=clock+sync&app=1819" target="_top">Download Clock Sync</a>

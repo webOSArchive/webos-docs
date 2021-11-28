@@ -7,4 +7,4 @@ This project has two goals:
 
 The [Getting Started](activate.md) section will walk through the steps necessary to activate a webOS device (initially focused on the TouchPad), install some App Stores, and get on the modern web via a Proxy.
 
-The [Next Steps](timesync.md) section covers some optional advanced topics that provide some quality-of-life improvements on webOS, through apps, hacks and scripts built by the community.
+The [Taking Control](timesync.md) section covers some optional advanced topics that provide some quality-of-life improvements on webOS, through apps, hacks and scripts built by the community.

@@ -6,9 +6,9 @@ There's a vibrant community rescuing, archiving, restoring and even building app
 
 This tool works on Mac, Linux and Windows, and requires Java and the devices drivers to be installed. If you've completed the [activation process documented here](activate.md), you can skip this step, because you've already installed these pieces:
 
-* Install Java (JDK) for Windows: [https://www.oracle.com/java/technologies/javase-downloads.html](https://www.oracle.com/java/technologies/javase-downloads.html)
-* Install Java for Mac: [https://support.apple.com/en-us/HT204036](https://support.apple.com/en-us/HT204036)
-* Install Java for Linux: [https://java.com/en/download/manual.jsp](https://java.com/en/download/manual.jsp)
+* Install Java (JDK) for Windows: <a href="https://www.oracle.com/java/technologies/javase-downloads.html" target="_blank">https://www.oracle.com/java/technologies/javase-downloads.html</a>
+* Install Java for Mac: <a href="https://support.apple.com/en-us/HT204036" target="_blank">https://support.apple.com/en-us/HT204036</a>
+* Install Java for Linux: <a href="https://java.com/en/download/manual.jsp" target="_blank">https://java.com/en/download/manual.jsp</a>
 
 Next you will need the Novacomm driver for your computer:
 
@@ -23,8 +23,8 @@ Next you will need the Novacomm driver for your computer:
 
 Once you have Java, you will need to download the webOS Quick Install (WOSQI) tool:
 
-* [Download from GitHub](https://github.com/NotAlexNoyle/webos-quick-install/releases)
-* [Download from webOS Archive](http://www.webosarchive.com/activation/WebOS-Quick-Install-4-7-2.jar)
+* <a href="https://github.com/NotAlexNoyle/webos-quick-install/releases" target="_blank">Download from GitHub</a>
+* <a href="http://www.webosarchive.com/activation/WebOS-Quick-Install-4-7-2.jar" target="_blank">Download from webOS Archive</a>
 
 ## Run WOSQI on your Computer
 
@@ -38,8 +38,8 @@ Once you have Java, you will need to download the webOS Quick Install (WOSQI) to
 The Preware app is the original Homebrew App Store for webOS, and contains many useful apps, hacks, tweaks from the glory days of webOS. Community members still occasionally publish new apps and updates, and it provides useful infrastructure for installing apps from other sources, so you don't need to plug your Device into your computer.
 
 * Download the Preware app to your computer
-    + [Download from PivotCE](http://ipkg.preware.net/feeds/webos-internals/armv7/org.webosinternals.preware_1.9.14_arm.ipk)
     + [Download from webOS Archive](http://www.webosarchive.com/activation/org.webosinternals.preware_1.9.14_arm.ipk)
+    + [Download from PivotCE](http://ipkg.preware.net/feeds/webos-internals/armv7/org.webosinternals.preware_1.9.14_arm.ipk)
 * Drag the Preware IPK you just downloaded onto the WOSQI window (or hit the + button and browse for it)
 * Press the Install button to install Preware on your device
 
@@ -70,10 +70,9 @@ Now that you have a couple App stores on your device, you won't need WOSQI or yo
 
 ## Video Tutorial
 
-A video showing [activation](activate.md) and app installation is available on YouTube...
+A video showing activation and [app installation](appstores.md) is available on YouTube...
 
-[![Video Tutorial](images/videotutorial.png)](https://www.youtube.com/watch?v=enQB3Tygebg "Activating a HP TouchPad")
-
+<a href="https://www.youtube.com/watch?v=enQB3Tygebg" target="_blank">[![Video Tutorial](images/videotutorial.png)]</a>
 
 ## Alternate Instructions
 
