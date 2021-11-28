@@ -71,4 +71,4 @@ This documentation attempts to update and simplify information available from ol
 
 * <a href="https://www.webosnation.com/bypass-activation-webos-1-x" target="_blank">WebOS Nation Bypass Activation webOS 1.0</a>
 * <a href="https://www.webosnation.com/bypass-activation-webos-2-x" target="_blank">WebOS Nation Bypass Activation webOS 2.0</a>
-* [Archived HP Forum Post](https://h30434.www3.hp.com/t5/Tablets-and-Mobile-Devices-Archive-Read-Only/How-to-use-the-webOS-Doctor-on-the-TouchPad/td-p/2186473)
+* <a href="https://h30434.www3.hp.com/t5/Tablets-and-Mobile-Devices-Archive-Read-Only/How-to-use-the-webOS-Doctor-on-the-TouchPad/td-p/2186473" target="_blank">Archived HP Forum Post</a>

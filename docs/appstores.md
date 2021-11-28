@@ -78,5 +78,5 @@ A video showing activation and [app installation](appstores.md) is available on 
 
 This documentation attempts to update and simplify information available from older, archived sources. You may find that material to be useful as reference:
 
-* [WebOS-Internals Wiki](https://webos-internals.org/wiki/Application:Preware#Installing_Preware_with_WebOS_Quick_Install)
-* [WebOS Nation Article](https://www.webosnation.com/how-install-homebrew-apps-your-touchpad-or-webos-smartphone)
+* <a href="https://webos-internals.org/wiki/Application:Preware#Installing_Preware_with_WebOS_Quick_Install" target="_blank">WebOS-Internals Wiki</a>
+* <a href="https://www.webosnation.com/how-install-homebrew-apps-your-touchpad-or-webos-smartphone" target="_blank">WebOS Nation Article</a>
