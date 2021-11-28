@@ -36,7 +36,7 @@ The Tweaks App, and corresponding tweaks, all found in Preware, can be used to c
 
 ### Developer Tools
 
-The official Developer Tools allow shell access from a USB-connected PC or Mac, using the command line. More information about the Developer Tools can be found at the restored [SDK Archive](http://sdk.webosarchive.com/docs/docs.html#dev-guide/tools.html).
+The official Developer Tools allow shell access from a USB-connected PC or Mac, using the command line. More information about the Developer Tools can be found at the restored <a href="http://sdk.webosarchive.com/docs/docs.html#dev-guide/tools.html" target="_top">SDK Archive</a>.
 
 ### SSH Access
 

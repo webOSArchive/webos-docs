@@ -28,9 +28,9 @@ The PDK refers to C and C++ binaries that had more direct access to the underlyi
 
 ## Getting Started
 
-[webOS Archive](http://www.webosarchive.com) has restored key portions of the SDK/PDK almost entirely, including the online documentation, emulators, and other tools you'll need to get started.
+<a href="http://www.webosarchive.com" target="_top">webOS Archive</a> has restored key portions of the SDK/PDK almost entirely, including the online documentation, emulators, and other tools you'll need to get started.
 
-Visit [http://sdk.webosarchive.com](http://sdk.webosarchive.com) to get access now!
+Visit <a href="http://sdk.webosarchive.com/docs/docs.html#dev-guide/tools.html" target="_top">http://sdk.webosarchive.com</a> to get access now!
 
 ## Other Documentation
 
