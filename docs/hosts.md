@@ -1,9 +1,10 @@
 # Root Certificates and Hosts
 
 ## Hosts Files
+
 With the latest updates from the community, there's less need to update the hosts file. However, some restoration efforts and Preware sources require that you trick you webOS device into looking for Palm/HP content from archived servers, rather than trying to reach dead servers. The easiest way to do this is with an App from Preware:
 
-**Note**: If you are using the webOS Archive Proxy, you do not need to modify your local hosts files -- the proxy will resolve these hosts for you.
+**Note**: If you are using the [webOS Archive Proxy](proxysetup.md) you do not need to modify your local hosts files -- the proxy will resolve these hosts for you.
 
 * Launch Preware and wait while it syncs
 * Use the built-in search feature to search for `internalz`
@@ -25,3 +26,7 @@ With the latest updates from the community, there's less need to update the host
 ```
 
 * From the Interalz Pro menu in the top left, choose "Save File" then "Close"
+
+## Help Hosts
+
+Additional Hosts can be configured to restore the on-device Help app for some devices. This restoration effort is documented at <a href="http://help.webosarchive.com/HowToUse.php" target="_blank">http://help.webosarchive.com</a>
