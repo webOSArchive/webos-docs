@@ -30,6 +30,10 @@ A proxy is the simplest and most comprehensive approach to lending webOS a hand,
 
 If you don't want to use a proxy, you can partially improve the situation by installing a SSL update. This is discussed on the <a href="https://forums.webosnation.com/palm-pre-2/332581-zero-google-2020-step-step.html" target="_blank">Forums</a>, but for brevity, downloading and installing <a href="http://preware.net/alpha/apps/armv7/org.webosinternals.openssl-updater_0.9.8-6_armv7.ipk" _target="blank">OpenSSL Updater for webOS</a> via [webOS Quick Install](appstores.md) is all you need.
 
+## What Next
+
+Now that you're online, check out a [few of the things you can do with your webOS device](thingstotry.md).
+
 ## Alternate Instructions
 
 This documentation attempts to update and simplify information available from older, archived sources. You may find that material to be useful as reference:

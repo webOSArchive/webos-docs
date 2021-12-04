@@ -27,6 +27,10 @@ More and more websites are moving to newer encryption over HTTPS as the only way
 
 * **FrogFind:** also by Action Retro, is <a href="http://www.frogfind.com/" target="_blank">Google for older devices</a>, and renders a simplified version of most websites through its search results. 
 
+## Email
+
+webOS has a first-class email client (arguably the best Exchange client for any Linux) that still works with private Exchange servers, Office365 ([with a SSL proxy](proxysetup.md)), Gmail (<a href="https://forums.webosnation.com/palm-pre-2/332581-zero-google-2020-step-step.html" target="_blank">with a little effort</a>), IMAP and POP3 including over SSL on most servers. Exchange and Office365 feature complete synchronization for Mail, Calendar, Contacts and Tasks.
+
 ## Apps
 
 All of the Apps listed below can be found on [App Museum II](appstores.md#install-webos-app-museum-ii), but there's direct download links as well.
