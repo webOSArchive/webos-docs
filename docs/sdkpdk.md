@@ -24,16 +24,18 @@ The SDK refers to apps built in Javascript frameworks. On the front-end (the par
 
 ## PDK
 
-The PDK refers to Linux binaries that had more direct access to the underlying hardware and platform. This was commonly used in games or some media players that needed high performance graphics.
+The PDK refers to C and C++ binaries that had more direct access to the underlying hardware and platform. This was commonly used in games or some media players that needed high performance graphics.
 
 ## Getting Started
 
-[webOS Archive](http://www.webosarchive.com) has restored key portions of the SDK/PDK almost entirely, including the online documentation, emulators, and other tools you'll need to get started.
+<a href="http://www.webosarchive.com" target="_top">webOS Archive</a> has restored key portions of the SDK/PDK almost entirely, including the online documentation, emulators, and other tools you'll need to get started.
 
-Visit [http://sdk.webosarchive.com](http://sdk.webosarchive.com) to get access now!
+Visit <a href="http://sdk.webosarchive.com" target="_top">http://sdk.webosarchive.com</a> to get access now!
 
 ## Other Documentation
 
 In 2009, O'Reilly Press released a book on Mojo development called "Palm webOS: The Insider's Guide to Developing Applications in Javascript using the Palm Mojo Framework."
 
-The book is available on [Google Books](https://books.google.com/books?id=sHT6PeMp1k8C&printsec=frontcover) in its entirety, and on Amazon and most online bookstores in paperback.
+The book is available on <a href="https://books.google.com/books?id=sHT6PeMp1k8C&printsec=frontcover" target="_blank">Google Books</a> in its entirety, and on Amazon and most online bookstores in paperback.
+
+Tuts+ still hosts a 5-part <a href="https://code.tutsplus.com/series/introduction-to-webos-sdk-development--mobile-22879" target="_blank">Introduction to webOS Development</a> series, focused on Mojo development on the Pre. It remains a worthwhile resource for new developers.

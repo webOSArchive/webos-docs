@@ -7,7 +7,7 @@ The built-in web browser is dated, and has some limitations, but with a little h
 
 ## Set Date and Time
 
-Believe it or not, this is a critical step! Web encryption requires a reasonable delta from UTC (Coordinated Universal Time) time or you'll end up with errors and failures. Use the built-in Settings app to set the date, time and time zone manually. Optionally, you can [sync the time with a network server](timesync.md) once you're online.
+Believe it or not, this is a critical step! Web encryption requires a reasonable delta from UTC (Coordinated Universal Time) time or you'll end up with errors and failures. Use the built-in Settings app to set the date, time and time zone manually. Depending on your device, you may want to [sync the time with a remote server](timesync.md) once you're online.
 
 ## Updating Certificates
 
@@ -16,7 +16,7 @@ The root certificates used to establish trust on the Internet are out-of-date in
 * On your device, launch Preware, and wait for it to update sources.
 * Search for "Certs" using Preware's built-in search tool
     + On a phone, just start typing
-    + On a Touchpad, use the Search icon in the toolbar at the top of the main scene
+    + On a TouchPad, use the Search icon in the toolbar at the top of the main scene
 * Find the app "Root Certs Update" in the search results, tap on it
 * Hit the Install button, and wait while it installs and runs the necessary scripts (this process takes a few minutes!)
     + If you have trouble downloading, try this alternate link:<br>
@@ -28,11 +28,15 @@ Since webOS was released, encryption standards have changed, and some sites and 
 
 A proxy is the simplest and most comprehensive approach to lending webOS a hand, and is covered in detail [here](proxysetup.md).
 
-If you don't want to use a proxy, you can partially improve the situation by installing a SSL update. This is discussed on the [Forums](https://forums.webosnation.com/palm-pre-2/332581-zero-google-2020-step-step.html), but for brevity, downloading and installing [OpenSSL Updater for webOS](http://preware.net/alpha/apps/armv7/org.webosinternals.openssl-updater_0.9.8-6_armv7.ipk) via [webOS Quick Install](appstores.md) is all you need.
+If you don't want to use a proxy, you can partially improve the situation by installing a SSL update. This is discussed on the <a href="https://forums.webosnation.com/palm-pre-2/332581-zero-google-2020-step-step.html" target="_blank">Forums</a>, but for brevity, downloading and installing <a href="http://preware.net/alpha/apps/armv7/org.webosinternals.openssl-updater_0.9.8-6_armv7.ipk" _target="blank">OpenSSL Updater for webOS</a> via [webOS Quick Install](appstores.md) is all you need.
+
+## What Next
+
+Now that you're online, check out a [few of the things you can do with your webOS device](thingstotry.md).
 
 ## Alternate Instructions
 
 This documentation attempts to update and simplify information available from older, archived sources. You may find that material to be useful as reference:
 
-* [Zero to Google in 2020](https://forums.webosnation.com/palm-pre-2/332581-zero-google-2020-step-step.html)
-* [Coming Back to webOS in 2014](https://pivotce.com/2014/10/21/guide-coming-back-to-webos-in-2014-part-1/)
+* <a href="https://forums.webosnation.com/palm-pre-2/332581-zero-google-2020-step-step.html" target="_blank">Zero to Google in 2020</a>
+* <a href="https://pivotce.com/2014/10/21/guide-coming-back-to-webos-in-2014-part-1/" target="_blank">Coming Back to webOS in 2014</a>
