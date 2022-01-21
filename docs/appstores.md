@@ -1,4 +1,4 @@
-# Installing Apps on your webOS Device
+r# Installing Apps on your webOS Device
 
 There's a vibrant community rescuing, archiving, restoring and even building apps for webOS. Since the actual HP App Catalog is gone, you'll need your computer one more time to "side-load" one app that gives you access to the rest of this "after-life" ecosystem.
 
@@ -24,7 +24,7 @@ Next you will need the Novacomm driver for your computer:
 Once you have Java, you will need to download the webOS Quick Install (WOSQI) tool:
 
 * <a href="https://github.com/NotAlexNoyle/webos-quick-install/releases" target="_blank">Download from GitHub</a>
-* <a href="http://www.webosarchive.com/activation/WebOS-Quick-Install-4-7-2.jar" target="_blank">Download from webOS Archive</a>
+* <a href="http://www.webosarchive.com/activation/WebOSQuickInstall-4.6.0.jar" target="_blank">Download from webOS Archive</a>
 
 ## Run WOSQI on your Computer
 

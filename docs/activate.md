@@ -19,6 +19,8 @@ Next you will need the Novacomm driver for your computer:
 * Linux 32-bit (Tested on Ubunutu): [DEB Package](http://www.webosarchive.com/activation/drivers/novacom-linux-32/)
 * Linux 64-bit (Tested on Ubunutu): [DEB Package](http://www.webosarchive.com/activation/drivers/novacom-linux-64/)
 
+Make sure you have a good quality micro USB cable connected directly to your computer (not to a hub.) The OEM cables are your best bet (they're recognizable by a silver indented circle near USB connectors.)
+
 ## Download the Tool
 
 * [devicetool](http://www.webosarchive.com/activation/devicetool/devicetool.jar) For webOS 1.x Devices (Pre, Pixi, Pre Plus)
@@ -40,8 +42,9 @@ Reboot your device into recovery mode...
 
 ### TouchPad
 
-* Hold the Power and Volume Up buttons until the TouchPad restarts
-* Keep holding both buttons until you see the USB symbol
+* Hold the Power and Home buttons until the TouchPad restarts
+* As soon as the TouchPad restarts, let go of the Power and Home buttons and hold the Volume Up button
+* Keep holding the Volume Up button until you see the USB symbol
 
 ## Run the Activation Tool
 
