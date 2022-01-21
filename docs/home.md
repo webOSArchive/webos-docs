@@ -8,3 +8,7 @@ This project has two goals:
 The [Getting Started](activate.md) section will walk through the steps necessary to activate a webOS device (initially focused on the TouchPad), install some App Stores, and get on the modern web via a Proxy.
 
 The [Taking Control](timesync.md) section covers some optional advanced topics that provide some quality-of-life improvements on webOS, through apps, hacks and scripts built by the community.
+
+## Revisions and Corrections
+
+This site is an open source project. If you find any problems or want to propose additional content, please submit a Pull Request here: [https://github.com/codepoet80/webos-docs](https://github.com/codepoet80/webos-docs)
