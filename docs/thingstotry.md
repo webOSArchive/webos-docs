@@ -36,7 +36,7 @@ webOS has a first-class email client (arguably the best Exchange client for any 
 All of the Apps listed below can be found on [App Museum II](appstores.md#install-webos-app-museum-ii), but there's direct download links as well.
 
 ### YouTube
-<img src="http://www.jonandnic.com/webos/metube/icon.png" align="right" style="padding-left: 8px">YouTube doesn't officially support webOS (or most retro platforms) but thanks to the open source community, its still available. An app called **MeTube**, available in App Museum II, works with a pair of back-end services to fetch YouTube videos for you on demand. The services are hosted by webOS Archive, but you can also run them yourself, if you prefer.
+<img src="../images/metube-icon.png" align="right" style="padding-left: 8px">YouTube doesn't officially support webOS (or most retro platforms) but thanks to the open source community, its still available. An app called **MeTube**, available in App Museum II, works with a pair of back-end services to fetch YouTube videos for you on demand. The services are hosted by webOS Archive, but you can also run them yourself, if you prefer.
 
 * <a href="http://appcatalog.webosarchive.com/showMuseumDetails.php?search=metube&app=1005774" target="_top">Download the App</a>
 * <a href="https://github.com/codepoet80/metube-php-servicewrapper" target="_blank">Self-host the services</a>
@@ -54,7 +54,7 @@ webOS devices make great Podcast listening tools -- whether its a TouchPad sitti
 ### The Ultimate Night Stand App
 Philips Hue lights are some of the best smart bulbs out there -- whether you use their standard bulbs, color changing bulbs, or their Wake-Up light with sunrise simulation. A little Palm Pre or Veer, or even a TouchPad make great companions, allowing you to control them in a dark room... without needing to put a smart speaker in your room listening to you sleep!
 
-<img src="http://www.jonandnic.com/webos/onenightstand/LampsPrePhoto.png" style="width:300px">
+<img src="../images/LampsPrePhoto.png" style="width:300px">
 
 **One Night Stand** is a night table clock that switches to a light controller with just a tap. It connects your smart home to webOS with a classy app that turn your Pre, Veer or TouchPad into an elegant controller.
 
@@ -88,4 +88,4 @@ If you'd rather get some information, **Accuweather** still works on all devices
 * <a href="http://appcatalog.webosarchive.com/showMuseum.php?search=Miriel" target="_top">Miriel</a> - These games keep my youngest daughter busy for hours
 
 ### Make Something New
-<img src="http://www.jonandnic.com/webos/webos-sdk.png" align="left" style="padding-right: 8px">webOS is an easy platform to learn to develop on. Based on Javascript, and powered by Linux, its an easy environment to explore, reverse engineer and build upon. If you can make a web page, you can make an App for webOS! Check out the [SDK section](sdkpdk.md) for more info about getting started!
+<img src="../images/webos-sdk.png" align="left" style="padding-right: 8px">webOS is an easy platform to learn to develop on. Based on Javascript, and powered by Linux, its an easy environment to explore, reverse engineer and build upon. If you can make a web page, you can make an App for webOS! Check out the [SDK section](sdkpdk.md) for more info about getting started!
