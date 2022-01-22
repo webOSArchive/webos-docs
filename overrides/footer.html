@@ -36,6 +36,12 @@
             myURL[i].setAttribute('target', "_top");
           }
         }
+        if (location.protocol == "https:" && currLink.indexOf("http://") != -1) {
+          newUrl = currLink.replace("http://", "https://");
+          if (window.location.host.indexOf("localhost") == -1) {
+            myURL[i].setAttribute('href', newUrl);
+          }
+        }
       }
     </script>
   </footer>

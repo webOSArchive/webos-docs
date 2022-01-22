@@ -1,4 +1,4 @@
-r# Installing Apps on your webOS Device
+# Installing Apps on your webOS Device
 
 There's a vibrant community rescuing, archiving, restoring and even building apps for webOS. Since the actual HP App Catalog is gone, you'll need your computer one more time to "side-load" one app that gives you access to the rest of this "after-life" ecosystem.
 
