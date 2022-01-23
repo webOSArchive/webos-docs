@@ -18,13 +18,10 @@ With the latest updates from the community, there's less need to update the host
 * Scroll down until you find the file `hosts`, tap on it, and choose "Open" in the menu that appears
 * In the text editor that opens, enter the following lines:
 
-`23.4.17.24`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `cdn.downloads.palm.com`
-
-`140.211.169.161` `ipkg.preware.org`
-
-`23.141.224.193`&nbsp;&nbsp; `ipkg.preware.net`
-
-`23.141.224.193`&nbsp;&nbsp; `preware.net`
+<code>23.4.17.24 &nbsp; cdn.downloads.palm.com<br/>
+140.211.169.161 &nbsp; ipkg.preware.org<br/>
+23.141.224.193 &nbsp; ipkg.preware.net<br/>
+23.141.224.193 &nbsp; preware.net<br/></code>
 
 * From the Interalz Pro menu in the top left, choose "Save File" then "Close"
 
