@@ -1,3 +1,10 @@
+<?php
+//Figure out what protocol the client wanted
+if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
+    $protocol = "https://";
+else
+    $protocol = "http://";
+?>
 <html>
 <head>
     <title>webOS Archive - Docs</title>
@@ -7,16 +14,10 @@
       .second-row {position: absolute; top: 45px; left: 0; right: 0; bottom: 0;  }
       .second-row iframe {display: block; width: 100%; height: 100%; border: none;}
     </style>
-    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="shortcut icon" href="<?php echo $protocol ?>www.webosarchive.com/favicon.ico">
 </head>
 <body>
 <?php
-//Figure out what protocol the client wanted
-if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
-    $protocol = "https://";
-else
-    $protocol = "http://";
-
 //Handle reverse proxy redirects
 $uri = $_SERVER['REQUEST_URI'];
 $uriParts = explode("?", $uri);
