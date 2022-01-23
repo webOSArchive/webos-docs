@@ -16,14 +16,15 @@ With the latest updates from the community, there's less need to update the host
 * Press "Yes" in the confirmation window, then close Preferences from the menu
 * In the File Browser, navigate to `/etc`
 * Scroll down until you find the file `hosts`, tap on it, and choose "Open" in the menu that appears
-* In the text editor that opens, enter the following lines exactly as shown:
+* In the text editor that opens, enter the following lines as shown:
 
-```
-23.4.17.24          cdn.downloads.palm.com
-140.211.169.161     ipkg.preware.org
-23.141.224.193      ipkg.preware.net
-23.141.224.193      preware.net
-```
+`23.4.17.24`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `cdn.downloads.palm.com`
+
+`140.211.169.161` `ipkg.preware.org`
+
+`23.141.224.193`&nbsp;&nbsp; `ipkg.preware.net`
+
+`23.141.224.193`&nbsp;&nbsp; `preware.net`
 
 * From the Interalz Pro menu in the top left, choose "Save File" then "Close"
 
