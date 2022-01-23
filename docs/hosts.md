@@ -16,7 +16,7 @@ With the latest updates from the community, there's less need to update the host
 * Press "Yes" in the confirmation window, then close Preferences from the menu
 * In the File Browser, navigate to `/etc`
 * Scroll down until you find the file `hosts`, tap on it, and choose "Open" in the menu that appears
-* In the text editor that opens, enter the following lines as shown:
+* In the text editor that opens, enter the following lines:
 
 `23.4.17.24`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `cdn.downloads.palm.com`
 
