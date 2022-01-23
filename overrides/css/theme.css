@@ -59,9 +59,14 @@ body {
     margin: 0
 }
 
+a {
+    color:#3E0BF9
+}
+
 a:hover,
 a:active {
-    outline: 0
+    outline: 0;
+    color: darkorange
 }
 
 abbr[title] {
