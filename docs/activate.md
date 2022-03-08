@@ -66,7 +66,7 @@ Use the built-in settings to join your WiFi -- webOS works with 2.4ghz WiFi netw
 
 A video showing activation and [app installation](appstores.md) is available on YouTube...
 
-<a href="https://www.youtube.com/watch?v=enQB3Tygebg" target="_blank">[![Video Tutorial](images/videotutorial.png)]</a>
+<a href="https://www.youtube.com/watch?v=-ieDXW8yA5c" target="_blank">[![Video Tutorial](images/videotutorial.png)]</a>
 
 ## Alternate Instructions
 
