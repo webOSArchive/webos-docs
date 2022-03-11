@@ -20,14 +20,17 @@ else
 <?php
 //Handle reverse proxy redirects
 $uri = $_SERVER['REQUEST_URI'];
-$uriParts = explode("?", $uri);
-$uri = end($uriParts);
-$uri = str_replace("/docs/", "", $uri);
-if (!isset($uri) || $uri == "" || $uri == "/") {
-	$uri = "home";
+$usePath = "home/";
+if (strpos($uri, '?') !== false) {
+    $uriParts = explode("?", $uri);
+    $uri = end($uriParts);
+    $uri = str_replace("/docs/", "", $uri);
+    if (!isset($uri) || $uri == "" || $uri == "/") {
+        $uri = "home";
+    }
+    $uri = str_replace("//", "/", $uri);
+    $usePath = $protocol . "stacks.webosarchive.com/docs/" . urldecode($uri);
 }
-$uri = str_replace("//", "/", $uri);
-$usePath = $protocol . "stacks.webosarchive.com/docs/" . urldecode($uri);
 ?>
 <?php
 echo file_get_contents($protocol . "www.webosarchive.com/menu.php?content=community");

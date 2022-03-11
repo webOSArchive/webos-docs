@@ -44,7 +44,7 @@ All of the Apps listed below can be found on [App Museum II](appstores.md#instal
 ### Podcasts
 webOS devices make great Podcast listening tools -- whether its a TouchPad sitting in Touchstone, maybe connected to a nice Bluetooth speaker, or a tiny little Pre or Veer, slipped in your pocket as you go about your routine. Many Podcasts have switched to HTTPS, which causes problems for older, encryption-challenged devices, but the webOS Archive <a href="http://podcasts.webosarchive.com" target="_top">Podcast Directory</a> service solves this, and many other problems. Combined with a stand-alone Podcast Directory app, and a number of Podcast players available in the Museum, you can download and listen to thousands of popular podcasts right on your device.
 
-![Podcasts](../images/retropodcasts.png)
+<img src="../images/retropodcasts.png">
 
 * Search the <a href="http://podcasts.webosarchive.com" target="_top">Podcast Directory</a>
 * Download the webOS <a href="http://appcatalog.webosarchive.com/showMuseumDetails.php?search=podcast&app=1005778" target="_top">App</a>
