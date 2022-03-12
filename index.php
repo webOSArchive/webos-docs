@@ -29,7 +29,7 @@ if (strpos($uri, '?') !== false) {
         $uri = "home";
     }
     $uri = str_replace("//", "/", $uri);
-    $usePath = $protocol . $_SERVER[HTTP_HOST] . "/docs/" . urldecode($uri);
+    $usePath = $protocol . $_SERVER[HTTP_HOST] . "/" . urldecode($uri);
 }
 ?>
 <?php
