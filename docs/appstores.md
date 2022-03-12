@@ -6,9 +6,9 @@ There's a vibrant community rescuing, archiving, restoring and even building app
 
 This tool works on Mac, Linux and Windows, and requires Java and the devices drivers to be installed. If you've completed the [activation process documented here](activate.md), you can skip this step, because you've already installed these pieces:
 
-* Install Java (JDK) for Windows: <a href="https://www.oracle.com/java/technologies/javase-downloads.html" target="_blank">https://www.oracle.com/java/technologies/javase-downloads.html</a>
+* Install Java (JDK) for Windows: <a href="https://www.oracle.com/java/technologies/downloads/" target="_blank">https://www.oracle.com/java/technologies/downloads/</a>
 * Install Java for Mac: <a href="https://support.apple.com/en-us/HT204036" target="_blank">https://support.apple.com/en-us/HT204036</a>
-* Install Java for Linux: <a href="https://java.com/en/download/manual.jsp" target="_blank">https://java.com/en/download/manual.jsp</a>
+* Install Java for Linux: <a href="https://www.fosstechnix.com/install-oracle-java-8-on-ubuntu-20-04/" target="_blank">https://www.fosstechnix.com/install-oracle-java-8-on-ubuntu-20-04/</a>
 
 Next you will need the Novacomm driver for your computer:
 
@@ -19,11 +19,12 @@ Next you will need the Novacomm driver for your computer:
 * Linux 32-bit (Tested on Ubunutu): [DEB Package](http://www.webosarchive.com/activation/drivers/novacom-linux-32/)
 * Linux 64-bit (Tested on Ubunutu): [DEB Package](http://www.webosarchive.com/activation/drivers/novacom-linux-64/)
 
+Make sure you have a good quality micro USB cable connected directly to your computer (not to a hub.) The OEM cables are your best bet (they're recognizable by a silver indented circle near USB connectors.)
+
 ## Download WOSQI
 
 Once you have Java, you will need to download the webOS Quick Install (WOSQI) tool:
 
-* <a href="https://github.com/NotAlexNoyle/webos-quick-install/releases" target="_blank">Download from GitHub</a>
 * <a href="http://www.webosarchive.com/activation/WebOSQuickInstall-4.6.0.jar" target="_blank">Download from webOS Archive</a>
 
 ## Run WOSQI on your Computer
