@@ -23,24 +23,25 @@ Make sure you have a good quality micro USB cable connected directly to your com
 
 ## Download WOSQI
 
-Once you have Java, you will need to download the webOS Quick Install (WOSQI) tool:
+Once you have Java, you will need to download the webOS Quick Install (WOSQI) tool. This Java application enables installing apps and patches that even the SDK command line can't properly install. Although it is linked to various repositories, many of its sources are offline. For this reason, we'll primarily use it to "bootstrap" some other sources of apps.
 
-* <a href="http://www.webosarchive.com/activation/WebOSQuickInstall-4.6.0.jar" target="_blank">Download from webOS Archive</a>
+* [Download webOS Quick Install 4.6.0 from webOS Archive](http://www.webosarchive.com/activation/WebOSQuickInstall-4.6.0.jar)
+
+There are other versions online, but 4.6.0 seems to be the most compatible with modern Java run times.
 
 ## Run WOSQI on your Computer
 
 * With your webOS device plugged into your computer:
 * Using your computer's command line, navigate to the directory where you downloaded WOSQI
-* Run the command: `java -jar WebOS-Quick-Install-4-7-2.jar`
+* Run the command: `java -jar WebOS-Quick-Install-4-0-0.jar`
 * The webOS Quick Install app should open on your computer
+* (In some environments you can launch the jar just by double-clicking it)
 
 ## Install Preware
 
-The Preware app is the original Homebrew App Store for webOS, and contains many useful apps, hacks, tweaks from the glory days of webOS. Community members still occasionally publish new apps and updates, and it provides useful infrastructure for installing apps from other sources, so you don't need to plug your Device into your computer.
+The Preware app is one of the original Homebrew App Stores for webOS, and contains many useful apps, hacks, tweaks from the glory days of webOS. Although its no longer maintained, and some files no longer work, it still provides useful infrastructure for installing apps from other sources, so you don't need to plug your Device into your computer.
 
-* Download the Preware app to your computer
-    + [Download from webOS Archive](http://www.webosarchive.com/activation/org.webosinternals.preware_1.9.14_arm.ipk)
-    + [Download from PivotCE](http://ipkg.preware.net/feeds/webos-internals/armv7/org.webosinternals.preware_1.9.14_arm.ipk)
+* [Download Preware 1.9.14 from webOS Archive](http://www.webosarchive.com/activation/org.webosinternals.preware_1.9.14_arm.ipk) to your computer.
 * Drag the Preware IPK you just downloaded onto the WOSQI window (or hit the + button and browse for it)
 * Press the Install button to install Preware on your device
 
@@ -57,8 +58,7 @@ Note that App Museum II requires Preware, so install that first!
 
 You can use WOSI to Install webOS App Museum II, just like you did with Preware.
 
-* Download the Museum to your computer:
-    + [Download Latest Version](http://appcatalog.webosarchive.com/latest.php)
+* [Download Latest webOS App Museum](http://appcatalog.webosarchive.com/latest.php) to your computer
 * Drag the Museum IPK you just downloaded onto the WOSQI window (or hit the + button and browse for it)
 * Press the Install button to install Preware on your device
 

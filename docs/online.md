@@ -19,16 +19,19 @@ The root certificates used to establish trust on the Internet are out-of-date in
     + On a TouchPad, use the Search icon in the toolbar at the top of the main scene
 * Find the app "Root Certs Update" in the search results, tap on it
 * Hit the Install button, and wait while it installs and runs the necessary scripts (this process takes a few minutes!)
-    + If you have trouble downloading, try this alternate link:<br>
-    [http://www.webosarchive.com/activation/com.palm_.rootcertsupdate_1.0-2_all.ipk](http://www.webosarchive.com/activation/com.palm_.rootcertsupdate_1.0-2_all.ipk)
+    + If you have trouble downloading, try downloading [Root Certs Update 1.0.2 from webOS Archive](http://www.webosarchive.com/activation/com.palm_.rootcertsupdate_1.0-2_all.ipk)
 
 ## Dealing with Encryption
 
 Since webOS was released, encryption standards have changed, and some sites and services have become inaccessible.
 
-A proxy is the simplest and most comprehensive approach to lending webOS a hand, and is covered in detail [here](proxysetup.md).
+If you're on webOS 2.2.4 or higher, a proxy is the simplest and most comprehensive approach to lending webOS a hand, and is covered in detail [here](proxysetup.md).
 
-If you don't want to use a proxy, you can partially improve the situation by installing a SSL update. This is discussed on the <a href="https://forums.webosnation.com/palm-pre-2/332581-zero-google-2020-step-step.html" target="_blank">Forums</a>, but for brevity, downloading and installing <a href="http://preware.net/alpha/apps/armv7/org.webosinternals.openssl-updater_0.9.8-6_armv7.ipk" _target="blank">OpenSSL Updater for webOS</a> via [webOS Quick Install](appstores.md) is all you need.
+If you don't want to use a proxy, you can partially improve the situation by installing a SSL update. This is discussed on the <a href="https://forums.webosnation.com/palm-pre-2/332581-zero-google-2020-step-step.html" target="_blank">Forums</a>, but for brevity, downloading and installing [OpenSSL Updater for webOS](http://www.webosarchive.com/activation/org.webosinternals.openssl-updater_0.9.8-6_armv7.ipk) via [webOS Quick Install](appstores.md) is all you need.
+
+If you're on an older version of webOS, you won't be able to install or use a Proxy, since the API was not present. This significantly limits your access to the web, and even to some Preware files -- since many have been moved to HTTPS and are inaccessible. This can result in errors during install. As a work-around for Preware issues, look at the end of the error message for the URL of the file -- you can then download that on your computer, and use [webOS Quick Install](appstores.md) to "sideload" to your device.
+
+With or without modern encryption, there's still lots of interesting things you can do with your devices...
 
 ## What Next
 
