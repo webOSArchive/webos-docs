@@ -31,7 +31,7 @@ Make sure you have a good quality micro USB cable connected directly to your com
 
 Reboot your device into recovery mode...
 
-### Phones
+### Phones (except Veer)
 
 * Plug the USB cable into your computer. Do not connect the other end to your device yet.
 * Remove the battery from the device.
@@ -40,10 +40,12 @@ Reboot your device into recovery mode...
 * Re-insert the battery.
 * Release the volume up button.
 
-### TouchPad
+### TouchPad and Veer
 
-* Hold the Power and Home buttons until the TouchPad restarts
-* As soon as the TouchPad restarts, let go of the Power and Home buttons and hold the Volume Up button
+* Reboot the device
+    + On TouchPad, hold the home and power buttons to force a reboot -- keep holding
+    + On Veer, power down completely. Wait a few seconds with no buttons pressed, then press and keep holding the power button to power back on
+* As soon as the device restarts, let go of the Power (and Home, on TouchPad) and hold the Volume Up button
 * Keep holding the Volume Up button until you see the USB symbol
 
 ## Run the Activation Tool
@@ -66,7 +68,7 @@ Use the built-in settings to join your WiFi -- webOS works with 2.4ghz WiFi netw
 
 A video showing activation and [app installation](appstores.md) is available on YouTube...
 
-<a href="https://www.youtube.com/watch?v=-ieDXW8yA5c" target="_blank">[![Video Tutorial](images/videotutorial.png)]</a>
+<a href="https://www.youtube.com/watch?v=-ieDXW8yA5c" target="_blank">![Video Tutorial](images/videotutorial.png)</a>
 
 ## Alternate Instructions
 

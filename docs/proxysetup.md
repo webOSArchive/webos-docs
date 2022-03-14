@@ -78,7 +78,7 @@ When done, your screen should look like this:
 
 With your proxy configured, you should be able to open almost any modern webpage. But even with connectivity established, you may find that some web pages don't work well on your device -- the web has evolved since webOS was first born! 
 
-You may want to consider using a RSS Service, and an app like <a href="http://www.feedspider.net/" target="_blank">FeedSpider</a> (available in Preware, and in App Museum II) to pull feeds from your favorite sites.
+You may want to consider using a RSS Service, and an app like <a href="http://www.feedspider.net/" target="_blank">FeedSpider</a> (available in Preware, and in App Museum II) to pull feeds from your favorite sites. Or <a href="https://forums.webosnation.com/hp-touchpad/331764-tp-qupzilla.html">try one of the community-built browsers</a> which may work on the Pre3 and Touchpad.
 
 ## Alternate Proxies
 

@@ -49,7 +49,8 @@ The Preware app is one of the original Homebrew App Stores for webOS, and contai
 
 ## Install webOS App Museum II
 
-<i>Note: Works for webOS 2.0 only</i><br>
+<i>Note: Works for webOS 2.0 only!</i> webOS 1.x users can use the Museum via the built-in web browser at [http://appcatalog.webosarchive.com](http://appcatalog.webosarchive.com)
+
 The original App Museum was a listing of the original Palm/HP App Catalog, and provided a way to link to FTP archives and install some of those apps.
 
 App Museum II pulls together multiple sources into a single interface for downloading App Catalog apps that have been rescued or archived by the community. Its a mostly historical source of apps, but curated sections of the Museum contain patched versions and instructions to making some important apps work again.
@@ -73,7 +74,7 @@ Now that you have a couple App stores on your device, you won't need WOSQI or yo
 
 A video showing activation and [app installation](appstores.md) is available on YouTube...
 
-<a href="https://www.youtube.com/watch?v=-ieDXW8yA5c" target="_blank">[![Video Tutorial](images/videotutorial.png)]</a>
+<a href="https://www.youtube.com/watch?v=-ieDXW8yA5c" target="_blank">![Video Tutorial](images/videotutorial.png)</a>
 
 ## Alternate Instructions
 

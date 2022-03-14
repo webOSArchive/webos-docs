@@ -13,6 +13,8 @@ nav:
       - Update Hosts: hosts.md
       - Shell Access: bash.md
       - Build Your Own Apps: sdkpdk.md
+    - Disater Recovery:
+      - Call the Doctor: doctor.md
 theme:
   name: readthedocs
   favicon: images/icon.ico
