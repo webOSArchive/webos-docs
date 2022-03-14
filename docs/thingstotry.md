@@ -87,5 +87,19 @@ If you'd rather get some information, **Accuweather** still works on all devices
 * <a href="http://appcatalog.webosarchive.com/showMuseumDetails.php?search=oregon&app=1097" target="_top">Oregon Trail</a> - The video game that taught a generation how to play video games has a beautiful version for the TouchPad
 * <a href="http://appcatalog.webosarchive.com/showMuseum.php?search=Miriel" target="_top">Miriel</a> - These games keep my youngest daughter busy for hours
 
+## Classic
+<img src="../images/palm-logo.png" align="right" style="padding-left: 8px">The Classic Emulator was originally only available for webOS 1.x but thanks to community efforts, it can be made to work on any webOS device, and gives you access to a cool catalog of vintage PalmOS apps and games!
+
+To make it work, you'll need to install two apps:
+
+* Install [Classic Emulator from App Museum II](http://appcatalog.webosarchive.com/app/ClassicEmulator) as you would install any Museum app
+* Install [Classic Container](http://www.webosarchive.com/activation/net.arthurthornton.classic-container_1.0_armv7.ipk) using [webOS Quick Install](appstores.md#run-wosqi-on-your-computer) on your computer.
+
+Classic expires after a week, but you can re-arm the timer easily. Quit the app, then:
+
+* Use the command line or Internalz, delete the file: `/usr/lib/palmos/expired.rgba`
+
+You can find tons of PalmOS apps and games at <a href="https://palmdb.net/" target="_blank">PalmDB.net</a>.
+
 ### Make Something New
 <img src="../images/webos-sdk.png" align="left" style="padding-right: 8px">webOS is an easy platform to learn to develop on. Based on Javascript, and powered by Linux, its an easy environment to explore, reverse engineer and build upon. If you can make a web page, you can make an App for webOS! Check out the [SDK section](sdkpdk.md) for more info about getting started!
