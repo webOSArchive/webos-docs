@@ -93,11 +93,11 @@ If you'd rather get some information, **Accuweather** still works on all devices
 To make it work, you'll need to install two apps:
 
 * Install [Classic Emulator from App Museum II](http://appcatalog.webosarchive.com/app/ClassicEmulator) as you would install any Museum app
-* Install [Classic Container](http://www.webosarchive.com/activation/net.arthurthornton.classic-container_1.0_armv7.ipk) using [webOS Quick Install](appstores.md#run-wosqi-on-your-computer) on your computer.
+* *webOS 2.0 and above only*: Install [Classic Container](http://www.webosarchive.com/activation/net.arthurthornton.classic-container_1.0_armv7.ipk) using [webOS Quick Install](appstores.md#run-wosqi-on-your-computer) on your computer.
 
-Classic expires after a week, but you can re-arm the timer easily. Quit the app, then:
+Classic expires after a week, to avoid this, always run Classic with your device in *Airplane Mode*, then when the expiry date hits, you can re-arm the timer. Quit the app, then:
 
-* Use the command line or Internalz, delete the file: `/usr/lib/palmos/expired.rgba`
+* Using the command line or Internalz, delete the file: `/usr/lib/palmos/expired.rgba`
 
 You can find tons of PalmOS apps and games at <a href="https://palmdb.net/" target="_blank">PalmDB.net</a>.
 
