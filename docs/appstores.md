@@ -78,7 +78,7 @@ A video showing activation and [app installation](appstores.md) is available on 
 
 ## What Next
 
-Now that you've got some App Stores installed, you'll probably want to [get one](online.md)!
+Now that you've got some App Stores installed, you'll probably want to [get online](online.md)!
 
 ## Alternate Instructions
 
