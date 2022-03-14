@@ -76,6 +76,10 @@ A video showing activation and [app installation](appstores.md) is available on 
 
 <a href="https://www.youtube.com/watch?v=-ieDXW8yA5c" target="_blank">![Video Tutorial](images/videotutorial.png)</a>
 
+## What Next
+
+Now that you've got some App Stores installed, you'll probably want to [get one](online.md)!
+
 ## Alternate Instructions
 
 This documentation attempts to update and simplify information available from older, archived sources. You may find that material to be useful as reference:
