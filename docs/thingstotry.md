@@ -88,11 +88,11 @@ If you'd rather get some information, **Accuweather** still works on all devices
 * <a href="http://appcatalog.webosarchive.com/showMuseum.php?search=Miriel" target="_top">Miriel</a> - These games keep my youngest daughter busy for hours
 
 ## Classic
-<img src="../images/palm-logo.png" align="right" style="padding-left: 8px">The Classic Emulator was originally only available for webOS 1.x but thanks to community efforts, it can be made to work on any webOS device, and gives you access to a cool catalog of vintage PalmOS apps and games!
+<img src="../images/palm-logo.png" align="right" style="padding-left: 8px">The Classic Emulator was originally only available for webOS 1.x but thanks to community efforts, it can be made to work on most webOS devices (some devices have no sound, Pre3 is not compatible), and gives you access to a cool catalog of vintage PalmOS apps and games!
 
-To make it work, you'll need to install two apps:
+Depending on your OS version, you'll need to install some components:
 
-* Install [Classic Emulator from App Museum II](http://appcatalog.webosarchive.com/app/ClassicEmulator) as you would install any Museum app
+* *All OS versions*: Install <a href="http://appcatalog.webosarchive.com/app/ClassicEmulator" target="_top">Classic Emulator from App Museum II</a> like any Museum app.
 * *webOS 2.0 and above only*: Install [Classic Container](http://www.webosarchive.com/activation/net.arthurthornton.classic-container_1.0_armv7.ipk) using [webOS Quick Install](appstores.md#run-wosqi-on-your-computer) on your computer.
 
 Classic expires after a week, to avoid this, always run Classic with your device in *Airplane Mode*, then when the expiry date hits, you can re-arm the timer. Quit the app, then:
