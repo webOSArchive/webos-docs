@@ -1,6 +1,6 @@
 # webOS Doctors
 
-If things go really wrong, Palm/HP provided a way to reflash the system image, called a Doctor, allowing you to start almost from scratch. This should be a last resort -- its almost impossible to brick these devices, but there are always risks when flashing an OS. Make sure you have a good quality (preferably OEM) USB cable, and a good charge on your battery.
+If things go really wrong, Palm/HP provided a way to reflash the system image, called a Doctor, allowing you to start almost from scratch. Some unofficial Super Doctors can also upgrade the OS. Be careful -- its almost impossible to brick these devices, but there are always risks when flashing an OS. Make sure you have a good quality (preferably OEM) USB cable, and a good charge on your battery.
 
 These instructions are provided for quick reference, no guarantee is implied.
 
@@ -8,9 +8,9 @@ These instructions are provided for quick reference, no guarantee is implied.
 
 Most Doctors were provided by the manufacturer, but some, such as Meta Doctors and Super Doctors, were built by the community to provide upgrades and enhancements to system images. These special kinds of doctors were intended to be built by the end user, but many have been archived.
 
-Available <a href="https://1drv.ms/u/s!Av5IQUxnr8DUjsN2Ow18-R-oOlAiWg?e=nYMMw7">webOS Doctors have been archived here</a>.
+Available <a href="https://archive.org/details/webOSDoctors">webOS Doctors have been archived here</a>.
 
-Refer to the files `_SuperDoctors.txt` and `_webOS Doctor Versions - Ask Mike.pdf` to find the correct Doctor file for your situation. Be 100% sure you have the right Doctor for your device before proceeding!
+Refer to the readme in that archive to find the correct Doctor file for your situation. Be 100% sure you have the right Doctor for your device before proceeding!
 
 ## Running the Doctor
 
@@ -25,6 +25,8 @@ During the process you'll need to get your device into recovery mode. Instructio
 Run the Doctor jar file using your computer's command line: `java -jar NAMEOFDOCTOR.jar`
 
 Replace `NAMEOFDOCTOR` with the file you downloaded above.
+
+On some OSes, you may be able to start the Doctor just by double-clicking the .jar file.
 
 ## Alternate Instructions
 

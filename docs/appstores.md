@@ -49,7 +49,9 @@ The Preware app is one of the original Homebrew App Stores for webOS, and contai
 
 ## Install webOS App Museum II
 
-<i>Note: Works for webOS 2.0 only!</i> webOS 1.x users can use the Museum via the built-in web browser at [http://appcatalog.webosarchive.com](http://appcatalog.webosarchive.com)
+App Museum II requires Enyo, which was built-in to webOS 2.2.4 and later by default, and is available in Preware for earlier webOS 2.x versions. Depending your device, you may be able to run a [Super Doctor](doctor.md) that upgrades your device to a later, unofficial, version of the OS.
+
+webOS 1.x users can use the Museum via the built-in web browser at [http://appcatalog.webosarchive.com](http://appcatalog.webosarchive.com)
 
 The original App Museum was a listing of the original Palm/HP App Catalog, and provided a way to link to FTP archives and install some of those apps.
 
