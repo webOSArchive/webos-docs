@@ -25,7 +25,7 @@ Make sure you have a good quality micro USB cable connected directly to your com
 
 Once you have Java, you will need to download the webOS Quick Install (WOSQI) tool. This Java application enables installing apps and patches that even the SDK command line can't properly install. Although it is linked to various repositories, many of its sources are offline. For this reason, we'll primarily use it to "bootstrap" some other sources of apps.
 
-* [Download webOS Quick Install 4.6.0 from webOS Archive](http://www.webosarchive.com/activation/WebOSQuickInstall-4.6.0.jar)
+* [Download webOS Quick Install 4.6.0 from webOS Archive](http://www.webosarchive.com/activation/webOSQuickInstall-4.6.0.jar)
 
 There are other versions online, but 4.6.0 seems to be the most compatible with modern Java run times.
 
