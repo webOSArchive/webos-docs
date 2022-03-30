@@ -2,7 +2,7 @@
 
 The Palm/HP activation services have been down a long time, but that doesn't mean your beautiful phone or tablet are dead! With a little effort, you can use the tools HP left behind to activate your device...
 
-*Note:* If you've done this before and just want the files, <a href="https://www.webosarchive.com/activation" target="_blank">download here</a>.
+*Note:* If you've done this before and just want the files, <a href="http://www.webosarchive.com/activation" target="_blank">download here</a>.
 
 ## Prepare Your Computer
 
