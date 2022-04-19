@@ -2,7 +2,12 @@
 
 The Palm/HP activation services have been down a long time, but that doesn't mean your beautiful phone or tablet are dead! With a little effort, you can use the tools HP left behind to activate your device...
 
-*Note:* If you've done this before and just want the files, <a href="http://www.webosarchive.com/activation" target="_blank">download here</a>.
+---
+> **_NOTE:_** If you've done this before and just want the files, <a href="http://www.webosarchive.com/activation" target="_blank">download here</a>.
+
+---
+
+*For Touchpads that won't turn on at all, community member [M.A.Touchpad has written a restoration guide](tprestore.md) that you may find useful.*
 
 ## Prepare Your Computer
 
