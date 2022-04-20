@@ -53,12 +53,11 @@ TP Debrick v005 is an operating system that will run from a USB drive on a compu
 + Tool to make the TP Debrick work. Download the right one for your OS.
 + + <a href="https://unetbootin.github.io/">UNetbootin</a>
 
-
 #### TP Debrick v004
 
 + Read the <a href="https://www.rootzwiki.com/threads/tpdebrick-v004.38786/" target="_blank">RootzWiki Thread</a>
 
-### Make the USB drive bootable
+### Make the USB drive bootable:
 
 * Insert the USB drive into your computer.
 * Open the UNetbootin application (.exe) and click the “Diskimage” radio button.
@@ -67,14 +66,18 @@ TP Debrick v005 is an operating system that will run from a USB drive on a compu
 * Once you have the correct drive selected, press “OK.”
 * UNetbootin will start to write the .iso file to the USB drive. You may see a box pop up in the middle of the procedure and the status bar may stop moving. This can be ignored as it still writes to the USB drive.
 * After some time, UNetbootin will finish flashing to the USB drive. Once it says it has finished, move on to the next step.
-3. Boot the computer via the USB drive.
+
+### Boot the computer via the USB drive:
+
 * Shutdown the computer you are going to use for this procedure.
 * Find which key gets the computer into the boot menu. You will have to search the internet for the boot menu key, as this varies from manufacturer to manufacturer.
 * Once you know the boot menu key, turn on the computer and immediately and repeatedly press the boot menu key. The computer should eventually display a menu that you can use the arrow and enter keys to navigate.
 * Select the option that says “Setup” or “BIOS Setup” Once you are in the setup, make sure that the computer has legacy boot enabled and not UEFI/Secure Boot. The BIOS interfaces of all computers are different, so I can not provide you with instructions on how to do this. I would recommend that you take a picture of the settings before you change them, just so you know what they were before.
 * After you change the settings, save them and shutdown the computer. Turn it back on and get back into the boot menu.
 * Select the option that has something to do with USB, like “USB HDD: Mass Storage Device.” The computer should then boot via the USB drive.
-4. Perform the TP Debrick:
+
+### Perform the TP Debrick:
+
 * Follow the instructions on the wallpaper to perform the procedure. The password is: 1234.
 * The Touchpad may have automatically booted after the procedure. If a “moboot” menu appears, this means that Android was probably installed on the tablet. Use the arrow keys to move and the home button to select and option. If you want to boot into WebOS, look for the option that says “boot webOS.” If you want to boot into Android, look for an option that says “boot CyanogenMod” or maybe “boot Evervolv.” If you do not see a WebOS option, you will probably have to use WebOS Doctor and the TP Toolbox to put WebOS on there.
 * If your Touchpad did not boot, connect it back to the charger. The creator of the TP Debrick v005 says to use the original charger (5.3V or 2A) or an equivalent, but you could also use the low powered chargers as well. Continue charging it for at least one week. If it has not booted by then, it probably has a very serious problem and, as far as we know, cannot be revived.
