@@ -86,6 +86,10 @@ If you prefer not to, or are unable to, use a public service, you can also run a
 
 * <a href="https://forums.webosnation.com/webos-apps-games/332506-squid-ssl-bump.html" target="_blank">Nizovn's Squid SSL Bump App</a>
 
-Another option is to host the Service yourself. If you have a Raspberry Pi (also works on Ubuntu), this can be done really easily:
+Another option is to host the Squid Service yourself. If you have a Raspberry Pi (also works on Ubuntu), this can be done really easily:
 
 * <a href="https://github.com/codepoet80/squid-sslbump-rpi" target="_blank">Squid SSL Bump Installer</a>
+
+If Squid is too complex for you, check out the WebOne proxy, which runs on Windows, Mac and Linux:
+
+* <a href="https://github.com/atauenis/webone" target="_blank">WebOne on GitHub</a>

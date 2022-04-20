@@ -59,9 +59,9 @@ The Preware app is one of the original Homebrew App Stores for webOS, and contai
 App Museum II requires Enyo, which was built-in to webOS 2.2.4 and later by default, and is available in Preware for earlier webOS 2.x versions. Depending your device, you may be able to run a [Super Doctor](doctor.md) that upgrades your device to a later, unofficial, version of the OS.
 
 ---
-> **_NOTE:_** webOS 1.x users can use the Museum via the built-in web browser at [http://appcatalog.webosarchive.com](http://appcatalog.webosarchive.com). Alternatively, community member Nomad84 provides a Preware feed that has many of the Museum apps available in it:
+> **_NOTE:_** webOS 1.x users can use the Museum via the built-in web browser at [http://appcatalog.webosarchive.com](http://appcatalog.webosarchive.com). Alternatively, community member Nomad84 provides a Preware feed that has the Museum apps available in it:
 
-> * <a href="https://forums.webosnation.com/webos-internals/332846-new-precentral-feed-just-works.html#post3458068" target="_blank">Partially restored App Catalog feed.</a>
+> * <a href="https://forums.webosnation.com/webos-development/332697-refurbishing-app-museum-4.html#post3458072" target="_blank">App Museum Preware feed</a>
 
 ---
 

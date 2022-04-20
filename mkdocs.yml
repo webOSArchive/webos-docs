@@ -15,6 +15,7 @@ nav:
       - Build Your Own Apps: sdkpdk.md
     - Disater Recovery:
       - Call the Doctor: doctor.md
+      - Touchpad Rescue: tprestore.md
 theme:
   name: readthedocs
   favicon: images/icon.ico
