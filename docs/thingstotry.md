@@ -12,6 +12,8 @@ More and more websites are moving to newer encryption over HTTPS as the only way
 
 * **Reddit** <img src="../images/reddit.png" align="right" style="padding-left: 8px">still works with an [HTTPS proxy enabled](proxysetup.md) on all devices through <a href="http://old.reddit.com" target="_blank">http://old.reddit.com</a> or the excellent IAmA Reddit App - <a href="https://preware.pivotce.com/package/com.tehtorq.reddit-hb" target="_blank">Homebrew</a> and <a href="http://appcatalog.webosarchive.com/showMuseumDetails.php?search=iama&app=10842" target="_top">App Catalog</a> versions are available. Reddit videos can also be watched in [MeTube](#youtube)
 
+* **Imgur** images and galleries won't load on their own in the native browser, but you can use the wosa.link image proxy to load a URL. Just put `http://imgur.wosa.link?` in front of the url, like: <a href="http://imgur.wosa.link/?https://imgur.com/gallery/iqfalaR" target="_blank">http://imgur.wosa.link/?https://imgur.com/gallery/iqfalaR</a>
+
 * **Facebook** <a href="http://m.facebook.com" target="_blank">mobile</a> still works on all devices (and webOS doesn't support most of their tracking!), and the <a href="http://appcatalog.webosarchive.com/showMuseumDetails.php?search=prebook&app=1005784" target="_top">PreBook app</a> makes the experience a little nicer
 
 * **Twitter** blocks the webOS browser, but <a href="https://preware.pivotce.com/package/net.minego.phnx" target="_blank">Project Macaw</a> delivers a pretty great Twitter experience via a Homebrew App and a [HTTPS proxy](proxysetup.md).
