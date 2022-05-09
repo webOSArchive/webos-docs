@@ -3,12 +3,12 @@ webOS is *not* a dead platform! There's still plenty of things you can on your w
 
 ## Websites
 
-More and more websites are moving to newer encryption over HTTPS as the only way to access the site. On webOS 2.2.4, you can work-around this with a [proxy](proxysetup.md). With old versions you are more limited. Here are some common websites that work, or ways to work around:
+More and more websites are moving to newer encryption over HTTPS as the only way to access the site. On webOS 2.2.4 and above, you can work-around this with a [proxy](proxysetup.md). With old versions you are more limited. Here are some common websites that work, or ways to work around:
 
 ### Common Sites
 * **Google** still works on all devices
 
-* **YouTube**'s website no longer works, but there's an app for that called [MeTube](#youtube), or you can try a retro-friendly Invidious provider.
+* **YouTube**'s website no longer works, but there's an app for that called [MeTube](#youtube), or you can try a retro-friendly <a href="https://invidious.io/" target="_blank">Invidious</a> provider.
 
 * **Reddit** <img src="../images/reddit.png" align="right" style="padding-left: 8px">still works with an [HTTPS proxy enabled](proxysetup.md) on all devices through <a href="http://old.reddit.com" target="_blank">http://old.reddit.com</a> or the excellent IAmA Reddit App - <a href="https://preware.pivotce.com/package/com.tehtorq.reddit-hb" target="_blank">Homebrew</a> and <a href="http://appcatalog.webosarchive.com/showMuseumDetails.php?search=iama&app=10842" target="_top">App Catalog</a> versions are available. Reddit videos can also be watched in [MeTube](#youtube)
 
@@ -16,7 +16,7 @@ More and more websites are moving to newer encryption over HTTPS as the only way
 
 * **Facebook** <a href="http://m.facebook.com" target="_blank">mobile</a> still works on all devices (and webOS doesn't support most of their tracking!), and the <a href="http://appcatalog.webosarchive.com/showMuseumDetails.php?search=prebook&app=1005784" target="_top">PreBook app</a> makes the experience a little nicer
 
-* **Twitter** blocks the webOS browser, but <a href="https://preware.pivotce.com/package/net.minego.phnx" target="_blank">Project Macaw</a> delivers a pretty great Twitter experience via a Homebrew App and a [HTTPS proxy](proxysetup.md).
+* **Twitter** blocks the webOS user agent, but <a href="https://preware.pivotce.com/package/net.minego.phnx" target="_blank">Project Macaw</a> delivers a pretty great Twitter experience via a Homebrew App and a [HTTPS proxy](proxysetup.md). If you just want to view a link or thread in the native browser, you can use <a href="https://nitter.net" target="_blank">nitter.net</a>. Just replace `twitter.com` in any link with `nitter.net`, like: <a href="https://nitter.net/webOSArchive" target="_blank">https://nitter.net/webOSArchive</a>
 
 * **Wikipedia** only works with a proxy. For older devices, webOS archive provides a "tiny" version that is periodically updated at <a href="http://wikipedia.webosarchive.com" target="_blank">wikipedia.webosarchive.com</a>
 
