@@ -63,6 +63,13 @@ Philips Hue lights are some of the best smart bulbs out there -- whether you use
 * Download <a href="http://appcatalog.webosarchive.com/showMuseumDetails.php?search=one+night&app=1005771" target="_top">One Night Stand</a>
 * Learn more about <a href="https://www.usa.philips.com/c-e/smartsleep/wake-up-light-portfolio.html" target="_blank">Philips Hue</a>
 
+### Play Some Tunes
+Pandora, and third party Pandora apps still work on all devices as of 2022. 
+
+If you have a TouchPad, the wonderful iTunes remote control app, <a href="http://appcatalog.webosarchive.com/app/Retune" target="_top">Retune</a>, still works to control Apple Music or iTunes playback, and can even send audio to HomePods and AppleTVs. You'll need to temporarily disable your computer's firewall for pairing, but once done, you can turn the firewall back on and use as normal.
+
+With some caveats, the <a href="http://appcatalog.webosarchive.com/app/PlexforwebOS" target="_top">Plex app</a> still works with modern Plex servers as well.
+
 ### Read a Book
 <img src="../images/kindle.png" align="right" style="padding-left: 8px">The TouchPad makes a great reading device (the TouchPad Go is even better -- if you can find one!) and a number of eReader apps were released. The premier app being the Amazon Kindle Beta. Despite the moniker, its fully functional in the U.S. (YMMV in other regions) with only a slight tweak needed to the login experience: when you login with your Amazon credentials, watch your phone or email for a One-Time Password (OTP) from Amazon that you'll use for your second login attempt. Once that's done, your fully library of books will be available: including color illustrations where the book content includes them!
 
@@ -88,6 +95,10 @@ If you'd rather get some information, **Accuweather** still works on all devices
 * <a href="http://appcatalog.webosarchive.com/showMuseum.php?search=assassin%27s+creed" target="_top">Assassin's Creed</a> - A giant adventure for your mobile device
 * <a href="http://appcatalog.webosarchive.com/showMuseumDetails.php?search=oregon&app=1097" target="_top">Oregon Trail</a> - The video game that taught a generation how to play video games has a beautiful version for the TouchPad
 * <a href="http://appcatalog.webosarchive.com/showMuseum.php?search=Miriel" target="_top">Miriel</a> - These games keep my youngest daughter busy for hours
+
+## Remote Control
+
+The App Museum has working apps (some need some tweaks) for remotely controlling Windows, Mac and Linux machines via <a href="http://appcatalog.webosarchive.com/showMuseum.php?search=splashtop" target="_top">Splashtop</a>, <a href="http://appcatalog.webosarchive.com/app/webOSRemoteDesktopClient" target="_top">Remote Desktop</a> or <a href="http://appcatalog.webosarchive.com/showMuseum.php?search=Miriel" target="_top">VNC</a>. You can also control <a href="http://appcatalog.webosarchive.com/app/KookarooRokuRemote" target="_top">Roku devices</a>, or an <a href="http://appcatalog.webosarchive.com/app/Retune" target="_top">iTunes library</a> -- including connected speakers like Home Pods.
 
 ## Classic
 <img src="../images/palm-logo.png" align="right" style="padding-left: 8px">The Classic Emulator was originally only available for webOS 1.x but thanks to community efforts, it can be made to work on most webOS devices (some devices have no sound, Pre3 is not compatible), and gives you access to a cool catalog of vintage PalmOS apps and games!

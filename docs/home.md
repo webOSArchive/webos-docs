@@ -12,3 +12,10 @@ The [Taking Control](timesync.md) section covers some optional advanced topics t
 ## Revisions and Corrections
 
 This site is an open source project. If you find any problems or want to propose additional content, please submit a Pull Request here: <a href="https://github.com/codepoet80/webos-docs" target="_blank">https://github.com/codepoet80/webos-docs</a>
+
+## Demo Videos
+
+The community has restored demo videos for Touchpads and some of the earlier webOS phones. They make a great starting point for new webOS users:
+
+* <a href="https://www.youtube.com/watch?v=QmCTmcjXuR4" target="_blank">Touchpad Demos</a>
+* <a href="https://www.youtube.com/watch?v=ODwG51W1sF0" target="_blank">Phone Demos</a>

@@ -31,6 +31,8 @@ If you don't want to use a proxy, you can partially improve the situation by ins
 
 If you're on an older version of webOS, you won't be able to install or use a Proxy, since the API was not present. This significantly limits your access to the web, and even to some Preware files -- since many have been moved to HTTPS and are inaccessible. This can result in errors during install. As a work-around for Preware issues, look at the end of the error message for the URL of the file -- you can then download that on your computer, and use [webOS Quick Install](appstores.md) to "sideload" to your device.
 
+For the earliest webOS devices, you can run the <a href="https://palmdb.net/app/opera-mini" target="_blank">Opera Mini</a> browser in [Classic](thingstotry.md#classic) to get around encryption problems on web pages.
+
 With or without modern encryption, there's still lots of interesting things you can do with your devices...
 
 ## What Next
