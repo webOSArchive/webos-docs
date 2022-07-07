@@ -33,7 +33,11 @@ if (strpos($uri, '?') !== false) {
 }
 ?>
 <?php
-echo file_get_contents($protocol . "www.webosarchive.com/menu.php?content=community");
+if ($uri == "community/") {
+	echo file_get_contents($protocol . "www.webosarchive.com/menu.php?content=community");
+} else {
+	echo file_get_contents($protocol . "www.webosarchive.com/menu.php?content=docs");
+}
 ?>
 <div class="second-row">
 <iframe src="<?PHP echo $usePath ?>" width="100%" height="100%" />
