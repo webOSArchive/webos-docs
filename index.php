@@ -33,7 +33,7 @@ if (strpos($uri, '?') !== false) {
 }
 ?>
 <?php
-if ($uri == "community/") {
+if ($uri == "community") {
 	echo file_get_contents($protocol . "www.webosarchive.com/menu.php?content=community");
 } else {
 	echo file_get_contents($protocol . "www.webosarchive.com/menu.php?content=docs");
