@@ -30,7 +30,7 @@ This section assumes you've completed the previous steps to [get online](online.
 If you're using webOS 2.2.4 or higher, The easiest way to get started is with the NEW **webOS Archive Proxy** app.
 To download, install [webOS App Museum II](appstores.md#install-webos-app-museum-ii) and search for "Proxy".
 
-Or use the <a href="http://appcatalog.webosarchive.com/showMuseumDetails.php?app=1005768" target="_top">direct download</a> and install it yourself.
+Or use the <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?app=1005768" target="_top">direct download</a> and install it yourself.
 
 As well as letting you enable or disable the proxy, this app makes it easy to download the certificate and install it in the right place. Its a good idea to perform a full reboot after installing the certificate.
 
@@ -45,7 +45,7 @@ Also, it never hurts to do a full reboot between clean-up and manual install.
 The webOS Archive Certificate is a single certificate you must install in order to bypass certificate warnings from other websites: one certificate (or: cert) that covers the whole Internet.
 
 * On your computer, download the cert:
-    + <a href="http://www.webosarchive.com/proxy/wOSAServiceCert.der">http://www.webosarchive.com/proxy/wOSAServiceCert.der</a>
+    + <a href="http://www.webosarchive.org/proxy/wOSAServiceCert.der">http://www.webosarchive.org/proxy/wOSAServiceCert.der</a>
 * Plug your webOS device into your computer with a USB cable, and enter USB Disk mode on the device
 * Copy the cert you downloaded onto root directory of the USB device
 * Launch the built-in webOS app "Device Info"
@@ -62,10 +62,10 @@ The webOS Archive Certificate is a single certificate you must install in order 
 A Proxy switch app adds a feature to webOS allowing you to turn on (and off) a global proxy. Once activated, this proxy works for any app on the device -- including email!
 
 * Install a Proxy app
-    + Install the app **webOS Archive Proxy** app from App Museum II, or <a href="http://appcatalog.webosarchive.com/showMuseumDetails.php?app=1005768" target="_top">download directly here</a>.
-    + Install the app **Proxy Set Basic** from Preware, or <a href="http://www.webosarchive.com/proxy/com.palm.com.verusora.touchpad.proxysetbasic_1.1.1_all.ipk" target="_top">download directly here</a>.
+    + Install the app **webOS Archive Proxy** app from App Museum II, or <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?app=1005768" target="_top">download directly here</a>.
+    + Install the app **Proxy Set Basic** from Preware, or <a href="http://www.webosarchive.org/proxy/com.palm.com.verusora.touchpad.proxysetbasic_1.1.1_all.ipk" target="_top">download directly here</a>.
 * Launch the app, and configure the fields as follows:
-* Server: `proxy.webosarchive.com`
+* Server: `proxy.webosarchive.org`
 * Port: `3128`
 * Username: `<yourusername>`
 * Password: `<yourpassword>`

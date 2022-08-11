@@ -12,12 +12,12 @@ This tool works on Mac, Linux and Windows, and requires Java and the devices dri
 
 Next you will need the Novacomm driver for your computer:
 
-* Windows 32-bit (Tested on Windows 7): [Installer MSI](http://www.webosarchive.com/activation/drivers/novacom-win-32/)
-* Windows 64-bit (Tested on Windows 10): [Installer MSI](http://www.webosarchive.com/activation/drivers/novacom-win-64/)
-* macOS 32-bit (Tested up to Mojave): [Installer PKG](http://www.webosarchive.com/activation/drivers/novacom-mac/)
+* Windows 32-bit (Tested on Windows 7): [Installer MSI](http://www.webosarchive.org/activation/drivers/novacom-win-32/)
+* Windows 64-bit (Tested on Windows 10): [Installer MSI](http://www.webosarchive.org/activation/drivers/novacom-win-64/)
+* macOS 32-bit (Tested up to Mojave): [Installer PKG](http://www.webosarchive.org/activation/drivers/novacom-mac/)
 * macOS 64-bit (For Catalina and Later): <a href="https://github.com/incidentist/novacomd/releases/tag/macos64" target="_blank">GitHub Release</a>
-* Linux 32-bit (Tested on Ubunutu): [DEB Package](http://www.webosarchive.com/activation/drivers/novacom-linux-32/)
-* Linux 64-bit (Tested on Ubunutu): [DEB Package](http://www.webosarchive.com/activation/drivers/novacom-linux-64/)
+* Linux 32-bit (Tested on Ubunutu): [DEB Package](http://www.webosarchive.org/activation/drivers/novacom-linux-32/)
+* Linux 64-bit (Tested on Ubunutu): [DEB Package](http://www.webosarchive.org/activation/drivers/novacom-linux-64/)
 
 Make sure you have a good quality micro USB cable connected directly to your computer (not to a hub.) The OEM cables are your best bet (they're recognizable by a silver indented circle near USB connectors.)
 
@@ -25,7 +25,7 @@ Make sure you have a good quality micro USB cable connected directly to your com
 
 Once you have Java, you will need to download the webOS Quick Install (WOSQI) tool. This Java application enables installing apps and patches that even the SDK command line can't properly install. Although it is linked to various repositories, many of its sources are offline. For this reason, we'll primarily use it to "bootstrap" some other sources of apps.
 
-* [Download webOS Quick Install 4.6.0 from webOS Archive](http://www.webosarchive.com/activation/webOSQuickInstall-4.6.0.jar)
+* [Download webOS Quick Install 4.6.0 from webOS Archive](http://www.webosarchive.org/activation/webOSQuickInstall-4.6.0.jar)
 
 There are other versions online, but 4.6.0 seems to be the most compatible with modern Java run times.
 
@@ -41,7 +41,7 @@ There are other versions online, but 4.6.0 seems to be the most compatible with 
 
 The Preware app is one of the original Homebrew App Stores for webOS, and contains many useful apps, hacks, tweaks from the glory days of webOS. Although its no longer maintained, and some files no longer work, it still provides useful infrastructure for installing apps from other sources, so you don't need to plug your Device into your computer.
 
-* [Download Preware 1.9.14 from webOS Archive](http://www.webosarchive.com/activation/org.webosinternals.preware_1.9.14_arm.ipk) to your computer.
+* [Download Preware 1.9.14 from webOS Archive](http://www.webosarchive.org/activation/org.webosinternals.preware_1.9.14_arm.ipk) to your computer.
 * Drag the Preware IPK you just downloaded onto the WOSQI window (or hit the + button and browse for it)
 * Press the Install button to install Preware on your device
 
@@ -59,7 +59,7 @@ The Preware app is one of the original Homebrew App Stores for webOS, and contai
 App Museum II requires Enyo, which was built-in to webOS 2.2.4 and later by default, and is available in Preware for earlier webOS 2.x versions. Depending your device, you may be able to run a [Super Doctor](doctor.md) that upgrades your device to a later, unofficial, version of the OS.
 
 ---
-> **_NOTE:_** webOS 1.x users can use the Museum via the built-in web browser at [http://appcatalog.webosarchive.com](http://appcatalog.webosarchive.com). Alternatively, community member Nomad84 provides a Preware feed that has the Museum apps available in it:
+> **_NOTE:_** webOS 1.x users can use the Museum via the built-in web browser at [http://appcatalog.webosarchive.org](http://appcatalog.webosarchive.org). Alternatively, community member Nomad84 provides a Preware feed that has the Museum apps available in it:
 
 > * <a href="https://forums.webosnation.com/webos-development/332697-refurbishing-app-museum-4.html#post3458072" target="_blank">App Museum Preware feed</a>
 
@@ -73,7 +73,7 @@ Note that App Museum II requires Preware, so install that first!
 
 You can use WOSI to Install webOS App Museum II, just like you did with Preware.
 
-* [Download Latest webOS App Museum](http://appcatalog.webosarchive.com/latest.php) to your computer
+* [Download Latest webOS App Museum](http://appcatalog.webosarchive.org/latest.php) to your computer
 * Drag the Museum IPK you just downloaded onto the WOSQI window (or hit the + button and browse for it)
 * Press the Install button to install Preware on your device
 

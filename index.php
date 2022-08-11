@@ -14,7 +14,7 @@ else
       .second-row {position: absolute; top: 45px; left: 0; right: 0; bottom: 0;  }
       .second-row iframe {display: block; width: 100%; height: 100%; border: none;}
     </style>
-    <link rel="shortcut icon" href="<?php echo $protocol ?>www.webosarchive.com/favicon.ico">
+    <link rel="shortcut icon" href="<?php echo $protocol ?>www.webosarchive.org/favicon.ico">
 </head>
 <body>
 <?php
@@ -34,9 +34,9 @@ if (strpos($uri, '?') !== false) {
 ?>
 <?php
 if ($uri == "community") {
-	echo file_get_contents($protocol . "www.webosarchive.com/menu.php?content=community");
+	echo file_get_contents($protocol . "www.webosarchive.org/menu.php?content=community");
 } else {
-	echo file_get_contents($protocol . "www.webosarchive.com/menu.php?content=docs");
+	echo file_get_contents($protocol . "www.webosarchive.org/menu.php?content=docs");
 }
 ?>
 <div class="second-row">

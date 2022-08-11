@@ -22,14 +22,14 @@
       {% endif %}
     </div>
   
-    <small><a href="https://github.com/codepoet80/webos-docs" target="_blank">webOS Docs</a> is a project of <a href="http://www.webosarchive.com" target="_top">webOS Archive</a> | If you found this useful, why not <a href="https://www.buymeacoffee.com/codepoet80" target="_blank">buy me a coffee?</a></small>
+    <small><a href="https://github.com/codepoet80/webos-docs" target="_blank">webOS Docs</a> is a project of <a href="http://www.webosarchive.org" target="_top">webOS Archive</a> | If you found this useful, why not <a href="https://www.buymeacoffee.com/codepoet80" target="_blank">buy me a coffee?</a></small>
     <script>
       //Support reverse proxy links
       var myURL = document.getElementsByTagName('a');
       for(var i=0; i<myURL.length; i++) {
         var currLink = (myURL[i].getAttribute('href'));
         if (currLink.indexOf("..") != -1) {
-          newUrl = location.protocol + "//www.webosarchive.com/docs" + myURL[i].getAttribute('href');
+          newUrl = location.protocol + "//www.webosarchive.org/docs" + myURL[i].getAttribute('href');
           newUrl = newUrl.replace("..", "");
           if (window.location.host.indexOf("localhost") == -1) {
             myURL[i].setAttribute('href', newUrl);

@@ -3,7 +3,7 @@
 The Palm/HP activation services have been down a long time, but that doesn't mean your beautiful phone or tablet are dead! With a little effort, you can use the tools HP left behind to activate your device...
 
 ---
-> **_NOTE:_** If you've done this before and just want the files, <a href="http://www.webosarchive.com/activation" target="_blank">download here</a>.
+> **_NOTE:_** If you've done this before and just want the files, <a href="http://www.webosarchive.org/activation" target="_blank">download here</a>.
 
 ---
 
@@ -19,20 +19,20 @@ This process works on Mac, Linux and Windows, but requires Java to be installed:
 
 Next you will need the Novacomm driver for your computer:
 
-* Windows 32-bit (Tested on Windows 7): [Installer MSI](http://www.webosarchive.com/activation/drivers/novacom-win-32/)
-* Windows 64-bit (Tested on Windows 10): [Installer MSI](http://www.webosarchive.com/activation/drivers/novacom-win-64/)
-* macOS 32-bit (Tested up to Mojave): [Installer PKG](http://www.webosarchive.com/activation/drivers/novacom-mac/)
+* Windows 32-bit (Tested on Windows 7): [Installer MSI](http://www.webosarchive.org/activation/drivers/novacom-win-32/)
+* Windows 64-bit (Tested on Windows 10): [Installer MSI](http://www.webosarchive.org/activation/drivers/novacom-win-64/)
+* macOS 32-bit (Tested up to Mojave): [Installer PKG](http://www.webosarchive.org/activation/drivers/novacom-mac/)
 * macOS 64-bit (For Catalina and Later): <a href="https://github.com/incidentist/novacomd/releases/tag/macos64" target="_blank">GitHub Release</a>
-* Linux 32-bit (Tested on Ubunutu): [DEB Package](http://www.webosarchive.com/activation/drivers/novacom-linux-32/)
-* Linux 64-bit (Tested on Ubunutu): [DEB Package](http://www.webosarchive.com/activation/drivers/novacom-linux-64/)
+* Linux 32-bit (Tested on Ubunutu): [DEB Package](http://www.webosarchive.org/activation/drivers/novacom-linux-32/)
+* Linux 64-bit (Tested on Ubunutu): [DEB Package](http://www.webosarchive.org/activation/drivers/novacom-linux-64/)
 
 Make sure you have a good quality micro USB cable connected directly to your computer (not to a hub.) The OEM cables are your best bet (they're recognizable by a silver indented circle near USB connectors.)
 
 ## Download the Tool
 
-* [devicetool](http://www.webosarchive.com/activation/devicetool/devicetool.jar) For webOS 1.x Devices (Pre, Pixi, Pre Plus)
-* [devicetool2](http://www.webosarchive.com/activation/devicetool/devicetool2.jar) For webOS 2.x and 3.x Devices (Pre 2, Pre3, Veer and TouchPad)
-* [devicetool All-in-One](http://www.webosarchive.com/activation/devicetool/devicetoolAIO.jar) Community created all-in-one, works all of the above, plus TouchPad Go
+* [devicetool](http://www.webosarchive.org/activation/devicetool/devicetool.jar) For webOS 1.x Devices (Pre, Pixi, Pre Plus)
+* [devicetool2](http://www.webosarchive.org/activation/devicetool/devicetool2.jar) For webOS 2.x and 3.x Devices (Pre 2, Pre3, Veer and TouchPad)
+* [devicetool All-in-One](http://www.webosarchive.org/activation/devicetool/devicetoolAIO.jar) Community created all-in-one, works all of the above, plus TouchPad Go
 
 ## Prepare Your Device
 

@@ -2,7 +2,7 @@
 
 This project has two goals:
 
-* Restore the on-device help system from archives, and <a href="http://help.webosarchive.com/HowToUse.php" target="_blank">get it working again</a>.
+* Restore the on-device help system from archives, and <a href="http://help.webosarchive.org/HowToUse.php" target="_blank">get it working again</a>.
 * Augment the on-device help with up-to-date information to re-activate a webOS device and make it useful on the modern Internet
 
 The [Getting Started](activate.md) section will walk through the steps necessary to activate a webOS device (initially focused on the TouchPad), install some App Stores, and get on the modern web via a Proxy.
@@ -18,4 +18,4 @@ This site is an open source project. If you find any problems or want to propose
 The community has restored demo videos for Touchpads and some of the earlier webOS phones. They make a great starting point for new webOS users:
 
 * <a href="https://www.youtube.com/watch?v=QmCTmcjXuR4" target="_blank">Touchpad Demos</a>
-* <a href="https://www.youtube.com/watch?v=ODwG51W1sF0" target="_blank">Phone Demos</a>
+* <a href="https://www.youtube.com/watch?v=snYWBmi295s" target="_blank">Phone Demos</a>

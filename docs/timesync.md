@@ -21,7 +21,7 @@ These instructions assume that you've completed the [Shell Access](bash.md) step
 * Launch Xecutah and click the "Start XTerm" button
 * If you're on a TouchPad, tap on the screen with 3 fingers to open the keyboard
 * Enter these commands:
-    + `wget http://www.webosarchive.com/activation/fix-ntp.sh`
+    + `wget http://www.webosarchive.org/activation/fix-ntp.sh`
     + `chmod +x fix-ntp.sh`
     + `./fix-ntp.sh`
 * When the script completes, the device will restart and the device will keep time properly.
@@ -42,4 +42,4 @@ For other devices, the only way to get time from a carrier is to install a SIM c
 
 Some users have had success using the Clock Sync app available in the App Museum. It can be configured to sync time in the background on a set schedule.
 
-* <a href="http://appcatalog.webosarchive.com/showMuseumDetails.php?search=clock+sync&app=1819" target="_top">Download Clock Sync</a>
+* <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=clock+sync&app=1819" target="_top">Download Clock Sync</a>

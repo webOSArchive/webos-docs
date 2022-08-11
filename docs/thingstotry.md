@@ -10,18 +10,18 @@ More and more websites are moving to newer encryption over HTTPS as the only way
 
 * **YouTube**'s website no longer works, but there's an app for that called [MeTube](#youtube), or you can try a retro-friendly <a href="https://invidious.io/" target="_blank">Invidious</a> provider.
 
-* **Reddit** <img src="../images/reddit.png" align="right" style="padding-left: 8px">still works with an [HTTPS proxy enabled](proxysetup.md) on all devices through <a href="http://old.reddit.com" target="_blank">http://old.reddit.com</a> or the excellent IAmA Reddit App - <a href="https://preware.pivotce.com/package/com.tehtorq.reddit-hb" target="_blank">Homebrew</a> and <a href="http://appcatalog.webosarchive.com/showMuseumDetails.php?search=iama&app=10842" target="_top">App Catalog</a> versions are available. Reddit videos can also be watched in [MeTube](#youtube)
+* **Reddit** <img src="../images/reddit.png" align="right" style="padding-left: 8px">still works with an [HTTPS proxy enabled](proxysetup.md) on all devices through <a href="http://old.reddit.com" target="_blank">http://old.reddit.com</a> or the excellent IAmA Reddit App - <a href="https://preware.pivotce.com/package/com.tehtorq.reddit-hb" target="_blank">Homebrew</a> and <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=iama&app=10842" target="_top">App Catalog</a> versions are available. Reddit videos can also be watched in [MeTube](#youtube)
 
 * **Imgur** images and galleries won't load on their own in the native browser, but you can use the wosa.link image proxy to load a URL. Just put `http://imgur.wosa.link?` in front of the url, like: <a href="http://imgur.wosa.link/?https://imgur.com/gallery/iqfalaR" target="_blank">http://imgur.wosa.link/?https://imgur.com/gallery/iqfalaR</a>
 
-* **Facebook** <a href="http://m.facebook.com" target="_blank">mobile</a> still works on all devices (and webOS doesn't support most of their tracking!), and the <a href="http://appcatalog.webosarchive.com/showMuseumDetails.php?search=prebook&app=1005784" target="_top">PreBook app</a> makes the experience a little nicer
+* **Facebook** <a href="http://m.facebook.com" target="_blank">mobile</a> still works on all devices (and webOS doesn't support most of their tracking!), and the <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=prebook&app=1005784" target="_top">PreBook app</a> makes the experience a little nicer
 
 * **Twitter** blocks the webOS user agent, but <a href="https://preware.pivotce.com/package/net.minego.phnx" target="_blank">Project Macaw</a> delivers a pretty great Twitter experience via a Homebrew App and a [HTTPS proxy](proxysetup.md). If you just want to view a link or thread in the native browser, you can use <a href="https://nitter.net" target="_blank">nitter.net</a>. Just replace `twitter.com` in any link with `nitter.net`, like: <a href="https://nitter.net/webOSArchive" target="_blank">https://nitter.net/webOSArchive</a>
 
-* **Wikipedia** only works with a proxy. For older devices, webOS archive provides a "tiny" version that is periodically updated at <a href="http://wikipedia.webosarchive.com" target="_blank">wikipedia.webosarchive.com</a>
+* **Wikipedia** only works with a proxy. For older devices, webOS archive provides a "tiny" version that is periodically updated at <a href="http://wikipedia.webosarchive.org" target="_blank">wikipedia.webosarchive.org</a>
 
 ### Alternatives
-* **RSS:** many sites can be accessed through their RSS Feed using the <a href="http://appcatalog.webosarchive.com/showMuseum.php?search=feedspider" target="_top">FeedSpider</a> app, and a free service like <a href="http://www.inoreader.com" target="_blank">InoReader</a>
+* **RSS:** many sites can be accessed through their RSS Feed using the <a href="http://appcatalog.webosarchive.org/showMuseum.php?search=feedspider" target="_top">FeedSpider</a> app, and a free service like <a href="http://www.inoreader.com" target="_blank">InoReader</a>
 
 * **Google News:** retro-computer enthusiast <a href="https://www.youtube.com/ActionRetro" target=_"blank">Action Retro</a> has built an excellent text-only Google News web app that works on almost anything. Check out <a href="http://68k.news/" target="_blank">68k.news</a>
 
@@ -40,17 +40,17 @@ All of the Apps listed below can be found on [App Museum II](appstores.md#instal
 ### YouTube
 <img src="../images/metube-icon.png" align="right" style="padding-left: 8px">YouTube doesn't officially support webOS (or most retro platforms) but thanks to the open source community, its still available. An app called **MeTube**, available in App Museum II, works with a pair of back-end services to fetch YouTube videos for you on demand. The services are hosted by webOS Archive, but you can also run them yourself, if you prefer.
 
-* <a href="http://appcatalog.webosarchive.com/showMuseumDetails.php?search=metube&app=1005774" target="_top">Download the App</a>
+* <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=metube&app=1005774" target="_top">Download the App</a>
 * <a href="https://github.com/codepoet80/metube-php-servicewrapper" target="_blank">Self-host the services</a>
 
 ### Podcasts
-webOS devices make great Podcast listening tools -- whether its a TouchPad sitting in Touchstone, maybe connected to a nice Bluetooth speaker, or a tiny little Pre or Veer, slipped in your pocket as you go about your routine. Many Podcasts have switched to HTTPS, which causes problems for older, encryption-challenged devices, but the webOS Archive <a href="http://podcasts.webosarchive.com" target="_top">Podcast Directory</a> service solves this, and many other problems. Combined with a stand-alone Podcast Directory app, and a number of Podcast players available in the Museum, you can download and listen to thousands of popular podcasts right on your device.
+webOS devices make great Podcast listening tools -- whether its a TouchPad sitting in Touchstone, maybe connected to a nice Bluetooth speaker, or a tiny little Pre or Veer, slipped in your pocket as you go about your routine. Many Podcasts have switched to HTTPS, which causes problems for older, encryption-challenged devices, but the webOS Archive <a href="http://podcasts.webosarchive.org" target="_top">Podcast Directory</a> service solves this, and many other problems. Combined with a stand-alone Podcast Directory app, and a number of Podcast players available in the Museum, you can download and listen to thousands of popular podcasts right on your device.
 
 <img src="../images/retropodcasts.png">
 
-* Search the <a href="http://podcasts.webosarchive.com" target="_top">Podcast Directory</a>
-* Download the webOS <a href="http://appcatalog.webosarchive.com/showMuseumDetails.php?search=podcast&app=1005778" target="_top">App</a>
-* Check out some <a href="http://appcatalog.webosarchive.com/showMuseumDetails.php?search=podder&app=2046" target="_top">Podcast</a> Player <a href="http://appcatalog.webosarchive.com/showMuseumDetails.php?search=video&app=10384" target="_top">Apps</a>
+* Search the <a href="http://podcasts.webosarchive.org" target="_top">Podcast Directory</a>
+* Download the webOS <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=podcast&app=1005778" target="_top">App</a>
+* Check out some <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=podder&app=2046" target="_top">Podcast</a> Player <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=video&app=10384" target="_top">Apps</a>
 * <a href="https://github.com/codepoet80/webos-podcastdirectory" target="_blank">Self-host the service</a>
 
 ### The Ultimate Night Stand App
@@ -60,53 +60,53 @@ Philips Hue lights are some of the best smart bulbs out there -- whether you use
 
 **One Night Stand** is a night table clock that switches to a light controller with just a tap. It connects your smart home to webOS with a classy app that turn your Pre, Veer or TouchPad into an elegant controller.
 
-* Download <a href="http://appcatalog.webosarchive.com/showMuseumDetails.php?search=one+night&app=1005771" target="_top">One Night Stand</a>
+* Download <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=one+night&app=1005771" target="_top">One Night Stand</a>
 * Learn more about <a href="https://www.usa.philips.com/c-e/smartsleep/wake-up-light-portfolio.html" target="_blank">Philips Hue</a>
 
 ### Play Some Tunes
 Pandora, and third party Pandora apps still work on all devices as of 2022. 
 
-If you have a TouchPad, the wonderful iTunes remote control app, <a href="http://appcatalog.webosarchive.com/app/Retune" target="_top">Retune</a>, still works to control Apple Music or iTunes playback, and can even send audio to HomePods and AppleTVs. You'll need to temporarily disable your computer's firewall for pairing, but once done, you can turn the firewall back on and use as normal.
+If you have a TouchPad, the wonderful iTunes remote control app, <a href="http://appcatalog.webosarchive.org/app/Retune" target="_top">Retune</a>, still works to control Apple Music or iTunes playback, and can even send audio to HomePods and AppleTVs. You'll need to temporarily disable your computer's firewall for pairing, but once done, you can turn the firewall back on and use as normal.
 
-With some caveats, the <a href="http://appcatalog.webosarchive.com/app/PlexforwebOS" target="_top">Plex app</a> still works with modern Plex servers as well.
+With some caveats, the <a href="http://appcatalog.webosarchive.org/app/PlexforwebOS" target="_top">Plex app</a> still works with modern Plex servers as well.
 
 ### Read a Book
 <img src="../images/kindle.png" align="right" style="padding-left: 8px">The TouchPad makes a great reading device (the TouchPad Go is even better -- if you can find one!) and a number of eReader apps were released. The premier app being the Amazon Kindle Beta. Despite the moniker, its fully functional in the U.S. (YMMV in other regions) with only a slight tweak needed to the login experience: when you login with your Amazon credentials, watch your phone or email for a One-Time Password (OTP) from Amazon that you'll use for your second login attempt. Once that's done, your fully library of books will be available: including color illustrations where the book content includes them!
 
-* Download <a href="http://appcatalog.webosarchive.com/showMuseumDetails.php?search=kindle&app=9216" target="_top">Amazon Kindle Beta</a>
-* If you prefer open book formats, try <a href="http://appcatalog.webosarchive.com/showMuseumDetails.php?search=book&app=5139" target="_top">ProBook HD</a>
+* Download <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=kindle&app=9216" target="_top">Amazon Kindle Beta</a>
+* If you prefer open book formats, try <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=book&app=5139" target="_top">ProBook HD</a>
 
 ### Be an Exhibitionist
 webOS 2.0 and above have a mode called Exhibition, that allows your device to continuously show content while on its charging dock. A photo slide show is an obvious choice -- load up your device with your favorite pictures of family, pets, or scenery, and let the exhibit roll by. You can even updated your picture frame remotely from a modern phone or computer with **Share Space**.
 
-* Download <a href="http://appcatalog.webosarchive.com/showMuseumDetails.php?search=share&app=1005788" target="_top">Share Space</a>
+* Download <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=share&app=1005788" target="_top">Share Space</a>
 
 If you'd rather get some information, **Accuweather** still works on all devices, and on the TouchPad includes a gorgeous Exhibition mode that shows the weather where you are, or in other locations of your choosing.
 
-* Download <a href="http://appcatalog.webosarchive.com/showMuseum.php?search=accuweather" target="_top">Accuweather</a>
+* Download <a href="http://appcatalog.webosarchive.org/showMuseum.php?search=accuweather" target="_top">Accuweather</a>
 
 ### Play Some Games!
-<img src="../images/angrybirds.jpg" align="right" style="padding-left: 8px">webOS had a great library of games, and you don't have to worry about in-app-purchases and spyware. Just some great mobile classics, including offerings from big publishers like Gameloft and EA. No matter which webOS device you have, you'll find some great entertainment in the <a href="http://appcatalog.webosarchive.com/showMuseum.php?category=Games&count=1030" target="_top">games section of the App Museum</a>. Here's a couple suggestions to get you started...
+<img src="../images/angrybirds.jpg" align="right" style="padding-left: 8px">webOS had a great library of games, and you don't have to worry about in-app-purchases and spyware. Just some great mobile classics, including offerings from big publishers like Gameloft and EA. No matter which webOS device you have, you'll find some great entertainment in the <a href="http://appcatalog.webosarchive.org/showMuseum.php?category=Games&count=1030" target="_top">games section of the App Museum</a>. Here's a couple suggestions to get you started...
 
-* <a href="http://appcatalog.webosarchive.com/showMuseum.php?search=angry+birds" target="_top">Angry Birds</a> - The original, and some of the variations, covering every screen size
-* <a href="http://appcatalog.webosarchive.com/showMuseumDetails.php?search=scumm&app=1005763" target="_top">SCUMMVM</a> - Play dozens of PC point-and-click adventures on your TouchPad
-* <a href="http://appcatalog.webosarchive.com/showMuseumDetails.php?search=sims&app=1100" target="_top">The Sims 3</a> - The addictive classic had a great offering on the Pre, and has recently been patched to work on TouchPad and Pre 3 as well.
-* <a href="http://appcatalog.webosarchive.com/showMuseumDetails.php?search=snes&app=8214" target="_top">Snes9X EX</a> - webOS is home to many emulators, start with this near-perfect Super Nintendo emulator for Pre through to the TouchPad
-* <a href="http://appcatalog.webosarchive.com/showMuseum.php?search=assassin%27s+creed" target="_top">Assassin's Creed</a> - A giant adventure for your mobile device
-* <a href="http://appcatalog.webosarchive.com/showMuseumDetails.php?search=oregon&app=1097" target="_top">Oregon Trail</a> - The video game that taught a generation how to play video games has a beautiful version for the TouchPad
-* <a href="http://appcatalog.webosarchive.com/showMuseum.php?search=Miriel" target="_top">Miriel</a> - These games keep my youngest daughter busy for hours
+* <a href="http://appcatalog.webosarchive.org/showMuseum.php?search=angry+birds" target="_top">Angry Birds</a> - The original, and some of the variations, covering every screen size
+* <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=scumm&app=1005763" target="_top">SCUMMVM</a> - Play dozens of PC point-and-click adventures on your TouchPad
+* <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=sims&app=1100" target="_top">The Sims 3</a> - The addictive classic had a great offering on the Pre, and has recently been patched to work on TouchPad and Pre 3 as well.
+* <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=snes&app=8214" target="_top">Snes9X EX</a> - webOS is home to many emulators, start with this near-perfect Super Nintendo emulator for Pre through to the TouchPad
+* <a href="http://appcatalog.webosarchive.org/showMuseum.php?search=assassin%27s+creed" target="_top">Assassin's Creed</a> - A giant adventure for your mobile device
+* <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=oregon&app=1097" target="_top">Oregon Trail</a> - The video game that taught a generation how to play video games has a beautiful version for the TouchPad
+* <a href="http://appcatalog.webosarchive.org/showMuseum.php?search=Miriel" target="_top">Miriel</a> - These games keep my youngest daughter busy for hours
 
 ## Remote Control
 
-The App Museum has working apps (some need some tweaks) for remotely controlling Windows, Mac and Linux machines via <a href="http://appcatalog.webosarchive.com/showMuseum.php?search=splashtop" target="_top">Splashtop</a>, <a href="http://appcatalog.webosarchive.com/app/webOSRemoteDesktopClient" target="_top">Remote Desktop</a> or <a href="http://appcatalog.webosarchive.com/app/mVNC" target="_top">VNC</a>. You can also control <a href="http://appcatalog.webosarchive.com/app/KookarooRokuRemote" target="_top">Roku devices</a>, or an <a href="http://appcatalog.webosarchive.com/app/Retune" target="_top">iTunes library</a> -- including connected speakers like Home Pods.
+The App Museum has working apps (some need some tweaks) for remotely controlling Windows, Mac and Linux machines via <a href="http://appcatalog.webosarchive.org/showMuseum.php?search=splashtop" target="_top">Splashtop</a>, <a href="http://appcatalog.webosarchive.org/app/webOSRemoteDesktopClient" target="_top">Remote Desktop</a> or <a href="http://appcatalog.webosarchive.org/app/mVNC" target="_top">VNC</a>. You can also control <a href="http://appcatalog.webosarchive.org/app/KookarooRokuRemote" target="_top">Roku devices</a>, or an <a href="http://appcatalog.webosarchive.org/app/Retune" target="_top">iTunes library</a> -- including connected speakers like Home Pods.
 
 ## Classic
 <img src="../images/palm-logo.png" align="right" style="padding-left: 8px">The Classic Emulator was originally only available for webOS 1.x but thanks to community efforts, it can be made to work on most webOS devices (some devices have no sound, Pre3 is not compatible), and gives you access to a cool catalog of vintage PalmOS apps and games!
 
 Depending on your OS version, you'll need to install some components:
 
-* *All OS versions*: Install <a href="http://appcatalog.webosarchive.com/app/ClassicEmulator" target="_top">Classic Emulator from App Museum II</a> like any Museum app.
-* *webOS 2.0 and above only*: Install [Classic Container](http://www.webosarchive.com/activation/net.arthurthornton.classic-container_1.0_armv7.ipk) using [webOS Quick Install](appstores.md#run-wosqi-on-your-computer) on your computer.
+* *All OS versions*: Install <a href="http://appcatalog.webosarchive.org/app/ClassicEmulator" target="_top">Classic Emulator from App Museum II</a> like any Museum app.
+* *webOS 2.0 and above only*: Install [Classic Container](http://www.webosarchive.org/activation/net.arthurthornton.classic-container_1.0_armv7.ipk) using [webOS Quick Install](appstores.md#run-wosqi-on-your-computer) on your computer.
 
 Classic expires after a week, to avoid this, always run Classic with your device in *Airplane Mode*, then when the expiry date hits, you can re-arm the timer. Quit the app, then:
 

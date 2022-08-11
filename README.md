@@ -1,8 +1,8 @@
 # webOS Docs
 
-This is the help docs site for [webOSArchive.com](http://www.webosarchive.com)
+This is the help docs site for [webOSArchive.org](http://www.webosarchive.org)
 
-Its loaded into the main URL using URL re-writing in Apache2 where individual docs are handled as a query
+Its loaded into the main URL using URL re-writing in nginx where individual docs are handled as a query
 
 Build the site with mkdocs (`mkdocs build`)
 
