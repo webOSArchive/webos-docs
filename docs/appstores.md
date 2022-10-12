@@ -2,6 +2,10 @@
 
 There's a vibrant community rescuing, archiving, restoring and even building apps for webOS. Since the actual HP App Catalog is gone, you'll need your computer one more time to "side-load" one app that gives you access to the rest of this "after-life" ecosystem.
 
+## Prepare Your Device
+
+If you've activated a device using [these steps](activate.md) you can skip this step, because your device is already ready. If your device was previously activated, you may need to [turn on Developer Mode](sdkpdk.md#activate-developer-mode) to allow homebrew app installation.
+
 ## Prepare Your Computer
 
 This tool works on Mac, Linux and Windows, and requires Java and the devices drivers to be installed. If you've completed the [activation process documented here](activate.md), you can skip this step, because you've already installed these pieces:

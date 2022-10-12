@@ -10,11 +10,15 @@ webOS is a combination of Linux and Javascript technologies, that provide incred
 
 * Tap the "Developer Mode" icon that appears in the search results, and turn it On.
 
+![Developer Mode](images/developermode-phone.png)
+
 #### webOS 2.0
 
 * Use the built-in "Just Type" search feature on the Launcher, and type: `upupdowndownleftrightleftrightbastart`
 
 * Tap the "Developer Mode" icon that appears in the search results, and turn it On.
+
+* When prompted for a password, just hit enter
 
 ![Developer Mode](images/developermode.png)
 
