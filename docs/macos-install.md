@@ -10,16 +10,33 @@ While the 32-bit driver does not work, the installer is still needed to setup th
 
 Download the community-built <a href="https://github.com/incidentist/novacomd/releases/tag/macos64" target="_blank">64-bit Release</a>, and unzip its contents.
 
-Replace the files in `/opt/nova/bin` installed by the 32-bit installer, with the new files in the 64-bit Release.
+Replace the files in **/opt/nova/bin** installed by the 32-bit installer, with the new files in the 64-bit Release.
+
+Restart the driver: `/opt/nova/bin/stop-novacomd && /opt/nova/bin/start-novacomd`
 
 ## Install Homebrew
 
+### Intel Processors
+
 Instructions for installing Brew are out of scope for this document, but can be found on the <a href="https://brew.sh/" target="_blank">official Homebrew website</a>.
+
+### Apple Silicon
+
+Brew must be installed with <a href="https://gist.github.com/progrium/b286cd8c82ce0825b2eb3b0b3a0720a0#homebrew" target="_blank">Rosetta enabled</a>, which is not the default install. You can force it with:
+
+`arch -x86_64 zsh /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
 ## Install Support Libraries
 
 Once brew is installed, you can use it to install the needed USB libraries for your CPU:
+
+### Intel
+
 `brew install libusb libusb-compat`
+
+### Apple Silicon
+
+`arch -x86_64 /usr/local/bin/brew install libusb-compat`
 
 ## Testing It Out
 
