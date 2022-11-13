@@ -18,7 +18,7 @@ Restart the driver: `/opt/nova/bin/stop-novacomd && /opt/nova/bin/start-novacomd
 
 ### Intel Processors
 
-Instructions for installing Brew are out of scope for this document, but can be found on the <a href="https://brew.sh/" target="_blank">official Homebrew website</a>.
+Use the standard instructions for installing Brew, found on the <a href="https://brew.sh/" target="_blank">official Homebrew website</a>.
 
 ### Apple Silicon
 
@@ -30,13 +30,13 @@ Brew must be installed with <a href="https://gist.github.com/progrium/b286cd8c82
 
 Once brew is installed, you can use it to install the needed USB libraries for your CPU:
 
-### Intel
+### Intel Processors
 
 `brew install libusb libusb-compat`
 
 ### Apple Silicon
 
-`arch -x86_64 /usr/local/bin/brew install libusb-compat`
+`arch -x86_64 /usr/local/bin/brew install libusb libusb-compat`
 
 ## Testing It Out
 
