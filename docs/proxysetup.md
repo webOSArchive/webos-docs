@@ -11,7 +11,7 @@ The webOS Archive Proxy is a service offered to legacy webOS device users who ag
 The provider of this Proxy makes no warranty of service level, security or privacy, and provides no indemnification for its users. In fact, the service keeps logs by default, which will be readily turned over to appropriate authorities upon request. Such logs include personal identifiable information, including the username and IP address of each user, as well as each web address they visit.
 
 If you can live with these considerations, please visit this form to agree to the convenant and apply for an account:
-<a href="https://www.surveymonkey.com/r/8LW7M3B" target="_blank">https://www.surveymonkey.com/r/8LW7M3B</a>
+<a href="https://forms.gle/rnwVb2BnZVacJoNU6" target="_blank">https://forms.gle/rnwVb2BnZVacJoNU6</a>
 
 Your credentials will be sent to you at the e-mail address you supplied, and can be used to set-up the Proxy on your webOS device.
 
