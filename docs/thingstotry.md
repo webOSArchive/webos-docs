@@ -31,7 +31,7 @@ More and more websites are moving to newer encryption over HTTPS as the only way
 
 ## Email
 
-webOS has a first-class email client (arguably the best Exchange client for any Linux) that still works with private Exchange servers, Office365 ([with a SSL proxy](proxysetup.md)), Gmail (<a href="https://forums.webosnation.com/palm-pre-2/332581-zero-google-2020-step-step.html" target="_blank">with a little effort</a>), IMAP and POP3 including over SSL on most servers. Exchange and Office365 feature complete synchronization for Mail, Calendar, Contacts and Tasks.
+webOS has a first-class email client (arguably the best Exchange client for any Linux) that still works with private Exchange servers, Office365 ([with a SSL proxy](proxysetup.md)), Gmail (<a href="http://stacks.webosarchive.org/forums/Zero%20to%20Google%20in%202020%20-%20step%20by%20step%20-%20webOS%20Nation%20Forums.html" target="_blank">with a little effort</a>), IMAP and POP3 including over SSL on most servers. Exchange and Office365 feature complete synchronization for Mail, Calendar, Contacts and Tasks.
 
 ## Apps
 

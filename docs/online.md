@@ -27,7 +27,7 @@ Since webOS was released, encryption standards have changed, and some sites and 
 
 If you're on webOS 2.2.4 or higher, a proxy is the simplest and most comprehensive approach to lending webOS a hand, and is covered in detail [here](proxysetup.md).
 
-If you don't want to use a proxy, you can partially improve the situation by installing a SSL update. This is discussed on the <a href="https://forums.webosnation.com/palm-pre-2/332581-zero-google-2020-step-step.html" target="_blank">Forums</a>, but for brevity, downloading and installing [OpenSSL Updater for webOS](http://www.webosarchive.org/activation/org.webosinternals.openssl-updater_0.9.8-6_armv7.ipk) via [webOS Quick Install](appstores.md) is all you need.
+If you don't want to use a proxy, you can partially improve the situation by installing a SSL update. This is discussed on the <a href="http://stacks.webosarchive.org/forums/Zero%20to%20Google%20in%202020%20-%20step%20by%20step%20-%20webOS%20Nation%20Forums.html" target="_blank">Forums</a>, but for brevity, downloading and installing [OpenSSL Updater for webOS](http://www.webosarchive.org/activation/org.webosinternals.openssl-updater_0.9.8-6_armv7.ipk) via [webOS Quick Install](appstores.md) is all you need.
 
 If you're on an older version of webOS, you won't be able to install or use a Proxy, since the API was not present. This significantly limits your access to the web, and even to some Preware files -- since many have been moved to HTTPS and are inaccessible. This can result in errors during install. As a work-around for Preware issues, look at the end of the error message for the URL of the file -- you can then download that on your computer, and use [webOS Quick Install](appstores.md) to "sideload" to your device.
 
@@ -43,5 +43,5 @@ Now that you're online, check out a [few of the things you can do with your webO
 
 This documentation attempts to update and simplify information available from older, archived sources. You may find that material to be useful as reference:
 
-* <a href="https://forums.webosnation.com/palm-pre-2/332581-zero-google-2020-step-step.html" target="_blank">Zero to Google in 2020</a>
+* <a href="http://stacks.webosarchive.org/forums/Zero%20to%20Google%20in%202020%20-%20step%20by%20step%20-%20webOS%20Nation%20Forums.html" target="_blank">Zero to Google in 2020</a>
 * <a href="https://pivotce.com/2014/10/21/guide-coming-back-to-webos-in-2014-part-1/" target="_blank">Coming Back to webOS in 2014</a>

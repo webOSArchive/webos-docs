@@ -4,7 +4,7 @@ Your webOS Device is built to synchronize its time with long-dead servers, and y
 
 ## TouchPad or TouchPad Go
 
-In 2018, the community figured out how to solve the time sync problem permanently on TouchPad; webOS Nation member dkirker <a href="https://forums.webosnation.com/hp-touchpad/331734-network-time-not-keeping-clocks-accurate-2.html" target="_blank">built a script to make it easy</a>. The script has been renamed to make it easier to type on your device, but it is otherwise unchanged.
+In 2018, the community figured out how to solve the time sync problem permanently on TouchPad; webOS Nation member dkirker <a href="http://stacks.webosarchive.org/forums/Network%20Time%20not%20keeping%20clocks%20accurate%20-%20Page%202%20-%20webOS%20Nation%20Forums_files/" target="_blank">built a script to make it easy</a>. The script has been renamed to make it easier to type on your device, but it is otherwise unchanged.
 
 These instructions assume that you've completed the [Shell Access](bash.md) steps, and are comfortable entering a few instructions into the command line.
 

@@ -12,5 +12,4 @@ There's still an <a href="https://appcatalog.webosarchive.org/WebService/reports
  <br>
 <img src="../images/webosnation.jpg" align="right" style="padding-left: 8px">
 
-* **Forums:** <a href="https://forums.webosnation.com" target="_blank">webOS Nation</a> Forums are still up, and you can expect roughly weekly interactions from both long-term experts and newer users. There's even a <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=forums&app=1005770" target="_blank">Forums app</a> you can use to participate from your webOS device.
-
+* **Forums:** In late 2022, the community learned about the sunsetting of the webOS Nation Forums. Much of this important historical content has been archived by the <a href="http://web.archive.org/web/20221227181510/https://forums.webosnation.com/" target="_blank">Wayback Machine</a>.
