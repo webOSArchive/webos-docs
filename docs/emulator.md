@@ -46,4 +46,4 @@ Since its dervied from the SDK emulator, all the limitations of that emulator ap
 
 Additionally, webOS in a modern era is heavily dependent on a <a href="http://www.webosarchive.org/proxy">SSL-bump proxy</a> to get around the limitations of its ancient SSL-stack. Unfortunately, the proxy-setting system calls do not appear to be present in the emulated OS, meaning that **HTTPS is not available in the emulator.**
 
-Finally, while most webOS SDK apps were cross-platform, some advanced apps and services, and many PDK apps were processor-specific. As the emulator provides an x86 environment to the guest OS, anything compiled for the hardware-native ARM platform will not work on the emulator.
+Finally, while most webOS SDK apps were cross-platform, some advanced apps and services, and many PDK apps, were processor-specific. As the emulator provides an x86 environment to the guest OS, anything compiled for the hardware-native ARM platform will not work on the emulator.
