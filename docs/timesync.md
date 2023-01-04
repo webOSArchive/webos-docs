@@ -2,6 +2,12 @@
 
 Your webOS Device is built to synchronize its time with long-dead servers, and you will find that the internal clock begins to drift. Usually this drift isn't enough to cause significant problems, but it can be annoying -- and most of the time, its easy to fix!
 
+### Clock Sync
+
+The simplest solution is the Clock Sync app available in the App Museum. It can be configured to sync time in the background on a set schedule, and runs on all devices. In 2022, it was updated to resolve issues where the host could not be contacted over HTTP.
+
+* <a href="https://appcatalog.webosarchive.org/app/ClockSync" target="_top">Download Clock Sync</a>
+
 ## TouchPad or TouchPad Go
 
 In 2018, the community figured out how to solve the time sync problem permanently on TouchPad; webOS Nation member dkirker <a href="http://stacks.webosarchive.org/forums/Network%20Time%20not%20keeping%20clocks%20accurate%20-%20Page%202%20-%20webOS%20Nation%20Forums_files/" target="_blank">built a script to make it easy</a>. The script has been renamed to make it easier to type on your device, but it is otherwise unchanged.
@@ -30,16 +36,6 @@ These instructions assume that you've completed the [Shell Access](bash.md) step
 
 ## Phones
 
-The script above has not been shown to work well on phones, and in some cases, seems to make the problem worse. Generally phones do OK keeping time as long as they have battery power, but may need to be set manually after being off or with a dead battery. Two potential work-arounds may help:
+Due to the 2G and 3G shut down, happening at different times around the world, phones that used to sync time with a cellular network carrier, have started drifting.
 
-### Carrier Time
-
-Phones will, by default, get time from a cellular network carrier -- at least until the 3G shut down. If you have a Verizon device, your device doesn't use a SIM card, you're always connected, and as long as your time zone is set correctly, the clock should update.
-
-For other devices, the only way to get time from a carrier is to install a SIM card.
-
-### Clock Sync
-
-Some users have had success using the Clock Sync app available in the App Museum. It can be configured to sync time in the background on a set schedule.
-
-* <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=clock+sync&app=1819" target="_top">Download Clock Sync</a>
+The fix script for tablets has not been shown to work well on phones, and in mosts cases, seems to make the problem worse. The Clock Sync app, mentioned above, works well in all cases.

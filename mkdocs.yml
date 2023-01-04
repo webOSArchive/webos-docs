@@ -6,13 +6,16 @@ nav:
       - Installing Apps on your webOS Device: appstores.md
       - Getting Online: online.md
       - Using a SSL Proxy: proxysetup.md
+      - Email and Calendars: email.md
     - Things To Try: thingstotry.md
     - Join the Community: community.md
     - Taking Control:
       - Time Synchronization: timesync.md
+      - Patches and Clean-up: patches.md
       - Update Hosts: hosts.md
       - Shell Access: bash.md
       - Build Your Own Apps: sdkpdk.md
+    - Emulation: emulator.md
     - Disater Recovery:
       - Call the Doctor: doctor.md
       - Touchpad Rescue: tprestore.md
