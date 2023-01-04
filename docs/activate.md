@@ -85,6 +85,6 @@ Now that you've activated your device, you might want to [install some apps](app
 
 This documentation attempts to update and simplify information available from older, archived sources. You may find that material to be useful as reference:
 
-* <a href="https://www.webosnation.com/bypass-activation-webos-1-x" target="_blank">WebOS Nation Bypass Activation webOS 1.0</a>
-* <a href="https://www.webosnation.com/bypass-activation-webos-2-x" target="_blank">WebOS Nation Bypass Activation webOS 2.0</a>
+* <a href="http://stacks.webosarchive.org/forums/Bypass%20Activation%20%5BwebOS%201.x%5D%20webOS%20Nation.html" target="_blank">WebOS Nation Bypass Activation webOS 1.0</a>
+* <a href="http://stacks.webosarchive.org/forums/Bypass%20Activation%20%5BwebOS%202.x%5D%20webOS%20Nation.html" target="_blank">WebOS Nation Bypass Activation webOS 2.0</a>
 * <a href="https://h30434.www3.hp.com/t5/Tablets-and-Mobile-Devices-Archive-Read-Only/How-to-use-the-webOS-Doctor-on-the-TouchPad/td-p/2186473" target="_blank">Archived HP Forum Post</a>
