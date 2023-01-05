@@ -36,6 +36,6 @@ As with mail, Private and hosted Exchange servers that provide EAS (Exchange Act
 For providers like Google or iCloud, you will need to publish your calendar and contacts to a webDav server, then use the C+Dav Synergy app to sync to your device. For Office365, you can use <a href="https://davmail.sourceforge.net/" target="_blank">DavMail</a> to do the same thing with less steps.
 
 The C+Dav app supports a wide variety of WebDav providers, including ownCloud and Radicale, and was updated in 2023.<br>
-To learn more, and download the current version, [visit the webos-ports Wiki](https://webos-ports.org/wiki/C+_Dav_Synergy_Connector#Contacts_Patch).
+To learn more, and download the current version, <a href="https://webos-ports.org/wiki/C+_Dav_Synergy_Connector#Contacts_Patch" target="_blank">visit the webOS Ports wiki</a>.
 
 If you need a WebDav host to publish calendars to, or to learn more about WebDav publishing, check back later in 2023 -- webOS Archive plans to provide this service to webOS users.
