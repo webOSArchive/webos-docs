@@ -6,6 +6,10 @@ webOS has a first-class email client (arguably the best Exchange client for any 
 
 ## Email
 
+#### IMAP and POP mail
+
+POP and IMAP servers still work, provided the server's encryption method is compatible with webOS. Run the [OpenSSL Updater for webOS](http://www.webosarchive.org/activation/org.webosinternals.openssl-updater_0.9.8-6_armv7.ipk) to improve your odds of connecting.
+
 #### Exchange Web Access
 
 Private and hosted Exchange servers that provide EAS (Exchange Active Sync) can still be used, provided you have a [SSL-bump proxy](proxysetup.md) enabled.
