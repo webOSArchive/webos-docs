@@ -21,7 +21,8 @@ else
 //Handle reverse proxy redirects
 $uri = $_SERVER['REQUEST_URI'];
 $usePath = "home/";
-if (strpos($uri, '?') !== false) {
+if (!isset($_GET["redir"])) {
+  if (strpos($uri, '?') !== false) {
     $uriParts = explode("?", $uri);
     $uri = end($uriParts);
     $uri = str_replace("/docs/", "", $uri);
@@ -30,6 +31,7 @@ if (strpos($uri, '?') !== false) {
     }
     $uri = str_replace("//", "/", $uri);
     $usePath = $protocol . $_SERVER['HTTP_HOST'] . "/" . urldecode($uri);
+  }
 }
 ?>
 <?php
