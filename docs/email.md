@@ -22,6 +22,10 @@ Microsoft has moved to "modern authentication," including an OAuth sign-in page 
 
 Some users are still able to use Gmail, but changes to Google's OAuth flow are creating problems. The most recent guidance for <a href="http://stacks.webosarchive.org/forums/Zero%20to%20Google%20in%202020%20-%20step%20by%20step%20-%20webOS%20Nation%20Forums.html" target="_blank">connecting webOS to Gmail is available in the archived Forums</a>.
 
+#### Zoho
+
+<a href="https://mail.zoho.com" target="_blank"><img src="../images/zoho.png" align="right" width="300" style="width:128px; padding-left: 8px"></a><a href="https://mail.zoho.com" target="_blank">Zoho</a> provides a cost-effective and full-featured alternative to Office365 and Google, with support for custom domains and Exchange ActiveSync. It works perfectly with webOS, with no hacks, work-arounds or modifications. If you have a choice in mail providers, webOS Archive highly recommends checking it out.
+
 #### iCloud
 
 You may be able to get IMAP access to your iCloud inbox if you run the [OpenSSL Updater for webOS](http://www.webosarchive.org/activation/org.webosinternals.openssl-updater_0.9.8-6_armv7.ipk) first.
@@ -33,6 +37,10 @@ The Calendar app on webOS is still one of the best out there -- particularly wit
 #### Exchange Web Access
 
 As with mail, Private and hosted Exchange servers that provide EAS (Exchange Active Sync) can still be used, provided you have a [SSL-bump proxy](proxysetup.md) enabled. Calendars and Contacts will sync seamlessly in a bi-directional fashion.
+
+#### Zoho
+
+<a href="https://calendar.zoho.com" target="_blank">Zoho</a> syncs via Exchange ActiveSync, and works without compromise on webOS.
 
 #### All Other Service Providers
 
