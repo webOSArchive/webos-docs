@@ -8,8 +8,10 @@ There's still an <a href="https://appcatalog.webosarchive.org/WebService/reports
 <img src="../images/twitter.png" align="right" style="padding-left: 8px">
  
 * **Twitter + RSS:** <a href="https://www.twitter.com/webOSArchive" target="_blank">webOS Archive is on Twitter</a>, and you can follow there or on webOS. Use the <a href="https://preware.pivotce.com/package/net.minego.phnx" target="_blank">Project Macaw</a> app to sign-in to Twitter, or <a href="https://appcatalog.webosarchive.org/app/feedspider" target="_blank">FeedSpider</a> to follow <a href="http://www.webosarchive.org/news.php" target="_top">webOS news</a> -- and any other RSS source on your device.
-&nbsp;<br>
- <br>
-<img src="../images/webosnation.jpg" align="right" style="padding-left: 8px">
+<br>&nbsp;<br>
+ 
+* **Fediverse:** <a href="https://palm.weboslives.eu/users/webosarchive" target="_blank">webOS Archive is on Mastodon</a>, thanks to a community-hosted server. You can also follow <a href="https://palm.weboslives.eu/users/webosarchive.rss" target="_blank">via RSS</a>.
+<br>&nbsp;<br>
 
-* **Forums:** In late 2022, the community learned about the sunsetting of the webOS Nation Forums. Much of this important historical content has been archived by the <a href="http://web.archive.org/web/20221227181510/https://forums.webosnation.com/" target="_blank">Wayback Machine</a>.
+* **Forums:** In late 2022, the community learned about the sunsetting of the webOS Nation Forums. Much of this important historical content has been archived by the <a href="http://web.archive.org/web/20221227181510/https://forums.webosnation.com/" target="_blank">Wayback Machine</a>. Discussions are ongoing on Discord to determine the best option for a new home.
+<img src="../images/webosnation.jpg" align="right" style="padding-left: 8px">
