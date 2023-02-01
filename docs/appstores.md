@@ -54,7 +54,7 @@ The Preware app is one of the original Homebrew App Stores for webOS, and contai
 ---
 > **_NOTE:_** Many Preware packages are now served from HTTPS hosts, which can cause problems for older devices. If you're running webOS 2.2.4 or higher, you can solve using a proxy. If you're on earlier versions of webOS, community member Nomad84 provides an alternate feed that is hosted via HTTP:
 
-> + <a href="http://stacks.webosarchive.org/forums/New%20Precentral%20feed%20that%20just%20works%20-%20webOS%20Nation%20Forums.html" target="_blank">HTTP-only Preware Feed</a>
+> + <a href="https://github.com/h8pewou/legacy-webos-feeds/blob/main/README.md" target="_blank">HTTP-only Preware Feeds</a>
 
 ---
 
@@ -65,7 +65,7 @@ App Museum II requires Enyo, which was built-in to webOS 2.2.4 and later by defa
 ---
 > **_NOTE:_** webOS 1.x users can use the Museum via the built-in web browser at [http://appcatalog.webosarchive.org](http://appcatalog.webosarchive.org). Alternatively, community member Nomad84 provides a Preware feed that has the Museum apps available in it:
 
-> * <a href="http://stacks.webosarchive.org/forums/Refurbishing%20the%20App%20Museum%20-%20Page%204%20-%20webOS%20Nation%20Forums.html" target="_blank">App Museum Preware feed</a>
+> * <a href="https://github.com/h8pewou/legacy-webos-feeds/blob/main/README.md#wosa-feed" target="_blank">App Museum Preware feed</a>
 
 ---
 
