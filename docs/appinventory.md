@@ -41,7 +41,7 @@ Download this Java jar file: <a href="https://www.webosarchive.org/activation/we
 
 Copy, move or save this file into the same folder you found during step 4.
 
-Note: If you've previously installed the SDK, you don't need this step.
+*Note: If you've previously installed the full SDK, you don't need this step.*
 
 ## Step 6: Get an App Inventory
 
@@ -51,4 +51,10 @@ From the command line on your computer opened in step 4, using the Java file dow
 
 **Mac or Ubuntu**: `java -jar ./webos-tools.jar palm-log -l`
 
-If it works, you'll get a list of all the apps installed on your device, including AppId, Version and Title. Copy and paste this list into a message and send it in for review!
+If it works, you'll get a list of all the apps installed on your device, including AppId, Version and Title. Copy and paste this list into a text file or message!
+
+## Step 7: Send your Inventory
+
+Contact the [Community](community.md) to share your Inventory. 
+
+If you have anything unique, proceed to [App Backup](appbackup.md) to learng how to extract your unique apps for archival!

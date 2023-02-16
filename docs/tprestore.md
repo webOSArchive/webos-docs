@@ -45,13 +45,13 @@ TP Debrick v005 is an operating system that will run from a USB drive on a compu
 + Read the <a href="https://forum.xda-developers.com/t/hp-touchpad-debrick-linux-live-cd.4189245/" target="_blank">XDA Touchpad Forum Thread</a>.
 
 + Tool Downloads (.iso files)
-+ + <a href="https://drive.google.com/file/d/1XUJNWqvkfH6WwMi0cTDn99JB1pdf3q-y/view?usp=sharing" target="_blank">Download from Google Drive</a> 
-+ + <a href="http://www.mediafire.com/file/0xu1u2s3afjas9a/HP_TOUCHPAD_DEBRICK_LIVE_CD.iso/file" target="_blank">Download from MediaFire</a>
+    + <a href="https://drive.google.com/file/d/1XUJNWqvkfH6WwMi0cTDn99JB1pdf3q-y/view?usp=sharing" target="_blank">Download from Google Drive</a> 
+    + <a href="http://www.mediafire.com/file/0xu1u2s3afjas9a/HP_TOUCHPAD_DEBRICK_LIVE_CD.iso/file" target="_blank">Download from MediaFire</a>
 
 + Watch the <a href="https://www.youtube.com/watch?v=WKrXu99XvA0&feature=youtu.be" target="_blank">Youtube Video Description</a>.
 
 + Tool to make the TP Debrick work. Download the right one for your OS.
-+ + <a href="https://unetbootin.github.io/">UNetbootin</a>
+    + <a href="https://unetbootin.github.io/">UNetbootin</a>
 
 #### TP Debrick v004
 
@@ -82,3 +82,7 @@ TP Debrick v005 is an operating system that will run from a USB drive on a compu
 * The Touchpad may have automatically booted after the procedure. If a “moboot” menu appears, this means that Android was probably installed on the tablet. Use the arrow keys to move and the home button to select and option. If you want to boot into WebOS, look for the option that says “boot webOS.” If you want to boot into Android, look for an option that says “boot CyanogenMod” or maybe “boot Evervolv.” If you do not see a WebOS option, you will probably have to use WebOS Doctor and the TP Toolbox to put WebOS on there.
 * If your Touchpad did not boot, connect it back to the charger. The creator of the TP Debrick v005 says to use the original charger (5.3V or 2A) or an equivalent, but you could also use the low powered chargers as well. Continue charging it for at least one week. If it has not booted by then, it probably has a very serious problem and, as far as we know, cannot be revived.
 * After you have finished the procedure, shutdown the computer. If you made any changes to the BIOS, reboot it into the boot menu and then select the BIOS setup. Put the settings back like how they were before. After you are done changing the settings, save them and shutdown the computer.
+
+### Inventory Your Apps:
+
+The best way to grow the Museum catalog is to backup apps from devices. Follow the [instructions to inventory your apps](appinventory.md) to help community!

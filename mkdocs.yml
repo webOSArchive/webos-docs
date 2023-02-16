@@ -19,6 +19,9 @@ nav:
     - Disater Recovery:
       - Call the Doctor: doctor.md
       - Touchpad Rescue: tprestore.md
+    - Archival:
+      - App Inventory: appinventory.md
+      - App Backup: appbackup.md
 theme:
   name: readthedocs
   favicon: images/icon.ico
