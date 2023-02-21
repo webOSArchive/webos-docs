@@ -2,7 +2,7 @@
 
 If you have a device with apps that you might be interested in contributing to the Museum, follow these steps to pull an inventory off the device, so we can check for uniqueness.
 
-In these instructions, the "Device" is your webOS device (Pre, Touchpad, etc...) and a "Computer" means a Mac or PC running Windows, OSX/macOS or Ubuntu.
+In these instructions, the "device" is your webOS device (Pre, Touchpad, etc...) and a "computer" means a Mac or PC running Windows, OSX/macOS or Ubuntu.
 
 ## Step 1: Connect to your Device
 

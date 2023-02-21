@@ -1,10 +1,10 @@
 # Backing Up an Installed App
 
-Depending on the type of app, and how it was installed, its usually possible to backup an app installed on a device, so it can be recompiled and added to the archive. Most FTP sites and other stores have already been added to the Museum, so the best way to grow the archive is from apps found on devices. You can follow [these steps to inventory your device](appinventory.md).
+Depending on the type of app, and how it was installed, its usually possible to backup an app from the device, so it can be recompiled and added to the archive. Most FTP sites and other repositories have already been added to the Museum, so the best way to grow the archive is from apps found on devices. You can follow [these steps to inventory your device](appinventory.md).
 
 If you have a Touchpad that won't start, try the [rescue instructions](tprestore.md).
 
-In these instructions, the "Device" is your webOS device (Pre, Touchpad, etc...) and a "Computer" means a Mac or PC running Windows, OSX/macOS or Ubuntu.
+In these instructions, the "device" is your webOS device (Pre, Touchpad, etc...) and a "computer" means a Mac or PC running Windows, OSX/macOS or Ubuntu.
 
 ## Step 1: Inventory Your Device
 
