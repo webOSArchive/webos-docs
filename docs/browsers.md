@@ -24,7 +24,7 @@ Due to the webosnation forum being now archived on archive.org, finding some inf
 doesn't know exactly what to look, and this is to help you.
 
 You will need, as prerequisite, to have installed on your device one package from the alpha feeds : dbus.
-While you can enable the alpha and beta feeds on preware, this wants to be a more quicker and simpler way.. so
+While you can enable the alpha and beta feeds on Preware, this wants to be a more quicker and simpler way.. so
 
 <a href="http://ipkg.preware.net/alpha/apps/armv7/" target="_blank">http://ipkg.preware.net/alpha/apps/armv7/</a>  is the alpha feed for webos 2.x and 3.0.x
 
