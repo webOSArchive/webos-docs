@@ -4319,7 +4319,8 @@ button {
     cursor: pointer;
     line-height: normal;
     -webkit-appearance: button;
-    *overflow: visible
+    *overflow: visible;
+    display: none;
 }
 
 button::-moz-focus-inner,
