@@ -84,7 +84,7 @@ You may want to consider using a RSS Service, and an app like <a href="http://ww
 
 If you prefer not to, or are unable to, use a public service, you can also run a proxy right on your webOS Device:
 
-* <a href="https://forums.webosnation.com/webos-apps-games/332506-squid-ssl-bump.html" target="_blank">Nizovn's Squid SSL Bump App</a>
+* <a href="https://gitlab.com/nizovn/com.nizovn.squid" target="_blank">Nizovn's Squid SSL Bump App</a> which you can get by adding his <a href="https://gitlab.com/nizovn/preware_feed/-/tree/master/" target="_blank">Preware feed</a>.
 
 Another option is to host the Squid Service yourself. If you have a Raspberry Pi (also works on Ubuntu), this can be done really easily:
 
@@ -93,3 +93,5 @@ Another option is to host the Squid Service yourself. If you have a Raspberry Pi
 If Squid is too complex for you, check out the WebOne proxy, which runs on Windows, Mac and Linux:
 
 * <a href="https://github.com/atauenis/webone" target="_blank">WebOne on GitHub</a>
+
+And finally, you can proxy only web rendering, using WRP. Read more about this approach in the [Browsing the Web](browsers.md#wrp) section.

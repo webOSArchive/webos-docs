@@ -10,7 +10,15 @@ The next problem is harder -- the browser engine that was built-in back in 2011 
 
 As recently as 2020, however, community member <a href="https://gitlab.com/nizovn" target="_blank">nizovn</a> compiled some Linux browsers for the Pre3 and Touchpad, read on for details on how to install those...
 
-## Community Contributed Browsers
+## WRP
+
+<a href="https://github.com/tenox7/wrp" target="_blank">Web Rendering Proxy</a> is a general-purpose solution that works for many retro devices. It uses Chrome, running on a modern PC, to render web pages as images, which almost any device can consume. It solves a lot of problems, including out-of-date SSL or JavaScript and HTML parsing engines. Since the rendered images are static, it can't be used for media or interactive content, but its a simple way to enable a lot of newer content.
+
+You don't need anything extra on your webOS device to use WRP -- but you can improve the experience with the WRP Browser app from webOS Archive (currently only available to <a href="http://www.webosarchive.org/support" target="_top">supporters</a>!)
+
+However, you will need to run WRP, and optionally a template, on a PC or Mac with the Chrome Browser installed. 
+
+## Homebrew Browsers
 
 ### Using the Feed
 
@@ -61,4 +69,3 @@ Install the browser of your choice:
 
 * Best for TouchPad: com.nizovn.qupzilla
 * Best to Pre3: com.nizovn.qtwebbrowserpalm
-
