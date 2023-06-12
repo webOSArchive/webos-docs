@@ -70,7 +70,7 @@ With some caveats, the <a href="http://appcatalog.webosarchive.org/app/Plexforwe
 <img src="../images/kindle.png" align="right" style="padding-left: 8px">The TouchPad makes a great reading device (the TouchPad Go is even better -- if you can find one!) and a number of eReader apps were released. The premier app being the Amazon Kindle Beta. Despite the moniker, its fully functional in the U.S. (YMMV in other regions) with only a slight tweak needed to the login experience: when you login with your Amazon credentials, watch your phone or email for a One-Time Password (OTP) from Amazon that you'll use for your second login attempt. Once that's done, your fully library of books will be available: including color illustrations where the book content includes them!
 
 * Download <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=kindle&app=9216" target="_top">Amazon Kindle Beta</a>
-* If you prefer open book formats, try <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=book&app=5139" target="_top">ProBook HD</a>
+* If you prefer open book formats, try <a href="https://appcatalog.webosarchive.org/app/pReader" target="_top">pReader</a>
 
 ### Be an Exhibitionist
 webOS 2.0 and above have a mode called Exhibition, that allows your device to continuously show content while on its charging dock. A photo slide show is an obvious choice -- load up your device with your favorite pictures of family, pets, or scenery, and let the exhibit roll by. You can even updated your picture frame remotely from a modern phone or computer with **Share Space**.
