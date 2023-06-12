@@ -13,5 +13,8 @@ There's still an <a href="https://appcatalog.webosarchive.org/WebService/reports
 * **Fediverse:** <a href="https://palm.weboslives.eu/users/webosarchive" target="_blank">webOS Archive is on Mastodon</a>, thanks to a community-hosted server. You can also follow <a href="https://palm.weboslives.eu/users/webosarchive.rss" target="_blank">via RSS</a>.
 <br>&nbsp;<br>
 
-* **Forums:** In late 2022, the community learned about the sunsetting of the webOS Nation Forums. Much of this important historical content has been archived by the <a href="http://web.archive.org/web/20221227181510/https://forums.webosnation.com/" target="_blank">Wayback Machine</a>. Discussions are ongoing on Discord to determine the best option for a new home.
-<img src="../images/webosnation.jpg" align="right" style="padding-left: 8px">
+* **Forums** 
+
+    - **Legacy:** In late 2022, the community learned about the sunsetting of the webOS Nation Forums. Much of this important historical content has been archived by the <a href="http://web.archive.org/web/20221227181510/https://forums.webosnation.com/" target="_blank">Wayback Machine</a>. A handy shortcut can be found at <a href="http://forums.webosarchive.org" target="_blank">http://forums.webosarchive.org</a><br/>&nbsp;<br/>
+
+    - **Re-birth:** In 2023, the community started creating a new Forum, which is evolving via a steering group on Discord. <a href="https://webos.flarum.cloud/" target="_blank">Visit the new Forums on Flarum.</a>
