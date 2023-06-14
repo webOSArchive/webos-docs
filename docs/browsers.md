@@ -16,7 +16,9 @@ As recently as 2020, however, community member <a href="https://gitlab.com/nizov
 
 You don't need anything extra on your webOS device to use WRP -- but you can improve the experience with the WRP Browser app from webOS Archive (currently only available to <a href="http://www.webosarchive.org/support" target="_top">supporters</a>!)
 
-However, you will need to run WRP, and optionally a template, on a PC or Mac with the Chrome Browser installed. 
+However, you will need to run WRP on a PC or Mac with the Chrome Browser installed.
+
+You can also <a href="http://www.webosarchive.org/wrp-browser/wrp.html" target="_blank">add this wrp.html template</a> (Right Click and Save As) in the same folder as the WRP executable to make the UI look more like webOS!
 
 ## Homebrew Browsers
 
