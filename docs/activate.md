@@ -13,9 +13,9 @@ The Palm/HP activation services have been down a long time, but that doesn't mea
 
 This process works on Mac, Linux and Windows, but requires Java to be installed:
 
-* Install Java (JDK) for Windows: <a href="https://www.oracle.com/java/technologies/downloads/" target="_blank">https://www.oracle.com/java/technologies/downloads/</a>
+* Install Java 8 for Windows: <a href="https://www.java.com/download/ie_manual.jsp" target="_blank">https://www.java.com/download/ie_manual.jsp</a>
 * Install Java for Mac: <a href="https://support.apple.com/en-us/HT204036" target="_blank">https://support.apple.com/en-us/HT204036</a>
-* Install Java for Linux: <a href="https://www.fosstechnix.com/install-oracle-java-8-on-ubuntu-20-04/" target="_blank">https://www.fosstechnix.com/install-oracle-java-8-on-ubuntu-20-04/</a>
+* Install Java 8 for Linux: <a href="https://www.fosstechnix.com/install-oracle-java-8-on-ubuntu-20-04/" target="_blank">https://www.fosstechnix.com/install-oracle-java-8-on-ubuntu-20-04/</a>
 
 Next you will need the Novacomm driver for your computer:
 
