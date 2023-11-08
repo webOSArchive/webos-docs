@@ -45,7 +45,7 @@ There are other versions online, but 4.6.0 seems to be the most compatible with 
 
 The Preware app is one of the original Homebrew App Stores for webOS, and contains many useful apps, hacks, tweaks from the glory days of webOS. Although its no longer maintained, and some files no longer work, it still provides useful infrastructure for installing apps from other sources, so you don't need to plug your Device into your computer.
 
-* [Download Preware 1.9.15 from webOS Archive](http://www.webosarchive.org/activation/org.webosinternals.preware_1.9.15_all.ipk) to your computer.
+* [Download Preware 1.9.16 from webOS Archive](http://www.webosarchive.org/activation/org.webosinternals.preware_1.9.16_arm.ipk) to your computer.
 * Drag the Preware IPK you just downloaded onto the WOSQI window (or hit the + button and browse for it)
 * Press the Install button to install Preware on your device
 
