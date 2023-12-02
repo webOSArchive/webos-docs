@@ -16,9 +16,9 @@ More and more websites are moving to newer encryption over HTTPS as the only way
 
 * **Facebook** <a href="http://m.facebook.com" target="_blank">mobile</a> still works on all devices (and webOS doesn't support most of their tracking!), and the <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=prebook&app=1005784" target="_top">PreBook app</a> makes the experience a little nicer
 
-* **Twitter** blocks the webOS user agent, but <a href="https://preware.pivotce.com/package/net.minego.phnx" target="_blank">Project Macaw</a> delivers a pretty great Twitter experience via a Homebrew App and a [HTTPS proxy](proxysetup.md). If you just want to view a link or thread in the native browser, you can use <a href="https://nitter.net" target="_blank">nitter.net</a>. Just replace `twitter.com` in any link with `nitter.net`, like: <a href="https://nitter.net/webOSArchive" target="_blank">https://nitter.net/webOSArchive</a>
+* **Twitter** blocks the webOS user agent. Until recently <a href="https://preware.pivotce.com/package/net.minego.phnx" target="_blank">Project Macaw</a> delivered a pretty great Twitter experience via a Homebrew App and a [HTTPS proxy](proxysetup.md), but "X" now wants $100/month for API access -- if you have your own API key, the app is still functional, and can be modified for your own use.
 
-* **Wikipedia** only works with a proxy. For older devices, webOS archive provides a "tiny" version that is periodically updated at <a href="http://wikipedia.webosarchive.org" target="_blank">wikipedia.webosarchive.org</a>
+* **Wikipedia** works great with a proxy. For older devices, webOS archive provides a "tiny" version that is periodically updated at <a href="http://wikipedia.webosarchive.org" target="_blank">wikipedia.webosarchive.org</a>
 
 ### Alternatives
 * **RSS:** many sites can be accessed through their RSS Feed using the <a href="http://appcatalog.webosarchive.org/showMuseum.php?search=feedspider" target="_top">FeedSpider</a> app, and a free service like <a href="http://www.inoreader.com" target="_blank">InoReader</a>
@@ -67,10 +67,11 @@ If you have a TouchPad, the wonderful iTunes remote control app, <a href="http:/
 With some caveats, the <a href="http://appcatalog.webosarchive.org/app/PlexforwebOS" target="_top">Plex app</a> still works with modern Plex servers as well.
 
 ### Read a Book
-<img src="../images/kindle.png" align="right" style="padding-left: 8px">The TouchPad makes a great reading device (the TouchPad Go is even better -- if you can find one!) and a number of eReader apps were released. The premier app being the Amazon Kindle Beta. Despite the moniker, its fully functional in the U.S. (YMMV in other regions) with only a slight tweak needed to the login experience: when you login with your Amazon credentials, watch your phone or email for a One-Time Password (OTP) from Amazon that you'll use for your second login attempt. Once that's done, your fully library of books will be available: including color illustrations where the book content includes them!
+<img src="../images/kindle.png" align="right" style="padding-left: 8px">The TouchPad makes a great reading device (the TouchPad Go is even better -- if you can find one!) and a number of eReader apps were released. The premier app being the Amazon Kindle Beta. Despite the moniker, its fully functional in the U.S. (YMMV in other regions) with only a slight tweak needed to the login experience: when you login with your Amazon credentials, watch your phone or email for a One-Time Password (OTP) from Amazon that you'll use for your second login attempt (sometimes this takes *multiple* attempts!) Once that's done, your fully library of books will be available: including color illustrations where the book content includes them!
 
 * Download <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=kindle&app=9216" target="_top">Amazon Kindle Beta</a>
-* If you prefer open book formats, try <a href="https://appcatalog.webosarchive.org/app/pReader" target="_top">pReader</a>
+* If you prefer open book formats, try <a href="https://appcatalog.webosarchive.org/app/pReader" target="_top">pReader</a>. 
+    * Note: You may want to <a href="https://github.com/codepoet80/punctuationdumben-sigil-plugin">simplify your ePubs</a>, as webOS can't render modern HTML entities.
 
 ### Be an Exhibitionist
 webOS 2.0 and above have a mode called Exhibition, that allows your device to continuously show content while on its charging dock. A photo slide show is an obvious choice -- load up your device with your favorite pictures of family, pets, or scenery, and let the exhibit roll by. You can even updated your picture frame remotely from a modern phone or computer with **Share Space**.
