@@ -32,4 +32,6 @@ On some OSes, you may be able to start the Doctor just by double-clicking the .j
 
 HP's original <a href="https://h30434.www3.hp.com/t5/Tablets-and-Mobile-Devices-Archive-Read-Only/How-to-use-the-webOS-Doctor-on-the-TouchPad/td-p/2186473" target="_blank">guide to Doctoring a TouchPad is still online here</a>.
 
+If you have difficulties with disconnection during the Doctoring process, check out the <a href="https://www.webos-internals.org/wiki/How_To_Recover#Doctor_disconnects_at_8.25" target="_blank">webos-internals wiki on recovery.</a>
+
 The process is similar for phones, but with differing procedures to enter recovery mode depending on your model. Refer to the [activation](activate.md) page for steps to enter recovery mode.
