@@ -18,6 +18,7 @@ nav:
       - Build Your Own Apps: sdkpdk.md
     - Emulation: emulator.md
     - Disater Recovery:
+      - Locked Out: pinbypass.md
       - Call the Doctor: doctor.md
       - Touchpad Rescue: tprestore.md
     - Archival:
