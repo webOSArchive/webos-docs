@@ -1,6 +1,6 @@
 # PIN Bypass
 
-If you stumble upon a Touchpad with a screen lock, but don't know the PIN, this process describes how to unlock the device. Do not use this procedure maliciously (but also: do not store anything sensitive on unsupported devices, that haven't been patched for more than a decade!!)
+If you stumble upon a Touchpad with a screen lock, but don't know the PIN, this process describes how to unlock the device. Do not use this procedure maliciously (but also: do not store anything sensitive on unsupported devices that haven't been patched for more than a decade!!)
 
 ## Enable Developer Mode
 
