@@ -20,7 +20,7 @@ Microsoft has moved to "modern authentication," including an OAuth sign-in page 
 
 #### Gmail
 
-Some users are still able to use Gmail, but changes to Google's OAuth flow are creating problems. The most recent guidance for <a href="http://stacks.webosarchive.org/forums/Zero%20to%20Google%20in%202020%20-%20step%20by%20step%20-%20webOS%20Nation%20Forums.html" target="_blank">connecting webOS to Gmail is available in the archived Forums</a>.
+Some users are still able to use Gmail, but changes to Google's OAuth flow are creating problems. The most recent guidance for <a href="https://forums.weboslives.eu/d/34-getting-gmail-working-in-2023/6" target="_blank">connecting webOS to Gmail is available in the new webOS Lives Forums</a>.
 
 #### Zoho
 
