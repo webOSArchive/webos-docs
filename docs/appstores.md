@@ -77,7 +77,7 @@ Note that App Museum II requires Preware, so install that first!
 
 You can use WOSI to Install webOS App Museum II, just like you did with Preware.
 
-* <a href="http://appcatalog.webosarchive.org/latest.php" target="_top">Download Latest webOS App Museum</a> to your computer
+* <a href="http://appcatalog.webosarchive.org/?latest" target="_blank">Download Latest webOS App Museum</a> to your computer
 * Drag the Museum IPK you just downloaded onto the WOSQI window (or hit the + button and browse for it)
 * Press the Install button to install Preware on your device
 
