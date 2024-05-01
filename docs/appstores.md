@@ -19,7 +19,7 @@ Next you will need the Novacomm driver for your computer:
 * Windows 32-bit (Tested on Windows 7): [Installer MSI](http://www.webosarchive.org/activation/drivers/novacom-win-32/)
 * Windows 64-bit (Tested on Windows 10): [Installer MSI](http://www.webosarchive.org/activation/drivers/novacom-win-64/)
 * macOS 32-bit (Tested up to Mojave): [Installer PKG](http://www.webosarchive.org/activation/drivers/novacom-mac/)
-* macOS 64-bit (For Catalina and Later): <a href="https://github.com/incidentist/novacomd/releases/tag/macos64" target="_blank">GitHub Release</a>
+* macOS 64-bit (For Catalina and up, including Apple Silicon): <a href="https://github.com/incidentist/novacomd/releases/tag/macos64" target="_blank">GitHub Release</a> | [Install Guide](macos-install.md)
 * Linux 32-bit (Tested on Ubunutu): [DEB Package](http://www.webosarchive.org/activation/drivers/novacom-linux-32/)
 * Linux 64-bit (Tested on Ubunutu): [DEB Package](http://www.webosarchive.org/activation/drivers/novacom-linux-64/)
 
@@ -40,6 +40,8 @@ There are other versions online, but 4.6.0 seems to be the most compatible with 
 * Run the command: `java -jar WebOS-Quick-Install-4-0-0.jar`
 * The webOS Quick Install app should open on your computer
 * (In some environments you can launch the jar just by double-clicking it)
+
+If WOSQI doesn't work, the most likely issue is that the novacom driver isn't working. Go back to [Prepare Your Computer](#prepare-your-computer) and make sure you've followed all the steps for your platform.
 
 ## Install Preware
 

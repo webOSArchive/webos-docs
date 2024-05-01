@@ -66,6 +66,8 @@ You'll need a command line in your operating system of choice. On a Mac or Ubunt
     + All-in-One: `java -jar devicetoolAIO.jar`
 * Wait while the device is updated and rebooted
 
+If the activation tool doesn't work, the most likely issue is that the novacom driver isn't working. Go back to [Prepare Your Computer](#prepare-your-computer) and make sure you've followed all the steps for your platform.
+
 ## Join WiFi
 
 Once the device restarts, it will have bypassed activation, and you're ready to begin using it.<br>
