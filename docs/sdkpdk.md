@@ -42,4 +42,4 @@ In 2009, O'Reilly Press released a book on Mojo development called "Palm webOS: 
 
 The book is available on <a href="https://books.google.com/books?id=sHT6PeMp1k8C&printsec=frontcover" target="_blank">Google Books</a> in its entirety, and on Amazon and most online bookstores in paperback.
 
-Tuts+ still hosts a 5-part <a href="https://code.tutsplus.com/series/introduction-to-webos-sdk-development--mobile-22879" target="_blank">Introduction to webOS Development</a> series, focused on Mojo development on the Pre. It remains a worthwhile resource for new developers.
+Tuts+ hosts a 5-part <a href="https://web.archive.org/web/20140309041556/https://code.tutsplus.com/series/introduction-to-webos-sdk-development--mobile-22879" target="_blank">Introduction to webOS Development</a> series, focused on Mojo development on the Pre. It remains a worthwhile resource for new developers.
