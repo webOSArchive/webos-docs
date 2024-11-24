@@ -32,7 +32,8 @@ To download, install [webOS App Museum II](appstores.md#install-webos-app-museum
 
 Or use the <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?app=1005768" target="_top">direct download</a> and install it yourself.
 
-As well as letting you enable or disable the proxy, this app makes it easy to download the certificate and install it in the right place. Its a good idea to perform a full reboot after installing the certificate.
+As well as letting you enable or disable the proxy, this app makes it easy to download the certificate and install it in the right place -- do this before trying to use the proxy, to avoid certificate errors.
+Its a good idea to perform a full reboot after installing the certificate.
 
 ### Manual Configuration
 
