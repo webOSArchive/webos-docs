@@ -88,7 +88,7 @@ If you prefer not to, or are unable to, use a public service, you can also run a
 
 Another option is to host the Squid Service yourself. If you have a Raspberry Pi (also works on Ubuntu), this can be done really easily:
 
-* <a href="https://github.com/codepoet80/squid-sslbump-rpi" target="_blank">Squid SSL Bump Installer</a>
+* <a href="https://github.com/webOSArchive/squid-sslbump-dockerless" target="_blank">Squid SSL Bump Installer</a>
 
 If Squid is too complex for you, check out the WebOne proxy, which runs on Windows, Mac and Linux:
 
