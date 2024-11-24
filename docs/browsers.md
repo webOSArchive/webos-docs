@@ -22,6 +22,25 @@ You can also <a href="http://www.webosarchive.org/wrp-browser/wrp.html" target="
 
 ## Homebrew Browsers
 
+### Manual Install
+
+Download all the required packages to your computer from <a href="http://stacks.webosarchive.org/nizovn" target="_blank">this archive</a>.
+
+Use [webOS Quick Install](appstores.md#run-wosqi-on-your-computer) to install the packages *in the following order* (**Note:** do not install these packages with the SDK command line tools -- it will not work!)
+
+*    org.webosinternals.dbus
+*    com.nizovn.cacert
+*    com.nizovn.glibc
+*    com.nizovn.openssl
+*    com.nizovn.qt5qpaplugins
+*    com.nizovn.qt5
+*    com.nizovn.qt5sdk
+
+Install the browser of your choice:
+
+* Best for TouchPad: com.nizovn.qupzilla
+* Best to Pre3: com.nizovn.qtwebbrowserpalm
+
 ### Using the Feed
 
 *documentation contributed by mazzinia*
@@ -52,22 +71,3 @@ Then simply launch Preware with the feed added, search for Qt WebBrowser and/or 
 pre-requisites will be added for you alongside.
 
 And welcome to internet.
-
-### Manual Install
-
-Download all the required packages to your computer from <a href="https://1drv.ms/f/s!Av5IQUxnr8DUjN1urFe1bvuihdSCAQ?e=6KBazO" target="_blank">this archive</a>.
-
-Use [webOS Quick Install](appstores.md#run-wosqi-on-your-computer) to install the packages *in the following order* (**Note:** do not install these packages with the SDK command line tools -- it will not work!)
-
-*    org.webosinternals.dbus
-*    com.nizovn.cacert
-*    com.nizovn.glibc
-*    com.nizovn.openssl
-*    com.nizovn.qt5qpaplugins
-*    com.nizovn.qt5
-*    com.nizovn.qt5sdk
-
-Install the browser of your choice:
-
-* Best for TouchPad: com.nizovn.qupzilla
-* Best to Pre3: com.nizovn.qtwebbrowserpalm
