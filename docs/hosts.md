@@ -27,4 +27,4 @@ With the latest updates from the community, there's less need to update the host
 
 ## Help Hosts
 
-Additional Hosts can be configured to restore the on-device Help app for some devices. This restoration effort is documented at <a href="http://help.webosarchive.org/HowToUse.php" target="_blank">http://help.webosarchive.org</a>
+Additional Hosts can be configured to restore the on-device Help app for some devices. This restoration effort is documented at <a href="http://help.webosarchive.org/" target="_blank">http://help.webosarchive.org</a>
