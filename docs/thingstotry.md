@@ -12,10 +12,6 @@ More and more websites are moving to newer encryption over HTTPS as the only way
 
 * **Reddit** <img src="../images/reddit.png" align="right" style="padding-left: 8px">still works with an [HTTPS proxy enabled](proxysetup.md) on all devices through <a href="http://old.reddit.com" target="_blank">http://old.reddit.com</a> or the excellent IAmA Reddit App - <a href="https://preware.pivotce.com/package/com.tehtorq.reddit-hb" target="_blank">Homebrew</a> and <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=iama&app=10842" target="_top">App Catalog</a> versions are available. Reddit videos can also be watched in [MeTube](#youtube)
 
-* **Imgur** images and galleries won't load on their own in the native browser, but you can use the wosa.link image proxy to load a URL. Just put `http://imgur.wosa.link?` in front of the url, like: <a href="http://imgur.wosa.link/?https://imgur.com/gallery/iqfalaR" target="_blank">http://imgur.wosa.link/?https://imgur.com/gallery/iqfalaR</a>
-
-* **Facebook** <a href="http://m.facebook.com" target="_blank">mobile</a> still works on all devices (and webOS doesn't support most of their tracking!), and the <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=prebook&app=1005784" target="_top">PreBook app</a> makes the experience a little nicer
-
 * **Twitter** blocks the webOS user agent. Until recently <a href="https://preware.pivotce.com/package/net.minego.phnx" target="_blank">Project Macaw</a> delivered a pretty great Twitter experience via a Homebrew App and a [HTTPS proxy](proxysetup.md), but "X" now wants $100/month for API access -- if you have your own API key, the app is still functional, and can be modified for your own use.
 
 * **Wikipedia** works great with a proxy. For older devices, webOS archive provides a "tiny" version that is periodically updated at <a href="http://wikipedia.webosarchive.org" target="_blank">wikipedia.webosarchive.org</a>
@@ -74,9 +70,7 @@ With some caveats, the <a href="http://appcatalog.webosarchive.org/app/Plexforwe
     * Note: You may want to <a href="https://github.com/codepoet80/punctuationdumben-sigil-plugin">simplify your ePubs</a>, as webOS can't render modern HTML entities.
 
 ### Be an Exhibitionist
-webOS 2.0 and above have a mode called Exhibition, that allows your device to continuously show content while on its charging dock. A photo slide show is an obvious choice -- load up your device with your favorite pictures of family, pets, or scenery, and let the exhibit roll by. You can even updated your picture frame remotely from a modern phone or computer with **Share Space**.
-
-* Download <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=share&app=1005788" target="_top">Share Space</a>
+webOS 2.0 and above have a mode called Exhibition, that allows your device to continuously show content while on its charging dock. A photo slide show is an obvious choice -- load up your device with your favorite pictures of family, pets, or scenery, and let the exhibit roll by. 
 
 If you'd rather get some information, **Accuweather** still works on all devices, and on the TouchPad includes a gorgeous Exhibition mode that shows the weather where you are, or in other locations of your choosing.
 
