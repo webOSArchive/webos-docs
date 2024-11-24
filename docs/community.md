@@ -7,10 +7,10 @@ There's still an <a href="https://appcatalog.webosarchive.org/WebService/reports
  <br>
 <img src="../images/twitter.png" align="right" style="padding-left: 8px">
  
-* **Twitter + RSS:** <a href="https://www.twitter.com/webOSArchive" target="_blank">webOS Archive is on Twitter</a>, and you can follow there or on webOS. Use the <a href="https://preware.pivotce.com/package/net.minego.phnx" target="_blank">Project Macaw</a> app to sign-in to Twitter, or <a href="https://appcatalog.webosarchive.org/app/feedspider" target="_blank">FeedSpider</a> to follow <a href="http://www.webosarchive.org/news.php" target="_top">webOS news</a> -- and any other RSS source on your device.
+* **Bluesky:** webOS Archive has officially eXited Twitter, but you can follow us on <a href="https://bsky.app/profile/webosarchive.org" target="_blank">Bluesky</a>.
 <br>&nbsp;<br>
  
-* **Fediverse:** <a href="https://palm.weboslives.eu/users/webosarchive" target="_blank">webOS Archive is on Mastodon</a>, thanks to a community-hosted server. You can also follow <a href="https://palm.weboslives.eu/users/webosarchive.rss" target="_blank">via RSS</a>.
+* **Fediverse + RSS:** <a href="https://palm.weboslives.eu/users/webosarchive" target="_blank">webOS Archive is on Mastodon</a>, thanks to a community-hosted server. On webOS, you can also follow <a href="https://palm.weboslives.eu/users/webosarchive.rss" target="_blank">via RSS</a> with apps like <a href="https://appcatalog.webosarchive.org/app/feedspider" target="_blank">FeedSpider</a>.
 <br>&nbsp;<br>
 
 * **Forums** 
