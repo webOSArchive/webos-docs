@@ -10,16 +10,6 @@ The next problem is harder -- the browser engine that was built-in back in 2011 
 
 As recently as 2020, however, community member <a href="https://gitlab.com/nizovn" target="_blank">nizovn</a> compiled some Linux browsers for the Pre3 and Touchpad, read on for details on how to install those...
 
-## WRP
-
-<a href="https://github.com/tenox7/wrp" target="_blank">Web Rendering Proxy</a> is a general-purpose solution that works for many retro devices. It uses Chrome, running on a modern PC, to render web pages as images, which almost any device can consume. It solves a lot of problems, including out-of-date SSL or JavaScript and HTML parsing engines. Since the rendered images are static, it can't be used for media or interactive content, but its a simple way to enable a lot of newer content.
-
-You don't need anything extra on your webOS device to use WRP -- but you can improve the experience with the WRP Browser app from webOS Archive (currently only available to <a href="http://www.webosarchive.org/support" target="_top">supporters</a>!)
-
-However, you will need to run WRP on a PC or Mac with the Chrome Browser installed.
-
-You can also <a href="http://www.webosarchive.org/wrp-browser/wrp.html" target="_blank">add this wrp.html template</a> (Right Click and Save As) in the same folder as the WRP executable to make the UI look more like webOS!
-
 ## Homebrew Browsers
 
 ### Manual Install
@@ -71,3 +61,13 @@ Then simply launch Preware with the feed added, search for Qt WebBrowser and/or 
 pre-requisites will be added for you alongside.
 
 And welcome to internet.
+
+## WRP
+
+<a href="https://github.com/tenox7/wrp" target="_blank">Web Rendering Proxy</a> is a general-purpose solution that works for many retro devices. It uses Chrome, running on a modern PC, to render web pages as images, which almost any device can consume. It solves a lot of problems, including out-of-date SSL or JavaScript and HTML parsing engines. Since the rendered images are static, it can't be used for media or interactive content, but its a simple way to enable a lot of newer content.
+
+You don't need anything extra on your webOS device to use WRP -- but you can improve the experience with the WRP Browser app from webOS Archive (currently only available to <a href="http://www.webosarchive.org/support" target="_top">supporters</a>!)
+
+However, you will need to run WRP on a PC or Mac with the Chrome Browser installed.
+
+You can also <a href="http://www.webosarchive.org/wrp-browser/wrp.html" target="_blank">add this wrp.html template</a> (Right Click and Save As) in the same folder as the WRP executable to make the UI look more like webOS!
