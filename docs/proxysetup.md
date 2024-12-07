@@ -8,14 +8,7 @@ Unfortunately, the API to set a proxy wasn't added for most devices until webOS 
 
 The webOS Archive Proxy is a service offered to legacy webOS device users who agree to a convenant of behavior. It enables retro devices with older encryption libraries to browse the modern web by "bumping" the SSL encryption from the source. It is insecure by design, running on a shared resource, and should not be used for any purpose beyond the nostalgia and utility of a dead platform.
 
-The provider of this Proxy makes no warranty of service level, security or privacy, and provides no indemnification for its users. In fact, the service keeps logs by default, which will be readily turned over to appropriate authorities upon request. Such logs include personal identifiable information, including the username and IP address of each user, as well as each web address they visit.
-
-If you can live with these considerations, please visit this form to agree to the convenant and apply for an account:
-<a href="https://forms.gle/rnwVb2BnZVacJoNU6" target="_blank">https://forms.gle/rnwVb2BnZVacJoNU6</a>
-
-Your credentials will be sent to you at the e-mail address you supplied, and can be used to set-up the Proxy on your webOS device.
-
-If you'd rather not use a public proxy, see below for [alternate options](proxysetup.md#alternate-proxies).
+As of December 2024, no new sign-ups are being accepted for the public proxy, [alternate options](proxysetup.md#alternate-proxies) are below. If you already have a proxy account, the next sections will help you set it up...
 
 ### Prerequisites
 
@@ -83,7 +76,7 @@ You may want to consider using a RSS Service, and an app like <a href="http://ww
 
 ## Alternate Proxies
 
-If you prefer not to, or are unable to, use a public service, you can also run a proxy right on your webOS Device:
+You can also run a proxy directly on your webOS Device:
 
 * <a href="https://gitlab.com/nizovn/com.nizovn.squid" target="_blank">Nizovn's Squid SSL Bump App</a> which you can get by adding his <a href="https://gitlab.com/nizovn/preware_feed/-/tree/master/" target="_blank">Preware feed</a>.
 
