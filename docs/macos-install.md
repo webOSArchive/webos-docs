@@ -2,18 +2,6 @@
 
 webOS was discontinued more than a decade before Apple Silicon and 64-bit-only Mac operating systems were the norm, so the official tools were never compiled for those platforms. However, the community has managed to build the driver for modern macOS and Apple hardware. It just takes a few additional steps to get it going...
 
-## Install the 32-Bit Driver
-
-While the 32-bit driver does not work, the installer is still needed to setup the environment. Start by running the normal [32-bit Mac Installer Package found here](activate.md#prepare-your-computer).
-
-## Swap in the 64-Bit Driver
-
-Download the community-built <a href="https://github.com/incidentist/novacomd/releases/tag/macos64" target="_blank">64-bit Release</a>, and unzip its contents.
-
-Replace the files in **/opt/nova/bin** installed by the 32-bit installer, with the new files in the 64-bit Release.
-
-Restart the driver: `/opt/nova/bin/stop-novacomd && /opt/nova/bin/start-novacomd`
-
 ## Install Homebrew
 
 ### Intel Processors
@@ -37,6 +25,19 @@ Once brew is installed, you can use it to install the needed USB libraries for y
 ### Apple Silicon
 
 `arch -x86_64 /usr/local/bin/brew install libusb libusb-compat`
+
+## Install Driver
+
+Download the community-built <a href="https://www.webosarchive.org/activation/drivers/novacom-macos-64bit.zip" target="_blank">64-bit Release</a>, and unzip its contents.
+(Huge thanks to <a href="https://github.com/incidentist" target="_blank">incidentist!</a>)
+
+Launch terminal, navigate to the folder you just unzipped and make sure both the installer and uninstaller are executable:
+
+`chmod +x *.sh`
+
+Launch the installer as super user:
+
+`sudo ./install-novacom.sh`
 
 ## Testing It Out
 
