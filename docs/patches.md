@@ -17,3 +17,7 @@ webOS Archive has produced a series of patches that can help hide these dead app
 ## USB-C Connectivity
 
 Community member Alan Morford has successfully replaced the micro-USB port on the Touchpad with a modern USB-C connector. His hack preserves both data and charging, but requires micro-soldering. If you have the tools and the skills, check out his <a href="https://pivotce.com/2024/09/25/guide-converting-the-touchpads-micro-usb-port-to-usb-c/" target="_blank">Guide on PivotCE</a>. 
+
+## Warning-Free Charger
+
+The original HP charging barrel was a little unique, and while you **can** charge the Touchpad with almost anything, it *will* complain if it doesn't detect the original circuitry. Alan Morford has a guide to <a href="https://pivotce.com/2024/12/05/guide-create-an-original-barrel-charging-wire-for-your-hp-touchpad/" target="_blank">fixing the charging warning</a> -- and its a little easier to pull off than the USB-C hack.
