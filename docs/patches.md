@@ -1,4 +1,4 @@
-# Patches
+# Patches and Hacks
 
 <img src="../images/patch.png" align="right" width="128" style="width:128px; padding-left: 8px"> webOS was an extremely customizable operating system, with community-created patches for a wide variety of modifications. Most of these Patches can still be found in [Preware](appstores.md#install-preware) and should be installed from there, since they were created by contemporaneous developers. Information about what each Patch does can be found in the Preware app.
 
@@ -13,3 +13,7 @@ webOS Archive has produced a series of patches that can help hide these dead app
 <a href="https://stacks.webosarchive.org/patches" target="_blank">Download and run webOS Archive Patches</a>
 
 **Note:** These patches are meant to be installed with [WOSQI (webOS Quick Install)](activate.md#download-wosqi) from a PC -- *not* from within Preware.
+
+## USB-C Connectivity
+
+Community member Alan Morford has successfully replaced the micro-USB port on the Touchpad with a modern USB-C connector. His hack preserves both data and charging, but requires micro-soldering. If you have the tools and the skills, check out his <a href="https://pivotce.com/2024/09/25/guide-converting-the-touchpads-micro-usb-port-to-usb-c/" target="_blank">Guide on PivotCE</a>. 

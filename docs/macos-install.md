@@ -39,6 +39,11 @@ Launch the installer as super user:
 
 `sudo ./install-novacom.sh`
 
+---
+> **_NOTE:_** macOS will initially block execution of the installed files. You will need to confirm security exceptions in System Preferences for both novacomd *and* novacom. The former will try to start automatically, the latter, when you try to test novacom...
+
+---
+
 ## Testing It Out
 
 If your device is already activated and in Dev mode, you can test the drivers easily:

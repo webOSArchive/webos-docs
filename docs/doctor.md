@@ -1,6 +1,6 @@
 # webOS Doctors
 
-If things go really wrong, Palm/HP provided a way to reflash the system image, called a Doctor, allowing you to start almost from scratch. Some unofficial Super Doctors can also upgrade the OS. Be careful -- its almost impossible to brick these devices, but there are always risks when flashing an OS. Make sure you have a good quality (preferably OEM) USB cable, and a good charge on your battery.
+If things go really wrong, Palm/HP provided a way to reflash the system image, called a Doctor, allowing you to start almost from scratch. Some unofficial Super Doctors can also upgrade the OS. Be careful -- its almost impossible to brick these devices, but there are always risks when flashing an OS. Make sure you have a good quality (preferably OEM) USB cable, and a good charge on your battery. If you've installed another operating system, and want to wipe that out too, visit the [Start Over](startover.md) instructions.
 
 These instructions are provided for quick reference, no guarantee is implied.
 

@@ -12,7 +12,7 @@ nav:
     - Join the Community: community.md
     - Taking Control:
       - Time Synchronization: timesync.md
-      - Patches and Clean-up: patches.md
+      - Patches and Hacks: patches.md
       - Update Hosts: hosts.md
       - Shell Access: bash.md
       - Build Your Own Apps: sdkpdk.md
@@ -20,6 +20,7 @@ nav:
     - Disater Recovery:
       - Locked Out: pinbypass.md
       - Call the Doctor: doctor.md
+      - Start Over: startover.md
       - Touchpad Rescue: tprestore.md
     - Archival:
       - App Inventory: appinventory.md
