@@ -39,17 +39,24 @@ Launch the installer as super user:
 
 `sudo ./install-novacom.sh`
 
----
-> **_NOTE:_** macOS will initially block execution of the installed files. You will need to confirm security exceptions in System Preferences for both novacomd *and* novacom. The former will try to start automatically, the latter, when you try to test novacom...
+**_IMPORTANT NOTE:_** By default, macOS will initially block execution of the installed files. You will need to confirm security exceptions in System Preferences for both novacomd *and* novacom, by manually running them from terminal:
 
----
+`/opt/nova/bin/novacomd`
+
+then
+
+`/opt/nova/bin/novacom`
+
+The former will try to start automatically, the latter, when you try to test novacom...
 
 ## Testing It Out
 
 If your device is already activated and in Dev mode, you can test the drivers easily:
 
 * Connect your webOS device to your Mac -- preferably with an original Palm/HP USB cable.
-* From a Terminal command line, type `palm-log -l` to list installed apps on your device.
+* From a Terminal command line, type `novacom -l` to list devices.
+
+If everything worked, you're ready to [install the SDK](sdkpdk.md) and start making apps!
 
 ## Activating a device
 
