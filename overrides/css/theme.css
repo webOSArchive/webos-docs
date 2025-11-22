@@ -7297,3 +7297,11 @@ span[id*='MathJax-Span'] {
     src: url("../fonts/RobotoSlab/roboto-slab-v7-bold.eot");
     src: url("../fonts/RobotoSlab/roboto-slab-v7-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoSlab/roboto-slab-v7-bold.woff2") format("woff2"), url("../fonts/RobotoSlab/roboto-slab-v7-bold.woff") format("woff"), url("../fonts/RobotoSlab/roboto-slab-v7-bold.ttf") format("truetype")
 }
+
+.breadcrumb-item {
+    font-weight: bold;
+}
+
+.breadcrumb-item:not(.active)::after {
+  content: " > ";
+}

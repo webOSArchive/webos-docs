@@ -1,18 +1,20 @@
 # Extracting an App Inventory
 
+Many apps are still missing from the Museum! If you have a device with apps that you might be interested in contributing to the Museum, follow these steps to pull an inventory off the device, so we can check for uniqueness...
+
 ## Easy Way
 
 <img src="../images/appscanner.png" align="right" style="padding-left: 8px;">Once you have [Preware](appstores.md) on your device, you can install an App that will automatically inventory your device, and compare your installed apps to the list of missing apps.
 
-If you have the App Museum installed, search for: `App Scanner`
+If you have the App Museum installed, search for:
+`App Scanner`
 
-If you only have Preware installed, visit the Museum in the built-in web-browser and click Download Direct Link: [https://appcatalog.webosarchive.org/app/webOSAppScanner](https://appcatalog.webosarchive.org/app/webOSAppScanner)
+If you only have Preware installed, you can the Museum in the built-in web-browser and click Direct Link under Download:
+<a href="https://appcatalog.webosarchive.org/app/webOSAppScanner" target="_blank">https://appcatalog.webosarchive.org/app/webOSAppScanner</a>
 
 ---
 
 ## Manual Way
-
-If you have a device with apps that you might be interested in contributing to the Museum, follow these steps to pull an inventory off the device, so we can check for uniqueness.
 
 In these instructions, the "device" is your webOS device (Pre, Touchpad, etc...) and a "computer" means a Mac or PC running Windows, OSX/macOS or Ubuntu.
 
