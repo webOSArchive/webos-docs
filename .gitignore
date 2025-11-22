@@ -14,3 +14,4 @@
 *.userprefs
 
 site/
+.DS_Store

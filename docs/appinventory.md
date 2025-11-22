@@ -2,7 +2,7 @@
 
 ## Easy Way
 
-Once you have [Preware](appstores.md) on your device, you can install an App that will automatically inventory your device, and compare your installed apps to the list of missing apps.
+<img src="../images/appscanner.png" align="right" style="padding-left: 8px;">Once you have [Preware](appstores.md) on your device, you can install an App that will automatically inventory your device, and compare your installed apps to the list of missing apps.
 
 If you have the App Museum installed, search for: `App Scanner`
 

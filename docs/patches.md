@@ -12,7 +12,7 @@ webOS Archive has produced a series of patches that can help hide these dead app
 
 <a href="https://stacks.webosarchive.org/patches" target="_blank">Download and run webOS Archive Patches</a>
 
-**Note:** These patches are meant to be installed with [WOSQI (webOS Quick Install)](activate.md#download-wosqi) from a PC -- *not* from within Preware.
+**Note:** These patches are meant to be installed with [WOSQI (webOS Quick Install)](appstores.md#download-wosqi) from a PC -- *not* from within Preware.
 
 ## USB-C Connectivity
 
