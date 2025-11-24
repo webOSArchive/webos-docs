@@ -6,13 +6,11 @@ webOS is *not* a dead platform! There's still plenty of things you can on your w
 More and more websites are moving to newer encryption over HTTPS as the only way to access the site. On webOS 2.2.4 and above, you can work-around this with a [proxy](proxysetup.md). With old versions you are more limited. Here are some common websites that work, or ways to work around:
 
 ### Common Sites
-* **Google** still works on all devices
+* **Google**'s website no longer works, but if you're using the [WOSA proxy](proxysetup.md) your searches will be automatically re-directed to DuckDuckGo Lite
 
-* **YouTube**'s website no longer works, but there's an app for that called [MeTube](#youtube), or you can try a retro-friendly <a href="https://invidious.io/" target="_blank">Invidious</a> provider.
+* **YouTube**'s website no longer works, but there's an app for that called [MeTube](#youtube), or you can try a retro-friendly <a href="https://invidious.io/" target="_blank">Invidious</a> provider
 
-* **Reddit** <img src="../images/reddit.png" align="right" style="padding-left: 8px">still works with an [HTTPS proxy enabled](proxysetup.md) on all devices through <a href="http://old.reddit.com" target="_blank">http://old.reddit.com</a> or the excellent IAmA Reddit App - <a href="https://preware.pivotce.com/package/com.tehtorq.reddit-hb" target="_blank">Homebrew</a> and <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=iama&app=10842" target="_top">App Catalog</a> versions are available. Reddit videos can also be watched in [MeTube](#youtube)
-
-* **Twitter** blocks the webOS user agent. Until recently <a href="https://preware.pivotce.com/package/net.minego.phnx" target="_blank">Project Macaw</a> delivered a pretty great Twitter experience via a Homebrew App and a [HTTPS proxy](proxysetup.md), but "X" now wants $100/month for API access -- if you have your own API key, the app is still functional, and can be modified for your own use.
+* **Reddit** <img src="../images/reddit.png" align="right" style="padding-left: 8px">still works with an [HTTPS proxy enabled](proxysetup.md) on all devices through <a href="http://old.reddit.com" target="_blank">http://old.reddit.com</a> or the excellent <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=iama&app=10842">IAmA Reddit App</a>, with the [WOSA proxy](proxysetup.md). Reddit videos can also be watched in [MeTube](#youtube)
 
 * **Wikipedia** works great with a proxy. For older devices, webOS archive provides a "tiny" version that is periodically updated at <a href="http://wikipedia.webosarchive.org" target="_blank">wikipedia.webosarchive.org</a>
 
@@ -23,7 +21,7 @@ More and more websites are moving to newer encryption over HTTPS as the only way
 
 * **Text-Only Web:** many popular sites have a text-only version that works well on a variety of retro devices. Sijmen J. Mulder has assembled a good list here: <a href="https://sjmulder.nl/en/textonly.html" target="_blank">https://sjmulder.nl/en/textonly.html</a>
 
-* **FrogFind:** also by Action Retro, is <a href="http://www.frogfind.com/" target="_blank">Google for older devices</a>, and renders a simplified version of most websites through its search results. 
+* **FrogFind:** also by Action Retro, is <a href="http://www.frogfind.com/" target="_blank">search engine for older devices</a>, and renders a simplified version of most websites through its search results
 
 ## Apps
 
