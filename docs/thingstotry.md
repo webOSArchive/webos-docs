@@ -10,7 +10,7 @@ More and more websites are moving to newer encryption over HTTPS as the only way
 
 * **YouTube**'s website no longer works, but there's an app for that called [MeTube](#youtube), or you can try a retro-friendly <a href="https://invidious.io/" target="_blank">Invidious</a> provider
 
-* **Reddit** <img src="../images/reddit.png" align="right" style="padding-left: 8px">still works with an [HTTPS proxy enabled](proxysetup.md) on all devices through <a href="http://old.reddit.com" target="_blank">http://old.reddit.com</a> or the excellent <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=iama&app=10842">IAmA Reddit App</a>, with the [WOSA proxy](proxysetup.md). Reddit videos can also be watched in [MeTube](#youtube)
+* **Reddit** <img src="../images/reddit.png" align="right" style="padding-left: 8px">still works with an [HTTPS proxy enabled](proxysetup.md) on all devices through <a href="http://old.reddit.com" target="_blank">http://old.reddit.com</a> or the excellent <a href="http://appcatalog.webosarchive.org/app/IAmAReddit">IAmA Reddit App</a>, with the [WOSA proxy](proxysetup.md). Reddit videos can also be watched in [MeTube](#youtube)
 
 * **Wikipedia** works great with a proxy. For older devices, webOS archive provides a "tiny" version that is periodically updated at <a href="http://wikipedia.webosarchive.org" target="_blank">wikipedia.webosarchive.org</a>
 
@@ -19,7 +19,7 @@ More and more websites are moving to newer encryption over HTTPS as the only way
 
 * **Google News:** retro-computer enthusiast <a href="https://www.youtube.com/ActionRetro" target=_"blank">Action Retro</a> has built an excellent text-only Google News web app that works on almost anything. Check out <a href="http://68k.news/" target="_blank">68k.news</a>
 
-* **Text-Only Web:** many popular sites have a text-only version that works well on a variety of retro devices. Sijmen J. Mulder has assembled a good list here: <a href="https://sjmulder.nl/en/textonly.html" target="_blank">https://sjmulder.nl/en/textonly.html</a>
+* **Text-Only Web:** many popular sites have a text-only version that works well on a variety of retro devices. Sijmen J. Mulder has assembled a good list here: <a href="http://sjmulder.nl/en/textonly.html" target="_blank">http://sjmulder.nl/en/textonly.html</a>
 
 * **FrogFind:** also by Action Retro, is <a href="http://www.frogfind.com/" target="_blank">search engine for older devices</a>, and renders a simplified version of most websites through its search results
 
@@ -27,11 +27,16 @@ More and more websites are moving to newer encryption over HTTPS as the only way
 
 All of the Apps listed below can be found on [App Museum II](appstores.md#install-webos-app-museum-ii), but there's direct download links as well.
 
-### YouTube
-<img src="../images/metube-icon.png" align="right" style="padding-left: 8px">YouTube doesn't officially support webOS (or most retro platforms) but thanks to the open source community, its still available. An app called **MeTube**, available in App Museum II, works with a pair of back-end services to fetch YouTube videos for you on demand. The services are hosted by webOS Archive, but you can also run them yourself, if you prefer.
+### Watch (Some) Videos
+
+<img src="../images/metube-icon.png" align="right" style="padding-left: 8px">YouTube doesn't officially support webOS (or most retro platforms) but thanks to the open source community, its still available. An app called **MeTube**, available in App Museum II, works with a pair of back-end services to fetch short YouTube videos for you on demand. The services are hosted by webOS Archive, but you can also run them yourself.
 
 * <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=metube&app=1005774" target="_top">Download the App</a>
 * <a href="https://github.com/codepoet80/metube-php-servicewrapper" target="_blank">Self-host the services</a>
+
+<a href="http://appcatalog.webosarchive.org/app/Flixnet" target="_blank">FlixNet</a> is an app for watching Public Domain movies hosted on archive.org. There's an expansive catalog of free and legal-to-download movies that play great on webOS.
+
+If you host your own <a href="https://app.plex.tv">Plex server</a>, you can configure it to support <a href="http://appcatalog.webosarchive.org/app/PlexforwebOS" target="_blank">Plex for webOS</a>.
 
 ### Podcasts
 webOS devices make great Podcast listening tools -- whether its a TouchPad sitting in Touchstone, maybe connected to a nice Bluetooth speaker, or a tiny little Pre or Veer, slipped in your pocket as you go about your routine. Many Podcasts have switched to HTTPS, which causes problems for older, encryption-challenged devices, but the webOS Archive <a href="http://podcasts.webosarchive.org" target="_top">Podcast Directory</a> service solves this, and many other problems. Combined with a stand-alone Podcast Directory app, and a number of Podcast players available in the Museum, you can download and listen to thousands of popular podcasts right on your device.
@@ -54,7 +59,7 @@ Philips Hue lights are some of the best smart bulbs out there -- whether you use
 * Learn more about <a href="https://www.usa.philips.com/c-e/smartsleep/wake-up-light-portfolio.html" target="_blank">Philips Hue</a>
 
 ### Play Some Tunes
-Pandora, and third party Pandora apps still work on all devices as of 2022. 
+<a href="http://appcatalog.webosarchive.org/showMuseum.php?search=pandora&safe=on" target="_blank">Pandora, and third party Pandora apps</a> still work on all devices as of 2025. 
 
 If you have a TouchPad, the wonderful iTunes remote control app, <a href="http://appcatalog.webosarchive.org/app/Retune" target="_top">Retune</a>, still works to control Apple Music or iTunes playback, and can even send audio to HomePods and AppleTVs. You'll need to temporarily disable your computer's firewall for pairing, but once done, you can turn the firewall back on and use as normal.
 
@@ -64,7 +69,7 @@ With some caveats, the <a href="http://appcatalog.webosarchive.org/app/Plexforwe
 <img src="../images/kindle.png" align="right" style="padding-left: 8px">The TouchPad makes a great reading device (the TouchPad Go is even better -- if you can find one!) and a number of eReader apps were released. The premier app being the Amazon Kindle Beta. Despite the moniker, its fully functional in the U.S. (YMMV in other regions) with only a slight tweak needed to the login experience: when you login with your Amazon credentials, watch your phone or email for a One-Time Password (OTP) from Amazon that you'll use for your second login attempt (sometimes this takes *multiple* attempts!) Once that's done, your fully library of books will be available: including color illustrations where the book content includes them!
 
 * Download <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=kindle&app=9216" target="_top">Amazon Kindle Beta</a>
-* If you prefer open book formats, try <a href="https://appcatalog.webosarchive.org/app/pReader" target="_top">pReader</a>. 
+* If you prefer open book formats, try <a href="http://appcatalog.webosarchive.org/app/pReader" target="_top">pReader</a>. 
     * Note: You may want to <a href="https://github.com/codepoet80/punctuationdumben-sigil-plugin">simplify your ePubs</a>, as webOS can't render modern HTML entities.
 
 ### Be an Exhibitionist
@@ -101,7 +106,7 @@ Classic expires after a week, to avoid this, always run Classic with your device
 
 * Using the command line or Internalz, delete the file: `/usr/lib/palmos/expired.rgba`
 
-You can find tons of PalmOS apps and games at <a href="https://palmdb.net/" target="_blank">PalmDB.net</a>.
+You can find tons of PalmOS apps and games at <a href="http://palmdb.net/" target="_blank">PalmDB.net</a>.
 
 ### Make Something New
 <img src="../images/webos-sdk.png" align="left" style="padding-right: 8px">webOS is an easy platform to learn to develop on. Based on Javascript, and powered by Linux, its an easy environment to explore, reverse engineer and build upon. If you can make a web page, you can make an App for webOS! Check out the [SDK section](sdkpdk.md) for more info about getting started!
