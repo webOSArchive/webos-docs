@@ -34,9 +34,9 @@ All of the Apps listed below can be found on [App Museum II](appstores.md#instal
 * <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=metube&app=1005774" target="_top">Download the App</a>
 * <a href="https://github.com/codepoet80/metube-php-servicewrapper" target="_blank">Self-host the services</a>
 
-<a href="http://appcatalog.webosarchive.org/app/Flixnet" target="_blank">FlixNet</a> is an app for watching Public Domain movies hosted on archive.org. There's an expansive catalog of free and legal-to-download movies that play great on webOS.
+<a href="http://appcatalog.webosarchive.org/app/Flixnet" target="_blank">FlixNet</a> is an app for watching Public Domain movies hosted on archive.org. There's an expansive catalog of free and legal-to-download movies that play perfectly on webOS.
 
-If you host your own <a href="https://app.plex.tv">Plex server</a>, you can configure it to support <a href="http://appcatalog.webosarchive.org/app/PlexforwebOS" target="_blank">Plex for webOS</a>.
+If you host your own <a href="https://app.plex.tv">Plex server</a>, you can configure it to support <a href="http://appcatalog.webosarchive.org/app/PlexforwebOS" target="_blank">Plex for webOS</a> -- be aware transcoding is not supported, so only <a href="https://sdk.webosarchive.org/docs/dev-guide/mojo/video.html#supported-video-formats">content natively supported by webOS</a> can be streamed.
 
 ### Podcasts
 webOS devices make great Podcast listening tools -- whether its a TouchPad sitting in Touchstone, maybe connected to a nice Bluetooth speaker, or a tiny little Pre or Veer, slipped in your pocket as you go about your routine. Many Podcasts have switched to HTTPS, which causes problems for older, encryption-challenged devices, but the webOS Archive <a href="http://podcasts.webosarchive.org" target="_top">Podcast Directory</a> service solves this, and many other problems. Combined with a stand-alone Podcast Directory app, and a number of Podcast players available in the Museum, you can download and listen to thousands of popular podcasts right on your device.
