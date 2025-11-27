@@ -1,4 +1,4 @@
-# Novacomm Drivers on macOS
+# Novacom Drivers on macOS
 
 webOS was discontinued more than a decade before Apple Silicon and 64-bit-only Mac operating systems were the norm, so the official tools were never compiled for those platforms. However, the community has managed to build the driver for modern macOS and Apple hardware. It just takes a few additional steps to get it going...
 

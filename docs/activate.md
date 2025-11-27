@@ -11,7 +11,7 @@ The Palm/HP activation services have been down a long time, but that doesn't mea
 
 ## Prepare Your Computer
 
-First you will need the Novacomm driver for your computer. Many platforms are supported, including modern macOS, thanks to a recent re-write of the driver:
+First you will need the novacom driver for your computer. Many platforms are supported, including modern macOS, thanks to a recent re-write of the driver:
 
 * Windows 32-bit (Tested on Windows 7): [Installer MSI](http://www.webosarchive.org/activation/drivers/novacom-win-32/)
 * Windows 64-bit (Tested on Windows 10 and 11): [Installer MSI](http://www.webosarchive.org/activation/drivers/novacom-win-64/)

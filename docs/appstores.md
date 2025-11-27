@@ -14,12 +14,12 @@ This tool works on Mac, Linux and Windows, and requires Java and the devices dri
 * Install Java for Mac: <a href="https://support.apple.com/en-us/HT204036" target="_blank">https://support.apple.com/en-us/HT204036</a>
 * Install Java for Linux: <a href="https://www.fosstechnix.com/install-oracle-java-8-on-ubuntu-20-04/" target="_blank">https://www.fosstechnix.com/install-oracle-java-8-on-ubuntu-20-04/</a>
 
-Next you will need the Novacomm driver for your computer:
+Next you will need the novacom driver for your computer:
 
 * Windows 32-bit (Tested on Windows 7): [Installer MSI](http://www.webosarchive.org/activation/drivers/novacom-win-32/)
-* Windows 64-bit (Tested on Windows 10): [Installer MSI](http://www.webosarchive.org/activation/drivers/novacom-win-64/)
-* macOS 32-bit (Tested up to Mojave): [Installer PKG](http://www.webosarchive.org/activation/drivers/novacom-mac/)
-* macOS 64-bit (For Catalina and up, including Apple Silicon): <a href="https://github.com/incidentist/novacomd/releases/tag/macos64" target="_blank">GitHub Release</a> | [Install Guide](macos-install.md)
+* Windows 64-bit (Tested on Windows 10 and 11): [Installer MSI](http://www.webosarchive.org/activation/drivers/novacom-win-64/)
+* macOS 32-bit (Tested up to Mojave): [Installer PKG](http://www.webosarchive.org/activation/drivers/novacom-osx-32/)
+* macOS 64-bit (For Catalina and up, including Apple Silicon): [Installer PKG](http://www.webosarchive.org/activation/drivers/novacom-macos-64/)
 * Linux 32-bit (Tested on Ubunutu): [DEB Package](http://www.webosarchive.org/activation/drivers/novacom-linux-32/)
 * Linux 64-bit (Tested on Ubunutu): [DEB Package](http://www.webosarchive.org/activation/drivers/novacom-linux-64/)
 
