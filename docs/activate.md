@@ -11,20 +11,20 @@ The Palm/HP activation services have been down a long time, but that doesn't mea
 
 ## Prepare Your Computer
 
-This process works on Mac, Linux and Windows, but requires Java to be installed:
+First you will need the Novacomm driver for your computer. Many platforms are supported, including modern macOS, thanks to a recent re-write of the driver:
+
+* Windows 32-bit (Tested on Windows 7): [Installer MSI](http://www.webosarchive.org/activation/drivers/novacom-win-32/)
+* Windows 64-bit (Tested on Windows 10 and 11): [Installer MSI](http://www.webosarchive.org/activation/drivers/novacom-win-64/)
+* macOS 32-bit (Tested up to Mojave): [Installer PKG](http://www.webosarchive.org/activation/drivers/novacom-osx-32/)
+* macOS 64-bit (For Catalina and up, including Apple Silicon): [Installer PKG](http://www.webosarchive.org/activation/drivers/novacom-macos-64/)
+* Linux 32-bit (Tested on Ubunutu): [DEB Package](http://www.webosarchive.org/activation/drivers/novacom-linux-32/)
+* Linux 64-bit (Tested on Ubunutu): [DEB Package](http://www.webosarchive.org/activation/drivers/novacom-linux-64/)
+
+Activation tools work on Mac, Linux and Windows, but require Java to be installed:
 
 * Install Java 8 for Windows: <a href="https://www.java.com/download/ie_manual.jsp" target="_blank">https://www.java.com/download/ie_manual.jsp</a>
 * Install Java for Mac: <a href="https://support.apple.com/en-us/HT204036" target="_blank">https://support.apple.com/en-us/HT204036</a>
 * Install Java 8 for Linux: <a href="https://www.fosstechnix.com/install-oracle-java-8-on-ubuntu-20-04/" target="_blank">https://www.fosstechnix.com/install-oracle-java-8-on-ubuntu-20-04/</a>
-
-Next you will need the Novacomm driver for your computer:
-
-* Windows 32-bit (Tested on Windows 7): [Installer MSI](http://www.webosarchive.org/activation/drivers/novacom-win-32/)
-* Windows 64-bit (Tested on Windows 10): [Installer MSI](http://www.webosarchive.org/activation/drivers/novacom-win-64/)
-* macOS 32-bit (Tested up to Mojave): [Installer PKG](http://www.webosarchive.org/activation/drivers/novacom-mac/)
-* macOS 64-bit (For Catalina and up, including Apple Silicon): <a href="https://www.webosarchive.org/activation/drivers/novacom-macos-64bit.zip" target="_blank">Installer Zip</a> | [Install Guide](macos-install.md)
-* Linux 32-bit (Tested on Ubunutu): [DEB Package](http://www.webosarchive.org/activation/drivers/novacom-linux-32/)
-* Linux 64-bit (Tested on Ubunutu): [DEB Package](http://www.webosarchive.org/activation/drivers/novacom-linux-64/)
 
 Make sure you have a good quality micro USB cable connected directly to your computer (not to a hub.) The OEM cables are your best bet (they're recognizable by a silver indented circle near USB connectors.)
 
