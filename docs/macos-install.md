@@ -2,52 +2,24 @@
 
 webOS was discontinued more than a decade before Apple Silicon and 64-bit-only Mac operating systems were the norm, so the official tools were never compiled for those platforms. However, the community has managed to build the driver for modern macOS and Apple hardware. It just takes a few additional steps to get it going...
 
-## Install Homebrew
+## Optional (But Recommended)
 
-### Intel Processors
+### Install Homebrew
 
-Use the standard instructions for installing Brew, found on the <a href="https://brew.sh/" target="_blank">official Homebrew website</a>.
+Use the standard instructions for installing Homebrew, found on the <a href="https://brew.sh/" target="_blank">official Homebrew website</a>.
 
-### Apple Silicon
-
-Brew must be installed with <a href="https://gist.github.com/progrium/b286cd8c82ce0825b2eb3b0b3a0720a0#homebrew" target="_blank">Rosetta enabled</a>, which is not the default install. You can force it with:
-
-`arch -x86_64 zsh /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-
-## Install Support Libraries
+### Install Support Libraries
 
 Once brew is installed, you can use it to install the needed USB libraries for your CPU:
 
-### Intel Processors
-
 `brew install libusb libusb-compat`
-
-### Apple Silicon
-
-`arch -x86_64 /usr/local/bin/brew install libusb libusb-compat`
 
 ## Install Driver
 
-Download the community-built <a href="https://www.webosarchive.org/activation/drivers/novacom-macos-64bit.zip" target="_blank">64-bit Release</a>, and unzip its contents.
+Download the community-built <a href="https://www.webosarchive.org/activation/drivers/novacom-macos-64/" target="_blank">64-bit Release</a>, and run the installer.
 (Huge thanks to <a href="https://github.com/incidentist" target="_blank">incidentist!</a>)
 
-Launch terminal, navigate to the folder you just unzipped and make sure both the installer and uninstaller are executable:
-
-`chmod +x *.sh`
-
-Launch the installer as super user:
-
-`sudo ./install-novacom.sh`
-
-**_IMPORTANT NOTE:_** By default, macOS will initially block execution of the installed files. You will need to confirm security exceptions in System Preferences for both novacomd *and* novacom, by manually running them from terminal:
-
-`/opt/nova/bin/novacomd`
-
-then
-
-`/opt/nova/bin/novacom`
-
-The former will try to start automatically, the latter, when you try to test novacom...
+**_IMPORTANT NOTE:_** By default, macOS may block execution of the installer. You will need to confirm security exceptions in System Preferences...
 
 ## Testing It Out
 
