@@ -2,7 +2,9 @@
 
 <img src="../images/patch.png" align="right" width="128" style="width:128px; padding-left: 8px"> webOS was an extremely customizable operating system, with community-created patches for a wide variety of modifications. Most of these Patches can still be found in [Preware](appstores.md#install-preware) and should be installed from there, since they were created by contemporaneous developers. Information about what each Patch does can be found in the Preware app.
 
-Newer patches don't benefit from the expertise of the original community, or the infrastructure that was created to deliver and support them, so will be discussed further here.
+Newer patches don't benefit from the expertise of the original community, or the infrastructure that was created to deliver and support them, so will be discussed further here. 
+
+Note that you must have run at least one historical patch via Preware, to install all the necessary dependencies before running the below (on TouchPad, I recommend "Advanced Reset Options" in Preware to start!)
 
 ## Removing Dead Apps
 
