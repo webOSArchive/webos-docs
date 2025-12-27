@@ -25,7 +25,7 @@ When prompted, confirm that Preware may install the pre-requisites for you. Be p
 
 ### Manual Install
 
-Download all the required packages to your computer from <a href="http://stacks.webosarchive.org/nizovn" target="_blank">this archive</a>.
+Download all the required packages to your computer from <a href="https://stacks.webosarchive.org/feeds/modernize/ipkgs/" target="_blank">this archive</a>.
 
 Use [webOS Quick Install](appstores.md#run-wosqi-on-your-computer) to install the packages *in the following order* (**Note:** do not install these packages with the SDK command line tools -- it will not work!)
 
