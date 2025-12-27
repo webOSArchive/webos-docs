@@ -8,7 +8,7 @@ More and more websites are moving to newer encryption over HTTPS as the only way
 ### Common Sites
 * **Google**'s website no longer works, but if you're using the [WOSA proxy](proxysetup.md) your searches will be automatically re-directed to DuckDuckGo Lite
 
-* **YouTube**'s website no longer works, but there's an app for that called [MeTube](#youtube), or you can try a retro-friendly <a href="https://invidious.io/" target="_blank">Invidious</a> provider
+* **YouTube**'s website no longer works, but there's an app for that called [MeTube](#watch-some-videos), or you can try a retro-friendly <a href="https://invidious.io/" target="_blank">Invidious</a> provider
 
 * **Reddit** <img src="../images/reddit.png" align="right" style="padding-left: 8px">still works with an [HTTPS proxy enabled](proxysetup.md) on all devices through <a href="http://old.reddit.com" target="_blank">http://old.reddit.com</a> or the excellent <a href="http://appcatalog.webosarchive.org/app/IAmAReddit">IAmA Reddit App</a>, with the [WOSA proxy](proxysetup.md). Reddit videos can also be watched in MeTube!
 
