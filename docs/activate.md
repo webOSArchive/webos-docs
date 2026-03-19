@@ -17,8 +17,8 @@ First you will need the novacom driver for your computer. Many platforms are sup
 * Windows 64-bit (Tested on Windows 10 and 11): [Installer MSI](http://www.webosarchive.org/activation/drivers/novacom-win-64/)
 * macOS 32-bit (Tested up to Mojave): [Installer PKG](http://www.webosarchive.org/activation/drivers/novacom-osx-32/)
 * macOS 64-bit (For Catalina and up, including Apple Silicon): [Installer PKG](http://www.webosarchive.org/activation/drivers/novacom-macos-64/)
-* Linux 32-bit (Tested on Ubunutu): [DEB Package](http://www.webosarchive.org/activation/drivers/novacom-linux-32/)
-* Linux 64-bit (Tested on Ubunutu): [DEB Package](http://www.webosarchive.org/activation/drivers/novacom-linux-64/)
+* Linux 32-bit (Tested on Ubuntu): [DEB Package](http://www.webosarchive.org/activation/drivers/novacom-linux-32/)
+* Linux 64-bit (Tested on Ubuntu): [DEB Package](http://www.webosarchive.org/activation/drivers/novacom-linux-64/)
 
 Activation tools work on Mac, Linux and Windows, but require Java to be installed:
 
