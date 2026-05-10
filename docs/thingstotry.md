@@ -34,9 +34,9 @@ All of the Apps listed below can be found on [App Museum II](appstores.md#instal
 * <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=metube&app=1005774" target="_top">Download the App</a>
 * <a href="https://github.com/codepoet80/metube-php-servicewrapper" target="_blank">Self-host the services</a>
 
-<a href="http://appcatalog.webosarchive.org/app/Flixnet" target="_blank">FlixNet</a> is an app for watching Public Domain movies hosted on archive.org. There's an expansive catalog of free and legal-to-download movies that play perfectly on webOS.
+<a href="http://appcatalog.webosarchive.org/app/Flixnet" target="_top">FlixNet</a> is an app for watching Public Domain movies hosted on archive.org. There's an expansive catalog of free and legal-to-download movies that play perfectly on webOS.
 
-If you host your own <a href="https://app.plex.tv">Plex server</a>, you can configure it to support <a href="http://appcatalog.webosarchive.org/app/PlexforwebOS" target="_blank">Plex for webOS</a> -- be aware transcoding is not supported, so only <a href="https://sdk.webosarchive.org/docs/dev-guide/mojo/video.html#supported-video-formats">content natively supported by webOS</a> can be streamed.
+If you host your own <a href="https://app.plex.tv">Plex server</a>, you can configure it to support <a href="http://appcatalog.webosarchive.org/app/PlexforwebOS" target="_top">Plex for webOS</a> -- be aware transcoding is not supported, so only <a href="https://sdk.webosarchive.org/docs/dev-guide/mojo/video.html#supported-video-formats">content natively supported by webOS</a> can be streamed.
 
 ### Podcasts
 webOS devices make great Podcast listening tools -- whether its a TouchPad sitting in Touchstone, maybe connected to a nice Bluetooth speaker, or a tiny little Pre or Veer, slipped in your pocket as you go about your routine. Many Podcasts have switched to HTTPS, which causes problems for older, encryption-challenged devices, but the webOS Archive <a href="http://podcasts.webosarchive.org" target="_top">Podcast Directory</a> service solves this, and many other problems. Combined with a stand-alone Podcast Directory app, and a number of Podcast players available in the Museum, you can download and listen to thousands of popular podcasts right on your device.
@@ -59,18 +59,26 @@ Philips Hue lights are some of the best smart bulbs out there -- whether you use
 * Learn more about <a href="https://www.usa.philips.com/c-e/smartsleep/wake-up-light-portfolio.html" target="_blank">Philips Hue</a>
 
 ### Play Some Tunes
-<a href="http://appcatalog.webosarchive.org/showMuseum.php?search=pandora&safe=on" target="_blank">Pandora, and third party Pandora apps</a> still work on all devices as of 2025. 
+<a href="http://appcatalog.webosarchive.org/showMuseum.php?search=pandora&safe=on" target="_top">Pandora, and third party Pandora apps</a> still work on all devices as of 2026. 
 
 If you have a TouchPad, the wonderful iTunes remote control app, <a href="http://appcatalog.webosarchive.org/app/Retune" target="_top">Retune</a>, still works to control Apple Music or iTunes playback, and can even send audio to HomePods and AppleTVs. You'll need to temporarily disable your computer's firewall for pairing, but once done, you can turn the firewall back on and use as normal.
 
 With some caveats, the <a href="http://appcatalog.webosarchive.org/app/PlexforwebOS" target="_top">Plex app</a> still works with modern Plex servers as well.
 
 ### Read a Book
-<img src="../images/kindle.png" align="right" style="padding-left: 8px">The TouchPad makes a great reading device (the TouchPad Go is even better -- if you can find one!) and a number of eReader apps were released. The premier app being the Amazon Kindle Beta. Despite the moniker, its fully functional in the U.S. (YMMV in other regions) with only a slight tweak needed to the login experience: when you login with your Amazon credentials, watch your phone or email for a One-Time Password (OTP) from Amazon that you'll use for your second login attempt (sometimes this takes *multiple* attempts!) Once that's done, your fully library of books will be available: including color illustrations where the book content includes them!
+<img src="../images/kindle.png" align="right" style="padding-left: 8px">The TouchPad makes a great reading device (the TouchPad Go is even better -- if you can find one!) and a number of eReader apps were released. 
 
-* Download <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=kindle&app=9216" target="_top">Amazon Kindle Beta</a>
-* If you prefer open book formats, try <a href="http://appcatalog.webosarchive.org/app/pReader" target="_top">pReader</a>. 
-    * Note: You may want to <a href="https://github.com/codepoet80/punctuationdumben-sigil-plugin">simplify your ePubs</a>, as webOS can't render modern HTML entities.
+#### Kindle
+
+Amazon's Kindle Beta app was an excellent release. Despite the moniker, it was fully functional, and can sometimes be coerced into functionality today. When you login with your Amazon credentials, watch your phone or email for a One-Time Password (OTP) from Amazon that you'll use for your second login attempt (sometimes this takes *multiple* attempts!) Once that's done, your fully library of books will be available: including color illustrations where the book content includes them!
+
+* Download <a href="https://appcatalog.webosarchive.org/app/AmazonKindleBeta" target="_top">Amazon Kindle Beta</a>
+
+#### Papyrus eReader
+
+Released in 2026, and derived from the Kindle app and an older indy project, <a href="http://appcatalog.webosarchive.org/app/pReader" target="_top">pReader</a>, Papyrus is a modern take on DRM-free ePub reading for the TouchPad. Still being maintained, this reader can import most ePub books (although it takes awhile for larger books!) and provides a pleasant reading experience.
+
+* Download <a href="https://appcatalog.webosarchive.org/app/PapyruseReader" target="_top">Papyrus eReader</a>
 
 ### Be an Exhibitionist
 webOS 2.0 and above have a mode called Exhibition, that allows your device to continuously show content while on its charging dock. A photo slide show is an obvious choice -- load up your device with your favorite pictures of family, pets, or scenery, and let the exhibit roll by. 
@@ -78,6 +86,8 @@ webOS 2.0 and above have a mode called Exhibition, that allows your device to co
 If you'd rather get some information, **Accuweather** still works on all devices, and on the TouchPad includes a gorgeous Exhibition mode that shows the weather where you are, or in other locations of your choosing.
 
 * Download <a href="http://appcatalog.webosarchive.org/showMuseum.php?search=accuweather" target="_top">Accuweather</a>
+
+Or, if you have [Calendar Sync](email.md) setup, you can display today's agenda with AgendaZ found in Preware.
 
 ### Play Some Games!
 <img src="../images/angrybirds.jpg" align="right" style="padding-left: 8px">webOS had a great library of games, and you don't have to worry about in-app-purchases and spyware. Just some great mobile classics, including offerings from big publishers like Gameloft and EA. No matter which webOS device you have, you'll find some great entertainment in the <a href="http://appcatalog.webosarchive.org/showMuseum.php?category=Games&count=1030" target="_top">games section of the App Museum</a>. Here's a couple suggestions to get you started...

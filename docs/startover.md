@@ -18,7 +18,7 @@ If those links go stale, webOS Archive has a back-up of the essential <a href="h
 
 Ensure you have the novacom drivers working on your PC. See the [Prepare Your Computer](activate.md#prepare-your-computer) section of the Activation instructions.
 
-The Toolbox has startup scripts that run in most Mac, Windows and Linux environments -- even as of 2025. If one OS not work, try another -- the script will need access to your PC's USB ports, so may need elevated privileges.
+The Toolbox has startup scripts that run in most Mac, Windows and Linux environments -- even as of 2026. If one OS doesn't work, try another -- the script will need access to your PC's USB ports, so may need elevated privileges.
 
 ### Touchpad Environment
 

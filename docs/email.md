@@ -42,12 +42,27 @@ As with mail, Private and hosted Exchange servers that provide EAS (Exchange Act
 
 <a href="https://calendar.zoho.com" target="_blank">Zoho</a> syncs via Exchange ActiveSync, and works without compromise on webOS.
 
-#### All Other Service Providers
+#### Public Calendars
 
-<img src="../images/caldav.png" align="right" width="300" style="width:128px; padding-left: 8px">
-For providers like Google or iCloud, you will need to publish your calendar and contacts to a webDav server, then use the C+Dav Synergy app to sync to your device. For Office365, you can use <a href="https://davmail.sourceforge.net/" target="_blank">DavMail</a> to do the same thing with less steps.
+<img src="https://appcatalog.webosarchive.org/AppImages/1005826/icon-256.png" align="right" width="128" style="width:128px; padding-left: 8px">
+In 2026, support was added for syncing Public calendar URLs to TouchPad (and possibly Pre3) via a Synergy app called webCal Sync.
 
-The C+Dav app supports a wide variety of WebDav providers, including ownCloud and Radicale, and was updated in 2023.<br>
-To learn more, and download the current version, <a href="https://webos-ports.org/wiki/C+_Dav_Synergy_Connector" target="_blank">visit the webOS Ports wiki</a>.
+Most Cloud providers (including Google, iCloud, Office365/Outlook.com, and Canvas) supporting sharing via a URL. Although the method of sharing this URL differs between providers (some have a separate secret and public URL, some have limitations set by an administrator), if you can get a .ICS link out of your provider, that doesn't require authentication, you can do a one-way sync to get that calendar on to your device:
 
-If you need a WebDav host to publish calendars to, or to learn more about WebDav publishing, check back later in 2023 -- webOS Archive plans to provide this service to webOS users.
+- Install <a href="https://appcatalog.webosarchive.org/app/webCalSync" target="_top">WebCal Sync</a> from the App Museum
+- Create a placeholder account and calendar in the built-in Accounts app
+- Use the WebCal Sync app to set the calendars you want to sync, one at a time with a test sync after each
+- Calendars successfully added will automatically sync every 15 minutes if your device is online
+
+If your Cloud service does not provide a method for publishing, but does work in Microsoft Outlook for Windows, you can use <a href="https://davmail.sourceforge.net/" target="_blank">DavMail</a> to publish calendar data to a service that does.
+
+#### CalDav and CardDav
+
+<img src="../images/caldav.png" align="right" width="128" style="width:128px; padding-left: 8px">
+If you host your own Calendar and Contact data in a webDav-compatible service, like ownCloud or NextCloud, you can do a one-way or two-way sync with that service, using the C+Dav app.
+
+C+Dav supports a wide variety of WebDav providers, and was updated in 2026.
+
+- <a href="https://github.com/codepoet80/org.webosports.service.contacts.carddav/releases" target="_blank">Download the latest Release</a>
+
+To learn more, <a href="https://webos-ports.org/wiki/C+_Dav_Synergy_Connector" target="_blank">visit the webOS Ports wiki</a>.
