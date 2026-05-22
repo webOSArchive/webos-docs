@@ -105,7 +105,7 @@ Or, if you have [Calendar Sync](email.md) setup, you can display today's agenda 
 
 The App Museum has working apps (some need some tweaks) for remotely controlling Windows, Mac and Linux machines via <a href="http://appcatalog.webosarchive.org/showMuseum.php?search=splashtop" target="_top">Splashtop</a>, <a href="http://appcatalog.webosarchive.org/app/webOSRemoteDesktopClient" target="_top">Remote Desktop</a> or <a href="http://appcatalog.webosarchive.org/app/mVNC" target="_top">VNC</a>. You can also control <a href="http://appcatalog.webosarchive.org/app/KookarooRokuRemote" target="_top">Roku devices</a>, or an <a href="http://appcatalog.webosarchive.org/app/Retune" target="_top">iTunes library</a> -- including connected speakers like Home Pods.
 
-## Classic
+### Classic
 <img src="../images/palm-logo.png" align="right" style="padding-left: 8px">The Classic Emulator was originally only available for webOS 1.x but thanks to community efforts, it can be made to work on most webOS devices (some devices have no sound, Pre3 is not compatible), and gives you access to a cool catalog of vintage PalmOS apps and games!
 
 Depending on your OS version, you'll need to install some components:
@@ -119,7 +119,7 @@ Classic expires after a week, to avoid this, always run Classic with your device
 
 You can find tons of PalmOS apps and games at <a href="http://palmdb.net/" target="_blank">PalmDB.net</a>.
 
-### Make Something New
+## Make Something New
 <img src="../images/webos-sdk.png" align="left" style="padding-right: 8px">webOS is an easy platform to learn to develop on -- and modern AI tools make it even easier. The community has built or ported more than 50 apps since the HP shut down the platform, and there's more to come!
 
 Based on Javascript, and powered by Linux, webOS an easy environment to explore, reverse engineer and build upon. If you can make (or vibe-code) a web page, you can make an App for webOS! Check out the [SDK section](sdkpdk.md) for more info about getting started!
