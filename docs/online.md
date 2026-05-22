@@ -37,7 +37,7 @@ With or without modern encryption, there's still lots of interesting things you 
 
 ## Hot Spot Detection
 
-When you join, or re-join, a WiFi network webOS may incorrectly notify you that a Hot Spot has been detected and ask you to log-in. The captive portal detection webOS used depended on a server that's long gone. Using the latest [self-host proxy](proxysetup.md), or modifying your [hosts](hosts.md) file can help eliminate these notifications.
+When you join (or re-join) a WiFi network, webOS may incorrectly notify you that a Hot Spot has been detected and ask you to log-in. The captive portal detection webOS used depended on a server that's long gone. Using the latest [self-host proxy](proxysetup.md), or modifying your [hosts](hosts.md) file can help eliminate these notifications.
 
 ## What Next
 

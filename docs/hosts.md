@@ -19,11 +19,11 @@ With the latest updates from the community, there's less need to update the host
 * In the text editor that opens, enter the following lines:
 
 ```
-23.4.17.24     cdn.downloads.palm.com   # May not work any longer
-140.211.169.161    ipkg.preware.org
-23.141.224.193     ipkg.preware.net
-23.141.224.193     preware.net
-173.230.142.249    developer.palm.com   # Fixes Hot Spot detection
+23.4.17.24        cdn.downloads.palm.com  # May not work any longer
+140.211.169.161   ipkg.preware.org
+23.141.224.193    ipkg.preware.net
+23.141.224.193    preware.net
+173.230.142.249   developer.palm.com   # Fixes Hot Spot detection
 ```
 
 * From the Interalz Pro menu in the top left, choose "Save File" then "Close"
