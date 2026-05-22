@@ -23,6 +23,18 @@ More and more websites are moving to newer encryption over HTTPS as the only way
 
 * **FrogFind:** also by Action Retro, is <a href="http://www.frogfind.com/" target="_blank">search engine for older devices</a>, and renders a simplified version of most websites through its search results
 
+## Play Some Games!
+
+<img src="../images/angrybirds.jpg" align="right" style="padding-left: 8px">webOS had a great library of games, and you don't have to worry about in-app-purchases and spyware. Just some great mobile classics, including offerings from big publishers like Gameloft and EA. No matter which webOS device you have, you'll find some great entertainment in the <a href="http://appcatalog.webosarchive.org/showMuseum.php?category=Games&count=1030" target="_top">games section of the App Museum</a>. Here's a couple suggestions to get you started...
+
+* <a href="http://appcatalog.webosarchive.org/showMuseum.php?search=angry+birds" target="_top">Angry Birds</a> - The original, and some of the variations, covering every screen size
+* <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=scumm&app=1005763" target="_top">SCUMMVM</a> - Play dozens of PC point-and-click adventures on your TouchPad
+* <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=sims&app=1100" target="_top">The Sims 3</a> - The addictive classic had a great offering on the Pre, and has recently been patched to work on TouchPad and Pre 3 as well.
+* <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=snes&app=8214" target="_top">Snes9X EX</a> - webOS is home to many emulators, start with this near-perfect Super Nintendo emulator for Pre through to the TouchPad
+* <a href="http://appcatalog.webosarchive.org/showMuseum.php?search=assassin%27s+creed" target="_top">Assassin's Creed</a> - A giant adventure for your mobile device
+* <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=oregon&app=1097" target="_top">Oregon Trail</a> - The video game that taught a generation how to play video games has a beautiful version for the TouchPad
+* <a href="http://appcatalog.webosarchive.org/showMuseum.php?search=Miriel" target="_top">Miriel</a> - These games keep my youngest daughter busy for hours
+
 ## Apps
 
 All of the Apps listed below can be found on [App Museum II](appstores.md#install-webos-app-museum-ii), but there's direct download links as well.
@@ -58,7 +70,7 @@ Philips Hue lights are some of the best smart bulbs out there -- whether you use
 * Download <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=one+night&app=1005771" target="_top">One Night Stand</a>
 * Learn more about <a href="https://www.usa.philips.com/c-e/smartsleep/wake-up-light-portfolio.html" target="_blank">Philips Hue</a>
 
-### Play Some Tunes
+### Rock Out
 <a href="http://appcatalog.webosarchive.org/showMuseum.php?search=pandora&safe=on" target="_top">Pandora, and third party Pandora apps</a> still work on all devices as of 2026. 
 
 If you have a TouchPad, the wonderful iTunes remote control app, <a href="http://appcatalog.webosarchive.org/app/Retune" target="_top">Retune</a>, still works to control Apple Music or iTunes playback, and can even send audio to HomePods and AppleTVs. You'll need to temporarily disable your computer's firewall for pairing, but once done, you can turn the firewall back on and use as normal.
@@ -89,18 +101,7 @@ If you'd rather get some information, **Accuweather** still works on all devices
 
 Or, if you have [Calendar Sync](email.md) setup, you can display today's agenda with AgendaZ found in Preware.
 
-### Play Some Games!
-<img src="../images/angrybirds.jpg" align="right" style="padding-left: 8px">webOS had a great library of games, and you don't have to worry about in-app-purchases and spyware. Just some great mobile classics, including offerings from big publishers like Gameloft and EA. No matter which webOS device you have, you'll find some great entertainment in the <a href="http://appcatalog.webosarchive.org/showMuseum.php?category=Games&count=1030" target="_top">games section of the App Museum</a>. Here's a couple suggestions to get you started...
-
-* <a href="http://appcatalog.webosarchive.org/showMuseum.php?search=angry+birds" target="_top">Angry Birds</a> - The original, and some of the variations, covering every screen size
-* <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=scumm&app=1005763" target="_top">SCUMMVM</a> - Play dozens of PC point-and-click adventures on your TouchPad
-* <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=sims&app=1100" target="_top">The Sims 3</a> - The addictive classic had a great offering on the Pre, and has recently been patched to work on TouchPad and Pre 3 as well.
-* <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=snes&app=8214" target="_top">Snes9X EX</a> - webOS is home to many emulators, start with this near-perfect Super Nintendo emulator for Pre through to the TouchPad
-* <a href="http://appcatalog.webosarchive.org/showMuseum.php?search=assassin%27s+creed" target="_top">Assassin's Creed</a> - A giant adventure for your mobile device
-* <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?search=oregon&app=1097" target="_top">Oregon Trail</a> - The video game that taught a generation how to play video games has a beautiful version for the TouchPad
-* <a href="http://appcatalog.webosarchive.org/showMuseum.php?search=Miriel" target="_top">Miriel</a> - These games keep my youngest daughter busy for hours
-
-## Remote Control
+### Remote Control
 
 The App Museum has working apps (some need some tweaks) for remotely controlling Windows, Mac and Linux machines via <a href="http://appcatalog.webosarchive.org/showMuseum.php?search=splashtop" target="_top">Splashtop</a>, <a href="http://appcatalog.webosarchive.org/app/webOSRemoteDesktopClient" target="_top">Remote Desktop</a> or <a href="http://appcatalog.webosarchive.org/app/mVNC" target="_top">VNC</a>. You can also control <a href="http://appcatalog.webosarchive.org/app/KookarooRokuRemote" target="_top">Roku devices</a>, or an <a href="http://appcatalog.webosarchive.org/app/Retune" target="_top">iTunes library</a> -- including connected speakers like Home Pods.
 
@@ -119,4 +120,6 @@ Classic expires after a week, to avoid this, always run Classic with your device
 You can find tons of PalmOS apps and games at <a href="http://palmdb.net/" target="_blank">PalmDB.net</a>.
 
 ### Make Something New
-<img src="../images/webos-sdk.png" align="left" style="padding-right: 8px">webOS is an easy platform to learn to develop on. Based on Javascript, and powered by Linux, its an easy environment to explore, reverse engineer and build upon. If you can make a web page, you can make an App for webOS! Check out the [SDK section](sdkpdk.md) for more info about getting started!
+<img src="../images/webos-sdk.png" align="left" style="padding-right: 8px">webOS is an easy platform to learn to develop on -- and modern AI tools make it even easier. The community has built or ported more than 50 apps since the HP shut down the platform, and there's more to come!
+
+Based on Javascript, and powered by Linux, webOS an easy environment to explore, reverse engineer and build upon. If you can make (or vibe-code) a web page, you can make an App for webOS! Check out the [SDK section](sdkpdk.md) for more info about getting started!
