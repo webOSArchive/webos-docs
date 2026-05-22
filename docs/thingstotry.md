@@ -23,7 +23,7 @@ More and more websites are moving to newer encryption over HTTPS as the only way
 
 * **FrogFind:** also by Action Retro, is <a href="http://www.frogfind.com/" target="_blank">search engine for older devices</a>, and renders a simplified version of most websites through its search results
 
-## Play Some Games!
+## Play Some Games
 
 <img src="../images/angrybirds.jpg" align="right" style="padding-left: 8px">webOS had a great library of games, and you don't have to worry about in-app-purchases and spyware. Just some great mobile classics, including offerings from big publishers like Gameloft and EA. No matter which webOS device you have, you'll find some great entertainment in the <a href="http://appcatalog.webosarchive.org/showMuseum.php?category=Games&count=1030" target="_top">games section of the App Museum</a>. Here's a couple suggestions to get you started...
 
