@@ -19,7 +19,7 @@ The root certificates used to establish trust on the Internet are out-of-date in
     + On a TouchPad, use the Search icon in the toolbar at the top of the main scene
 * Find the app "Root Certs Update" in the search results, tap on it
 * Hit the Install button, and wait while it installs and runs the necessary scripts (this process takes a few minutes!)
-    + If you have trouble downloading, try downloading [Root Certs Update 1.0.2 from webOS Archive](http://www.webosarchive.org/activation/com.palm_.rootcertsupdate_1.0-2_all.ipk)
+    + If you have trouble with the app method, try downloading [Root Certs Update 1.0.5 from Herrie82](https://github.com/Herrie82/webOS-rootcerts/raw/refs/heads/main/com.palm_.rootcertsupdate_1.0-5_all.ipk)
 
 ## Dealing with Encryption
 
