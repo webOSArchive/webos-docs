@@ -45,7 +45,7 @@ If WOSQI doesn't work, the most likely issue is that the novacom driver isn't wo
 
 ## Install Preware
 
-The Preware app is one of the original Homebrew App Stores for webOS, and contains many useful apps, hacks, tweaks from the glory days of webOS. Although its no longer maintained, and some files no longer work, it still provides useful infrastructure for installing apps from other sources, so you don't need to plug your Device into your computer.
+The Preware app is the original Homebrew App Stores for webOS, and contains many useful apps, hacks, tweaks from the glory days of webOS. It provides critical infrastructure for installing apps from other sources -- so you don't need to plug your Device into your computer!
 
 * [Download Preware 1.9.16 from webOS Archive](http://www.webosarchive.org/activation/org.webosinternals.preware_1.9.16_arm.ipk) to your computer.
 * Drag the Preware IPK you just downloaded onto the WOSQI window (or hit the + button and browse for it)
@@ -60,35 +60,30 @@ The Preware app is one of the original Homebrew App Stores for webOS, and contai
 
 ---
 
-## Install webOS App Museum II
+## Install an App Store
 
-App Museum II requires Enyo, which was built-in to webOS 2.2.4 and later by default, and is available in Preware for earlier webOS 2.x versions. Depending your device, you may be able to run a [Super Doctor](doctor.md) that upgrades your device to a later, unofficial, version of the OS.
+The original webOS **App Catalog** has been restored for webOS 2.2.4 (newer phones) and 3.0.x (tablets) -- this is the best way to find apps for your devices! <br>
+You can download the installable App Catalog packages at <a href="https://appcatalog.webosarchive.org/?latest" target="_blank">appcatalog.webosarchive.org</a>.
+
+On any Enyo-capable device, you can use **App Museum II**. <a href="https://appcatalog.webosarchive.org/?latest" target="_blank">Download the latest here</a>.
+
+> Enyo was built-in to webOS 2.2.4 and later by default, and is available in Preware for earlier webOS 2.x versions. Depending your device, you may be able to run a [Super Doctor](doctor.md) that upgrades your device to a later, unofficial, version of the OS.
+
+webOS 1.x users can use the Museum via the built-in web browser at [http://appcatalog.webosarchive.org](http://appcatalog.webosarchive.org). 
+
+Alternatively, community member Nomad84 provides a <a href="https://github.com/h8pewou/legacy-webos-feeds/blob/main/README.md#wosa-feed" target="_blank">Museum Preware feed</a>.
 
 ---
-> **_NOTE:_** webOS 1.x users can use the Museum via the built-in web browser at [http://appcatalog.webosarchive.org](http://appcatalog.webosarchive.org). Alternatively, community member Nomad84 provides a Preware feed that has the Museum apps available in it:
 
-> * <a href="https://github.com/h8pewou/legacy-webos-feeds/blob/main/README.md#wosa-feed" target="_blank">App Museum Preware feed</a>
+You can use WOSI to Install webOS App Stores, just like you did with Preware:
 
----
-
-The original App Museum was a listing of the original Palm/HP App Catalog, and provided a way to link to FTP archives and install some of those apps.
-
-App Museum II pulls together multiple sources into a single interface for downloading App Catalog apps that have been rescued or archived by the community. Its a mostly historical source of apps, but curated sections of the Museum contain patched versions and instructions to making some important apps work again.
-
-Note that App Museum II requires Preware, so install that first!
-
-You can use WOSI to Install webOS App Museum II, just like you did with Preware.
-
-* **<a href="http://appcatalog.webosarchive.org/?latest" target="_blank">Download Latest webOS App Museum</a> to your computer**
-* Drag the Museum IPK you just downloaded onto the WOSQI window (or hit the + button and browse for it)
-* Press the Install button to install Preware on your device
+* **<a href="http://appcatalog.webosarchive.org/" target="_blank">Download an App Store</a> to your computer**
+* Drag the IPK you just downloaded onto the WOSQI window (or hit the + button and browse for it)
+* Press the Install button to install on your device
 
 ## Use Your Device to Install Apps
 
 Now that you have a couple App stores on your device, you won't need WOSQI or your computer any more. Make sure you're on WiFi, then just launch Preware or App Museum II and find and download apps there!
-<br>Just look for these icons in your Launcher...
-
-![Preware](images/preware-icon.png) &nbsp;&nbsp;![App Museum II](images/appmuseum-icon.png)
 
 ## Video Tutorial
 
