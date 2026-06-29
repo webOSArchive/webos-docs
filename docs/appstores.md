@@ -47,7 +47,7 @@ If WOSQI doesn't work, the most likely issue is that the novacom driver isn't wo
 
 The Preware app is the original Homebrew App Stores for webOS, and contains many useful apps, hacks, tweaks from the glory days of webOS. It provides critical infrastructure for installing apps from other sources -- so you don't need to plug your Device into your computer!
 
-* [Download Preware 1.9.16 from webOS Archive](http://www.webosarchive.org/activation/org.webosinternals.preware_1.9.16_arm.ipk) to your computer.
+* [Download Preware 1.9.17 from webOS Archive](http://www.webosarchive.org/activation/org.webosinternals.preware_1.9.17_arm.ipk) to your computer.
 * Drag the Preware IPK you just downloaded onto the WOSQI window (or hit the + button and browse for it)
 * Press the Install button to install Preware on your device
 
