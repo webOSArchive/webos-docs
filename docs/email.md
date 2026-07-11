@@ -4,15 +4,17 @@
 
 webOS has a first-class email client (arguably the best Exchange client for any Linux) that still works in some cases. Success is varied, depending on the server infrastructure.
 
+> **Encryption note:** the connection tips below assume your device can already speak modern encryption. On a **TouchPad / TouchPad Go** that means you've run the [Modern TLS Updates](modern-tls.md) — with those in place, secure mail servers connect directly and you can ignore the OpenSSL-updater and proxy suggestions here. On **other devices**, use the [OpenSSL updater](online.md#dealing-with-encryption) and/or a [proxy](proxysetup.md) as noted.
+
 ## Email
 
 #### IMAP and POP mail
 
-POP and IMAP servers still work, provided the server's encryption method is compatible with webOS. Run the [OpenSSL Updater for webOS](http://www.webosarchive.org/activation/org.webosinternals.openssl-updater_0.9.8-6_armv7.ipk) to improve your odds of connecting.
+POP and IMAP servers still work, provided the server's encryption method is compatible with webOS. On TouchPad, the [Modern TLS Updates](modern-tls.md) handle this; on other devices, run the [OpenSSL Updater for webOS](http://www.webosarchive.org/activation/org.webosinternals.openssl-updater_0.9.8-6_armv7.ipk) to improve your odds of connecting.
 
 #### Exchange Web Access
 
-Private and hosted Exchange servers that provide EAS (Exchange Active Sync) can still be used, provided you have a [SSL-bump proxy](proxysetup.md) enabled.
+Private and hosted Exchange servers that provide EAS (Exchange Active Sync) can still be used. On TouchPad, the [Modern TLS Updates](modern-tls.md) are enough; on other devices, you'll need a [SSL-bump proxy](proxysetup.md) enabled.
 
 #### Office365 (aka Microsoft365)
 
@@ -28,7 +30,7 @@ Some users are still able to use Gmail, but changes to Google's OAuth flow are c
 
 #### iCloud
 
-You may be able to get IMAP access to your iCloud inbox if you run the [OpenSSL Updater for webOS](http://www.webosarchive.org/activation/org.webosinternals.openssl-updater_0.9.8-6_armv7.ipk) first.
+You may be able to get IMAP access to your iCloud inbox. On TouchPad, the [Modern TLS Updates](modern-tls.md) cover this; on other devices, run the [OpenSSL Updater for webOS](http://www.webosarchive.org/activation/org.webosinternals.openssl-updater_0.9.8-6_armv7.ipk) first.
 
 ## Calendars and Contacts
 
@@ -36,7 +38,7 @@ The Calendar app on webOS is still one of the best out there -- particularly wit
 
 #### Exchange Web Access
 
-As with mail, Private and hosted Exchange servers that provide EAS (Exchange Active Sync) can still be used, provided you have a [SSL-bump proxy](proxysetup.md) enabled. Calendars and Contacts will sync seamlessly in a bi-directional fashion.
+As with mail, Private and hosted Exchange servers that provide EAS (Exchange Active Sync) can still be used — on TouchPad with [Modern TLS Updates](modern-tls.md), or on other devices with a [SSL-bump proxy](proxysetup.md) enabled. Calendars and Contacts will sync seamlessly in a bi-directional fashion.
 
 #### Zoho
 

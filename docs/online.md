@@ -1,13 +1,11 @@
 # Getting Online
 
+*This page is for webOS **1.x and 2.x** devices (Pre, Pixi, Veer, Pre 2, Pre3). On a **TouchPad** or **TouchPad Go**? Use [Modern TLS Updates](modern-tls.md) instead — it replaces everything on this page.*
+
 This section assumes you've completed the previous steps to [activate your device](activate.md), and [install Preware](appstores.md).<br>
-It also assumes you've joined a WiFi network using the built-in Settings, and that your WiFi network has Internet access.
+It also assumes you've joined a WiFi network using the built-in Settings, that your WiFi network has Internet access, and that you've [set the date and time](setup-path.md#set-the-date-time-first).
 
 The built-in web browser is dated, and has some limitations, but with a little help, there's still a lot you can do online!
-
-## Set Date and Time
-
-Believe it or not, this is a critical step! Web encryption requires a reasonable delta from UTC (Coordinated Universal Time) time or you'll end up with errors and failures. Use the built-in Settings app to set the date, time and time zone manually. Depending on your device, you may want to [sync the time with a remote server](timesync.md) once you're online.
 
 ## Updating Certificates
 
