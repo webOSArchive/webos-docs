@@ -6,7 +6,7 @@ Many apps are still missing from the Museum! If you have a device with apps that
 
 <img src="../images/appscanner.png" align="right" style="padding-left: 8px;">Once you have [Preware](appstores.md) on your device, you can install an App that will automatically inventory your device, and compare your installed apps to the list of missing apps.
 
-If you have the App Museum installed, search for:
+If you have the App Catalog or App Museum II installed, search for:
 `App Scanner`
 
 If you only have Preware installed, you can the Museum in the built-in web-browser and click Direct Link under Download:

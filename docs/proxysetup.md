@@ -45,7 +45,7 @@ While the details will be slightly different, these steps are usually required.
 ![webOS Archive Proxy](images/proxyicon.png)
 
 If you're using webOS 2.2.4 or higher, The easiest way to get started is with the NEW **webOS Archive Proxy** app.
-To download, install [webOS App Museum II](appstores.md#install-webos-app-museum-ii) and search for "Proxy".
+To download, install an [App Store](appstores.md) and search for "Proxy".
 
 Or use the <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?app=1005768" target="_top">direct download</a> and install it yourself.
 

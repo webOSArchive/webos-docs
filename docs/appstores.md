@@ -1,6 +1,6 @@
 # Installing Apps on your webOS Device
 
-There's a vibrant community rescuing, archiving, restoring and even building apps for webOS. Since the actual HP App Catalog is gone, you'll need your computer one more time to "side-load" one app that gives you access to the rest of this "after-life" ecosystem.
+There's a vibrant community rescuing, archiving, restoring and even building apps for webOS. Since the original HP App Catalog is broken, you'll need your computer one more time to "side-load" one app that gives you access to the rest of this "after-life" ecosystem.
 
 ## Prepare Your Device
 
@@ -48,7 +48,7 @@ If WOSQI doesn't work, the most likely issue is that the novacom driver isn't wo
 The Preware app is the original Homebrew App Stores for webOS, and contains many useful apps, hacks, tweaks from the glory days of webOS. It provides critical infrastructure for installing apps from other sources -- so you don't need to plug your Device into your computer!
 
 * [Download Preware 1.9.17 from webOS Archive](http://www.webosarchive.org/activation/org.webosinternals.preware_1.9.17_arm.ipk) to your computer.
-* Drag the Preware IPK you just downloaded onto the WOSQI window (or hit the + button and browse for it)
+* Drag the Preware IPK you just downloaded onto the WOSQI window (or hit the + button and find it)
 * Press the Install button to install Preware on your device
 
 ![Install Preware from WebOS Quick Install](images/wosqi.png)
@@ -62,10 +62,11 @@ The Preware app is the original Homebrew App Stores for webOS, and contains many
 
 ## Install an App Store
 
-The original webOS **App Catalog** has been restored for webOS 2.2.4 (newer phones) and 3.0.x (tablets) -- this is the best way to find apps for your devices! <br>
-You can download the installable App Catalog packages at <a href="https://appcatalog.webosarchive.org/?latest" target="_blank">appcatalog.webosarchive.org</a>.
+The original webOS **App Catalog** has been restored for webOS 2.2.4 (newer phones) and 3.0.x (tablets) -- this is the best way to find apps for your devices!
 
-On any Enyo-capable device, you can use **App Museum II**. <a href="https://appcatalog.webosarchive.org/?latest" target="_blank">Download the latest here</a>.
+- You can download the installable App Catalog packages at <a href="https://appcatalog.webosarchive.org/?latest" target="_blank">appcatalog.webosarchive.org</a>.
+
+An alternative for LuneOS, or any Enyo-capable device, is to use **App Museum II**. <a href="https://appcatalog.webosarchive.org/?latest" target="_blank">Download the latest here</a>.
 
 > Enyo was built-in to webOS 2.2.4 and later by default, and is available in Preware for earlier webOS 2.x versions. Depending your device, you may be able to run a [Super Doctor](doctor.md) that upgrades your device to a later, unofficial, version of the OS.
 
@@ -78,7 +79,7 @@ Alternatively, community member Nomad84 provides a <a href="https://github.com/h
 You can use WOSI to Install webOS App Stores, just like you did with Preware:
 
 * **<a href="http://appcatalog.webosarchive.org/" target="_blank">Download an App Store</a> to your computer**
-* Drag the IPK you just downloaded onto the WOSQI window (or hit the + button and browse for it)
+* Drag the IPK you just downloaded onto the WOSQI window (or hit the + button and find it)
 * Press the Install button to install on your device
 
 ## Use Your Device to Install Apps

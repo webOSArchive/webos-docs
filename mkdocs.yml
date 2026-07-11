@@ -1,6 +1,6 @@
 site_name: webOS Docs
 nav:
-    - Home: home.md
+    - Home: index.md
     - Getting Started:
       - Activating a webOS Device: activate.md
       - Installing Apps on your webOS Device: appstores.md
@@ -33,6 +33,11 @@ nav:
 theme:
   name: readthedocs
   favicon: images/icon.ico
-  icon: 
+  icon:
     logo: material/book-check
   custom_dir: overrides
+extra_css:
+  - css/wosa-fonts.css
+  - css/wosa-menu.css
+extra_javascript:
+  - js/wosa-menu.js

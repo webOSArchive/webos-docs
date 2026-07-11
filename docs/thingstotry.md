@@ -37,7 +37,7 @@ More and more websites are moving to newer encryption over HTTPS as the only way
 
 ## Apps
 
-All of the Apps listed below can be found on [App Museum II](appstores.md#install-webos-app-museum-ii), but there's direct download links as well.
+All of the Apps listed below can be found in the [App Catalog](appstores.md), but there's direct download links as well.
 
 ### Watch (Some) Videos
 

@@ -1,0 +1,40 @@
+/*
+ * Placement for the injected webOS Archive top-nav bar (see js/wosa-menu.js).
+ *
+ * The bar is fixed to the top of the viewport at 45px tall (matching the
+ * upstream .menu-wrapper height). The ReadTheDocs theme uses a fixed left
+ * sidebar and a content wrapper, so both are pushed down by 45px -- but only
+ * once the menu has actually loaded (the .wosa-has-menu class is added on
+ * success), so a device that can't load the menu shows no empty gap.
+ */
+#wosa-menu-mount {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 45px;
+  z-index: 500;               /* above the RTD sidebar (z-index 200) */
+  background: #2d2d2d;        /* fallback fill until menu.css paints */
+}
+
+/* Allow the menu's hover dropdowns to spill below the 45px bar. */
+#wosa-menu-mount .menu-wrapper,
+#wosa-menu-mount .wosaMenu {
+  overflow: visible;
+}
+
+/* Reserve space for the bar only after a successful load. */
+.wosa-has-menu .wy-nav-side {
+  top: 45px;
+  /* The theme sets min-height:100%, which would force the sidebar to a full
+     viewport height starting 45px down -- overflowing the bottom and giving
+     the side nav its own scrollbar. Cancel it so top:45px + the theme's
+     bottom:0 size the sidebar to exactly (viewport - 45px). */
+  min-height: 0;
+}
+.wosa-has-menu .wy-nav-content-wrap {
+  /* Padding (not margin) clears the fixed bar; with box-sizing:border-box and
+     the theme's min-height:100%, this adds no extra page scroll. The mobile
+     .wy-nav-top bar lives inside this wrapper, so it's cleared here too. */
+  padding-top: 45px;
+}

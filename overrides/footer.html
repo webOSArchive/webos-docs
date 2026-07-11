@@ -24,19 +24,14 @@
   
     <small><a href="https://github.com/webosarchive/webos-docs" target="_blank">webOS Docs</a> is an open source project of <a href="http://www.webosarchive.org" target="_top">webOS Archive</a></small>
     <script>
-      //Support reverse proxy links
+      // When the page is served over https, upgrade any absolute http:// links
+      // so we don't trigger mixed-content or needless redirects. (Pages are now
+      // served directly at their real paths, so no reverse-proxy link rewriting
+      // is needed -- MkDocs's relative links resolve natively.)
       var myURL = document.getElementsByTagName('a');
       for(var i=0; i<myURL.length; i++) {
         var currLink = (myURL[i].getAttribute('href'));
-        if (currLink.indexOf("..") != -1) {
-          newUrl = location.protocol + "//www.webosarchive.org/docs" + myURL[i].getAttribute('href');
-          newUrl = newUrl.replace("..", "");
-          if (window.location.host.indexOf("localhost") == -1) {
-            myURL[i].setAttribute('href', newUrl);
-            myURL[i].setAttribute('target', "_top");
-          }
-        }
-        if (location.protocol == "https:" && currLink.indexOf("http://") != -1) {
+        if (currLink && location.protocol == "https:" && currLink.indexOf("http://") != -1) {
           newUrl = currLink.replace("http://", "https://");
           if (window.location.host.indexOf("localhost") == -1) {
             myURL[i].setAttribute('href', newUrl);
