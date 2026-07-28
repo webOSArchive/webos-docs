@@ -5,7 +5,7 @@ This project has two goals:
 * Restore the on-device help system from archives, and <a href="http://help.webosarchive.org/" target="_blank">get it working again</a>.
 * Augment the on-device help with up-to-date information to re-activate a webOS device and make it useful on the modern Internet
 
-The [Getting Started](activate.md) section will walk through the steps necessary to activate a webOS device, install some App Stores, and get on the modern web. From there the guide splits into two setup paths depending on your hardware: **TouchPad and TouchPad Go** (webOS 3.x) can now use [Modern TLS Updates](modern-tls.md) for native encryption, while **all other devices** use certificate updates and a [proxy](proxysetup.md). See [Which Setup Path?](setup-path.md) to find yours.
+The [Getting Started](activate.md) section will walk through the steps necessary to activate a webOS device, install some App Stores, and get on the modern web. It's one path for almost everyone: on **webOS 2.2.4 and 3.0.x** — TouchPad and TouchPad Go, plus Pre3, Veer and Pre 2 — the [Modern TLS Updates](modern-tls.md) give your device native modern encryption, with no proxy or certificate juggling required. Devices older than 2.2.4 can't run those updates and are largely limited to plain HTTP; they're covered under [Older Devices](online.md).
 
 The [Taking Control](timesync.md) section covers some optional advanced topics that provide some quality-of-life improvements on webOS, through apps, hacks and scripts built by the community.
 

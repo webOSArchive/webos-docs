@@ -54,7 +54,7 @@ The Preware app is the original Homebrew App Stores for webOS, and contains many
 ![Install Preware from WebOS Quick Install](images/wosqi.png)
 
 ---
-> **_NOTE:_** Many Preware packages are now served from HTTPS hosts, which can cause problems for older devices. TouchPad users will fix this permanently in the next step with [Modern TLS Updates](modern-tls.md). On other devices running webOS 2.2.4 or higher, you can solve this with a [proxy](proxysetup.md). On earlier versions of webOS, community member Nomad84 provides an alternate feed that is hosted via HTTP:
+> **_NOTE:_** Many Preware packages are now served from HTTPS hosts, which can cause problems for older devices. On webOS 2.2.4 and 3.0.x you'll fix this permanently in the next step with [Modern TLS Updates](modern-tls.md). On earlier versions of webOS, community member Nomad84 provides an alternate feed that is hosted via HTTP:
 
 > + <a href="https://github.com/h8pewou/legacy-webos-feeds/blob/main/README.md" target="_blank">HTTP-only Preware Feeds</a>
 
@@ -94,7 +94,7 @@ A video showing activation and [app installation](appstores.md) is available on 
 
 ## What Next
 
-Now that you've got some App Stores installed, it's time to get your device onto the modern web. The steps differ by device — see [Which Setup Path?](setup-path.md) to find yours.
+Now that you've got some App Stores installed, it's time to get your device onto the modern web. Start with [Getting Ready](setup-path.md), then run the [Modern TLS Updates](modern-tls.md).
 
 ## Alternate Instructions
 

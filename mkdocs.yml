@@ -4,15 +4,14 @@ nav:
     - Getting Started:
       - Activating a webOS Device: activate.md
       - Installing Apps on your webOS Device: appstores.md
-      - Which Setup Path?: setup-path.md
-    - "Setup · TouchPad (webOS 3.x)":
+      - Getting Ready: setup-path.md
       - Modern TLS Updates: modern-tls.md
-    - "Setup · Other Devices":
-      - Getting Online: online.md
-      - Using a SSL Proxy: proxysetup.md
     - Using Your Device:
       - Browsing the Web: browsers.md
       - Email, Calendars & Contacts: email.md
+    - "Older Devices (before webOS 2.2.4)":
+      - Getting Online: online.md
+      - Using a SSL Proxy: proxysetup.md
     - Things To Try: thingstotry.md
     - Join the Community: community.md
     - Taking Control:

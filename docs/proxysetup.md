@@ -1,10 +1,15 @@
 # Proxy Setup
 
-*On a **TouchPad** or **TouchPad Go**? You don't need a proxy — [Modern TLS Updates](modern-tls.md) give webOS 3.x native encryption. This page is for webOS 1.x and 2.x devices.*
+> **Most people no longer need this page.** An SSL-bump proxy used to be the only way to get a webOS device onto the encrypted web. On **webOS 2.2.4 and 3.0.x** — every TouchPad, and any Pre3, Veer or Pre 2 at 2.2.4 — the [Modern TLS Updates](modern-tls.md) do the job natively, and better. Start there.
 
-Modern encryption isn't available on most webOS mobile devices, and efforts to port it haven't panned out so far. Fortunately, on most webOS Devices, you can work-around by using a SSL-bump proxy. Outlined here are some options for proxies that can help you get your device online. Fair warning: SSL-bumping defeats the security of modern encryption, and shouldn't be used for anything highly private.
+A proxy is worth setting up in two remaining cases:
 
-Unfortunately, the API to set a proxy wasn't added for most devices until webOS 2.2.4 (2.2.0 on Pre3). If you're on an original Pre or Pixi, you're out of luck. If you're on a Pre2 or Veer, it IS possible to update them to webOS 2.2.4, but depending on carrier, it requires some extra work to <a href="https://github.com/webos-internals/meta-doctor/" target="_blank">build and run a Super Doctor</a>. If you're on a Pre3 or TouchPad, you're ready to go.
+* **You want the extras.** The webOS Archive proxy does more than encryption: it redirects Google searches to DuckDuckGo Lite, quiets the bogus [Hot Spot detection](online.md#hot-spot-detection), and can host the original on-device Help content.
+* **You'd rather not patch the device.** The TLS Updates modify system files. If you want your device left stock, a proxy is the hands-off alternative.
+
+Note the awkward gap: the API to set a proxy wasn't added for most devices until webOS 2.2.4 (2.2.0 on Pre3) — so the [older devices](online.md) that can't run the TLS Updates mostly can't run a proxy either. On an original Pre or Pixi, neither option is available. If you're on a Pre 2 or Veer it IS possible to update them to webOS 2.2.4 with a Super Doctor — many are archived and ready to run, see [Call the Doctor](doctor.md) — and once you've done that, the [TLS Updates](modern-tls.md) are the easier finish.
+
+Fair warning: SSL-bumping defeats the security of modern encryption, and shouldn't be used for anything highly private.
 
 **Important Note** Make sure the time on your device is at least close to accurate. Certificates are based on dates, so if your internal clock is wrong, you will get errors!
 

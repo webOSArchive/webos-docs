@@ -1,39 +1,32 @@
-# Which Setup Path?
+# Getting Ready
 
-You've [activated your device](activate.md) and [installed Preware and an App Store](appstores.md). Everything up to this point is the same for every webOS device. From here, the road forks.
+You've [activated your device](activate.md) and [installed Preware and an App Store](appstores.md). Two short things to take care of before you get online: setting the clock, and checking what your device's version of webOS can do.
 
-Since webOS was released, Internet encryption (TLS) has moved on, and the version built into webOS can no longer connect to most of the modern web. **How you fix this depends on your device.**
+Since webOS was released, Internet encryption (TLS) has moved on, and the version built into webOS can no longer connect to most of the modern web. The community has fixed that — natively, on the device — for **webOS 2.2.4 and 3.0.x**. That's a single update, and it's the same next step for tablets and phones alike.
 
 ## Set the Date & Time First
 
-Before anything else — and no matter which path you take — set your clock. This is a critical step, not an optional one: TLS encryption is based on dates, so if your internal clock is wrong you'll get errors and failures on nearly every secure site.
+Before anything else, set your clock. This is a critical step, not an optional one: TLS encryption is based on dates, so if your internal clock is wrong you'll get errors and failures on nearly every secure site.
 
 * Launch the built-in **Date & Time** app
 * Set the date and time as close to reality as you can
 * Set your Timezone
 
-Once you're online, you may want to keep the clock from drifting automatically — see [Time Synchronization](timesync.md).
+The [Modern TLS Updates](modern-tls.md) will keep the clock from drifting for you from then on. If you'd rather not run those, see [Time Synchronization](timesync.md) for other options.
 
-## Choose Your Path
+## What Your Device Can Do
 
-| Your device | webOS version | Your path |
+| Your device | webOS version | What to do |
 |---|---|---|
-| **TouchPad**, **TouchPad Go** | 3.x | ➡️ [**Modern TLS Updates**](modern-tls.md) |
-| Pre3, Veer, Pre 2 | 2.x | ➡️ [**Getting Online (Certificates & Proxy)**](online.md) |
-| Pre, Pre Plus, Pixi | 1.x | ➡️ [**Getting Online (Certificates & Proxy)**](online.md) |
+| **TouchPad**, **TouchPad Go** | 3.0.x | ➡️ [**Modern TLS Updates**](modern-tls.md) |
+| **Pre3**, **Veer**, **Pre 2** | 2.2.4 | ➡️ [**Modern TLS Updates**](modern-tls.md) |
+| Veer, Pre 2 | 2.2.0 / 2.1.0 | Upgrade to 2.2.4 if you can — otherwise see [Older Devices](online.md) |
+| Pre, Pre Plus, Pixi | 1.x | [Older Devices](online.md) — limited to HTTP |
 
-### TouchPad and TouchPad Go — the easy path
+**webOS 2.2.4 is the dividing line.** At 2.2.4 or above, your device can be updated to speak modern TLS directly — no root certificate juggling, no OpenSSL updater, no proxy server to run. Below 2.2.4, none of that is available (and neither is the proxy work-around, which needs an API that only arrived in 2.2.4), so those devices are effectively limited to what they can reach over plain HTTP.
 
-Thanks to recent community work, webOS 3.x tablets can now be updated to speak **modern TLS natively**. That single update replaces almost every work-around that used to be necessary — no root certificate updates, no OpenSSL patches, and no proxy server to run.
-
-If you have a TouchPad or TouchPad Go, head straight to **[Modern TLS Updates](modern-tls.md)**.
-
-### Everything else — the work-around path
-
-For webOS 1.x and 2.x devices (Pre, Pixi, Veer, Pre 2, Pre3), native modern TLS isn't available. Instead, you'll lend webOS a hand with a combination of updated certificates and — where supported — an SSL-bump proxy.
-
-If you have one of these devices, start with **[Getting Online](online.md)**, then set up a **[Proxy](proxysetup.md)**.
+If you have a Veer or a Pre 2 that's still on its original firmware, it is worth upgrading it to 2.2.4 with an unofficial **Super Doctor** — that puts it on the same footing as everything else here. Many are already built and archived, so it's usually just a matter of downloading the right one; see [Call the Doctor](doctor.md).
 
 ---
 
-Once your device can reach the modern web, both paths rejoin for [Browsing the Web](browsers.md) and [Email, Calendars &amp; Contacts](email.md).
+Next: **[Modern TLS Updates](modern-tls.md)**.

@@ -3,16 +3,16 @@ webOS is *not* a dead platform! There's still plenty of things you can on your w
 
 ## Websites
 
-More and more websites are moving to newer encryption over HTTPS as the only way to access the site. On webOS 2.2.4 and above, you can work-around this with a [proxy](proxysetup.md). With old versions you are more limited. Here are some common websites that work, or ways to work around:
+More and more websites are moving to newer encryption over HTTPS as the only way to access the site. On webOS 2.2.4 and above, the [Modern TLS Updates](modern-tls.md) solve this outright; a [proxy](proxysetup.md) is an alternative. On [older versions](online.md) you are more limited. Here are some common websites that work, or ways to work around:
 
 ### Common Sites
-* **Google**'s website no longer works, but if you're using the [WOSA proxy](proxysetup.md) your searches will be automatically re-directed to DuckDuckGo Lite
+* **Google**'s website no longer works. Try <a href="https://duckduckgo.com/html" target="_blank">DuckDuckGo Lite</a> instead — and if you're using the [WOSA proxy](proxysetup.md), your Google searches are re-directed there automatically
 
 * **YouTube**'s website no longer works, but there's an app for that called [MeTube](#watch-some-videos), or you can try a retro-friendly <a href="https://invidious.io/" target="_blank">Invidious</a> provider
 
-* **Reddit** <img src="../images/reddit.png" align="right" style="padding-left: 8px">still works with an [HTTPS proxy enabled](proxysetup.md) on all devices through <a href="http://old.reddit.com" target="_blank">http://old.reddit.com</a> or the excellent <a href="http://appcatalog.webosarchive.org/app/IAmAReddit">IAmA Reddit App</a>, with the [WOSA proxy](proxysetup.md). Reddit videos can also be watched in MeTube!
+* **Reddit** <img src="../images/reddit.png" align="right" style="padding-left: 8px">still works once your device can reach HTTPS — through the [TLS Updates](modern-tls.md) or a [proxy](proxysetup.md) — via <a href="http://old.reddit.com" target="_blank">http://old.reddit.com</a> or the excellent <a href="http://appcatalog.webosarchive.org/app/IAmAReddit">IAmA Reddit App</a>. Reddit videos can also be watched in MeTube!
 
-* **Wikipedia** works great with a proxy. For older devices, webOS archive provides a "tiny" version that is periodically updated at <a href="http://wikipedia.webosarchive.org" target="_blank">wikipedia.webosarchive.org</a>
+* **Wikipedia** works great once you have HTTPS. For [older devices](online.md), webOS archive provides a "tiny" version that is periodically updated at <a href="http://wikipedia.webosarchive.org" target="_blank">wikipedia.webosarchive.org</a>
 
 ### Alternatives
 * **RSS:** many sites can be accessed through their RSS Feed using the <a href="http://appcatalog.webosarchive.org/showMuseum.php?search=feedspider" target="_top">FeedSpider</a> app, and a free service like <a href="http://www.inoreader.com" target="_blank">InoReader</a>
