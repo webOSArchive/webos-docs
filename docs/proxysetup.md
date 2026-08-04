@@ -1,6 +1,6 @@
 # Proxy Setup
 
-> **Most people no longer need this page.** An SSL-bump proxy used to be the only way to get a webOS device onto the encrypted web. On **webOS 2.2.4 and 3.0.x** — every TouchPad, and any Pre3, Veer or Pre 2 at 2.2.4 — the [Modern TLS Updates](modern-tls.md) do the job natively, and better. Start there.
+> **Most people no longer need this page.** An SSL-bump proxy used to be the only way to get a webOS device onto the encrypted web. On **webOS 2.2.4 and 3.0.5** — every TouchPad, and any Pre3, Veer or Pre 2 at 2.2.4 — the [Modern TLS Updates](modern-tls.md) do the job natively, and better. Start there.
 
 A proxy is worth setting up in two remaining cases:
 

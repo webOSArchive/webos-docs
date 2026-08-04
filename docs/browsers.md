@@ -1,12 +1,12 @@
 # Browsing the Web
 
-> **Before you start:** make sure your device can reach the modern web first. On **webOS 2.2.4 or 3.0.x**, run the [Modern TLS Updates](modern-tls.md) — after that, nothing extra is needed for secure sites. On [older devices](online.md), you're limited to HTTP unless you can run a [proxy](proxysetup.md).
+> **Before you start:** make sure your device can reach the modern web first. On **webOS 2.2.4 or 3.0.5**, run the [Modern TLS Updates](modern-tls.md) — after that, nothing extra is needed for secure sites. On [older devices](online.md), you're limited to HTTP unless you can run a [proxy](proxysetup.md).
 
 ## Built-in Browser
 
 The built-in web browser on your device has two challenges: encryption and rendering.
 
-Most of the web has moved to HTTPS, using an encryption that older webOS versions don't support, so websites can't load. The [Modern TLS Updates](modern-tls.md) solve this on webOS 2.2.4 and 3.0.x; on [older devices](online.md), your options are much narrower.
+Most of the web has moved to HTTPS, using an encryption that older webOS versions don't support, so websites can't load. The [Modern TLS Updates](modern-tls.md) solve this on webOS 2.2.4 and 3.0.5; on [older devices](online.md), your options are much narrower.
 
 The next problem is harder -- the browser engine that was built-in back in 2011 (or earlier) is missing some modern features. As a result some pages will not display properly, not display at all, or encourage you to upgrade your browser, then refuse to let you proceed. In these cases, you might consider getting the content over [RSS](thingstotry.md#alternatives).
 

@@ -1,6 +1,6 @@
 # Getting Online — Older Devices
 
-*This page is for devices running **older than webOS 2.2.4**: the webOS 1.x line (Pre, Pre Plus, Pixi), and any Veer or Pre 2 still on its original 2.2.0 / 2.1.0 firmware. On **webOS 2.2.4 or 3.0.x** — any TouchPad, and Pre3, Veer or Pre 2 that's been upgraded — use [Modern TLS Updates](modern-tls.md) instead. It replaces everything on this page.*
+*This page is for devices running **older than webOS 2.2.4**: the webOS 1.x line (Pre, Pre Plus, Pixi), and any Veer or Pre 2 still on its original 2.2.0 / 2.1.0 firmware. On **webOS 2.2.4 or 3.0.5** — any TouchPad, and Pre3, Veer or Pre 2 that's been upgraded — use [Modern TLS Updates](modern-tls.md) instead. It replaces everything on this page.*
 
 This section assumes you've completed the previous steps to [activate your device](activate.md), and [install Preware](appstores.md).<br>
 It also assumes you've joined a WiFi network using the built-in Settings, that your WiFi network has Internet access, and that you've [set the date and time](setup-path.md#set-the-date-time-first).

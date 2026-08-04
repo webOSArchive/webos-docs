@@ -8,7 +8,7 @@ For years, getting a webOS device onto the modern web meant a stack of work-arou
 
 | Device | webOS version | Supported |
 |---|---|---|
-| TouchPad, TouchPad Go | 3.0.x | ✅ Yes |
+| TouchPad, TouchPad Go | 3.0.5 | ✅ Yes |
 | Pre3 | 2.2.4 | ✅ Yes |
 | Veer, Pre 2 | 2.2.4 | ✅ Yes |
 | Veer, Pre 2 | 2.2.0 / 2.1.0 | ❌ [Upgrade to 2.2.4 first](doctor.md) |

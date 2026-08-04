@@ -2,7 +2,7 @@
 
 You've [activated your device](activate.md) and [installed Preware and an App Store](appstores.md). Two short things to take care of before you get online: setting the clock, and checking what your device's version of webOS can do.
 
-Since webOS was released, Internet encryption (TLS) has moved on, and the version built into webOS can no longer connect to most of the modern web. The community has fixed that — natively, on the device — for **webOS 2.2.4 and 3.0.x**. That's a single update, and it's the same next step for tablets and phones alike.
+Since webOS was released, Internet encryption (TLS) has moved on, and the version built into webOS can no longer connect to most of the modern web. The community has fixed that — natively, on the device — for **webOS 2.2.4 and 3.0.5**. That's a single update, and it's the same next step for tablets and phones alike.
 
 ## Set the Date & Time First
 
@@ -18,7 +18,8 @@ The [Modern TLS Updates](modern-tls.md) will keep the clock from drifting for yo
 
 | Your device | webOS version | What to do |
 |---|---|---|
-| **TouchPad**, **TouchPad Go** | 3.0.x | ➡️ [**Modern TLS Updates**](modern-tls.md) |
+| **TouchPad**, **TouchPad Go** | 3.0.5 | ➡️ [**Modern TLS Updates**](modern-tls.md) |
+| **TouchPad**, **TouchPad Go** | 3.0.4 | ➡️ [**Doctor to 3.0.5**](doctor.md) first! |
 | **Pre3**, **Veer**, **Pre 2** | 2.2.4 | ➡️ [**Modern TLS Updates**](modern-tls.md) |
 | Veer, Pre 2 | 2.2.0 / 2.1.0 | Upgrade to 2.2.4 if you can — otherwise see [Older Devices](online.md) |
 | Pre, Pre Plus, Pixi | 1.x | [Older Devices](online.md) — limited to HTTP |

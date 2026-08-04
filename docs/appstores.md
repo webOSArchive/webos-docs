@@ -54,7 +54,7 @@ The Preware app is the original Homebrew App Stores for webOS, and contains many
 ![Install Preware from WebOS Quick Install](images/wosqi.png)
 
 ---
-> **_NOTE:_** Many Preware packages are now served from HTTPS hosts, which can cause problems for older devices. On webOS 2.2.4 and 3.0.x you'll fix this permanently in the next step with [Modern TLS Updates](modern-tls.md). On earlier versions of webOS, community member Nomad84 provides an alternate feed that is hosted via HTTP:
+> **_NOTE:_** Many Preware packages are now served from HTTPS hosts, which can cause problems for older devices. On webOS 2.2.4 and 3.0.5 you'll fix this permanently in the next step with [Modern TLS Updates](modern-tls.md). On earlier versions of webOS, community member Nomad84 provides an alternate feed that is hosted via HTTP:
 
 > + <a href="https://github.com/h8pewou/legacy-webos-feeds/blob/main/README.md" target="_blank">HTTP-only Preware Feeds</a>
 
@@ -62,7 +62,7 @@ The Preware app is the original Homebrew App Stores for webOS, and contains many
 
 ## Install an App Store
 
-The original webOS **App Catalog** has been restored for webOS 2.2.4 (newer phones) and 3.0.x (tablets) -- this is the best way to find apps for your devices!
+The original webOS **App Catalog** has been restored for webOS 2.2.4 (newer phones) and 3.0.5 (tablets) -- this is the best way to find apps for your devices!
 
 - You can download the installable App Catalog packages at <a href="https://appcatalog.webosarchive.org/?latest" target="_blank">appcatalog.webosarchive.org</a>.
 
