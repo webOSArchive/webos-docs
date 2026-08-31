@@ -1,0 +1,509 @@
+Delivered-To: curator@webosarchive.org
+Received-SPF: pass (zohomail.com: domain of weboslives.eu designates 17.58.23.182 as permitted sender) client-ip=17.58.23.182; envelope-from=adam@weboslives.eu; helo=mr85p00im-zteg06011501.me.com;
+Authentication-Results: mx.zohomail.com;
+	dkim=pass;
+	spf=pass (zohomail.com: domain of weboslives.eu designates 17.58.23.182 as permitted sender)  smtp.mailfrom=adam@weboslives.eu
+ARC-Seal: i=1; a=rsa-sha256; t=1725568900; cv=none; 
+	d=zohomail.com; s=zohoarc; 
+	b=MdJLadwZIQ5h3u3M5ZDgNfasahZBkh1L28Sf9hSCxivmCLoyjl45dOkCkkuiT2SGwO7EqLbj0hnxgv+VJzhAYTo+Z7jd/h2CcojeQ65Apy0JKgbxRvC8KG60Zn1tkJFFx34Iv97cuBXnYhGoaKRmYPj697b1NRlSCayvdcTkq8o=
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=zohomail.com; s=zohoarc; 
+	t=1725568900; h=Content-Type:Content-Transfer-Encoding:Date:Date:From:From:MIME-Version:Message-ID:References:Subject:Subject:To:To:Message-Id:Reply-To:Cc; 
+	bh=jMDd7xbr2Qj3DZE4QeeK6YfZzxt3zc/pGB5yqnTBQOQ=; 
+	b=ORv6pDqGDuyRIhOkvyuwlNFCmVhcVCsHrr/wKDtfX1vDaYNHiZ1GAys7ItnAkB0EEB+F5AQmPTvyhd6Hk2RE+GVg+I0KoeASNM9Hwf1q7nM0SJfRenkZE94RoTGaga1dEMVGl7VuR0lukAJG3tQO6PArPxeWoo8ePaZG3C/NBao=
+ARC-Authentication-Results: i=1; mx.zohomail.com;
+	dkim=pass;
+	spf=pass (zohomail.com: domain of weboslives.eu designates 17.58.23.182 as permitted sender)  smtp.mailfrom=adam@weboslives.eu
+Return-Path: <adam@weboslives.eu>
+Received: from mr85p00im-zteg06011501.me.com (mr85p00im-zteg06011501.me.com [17.58.23.182]) by mx.zohomail.com
+	with SMTPS id 172556890035935.38770200528461; Thu, 5 Sep 2024 13:41:40 -0700 (PDT)
+Received: from smtpclient.apple (mr38p00im-dlb-asmtp-mailmevip.me.com [17.57.152.18])
+	by mr85p00im-zteg06011501.me.com (Postfix) with ESMTPSA id 74F8D4803FD
+	for <curator@webosarchive.org>; Thu,  5 Sep 2024 20:41:38 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=weboslives.eu;
+	s=sig1; t=1725568899;
+	bh=jMDd7xbr2Qj3DZE4QeeK6YfZzxt3zc/pGB5yqnTBQOQ=;
+	h=Content-Type:From:Mime-Version:Date:Subject:Message-Id:To;
+	b=UvTdqzwpbS/BXBxJs7bAgs+elH44hnNDI+jsuijIHfR84aWBxEds4yCkF+7yTL8gY
+	 rvZ2bPx2kpokD9+8r0ZvaZ+HGabXDPjs/mMHPd49quRahgqgDeealpCib+xGjtecI2
+	 cv5b/Jfzs6nofNSvURPJ3/SZzfmoXMNUw8JUK2BRQ83OlR5DET4dAc/ur1sJfqZG8b
+	 488PCIaeqqmqoIcS4+eVLNNne60A1NryDu7aXWmbrQ2YwjWQS4xFmqPkdSRv/5yo85
+	 6/jvyGAgJIynM55exwUSx1dOsPvZs+dryG5gT2QZMPrSlEy+34gccx3t8YiTeBL5NG
+	 05uRUmXNSPhtQ==
+Content-Type: multipart/alternative; boundary=Apple-Mail-6C499E4F-15F8-4444-876A-4B08C4BE77D7
+Content-Transfer-Encoding: 7bit
+From: Adam Maracz <adam@weboslives.eu>
+Mime-Version: 1.0 (1.0)
+Date: Thu, 5 Sep 2024 22:41:19 +0200
+Subject: Fwd: HP webOS Developer Newsletter - Start creating apps for HP TouchPad with webOS 3.0 SDK
+Message-Id: <0CBC1BF6-25E6-45ED-825F-5BA8074FAD36@weboslives.eu>
+References: <Kilauea272137-45953-333875383-1-1013@flonetwork.com>
+To: curator@webosarchive.org
+X-Mailer: iPad Mail (22B5034e)
+X-Proofpoint-ORIG-GUID: 2nktMsiESTufq0UHt3mUi1G6ToTftqNC
+X-Proofpoint-GUID: 2nktMsiESTufq0UHt3mUi1G6ToTftqNC
+X-Proofpoint-Virus-Version: vendor=baseguard
+ engine=ICAP:2.0.272,Aquarius:18.0.1039,Hydra:6.0.680,FMLib:17.12.60.29
+ definitions=2024-09-05_16,2024-09-05_01,2024-09-02_01
+X-Proofpoint-Spam-Details: rule=notspam policy=default score=0 mlxlogscore=999 phishscore=0
+ spamscore=0 adultscore=0 mlxscore=0 bulkscore=83 clxscore=1030
+ suspectscore=0 malwarescore=0 classifier=spam adjust=0 reason=mlx
+ scancount=1 engine=8.19.0-2308100000 definitions=main-2409050153
+X-ZohoMail-DKIM: pass (identity @weboslives.eu)
+X-ZM-MESSAGEID: 1725568902643124400
+
+
+--Apple-Mail-6C499E4F-15F8-4444-876A-4B08C4BE77D7
+Content-Type: text/html;
+	charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><meta http-equiv=3D"content-type" content=3D"text/html; charset=3D=
+utf-8"></head><body dir=3D"auto"><div dir=3D"ltr"></div><div dir=3D"ltr"></d=
+iv><div dir=3D"ltr"><br><br><br>Begin forwarded message:<br><br></div><block=
+quote type=3D"cite"><div dir=3D"ltr"><b>From:</b> HP webOS Developer Newslet=
+ter &lt;hpwebos@news.palmnewsletters.com&gt;<br><b>Date:</b> March 31, 2011 a=
+t 22:30:33 GMT+2<br><b>To:</b> nomad84@gmail.com<br><b>Subject:</b> <b>HP we=
+bOS Developer Newsletter - Start creating apps for HP TouchPad with webOS 3.=
+0 SDK</b><br><b>Reply-To:</b> HP webOS Developer Newsletter &lt;hpwebos-ctg0=
+aeb7kaaee4erhzuiw5gzjzdeactq@news.palmnewsletters.com&gt;<br><br></div></blo=
+ckquote><blockquote type=3D"cite"><div dir=3D"ltr">=EF=BB=BF
+
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-1=
+">
+<title>PDN Newsletter</title>
+
+
+
+
+
+<table border=3D"0" width=3D"695" cellpadding=3D"0" cellspacing=3D"0">
+<tbody><tr><td width=3D"400">
+<img src=3D"http://epidm.edgesuite.net/CMS/PALM/2011/Palm_AdHocs/248937/Revi=
+sed/newsletter_header2.png" data-unique-identifier=3D""><br>
+<img src=3D"http://epidm.edgesuite.net/CMS/PALM/2011/Palm_AdHocs/248937/Revi=
+sed/touchpad_title.png" data-unique-identifier=3D""><br>
+<br></td>
+<td align=3D"right" valign=3D"bottom">
+
+=09
+</td>
+</tr>
+</tbody></table>
+
+<table width=3D"694" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+  <tbody><tr>
+    <td width=3D"401" valign=3D"top">
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+    <div style=3D"padding-left:20px; padding-right:10px">
+ =20
+      <font style=3D"font-family: Verdana, Geneva, sans-serif; font-size:16p=
+x;">
+         <br>
+         Create Apps for HP TouchPad with webOS 3.0 SDK
+</font>
+          <br>
+          <br>
+           <table border=3D"0" width=3D"100%" cellpadding=3D"0" cellspacing=3D=
+"0">
+           <tbody><tr>
+     <td valign=3D"top" width=3D"117"><img src=3D"http://epidm.edgesuite.net=
+/CMS/PALM/2011/Palm_AdHocs/248937/Revised/touchpad.png" alt=3D"" width=3D"11=
+7" data-unique-identifier=3D""></td>
+     <td valign=3D"top"><font style=3D"font-family: Verdana, Geneva, sans-se=
+rif; font-size:11px; line-height:16px;"><p>It=E2=80=99s here. You can now de=
+velop apps for the HP TouchPad with the webOS 3.0 SDK, now available to deve=
+lopers in our Early Access program. So get started today =E2=80=93 and get y=
+our app ready in time for TouchPad=E2=80=99s big summer launch!&nbsp;&nbsp;<=
+br>
+       <br>
+       <a href=3D"http://News.palmnewsletters.com/cgi-bin13/DM/t/hBPjl0ZtrJr=
+0Mt20PoKM0Gl">Get started now =E2=80=BA</a></p>
+     </font></td>
+           </tr>
+           </tbody></table>
+     =20
+      <br>
+     =20
+     =20
+        <hr size=3D"1" color=3D"#CCCCCC">
+       =20
+   =20
+          =20
+        <font style=3D"font-family: Verdana, Geneva, sans-serif; font-size:1=
+6px;">
+        <br>
+        New Look for HP webOS Developer Center </font><br>
+        <br>
+           <table border=3D"0" width=3D"100%" cellpadding=3D"0" cellspacing=3D=
+"0">
+           <tbody><tr>
+             <td valign=3D"top" width=3D"117"><img src=3D"http://epidm.edges=
+uite.net/CMS/PALM/2011/Palm_AdHocs/248937/Revised/new_site.jpg" alt=3D"" wid=
+th=3D"117" data-unique-identifier=3D""></td>
+     <td valign=3D"top"><font style=3D"font-family: Verdana, Geneva, sans-se=
+rif; font-size:11px; line-height:16px;">Check out the new and improved <a hr=
+ef=3D"http://News.palmnewsletters.com/cgi-bin13/DM/t/hBPjl0ZtrJr0Mt20Pw1P0GW=
+">HP webOS Developer Center</a>. It provides developers with access to the l=
+atest tools, documentation and resources, and gives us new ways to market an=
+d showcase great apps =E2=80=93 all in a new, more user-friendly design. If y=
+ou=E2=80=99re new to webOS, you can learn more about our innovative platform=
+, our family of connected devices and the benefits of becoming a webOS devel=
+oper. <br>
+       <br>
+     <a href=3D"http://News.palmnewsletters.com/cgi-bin13/DM/t/hBPjl0ZtrJr0M=
+t20Pw1P0GW">See it now =E2=80=BA</a>
+
+     </font><p></p></td>
+           </tr>
+           </tbody></table>
+     =20
+      <br>
+      <hr size=3D"1" color=3D"#CCCCCC">
+       =20
+       =20
+        <font style=3D"font-family: Verdana, Geneva, sans-serif; font-size:1=
+6px;">
+        <br>
+        Meet the Team: Lisa Brewster</font><br>
+        <br>
+  <table border=3D"0" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+           <tbody><tr>
+             <td valign=3D"top" width=3D"117"><img src=3D"http://epidm.edges=
+uite.net/CMS/PALM/2011/Palm_AdHocs/248937/Revised/lisa.jpg" alt=3D"" width=3D=
+"117" data-unique-identifier=3D""></td>
+     <td valign=3D"top"><p>Get to know your HP webOS Developer Relations tea=
+m. This month, hear from Lisa Brewster who =E2=80=93 as she puts it =E2=80=93=
+ keeps the apps flowing and puts the =E2=80=9Celation=E2=80=9D in developer r=
+elations.<font style=3D"font-family: Verdana, Geneva, sans-serif; font-size:=
+11px; line-height:16px;"><br>
+         <br>
+         <a href=3D"http://News.palmnewsletters.com/cgi-bin13/DM/t/hBPjl0Ztr=
+Jr0Mt20Pw1Q0GX">Read the interview  =E2=80=BA</a>
+       </font></p></td>     =20
+     </tr>
+        </tbody></table>
+      <br>
+     =20
+            <hr size=3D"1" color=3D"#CCCCCC">
+       =20
+       =20
+        <font style=3D"font-family: Verdana, Geneva, sans-serif; font-size:1=
+6px;">
+        <br>
+        Tech Tip: Optimize Existing Apps for HP Veer</font><br>
+        <br>
+  <table border=3D"0" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+           <tbody><tr>
+             <td valign=3D"top" width=3D"117"><img src=3D"http://epidm.edges=
+uite.net/CMS/PALM/2011/Palm_AdHocs/248937/Revised/device_veer.jpg" alt=3D"" w=
+idth=3D"117" data-unique-identifier=3D""></td>
+     <td valign=3D"top"><p>Have an app for the Palm Pixi? They=E2=80=99ll ju=
+st work on the HP Veer, the next all-new webOS smartphone. We=E2=80=99re goi=
+ng to do a big push around the Veer, so consider optimizing your app for Pix=
+i=E2=80=99s 320=C3=97400 display. <br>
+         <font style=3D"font-family: Verdana, Geneva, sans-serif; font-size:=
+11px; line-height:16px;"><br>
+           <a href=3D"http://News.palmnewsletters.com/cgi-bin13/DM/t/hBPjl0Z=
+trJr0Mt20PoKP0Go">Read more  =E2=80=BA</a> </font></p></td>     =20
+     </tr>
+        </tbody></table>
+      <br>
+     =20
+     =20
+            =20
+          =20
+        <hr size=3D"1" color=3D"#CCCCCC">
+       =20
+       =20
+        <font style=3D"font-family: Verdana, Geneva, sans-serif; font-size:1=
+6px;">
+        <br>
+        Marketing Tip: Consider Releasing a Beta Version of Your App</font><=
+br><br>
+  <table border=3D"0" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+           <tbody><tr><td valign=3D"top" width=3D"117">
+     <img src=3D"http://epidm.edgesuite.net/CMS/PALM/2011/Palm_AdHocs/248937=
+/Revised/screen.png" width=3D"117" data-unique-identifier=3D"">
+     </td>
+     <td valign=3D"top"><p>Build early buzz for your app and get helpful use=
+r feedback by releasing a beta version in the HP Beta Catalog. It=E2=80=99s o=
+ne way to get your app in the hands of users, while giving you time to refin=
+e your app.<font style=3D"font-family: Verdana, Geneva, sans-serif; font-siz=
+e:11px; line-height:16px;"><br>
+           <a href=3D"http://News.palmnewsletters.com/cgi-bin13/DM/t/hBPjl0Z=
+trJr0Mt20PoKQ0Gp"><br>
+    Read more  =E2=80=BA</a> </font></p></td>     =20
+     </tr>
+        </tbody></table>
+  <br>
+ =20
+                   <hr size=3D"1" color=3D"#CCCCCC">
+       =20
+
+
+		<font style=3D"font-family: Verdana, Geneva, sans-serif; fo=
+nt-size:16px;"><br>
+		Join the Forum: Get Help, Share Ideas </font>
+<font style=3D"font-family: Verdana, Geneva, sans-serif; font-size:11px; lin=
+e-height:16px;">
+<p>The webOS Developer Center forums provide a place to ask questions, get a=
+dvice, and find out what's new in the webOS community.<a href=3D"http://News=
+.palmnewsletters.com/cgi-bin13/DM/t/hBPjl0ZtrJr0Mt20PoKR0Gq"><br>
+  <br>
+  Join the discussions now =E2=80=BA</a><br>
+  <br>
+
+</p></font></div></td>
+    <td width=3D"17">&nbsp;
+   =20
+    </td>
+    <td width=3D"276" valign=3D"top" align=3D"right">
+    <font face=3D"Verdana, Geneva, sans-serif" size=3D"1" color=3D"#262626">=
+March 31, 2011 | Issue No. 12</font><br>
+    <br>
+   =20
+    <a href=3D"http://News.palmnewsletters.com/cgi-bin13/DM/t/hBPjl0ZtrJr0Mt=
+20PoKy0GV"><img src=3D"http://epidm.edgesuite.net/CMS/PALM/2011/Palm_AdHocs/=
+248937/Revised/icon_blog.gif" border=3D"0" data-unique-identifier=3D""></a>
+    <a href=3D"http://News.palmnewsletters.com/cgi-bin13/DM/t/hBPjl0ZtrJr0Mt=
+20PoKR0Gq"><img src=3D"http://epidm.edgesuite.net/CMS/PALM/2011/Palm_AdHocs/=
+248937/Revised/icon_forum.gif" border=3D"0" data-unique-identifier=3D""></a>=
+
+    <a href=3D"http://News.palmnewsletters.com/cgi-bin13/DM/t/hBPjl0ZtrJr0Mt=
+20PoKz0GW"><img src=3D"http://epidm.edgesuite.net/CMS/PALM/2011/Palm_AdHocs/=
+248937/Revised/icon_podcast.gif" border=3D"0" data-unique-identifier=3D""></=
+a>
+    <a href=3D"http://News.palmnewsletters.com/cgi-bin13/DM/t/hBPjl0ZtrJr0Mt=
+20PoK10GJ"><img src=3D"http://epidm.edgesuite.net/CMS/PALM/2011/Palm_AdHocs/=
+248937/Revised/icon_twitter.gif" border=3D"0" data-unique-identifier=3D""></=
+a>
+   =20
+   =20
+     <table width=3D"271" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+        <tbody><tr>
+          <td colspan=3D"3" height=3D"17"><img src=3D"http://epidm.edgesuite=
+.net/CMS/PALM/2011/Palm_AdHocs/248937/Revised/right_grey_top.png" width=3D"2=
+71" height=3D"17" data-unique-identifier=3D""><br></td>
+        </tr>
+        <tr>
+          <td width=3D"13"><img src=3D"http://epidm.edgesuite.net/CMS/PALM/2=
+011/Palm_AdHocs/248937/Revised/right_grey_bg_left.jpg" width=3D"13" height=3D=
+"180" data-unique-identifier=3D""></td>
+          <td bgcolor=3D"#eeeeee" align=3D"left">
+		  <div style=3D"padding-left:20px; padding-right:15px">
+		    <font style=3D"font-family: Verdana, Geneva, sans-serif=
+; font-size:16px;">Become a webOS Developer!</font>
+		   =20
+              <p><font style=3D"font-family: Verdana, Geneva, sans-serif; fo=
+nt-size:11px; line-height:16px;">Upload apps, track downloads, get sales sta=
+ts and be part of our active and ardent developer community.</font>  </p>
+              <p align=3D"center"><a href=3D"http://News.palmnewsletters.com=
+/cgi-bin13/DM/t/hBPjl0ZtrJr0Mt20Pw1U0Gb"><img src=3D"http://epidm.edgesuite.=
+net/CMS/PALM/2011/Palm_AdHocs/248937/Revised/join_now.png" width=3D"165" hei=
+ght=3D"36" border=3D"0" data-unique-identifier=3D""></a><br>
+              </p>
+</div></td>
+		<td width=3D"13"><img src=3D"http://epidm.edgesuite.net/CMS=
+/PALM/2011/Palm_AdHocs/248937/Revised/right_grey_bg_right.jpg" width=3D"13" h=
+eight=3D"180" data-unique-identifier=3D""></td>
+        </tr>
+        <tr>
+          <td colspan=3D"3"><img src=3D"http://epidm.edgesuite.net/CMS/PALM/=
+2011/Palm_AdHocs/248937/Revised/right_grey_bottom.png" width=3D"271" height=3D=
+"17" data-unique-identifier=3D""></td>
+        </tr>
+      </tbody></table>  =20
+     =20
+
+      <p></p>
+      <table width=3D"271" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=
+
+        <tbody><tr>
+          <td colspan=3D"3"><img src=3D"http://epidm.edgesuite.net/CMS/PALM/=
+2011/Palm_AdHocs/248937/Revised/right_top.png" width=3D"271" height=3D"17" d=
+ata-unique-identifier=3D""></td>
+        </tr>
+        <tr>
+          <td><img src=3D"http://epidm.edgesuite.net/CMS/PALM/2011/Palm_AdHo=
+cs/248937/Revised/right_dfpp_bg_left.jpg" width=3D"13" height=3D"370" data-u=
+nique-identifier=3D""></td>
+          <td align=3D"left"><div style=3D"padding-left:20px; padding-right:=
+15px"><font style=3D"font-family: Verdana, Geneva, sans-serif; font-size:16p=
+x; line-height:16px;">
+              </font><font style=3D"font-family: Verdana, Geneva, sans-serif=
+; font-size:16px; line-height:16px;">Upcoming Events</font>
+              <p><font style=3D"font-family: Verdana, Geneva, sans-serif; fo=
+nt-size:11px; line-height:16px;">04.07-09 | <a href=3D"http://News.palmnewsl=
+etters.com/cgi-bin13/DM/t/hBPjl0ZtrJr0Mt20PoKU0Gt"><strong>EG Conference<br>=
+
+              </strong></a>Monterey, CA<br>
+            </font></p>
+                          <p><font style=3D"font-family: Verdana, Geneva, sa=
+ns-serif; font-size:11px; line-height:16px;">04.11-12 | <a href=3D"http://Ne=
+ws.palmnewsletters.com/cgi-bin13/DM/t/hBPjl0ZtrJr0Mt20Pw1W0Gd"><strong>Break=
+ing Development<br>
+              </strong></a>Dallas, TX<br>
+            </font></p>
+                          <p><font style=3D"font-family: Verdana, Geneva, sa=
+ns-serif; font-size:11px; line-height:16px;">05.02-03 | <a href=3D"http://Ne=
+ws.palmnewsletters.com/cgi-bin13/DM/t/hBPjl0ZtrJr0Mt20PoKW0Gv"><strong>JSCon=
+f.us<br>
+              </strong></a>Portland, OR<br>
+            </font></p>
+                          <p><font style=3D"font-family: Verdana, Geneva, sa=
+ns-serif; font-size:11px; line-height:16px;">05.05 | <a href=3D"http://News.=
+palmnewsletters.com/cgi-bin13/DM/t/hBPjl0ZtrJr0Mt20PoKX0Gw"><strong>node.con=
+f<br>
+              </strong></a>Portland, OR<br>
+            </font></p>
+             <p><font style=3D"font-family: Verdana, Geneva, sans-serif; fon=
+t-size:11px; line-height:16px;">05.12-13 | <a href=3D"http://News.palmnewsle=
+tters.com/cgi-bin13/DM/t/hBPjl0ZtrJr0Mt20PoKY0Gx"><strong>WebDirections USA<=
+br>
+              </strong></a>Seattle, WA<br><br>
+           =20
+            Got an upcoming event or local meetup group you'd like us to kno=
+w about? Send a note to <a href=3D"mailto:devmarketing@palm.com">devmarketin=
+g@palm.com</a>.</font></p>=20
+          </div></td>
+          <td><img src=3D"http://epidm.edgesuite.net/CMS/PALM/2011/Palm_AdHo=
+cs/248937/Revised/right_dfpp_bg_right.jpg" width=3D"13" height=3D"370" data-=
+unique-identifier=3D""></td>
+        </tr>
+        <tr>
+          <td colspan=3D"3"><img src=3D"http://epidm.edgesuite.net/CMS/PALM/=
+2011/Palm_AdHocs/248937/Revised/right_dfpp_bot.png" width=3D"271" height=3D"=
+17" data-unique-identifier=3D""></td>
+        </tr>
+      </tbody></table>
+            <p></p>
+      <table width=3D"271" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=
+
+        <tbody><tr>
+          <td colspan=3D"3"><img src=3D"http://epidm.edgesuite.net/CMS/PALM/=
+2011/Palm_AdHocs/248937/Revised/right_top.png" width=3D"271" height=3D"17" d=
+ata-unique-identifier=3D""></td>
+        </tr>
+        <tr>
+          <td><img src=3D"http://epidm.edgesuite.net/CMS/PALM/2011/Palm_AdHo=
+cs/248937/Revised/right_dfpp_bg_left.jpg" width=3D"13" height=3D"200" data-u=
+nique-identifier=3D""></td>
+          <td align=3D"left"><div style=3D"padding-left:20px; padding-right:=
+15px"><font style=3D"font-family: Verdana, Geneva, sans-serif; font-size:16p=
+x; line-height:16px;"><br>
+              webOS Buzz</font>
+
+              <p><font style=3D"font-family: Verdana, Geneva, sans-serif; fo=
+nt-size:11px; line-height:16px;">In case you missed it, Engadget editor-at-l=
+arge, Joshua Topolsky, previewed the HP Veer, Pre3 and TouchPad on Late Nigh=
+t with Jimmy Fallon (it=E2=80=99s a few minutes in, but they clearly saved t=
+he best for last!) <br>
+              <br>
+              <a href=3D"http://News.palmnewsletters.com/cgi-bin13/DM/t/hBPj=
+l0ZtrJr0Mt20PoKZ0Gy">View the video =E2=80=BA</a>
+<br>
+            </font></p>
+           =20
+          </div></td>
+          <td><img src=3D"http://epidm.edgesuite.net/CMS/PALM/2011/Palm_AdHo=
+cs/248937/Revised/right_dfpp_bg_right.jpg" width=3D"13" height=3D"200" data-=
+unique-identifier=3D""></td>
+        </tr>
+        <tr>
+          <td colspan=3D"3"><img src=3D"http://epidm.edgesuite.net/CMS/PALM/=
+2011/Palm_AdHocs/248937/Revised/right_dfpp_bot.png" width=3D"271" height=3D"=
+17" data-unique-identifier=3D""></td>
+        </tr>
+      </tbody></table>=20
+
+     =20
+      <p></p>
+    =20
+     <table width=3D"272" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+    <tbody><tr>
+          <td colspan=3D"3"><img src=3D"http://epidm.edgesuite.net/CMS/PALM/=
+2011/Palm_AdHocs/248937/Revised/right_top.png" width=3D"271" height=3D"17" d=
+ata-unique-identifier=3D""></td>
+        </tr>
+        <tr>
+        <td><img src=3D"http://epidm.edgesuite.net/CMS/PALM/2011/Palm_AdHocs=
+/248937/Revised/right_dfpp_bg_left.jpg" width=3D"13" height=3D"460" data-uni=
+que-identifier=3D""></td>
+          <td align=3D"left">
+		  <div style=3D"padding-left:20px; padding-right:15px">
+         =20
+         =20
+          <font style=3D"font-family: Verdana, Geneva, sans-serif; font-size=
+:16px;">Featured App - Sports Live! </font>
+          <br>
+          <br>
+          <font style=3D"font-family: Verdana, Geneva, sans-serif; font-size=
+:11px; line-height:16px;">
+          <div align=3D"center">
+            <img src=3D"http://epidm.edgesuite.net/CMS/PALM/2011/Palm_AdHocs=
+/248937/Revised/sports_live.jpg" width=3D"133" data-unique-identifier=3D""><=
+/div>
+            <p>Avid sports fans =E2=80=93 no matter what you're into, <a hre=
+f=3D"http://News.palmnewsletters.com/cgi-bin13/DM/t/hBPjl0ZtrJr0Mt20PoKa0G6"=
+>Sports Live!</a> is a must-have app with scoreboards, real-time tickers and=
+ instant alerts that help you keep up on all your favorite teams. =46rom gre=
+at use of notifications to a ton of great options, this app=E2=80=99s a keep=
+er.</p>
+<p>If you'd like us to consider featuring your app, email us at <a href=3D"m=
+ailto:devmarketing@palm.com">devmarketing@palm.com</a>.</p></font>
+             =20
+=09
+      </div></td>
+         <td><img src=3D"http://epidm.edgesuite.net/CMS/PALM/2011/Palm_AdHoc=
+s/248937/Revised/right_dfpp_bg_right.jpg" width=3D"13" height=3D"460" data-u=
+nique-identifier=3D""></td>
+        </tr>
+        <tr>
+          <td colspan=3D"3"><img src=3D"http://epidm.edgesuite.net/CMS/PALM/=
+2011/Palm_AdHocs/248937/Revised/right_dfpp_bot.png" width=3D"271" height=3D"=
+17" data-unique-identifier=3D""></td>
+        </tr>
+     </tbody></table>
+    =20
+    =20
+    =20
+    =20
+    </td>
+  </tr>
+</tbody></table>
+<table width=3D"700">
+  <tbody><tr><td>
+ =20
+
+  <center>
+  <hr size=3D"1" color=3D"#CCCCCC"><br>
+<font face=3D"Verdana, Geneva, sans-serif" size=3D"1" color=3D"#666666"><p>T=
+o=20
+  be removed from this list, please reply to this email and write "Unsubscri=
+be" in the subject heading.</p>
+<p>=C2=A92011 Hewlett-Packard Development Company, L.P. The information cont=
+ained herein is subject to change without notice. All screen images simulate=
+d.</p>
+<p>
+  950 W. Maude Ave., Sunnyvale, CA 94085-2801  <br>
+  <a href=3D"http://News.palmnewsletters.com/cgi-bin13/DM/t/hBPjl0ZtrJr0Mt20=
+Pw1P0GW" target=3D"_blank"><span class=3D"style38">HP webOS Developer Center=
+</span></a> | <a href=3D"http://News.palmnewsletters.com/cgi-bin13/DM/t/hBPj=
+l0ZtrJr0Mt20PoKb0G7" target=3D"_blank"><span class=3D"style38">Online Privac=
+y Statement</span></a>  </p></font></center>
+  </td></tr>
+  </tbody></table>
+
+
+<img src=3D"http://News.palmnewsletters.com/cgi-bin13/flosensing?y=3DBPjl0Zt=
+rJr0Mt20BB" data-unique-identifier=3D"">
+
+</div></blockquote></body></html>=
+
+--Apple-Mail-6C499E4F-15F8-4444-876A-4B08C4BE77D7--

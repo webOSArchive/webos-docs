@@ -5,6 +5,10 @@
  * that a legacy webOS browser which can't run it simply shows the docs
  * without the menu bar -- the documentation itself is always readable.
  *
+ * SHARED FILE -- deployed verbatim to docs, the blog, and any other
+ * webOS Archive property. Keep it free of per-site details; anything
+ * site-specific belongs in that site's menu.php or wosa-menu.css.
+ *
  * The menu is pulled from a SAME-ORIGIN endpoint (menu.php), which proxies
  * the real menu over whichever protocol the client arrived on. That keeps
  * http-only devices on http and avoids any CORS requirement.
@@ -20,14 +24,26 @@
     return;
   }
 
-  // Work out where menu.php lives. In production the docs are reverse-proxied
-  // under /docs/; on the standalone docs host (and locally) they sit at the
-  // root. Handle both so the request stays same-origin either way.
+  // Work out where menu.php lives by looking at where THIS script was loaded
+  // from. It always sits at <root>/js/wosa-menu.js, so stripping that suffix
+  // yields the root whether the site is at a host root (docs.webosarchive.org),
+  // reverse-proxied under a path (/docs/), or served from a subdirectory of a
+  // larger site (/pivot/). Deriving it is what lets this file stay byte-for-byte
+  // identical across every property -- a hardcoded marker would not.
   function menuRoot() {
-    var path = window.location.pathname || "/";
-    var marker = path.indexOf("/docs/");
-    if (marker !== -1) return path.substring(0, marker) + "/docs/";
-    return "/";
+    var tags = document.getElementsByTagName("script");
+    for (var i = 0; i < tags.length; i++) {
+      // .src is the absolute, resolved URL even when the tag was written with
+      // a relative path -- MkDocs emits ../js/... on deeper pages.
+      var src = tags[i].src || "";
+      var cut = src.indexOf("/js/wosa-menu.js");
+      if (cut === -1) continue;
+      var scheme = src.indexOf("://");
+      var pathStart = scheme === -1 ? 0 : src.indexOf("/", scheme + 3);
+      if (pathStart === -1 || pathStart > cut) return "/";
+      return src.substring(pathStart, cut) + "/";
+    }
+    return "/";                       // not found: assume the host root
   }
 
   // Re-create <script> tags copied in via innerHTML so they actually execute
@@ -55,7 +71,9 @@
     } catch (e) {
       return;
     }
-    xhr.open("GET", menuRoot() + "menu.php?content=docs", true);
+    // No content= param: each site's own menu.php declares which nav item
+    // it is via its default, so this script stays identical everywhere.
+    xhr.open("GET", menuRoot() + "menu.php", true);
     xhr.onreadystatechange = function () {
       if (xhr.readyState !== 4) return;
       if (xhr.status >= 200 && xhr.status < 300 && xhr.responseText) {
