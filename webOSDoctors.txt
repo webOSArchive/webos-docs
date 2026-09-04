@@ -1,0 +1,30 @@
+For help flashing your device, please visit www.webosarchive.com
+webosdoctorp100ewwbellmo.jar - Palm Pre on Bell Mobility to 1.4.5
+webosdoctorp100ewwsprint.jar - Palm Pre on Sprint to 1.4.5
+webosdoctorp100ueu-wr.jar - Palm Pre on O2 or Movistar to 1.4.5
+webosdoctorp101ewwatt.jar - Palm Pre Plus on AT&T to 1.4.5
+webosdoctorp101ewwverizonwireless-1.4.5.1.jar - Palm Pre Plus on Verizon to 1.4.5.1
+webosdoctorp101ueu-wr.jar - Palm Pre Plus on O2, Movistar, SFR France to 2.1.0
+webosdoctorp101ueude-wr.jar - Palm Pre Plus on Vodafone to 2.1.0
+webosdoctorp102verizonwireless.jar - Palm Pre 2 on Verizon to 2.1.0
+webosdoctorp121ewwatt.jar - Palm Pixi Plus on AT&T to 1.4.5
+webosdoctorp121ewweu-wr.jar - Palm Pixi Plus on EU Carriers to 1.4.5
+webosdoctorp121ewwverizonwireless.jar - Palm Pixi Plus on Verizon to 1.4.5
+webosdoctorp121pixiplus-verizon-2.1.0.jar - Super Doctor Pixi Plus on Verizon to 2.2.1
+webosdoctorp121pixiplus-att-2.1.0.jar - Super Doctor Pixi Plus on AT&T to 2.2.1
+webosdoctorp160unaatt-2.2.4.jar - Super Doctor Veer on AT&T to 2.2.4
+webosdoctorp160unawr-2.2.4.jar - Super Doctor Veer ROW Carriers to 2.2.4
+webosdoctorp160unaatt-veer.jar - HP Veer on AT&T to 2.1.1
+webosdoctorp160unawr.jar - HP Veer on EU Carriers to 2.1.1
+webosdoctorp160unawr-2.2.4.jar - Super Doctor Veer on EU Carriers to 2.2.4
+webosdoctorp200ewwsprint.jar - Palm Pixi on Sprint to 1.4.5
+webosdoctorp224mantaatt-pre3.jar - HP Pre 3 on AT&T to 2.2.4
+webosdoctorp224mantaverizon.jar - HP Pre 3 on Verizon to 2.2.4
+webosdoctorp224mantawr.jar - HP Pre 3 Unlocked or EU/ROW Carriers to 2.2.4
+webosdoctorp224pre2-verizon-2.2.4.jar - Super Doctor Pre2 on Verizon to 2.2.4
+webosdoctorp224pre2wr.jar - Palm Pre 2 Unlocked or on SFR France, Rogers to 2.2.4
+webosdoctorp305hstnhatt.jar - HP TouchPad 10" AT&T 3.0.5
+webosdoctorp305hstnhwifi.jar - HP TouchPad 10" 16gb, 32gb, 64gb WiFi 3.0.5
+webosdoctoropal3gatt-3.0.5.jar - HP TouchPad Go 7" ALL radios to 3.0.5
+webosdoctorp310hstnh-ce-600070.jar - HP TouchPad 10" AT&T 3.1.0 Community Edition
+webosdoctorp310hstnhatt-ce-600071.jar - HP TouchPad 10" 16gb, 32gb, 64gb WiFi 3.1.0 Community Edition

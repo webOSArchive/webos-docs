@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>webOS Help</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="site-header">
+  <div class="content-inner">
+    <h1>webOS Help</h1>
+    <p class="tagline">Answer a few questions, get exactly the steps you need.</p>
+  </div>
+</div>
+
+<div id="controls">
+  <div class="content-inner">
+    <span class="link-group">
+      <a href="#" onclick="wosaExpandAll(); return false;">Expand all</a>
+      <a href="#" onclick="wosaCollapseAll(); return false;">Collapse all</a>
+    </span>
+    <a href="#" id="resetLink" onclick="wosaReset(); return false;">Start Over</a>
+    <div id="deviceFilterBar"><!-- device filter chip, filled in by app.js --></div>
+  </div>
+</div>
+
+<div id="wrap" class="content-inner">
+  <div id="app"><!-- step cards rendered here --></div>
+</div>
+
+<div id="site-footer">
+  <div class="content-inner">
+    <p>webOS Archive Help &middot; <a href="http://www.webosarchive.org">webosarchive.org</a></p>
+  </div>
+</div>
+
+<script src="flow-data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
