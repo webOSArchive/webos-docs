@@ -185,6 +185,15 @@ function wosaResolveOptions(node) {
   return node.options;
 }
 
+/* node.q and node.info are usually plain strings, but can also be a
+   function (same idea as node.options) for a node whose question or
+   intro text needs to change based on state -- e.g. Step 4 skipping
+   its recovery-mode instructions entirely once a Community Edition
+   Doctor has already left the device activated. */
+function wosaResolveField(field) {
+  return (typeof field === "function") ? field() : field;
+}
+
 /* Renders one question node: the question, then every option as a
    row that stays visible whether or not it's chosen (no collapsing
    away) -- the chosen row just switches to the pale-green "chosen"
@@ -224,14 +233,16 @@ function wosaRenderNode(node, path, stepId, level) {
 
   var wrapperCls = "node-block" + (animateWrapper ? " reveal-next" : "");
   var html = '<div class="' + wrapperCls + '">';
-  if (node.q) {
-    html += '<p class="node-question">' + node.q + '</p>';
+  var q = wosaResolveField(node.q);
+  if (q) {
+    html += '<p class="node-question">' + q + '</p>';
   }
   if (node.code) {
     html += '<pre><code>' + node.code + '</code></pre>';
   }
-  if (node.info) {
-    html += '<div class="node-info">' + node.info + '</div>';
+  var info = wosaResolveField(node.info);
+  if (info) {
+    html += '<div class="node-info">' + info + '</div>';
   }
   html += '<div class="opt-list">';
   for (var i = 0; i < options.length; i++) {

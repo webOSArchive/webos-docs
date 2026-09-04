@@ -255,7 +255,7 @@ var STEP3_NODE = {
           },
           {
             label: "Upgrade to webOS 3.1.0 Community Edition",
-            content: "<p class='note'>This replaces Steps 4 and 5 entirely &mdash; the Community Edition doctor leaves the device activated and ready to use.</p>" + STEP3_RESET_PLACEHOLDER
+            content: "<p class='note'>The Community Edition doctor leaves the device activated &mdash; Step 4 becomes a quick on-device confirmation instead of the usual recovery-mode/deviceTool dance.</p>" + STEP3_RESET_PLACEHOLDER
           }
         ]
       }
@@ -333,15 +333,42 @@ var STEP4_OPT_TOUCHPAD_VEER = {
   next: STEP4_RUN_TOOL_NODE
 };
 
+/* True only when Step 3's answer was upgrading a TouchPad 10" to webOS
+   3.1.0 Community Edition -- that Doctor already leaves the device
+   activated, so none of Step 4's recovery-mode/deviceTool steps apply.
+   Purely derived from Step 3's own path (not a separate stored flag),
+   so it can never drift out of sync with what was actually chosen: if
+   the filter or the Step 3 answer changes, this just re-evaluates true
+   on the next render. */
+function wosaIsCEUpgrade() {
+  if (typeof wosaState === "undefined" || wosaState.deviceFilter !== 2) { return false; }
+  var step3Path = wosaState.path && wosaState.path[3];
+  return !!(step3Path && step3Path[1] === 2);
+}
+
+var STEP4_OPT_CE_COMPLETE = {
+  label: "Complete the setup wizard on-device to finish activation.",
+  content: "<p>The Community Edition doctor already leaves your device activated &mdash; no deviceTool or recovery mode needed.</p>" +
+    "<p><button type='button' class='continue-btn' onclick='wosaGoto(5)'>Continue to Step 5 &rarr;</button></p>"
+};
+
 var STEP4_NODE = {
-  q: "First, get your device into recovery mode so deviceTool can see it.",
-  info: "<p>Connect a good quality micro-USB cable directly between your device and computer &mdash; not through a hub. (OEM cables are recognizable by a small silver indented circle near the connector.)</p>",
+  q: function () {
+    return wosaIsCEUpgrade() ? "" : "First, get your device into recovery mode so deviceTool can see it.";
+  },
+  info: function () {
+    return wosaIsCEUpgrade() ? "" : "<p>Connect a good quality micro-USB cable directly between your device and computer &mdash; not through a hub. (OEM cables are recognizable by a small silver indented circle near the connector.)</p>";
+  },
   /* Options narrow based on the remembered device filter (see
      FILTER_STEP_IDS): an Older Phone always has a plain removable
      back/battery, so the broken-cover variant only makes sense for
      Later Phones (Pre 2/Pre 3) -- and neither phone option applies
-     to a TouchPad or Veer. With no filter set, show everything. */
+     to a TouchPad or Veer. With no filter set, show everything. A
+     TouchPad upgraded to Community Edition skips all of that. */
   options: function () {
+    if (wosaIsCEUpgrade()) {
+      return [STEP4_OPT_CE_COMPLETE];
+    }
     var filter = (typeof wosaState !== "undefined") ? wosaState.deviceFilter : null;
     if (filter === 0) {
       return [STEP4_OPT_BATTERY_PHONE];
