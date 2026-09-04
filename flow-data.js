@@ -428,20 +428,34 @@ var STEP5_DEVMODE_NODE = {
   }
 };
 
+var STEP5_OPT_CE_INSTALLED = {
+  label: "App Stores are already installed in 3.1.0, but you may want to visit them to check for updates and to see what's new.",
+  content: "<p><button type='button' class='continue-btn' onclick='wosaGoto(6)'>Continue to Step 6 &rarr;</button></p>"
+};
+
 var STEP5_NODE = {
-  q: "Did your device just finish Step 4 (deviceTool)?",
-  options: [
-    {
-      label: "Yes",
-      content: "<p>Good &mdash; deviceTool already enables homebrew installs, so there's nothing extra to turn on.</p>",
-      next: STEP5_WOSQI_NODE
-    },
-    {
-      label: "No, it was already activated and working",
-      content: "<p>You'll need to turn on Developer Mode first, to allow homebrew app installs.</p>",
-      next: STEP5_DEVMODE_NODE
+  q: function () {
+    return wosaIsCEUpgrade() ? "" : "Did your device just finish Step 4 (deviceTool)?";
+  },
+  /* A Community Edition upgrade already includes the app stores --
+     nothing to install, just worth a visit for updates. */
+  options: function () {
+    if (wosaIsCEUpgrade()) {
+      return [STEP5_OPT_CE_INSTALLED];
     }
-  ]
+    return [
+      {
+        label: "Yes",
+        content: "<p>Good &mdash; deviceTool already enables homebrew installs, so there's nothing extra to turn on.</p>",
+        next: STEP5_WOSQI_NODE
+      },
+      {
+        label: "No, it was already activated and working",
+        content: "<p>You'll need to turn on Developer Mode first, to allow homebrew app installs.</p>",
+        next: STEP5_DEVMODE_NODE
+      }
+    ];
+  }
 };
 
 var STEP6_NODE = {

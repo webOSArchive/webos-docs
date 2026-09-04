@@ -121,6 +121,14 @@ function wosaChoose(stepId, level, idx) {
         wosaState.path[otherId] = [idx];
       }
     }
+  }
+  /* Any answer within a filter step -- not just the top-level device
+     category -- can change what filter-dependent steps should show
+     (e.g. Step 3's own "upgrade to Community Edition" sub-answer, one
+     level deeper than the device category). Invalidating on every
+     change here is cheap and always correct, since filter-dependent
+     options are re-derived fresh from state on every render anyway. */
+  if (isFilterStep) {
     wosaInvalidateFilterDependents();
   }
 
