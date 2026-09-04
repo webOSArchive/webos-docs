@@ -295,17 +295,38 @@ body {
 /* the chosen option stays in the list (never collapses away) --
    pale green marks it as settled, distinct from the blue "you can
    pick this" tint on the rest. Picking a different option just moves
-   this class to that row instead. */
+   this class to that row instead. The pulse (.settle, added by
+   app.js) plays only on the row that was *just* chosen -- an
+   already-chosen row re-rendered because something deeper changed
+   shouldn't replay it. */
 .opt-btn.chosen {
   background: #e9f5e9;
   border-left: 3px solid #6faa74;
   border-bottom-color: #cfe4cf;
+}
+
+.opt-btn.chosen.settle {
   -webkit-animation: wosaSettle 300ms ease-out;
   animation: wosaSettle 300ms ease-out;
 }
 
 .opt-btn.chosen:active {
   background: #cfe9cf;
+}
+
+/* once this question has an answer, its other options recede to a
+   neutral gray -- still fully readable and clickable (pick one to
+   switch), just no longer competing with the green "chosen" row for
+   attention the way the blue "you can pick this" tint would */
+.opt-btn.dimmed {
+  background: #e4e4e2;
+  border-left: 3px solid #b5b5b3;
+  border-bottom-color: #d3d3d1;
+  color: #666666;
+}
+
+.opt-btn.dimmed:active {
+  background: #d3d3d1;
 }
 
 /* the actual Enyo menu-item arrow icon, cropped from menuitem-arrow.png
@@ -346,11 +367,13 @@ body {
    answering a question, so it settles/reveals instead of snapping
    into place. Plain CSS `animation` (not `transition`) so it plays on
    insertion even though we render by replacing innerHTML wholesale --
-   no "before" DOM state needed. Caveat: since a render rebuilds every
-   step card, an already-open, unrelated step's content will also
-   replay this on any interaction elsewhere on the page. Fine if only
-   one step is open at a time; worth revisiting if "Expand all" makes
-   it feel noisy. */
+   no "before" DOM state needed.
+
+   .reveal / .reveal-next are applied by app.js only to the elements
+   that are genuinely new as of the choice that was just made (see
+   wosaAnimateFrom) -- everything at a shallower level re-renders
+   without them, so already-visible content doesn't replay the
+   entrance animation every time something deeper changes. */
 @-webkit-keyframes wosaSettle {
   from { background-color: #cfe9cf; }
   to { background-color: #e9f5e9; }
@@ -369,11 +392,19 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
+.reveal {
+  -webkit-animation: wosaReveal 200ms ease-out both;
+  animation: wosaReveal 200ms ease-out both;
+}
+
+.reveal-next {
+  -webkit-animation: wosaReveal 200ms ease-out 100ms both;
+  animation: wosaReveal 200ms ease-out 100ms both;
+}
+
 .leaf-content {
   padding: 2px 4px 10px 4px;
   margin: 0 0 8px 0;
-  -webkit-animation: wosaReveal 200ms ease-out both;
-  animation: wosaReveal 200ms ease-out both;
 }
 
 .leaf-content p {
@@ -424,13 +455,11 @@ pre code {
   padding: 0;
 }
 
-/* nested sub-questions get a light indent so the hierarchy is visible,
-   and reveal slightly after the leaf-content above them (a small
-   cascade: answer settles, then the next question appears) */
+/* nested sub-questions get a light indent so the hierarchy is visible.
+   Entrance animation (.reveal-next) is added by app.js only when this
+   particular nested block is new as of the choice just made. */
 .node-block .node-block {
   margin-left: 4px;
-  -webkit-animation: wosaReveal 200ms ease-out 100ms both;
-  animation: wosaReveal 200ms ease-out 100ms both;
 }
 
 #site-footer {

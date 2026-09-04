@@ -36,6 +36,14 @@ function wosaLoadState() {
 
 var wosaState = wosaLoadState();
 
+/* Transient (not persisted, not part of wosaState): set by wosaChoose
+   right before it calls wosaRender(), so wosaRenderNode knows which
+   step/level just changed and can animate only what's genuinely new
+   as of *this* choice -- everything shallower re-renders without the
+   entrance animation, so it doesn't replay on already-visible content.
+   Every other render path leaves this null, so nothing animates. */
+var wosaAnimateFrom = null;
+
 function wosaSaveState() {
   try {
     if (window.localStorage) {
@@ -116,6 +124,7 @@ function wosaChoose(stepId, level, idx) {
     wosaInvalidateFilterDependents();
   }
 
+  wosaAnimateFrom = { stepId: stepId, level: level };
   wosaSaveState();
   wosaRender();
 }
@@ -189,7 +198,17 @@ function wosaRenderNode(node, path, stepId, level) {
   var chosenIdx = path[level];
   var hasChoice = (chosenIdx !== undefined && chosenIdx !== null && options[chosenIdx]);
 
-  var html = '<div class="node-block">';
+  /* This whole sub-question is brand new (never visible before this
+     click) only when it's strictly deeper than the level that was
+     just answered -- the level that was just answered already had
+     its question/option list on screen, so that part shouldn't
+     replay the entrance animation, only its resulting leaf-content. */
+  var justChosen = (wosaAnimateFrom && wosaAnimateFrom.stepId === stepId) ? wosaAnimateFrom.level : null;
+  var animateWrapper = (justChosen !== null && level > justChosen);
+  var animateLeaf = (justChosen !== null && level >= justChosen);
+
+  var wrapperCls = "node-block" + (animateWrapper ? " reveal-next" : "");
+  var html = '<div class="' + wrapperCls + '">';
   if (node.q) {
     html += '<p class="node-question">' + node.q + '</p>';
   }
@@ -201,7 +220,15 @@ function wosaRenderNode(node, path, stepId, level) {
   }
   html += '<div class="opt-list">';
   for (var i = 0; i < options.length; i++) {
-    var cls = (hasChoice && i === chosenIdx) ? "opt-btn chosen" : "opt-btn";
+    var cls = "opt-btn";
+    if (hasChoice) {
+      if (i === chosenIdx) {
+        cls += " chosen";
+        if (justChosen !== null && level === justChosen) { cls += " settle"; }
+      } else {
+        cls += " dimmed";
+      }
+    }
     html += '<button type="button" class="' + cls + '" onclick="wosaChoose(' + stepId + ',' + level + ',' + i + ')">' +
       '<img class="chevron" src="images/chevron.png" alt="">' + options[i].label + '</button>';
   }
@@ -210,7 +237,8 @@ function wosaRenderNode(node, path, stepId, level) {
   if (hasChoice) {
     var opt = options[chosenIdx];
     if (opt.content) {
-      html += '<div class="leaf-content">' + opt.content + '</div>';
+      var leafCls = "leaf-content" + (animateLeaf ? " reveal" : "");
+      html += '<div class="' + leafCls + '">' + opt.content + '</div>';
     }
     if (opt.next) {
       html += wosaRenderNode(opt.next, path, stepId, level + 1);
@@ -314,6 +342,7 @@ function wosaRender() {
     html += wosaRenderStepCard(FLOW[i]);
   }
   app.innerHTML = html;
+  wosaAnimateFrom = null;
 }
 
 wosaRender();
