@@ -195,6 +195,21 @@ function wosaResolveOptions(node) {
    instead; there's no separate "reopen" step. Returns an HTML string. */
 function wosaRenderNode(node, path, stepId, level) {
   var options = wosaResolveOptions(node);
+
+  /* If the device filter has narrowed a *filter-dependent* question
+     (node.options is a function) down to exactly one real choice,
+     there's nothing to actually decide -- auto-select it instead of
+     making the user tap the only row available. This never applies
+     to a node that's just naturally single-option by design (a plain
+     array), like the "confirm you finished deviceTool" checkpoint,
+     which still needs a deliberate tap. Mutates the same path array
+     wosaGetPath already lazily seeds from the filter, so it's a
+     harmless, always-reproducible derivation, not persisted state. */
+  if (typeof node.options === "function" && options.length === 1 &&
+      (path[level] === undefined || path[level] === null)) {
+    path[level] = 0;
+  }
+
   var chosenIdx = path[level];
   var hasChoice = (chosenIdx !== undefined && chosenIdx !== null && options[chosenIdx]);
 

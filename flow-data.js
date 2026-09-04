@@ -191,11 +191,12 @@ var DEVICE_CATEGORY_ICONS = [
 var FILTER_STEP_IDS = [3, 6];
 
 /* Steps whose node.options is a function that reads the device filter
-   (see STEP4_NODE below) rather than steps that ask the category
-   question itself. Their answers must be invalidated whenever the
-   filter changes -- otherwise a stale numeric index could silently
-   point at the wrong option once the filtered list re-shuffles. */
-var FILTER_DEPENDENT_STEP_IDS = [4];
+   (see STEP4_NODE and STEP5_DEVMODE_NODE below) rather than steps
+   that ask the category question itself. Their answers must be
+   invalidated whenever the filter changes -- otherwise a stale
+   numeric index could silently point at the wrong option once the
+   filtered list re-shuffles. */
+var FILTER_DEPENDENT_STEP_IDS = [4, 5];
 
 function wosaDeviceIconLabel(i) {
   return "<img class='device-icon' src='" + DEVICE_CATEGORY_ICONS[i] + "' alt=''>" + DEVICE_CATEGORY_LABELS[i];
@@ -370,20 +371,34 @@ var STEP5_WOSQI_NODE = {
   ]
 };
 
+var STEP5_OPT_WEBOS1 = {
+  label: "webOS 1.0 (original Pre)",
+  content: "<p>From the Launcher, start typing: <code>webos20090606</code>. Tap the Developer Mode icon that appears, and turn it On.</p>",
+  next: STEP5_WOSQI_NODE
+};
+
+var STEP5_OPT_WEBOS2 = {
+  label: "webOS 2.0 and later (Pre 2, Pre 3, Veer, TouchPad)",
+  content: "<p>Use \"Just Type\" on the Launcher and type: <code>upupdowndownleftrightleftrightbastart</code>. Tap the Developer Mode icon that appears and turn it On. When prompted for a password, just hit Enter.</p>",
+  next: STEP5_WOSQI_NODE
+};
+
 var STEP5_DEVMODE_NODE = {
   q: "Which webOS version?",
-  options: [
-    {
-      label: "webOS 1.0 (original Pre)",
-      content: "<p>From the Launcher, start typing: <code>webos20090606</code>. Tap the Developer Mode icon that appears, and turn it On.</p>",
-      next: STEP5_WOSQI_NODE
-    },
-    {
-      label: "webOS 2.0 and later (Pre 2, Pre 3, Veer, TouchPad)",
-      content: "<p>Use \"Just Type\" on the Launcher and type: <code>upupdowndownleftrightleftrightbastart</code>. Tap the Developer Mode icon that appears and turn it On. When prompted for a password, just hit Enter.</p>",
-      next: STEP5_WOSQI_NODE
+  /* Narrows by the remembered device filter, same idea as Step 4:
+     an Older Phone can only ever be webOS 1.x, and a Later Phone or
+     TouchPad can only ever be 2.0+ -- no device could actually go
+     either way, so don't ask if we already know. */
+  options: function () {
+    var filter = (typeof wosaState !== "undefined") ? wosaState.deviceFilter : null;
+    if (filter === 0) {
+      return [STEP5_OPT_WEBOS1];
     }
-  ]
+    if (filter === 1 || filter === 2 || filter === 3) {
+      return [STEP5_OPT_WEBOS2];
+    }
+    return [STEP5_OPT_WEBOS1, STEP5_OPT_WEBOS2];
+  }
 };
 
 var STEP5_NODE = {
