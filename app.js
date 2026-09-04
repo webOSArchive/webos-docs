@@ -139,23 +139,6 @@ function wosaClearDeviceFilter() {
   wosaRender();
 }
 
-/* Re-open a previously answered level so it can be changed. Reopening
-   a filter step's top level (the shared "which device" question) also
-   clears the remembered filter -- otherwise wosaGetPath would just
-   re-seed the answer we're about to clear, right back where it was. */
-function wosaReopen(stepId, level) {
-  var p = wosaGetPath(stepId);
-  wosaState.path[stepId] = p.slice(0, level);
-
-  var isFilterStep = (typeof FILTER_STEP_IDS !== "undefined" && FILTER_STEP_IDS.indexOf(stepId) !== -1);
-  if (isFilterStep && level === 0) {
-    wosaClearFilterState();
-  }
-
-  wosaSaveState();
-  wosaRender();
-}
-
 /* A step's header is always clickable to collapse/expand its body. */
 function wosaToggleStepCollapse(stepId) {
   wosaState.collapsedSteps[stepId] = !wosaState.collapsedSteps[stepId];
@@ -193,47 +176,47 @@ function wosaResolveOptions(node) {
   return node.options;
 }
 
-/* Renders one question node (and, once answered, its collapsed summary,
-   the chosen answer's instructions, and -- recursively -- whatever
-   sub-question comes next). Returns an HTML string. */
+/* Renders one question node: the question, then every option as a
+   row that stays visible whether or not it's chosen (no collapsing
+   away) -- the chosen row just switches to the pale-green "chosen"
+   look in place. Once something's chosen, its instructions and --
+   recursively -- whatever sub-question comes next are appended below
+   the whole option list, so the step only ever grows downward.
+   Picking a different option re-renders with that one highlighted
+   instead; there's no separate "reopen" step. Returns an HTML string. */
 function wosaRenderNode(node, path, stepId, level) {
-  var html = "";
   var options = wosaResolveOptions(node);
   var chosenIdx = path[level];
   var hasChoice = (chosenIdx !== undefined && chosenIdx !== null && options[chosenIdx]);
 
-  if (!hasChoice) {
-    html += '<div class="node-block">';
-    if (node.q) {
-      html += '<p class="node-question">' + node.q + '</p>';
+  var html = '<div class="node-block">';
+  if (node.q) {
+    html += '<p class="node-question">' + node.q + '</p>';
+  }
+  if (node.code) {
+    html += '<pre><code>' + node.code + '</code></pre>';
+  }
+  if (node.info) {
+    html += '<div class="node-info">' + node.info + '</div>';
+  }
+  html += '<div class="opt-list">';
+  for (var i = 0; i < options.length; i++) {
+    var cls = (hasChoice && i === chosenIdx) ? "opt-btn chosen" : "opt-btn";
+    html += '<button type="button" class="' + cls + '" onclick="wosaChoose(' + stepId + ',' + level + ',' + i + ')">' +
+      '<img class="chevron" src="images/chevron.png" alt="">' + options[i].label + '</button>';
+  }
+  html += '</div>';
+
+  if (hasChoice) {
+    var opt = options[chosenIdx];
+    if (opt.content) {
+      html += '<div class="leaf-content">' + opt.content + '</div>';
     }
-    if (node.code) {
-      html += '<pre><code>' + node.code + '</code></pre>';
+    if (opt.next) {
+      html += wosaRenderNode(opt.next, path, stepId, level + 1);
     }
-    if (node.info) {
-      html += '<div class="node-info">' + node.info + '</div>';
-    }
-    html += '<div class="opt-list">';
-    for (var i = 0; i < options.length; i++) {
-      html += '<button type="button" class="opt-btn" onclick="wosaChoose(' + stepId + ',' + level + ',' + i + ')">' +
-        '<img class="chevron" src="images/chevron.png" alt="">' + options[i].label + '</button>';
-    }
-    html += '</div></div>';
-    return html;
   }
 
-  var opt = options[chosenIdx];
-  html += '<div class="node-block answered">';
-  html += '<div class="answered-summary" onclick="wosaReopen(' + stepId + ',' + level + ')">' +
-    '<span class="change-hint">Change</span>' +
-    (node.q ? node.q + ' &rarr; ' : '') + '<strong>' + opt.label + '</strong>' +
-    '</div>';
-  if (opt.content) {
-    html += '<div class="leaf-content">' + opt.content + '</div>';
-  }
-  if (opt.next) {
-    html += wosaRenderNode(opt.next, path, stepId, level + 1);
-  }
   html += '</div>';
   return html;
 }

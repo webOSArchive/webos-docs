@@ -265,7 +265,8 @@ body {
 /* option rows look like flat webOS list rows, not boxed buttons --
    full width, disclosure chevron on the right. A light blue tint and
    left accent bar mark them as tappable against the monotone gray
-   chrome, distinct from the settled look of .answered-summary. */
+   chrome; picking one switches it to the pale-green "chosen" look
+   below instead of collapsing the row away. */
 .opt-btn {
   display: block;
   width: 100%;
@@ -289,6 +290,22 @@ body {
 
 .opt-btn:active {
   background: #cfe1f2;
+}
+
+/* the chosen option stays in the list (never collapses away) --
+   pale green marks it as settled, distinct from the blue "you can
+   pick this" tint on the rest. Picking a different option just moves
+   this class to that row instead. */
+.opt-btn.chosen {
+  background: #e9f5e9;
+  border-left: 3px solid #6faa74;
+  border-bottom-color: #cfe4cf;
+  -webkit-animation: wosaSettle 300ms ease-out;
+  animation: wosaSettle 300ms ease-out;
+}
+
+.opt-btn.chosen:active {
+  background: #cfe9cf;
 }
 
 /* the actual Enyo menu-item arrow icon, cropped from menuitem-arrow.png
@@ -350,31 +367,6 @@ body {
 @keyframes wosaReveal {
   from { opacity: 0; transform: translateY(6px); }
   to { opacity: 1; transform: translateY(0); }
-}
-
-/* pale green marks a confirmed choice, distinct from the blue "you can
-   pick this" tint on .opt-btn -- blue means pending, green means settled */
-.answered-summary {
-  padding: 10px 14px 10px 10px;
-  background: #e9f5e9;
-  border-left: 3px solid #6faa74;
-  border-bottom: 1px solid #cfe4cf;
-  margin-bottom: 8px;
-  cursor: pointer;
-  overflow: hidden;
-  position: relative;
-  -webkit-animation: wosaSettle 300ms ease-out;
-  animation: wosaSettle 300ms ease-out;
-}
-
-/* text hint, not the expander icon -- reopening an answer to change it
-   is a different action from collapsing/expanding a step */
-.change-hint {
-  float: right;
-  color: #4a76a8;
-  font-size: 12px;
-  text-decoration: underline;
-  margin-left: 8px;
 }
 
 .leaf-content {
