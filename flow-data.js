@@ -430,7 +430,8 @@ var STEP5_DEVMODE_NODE = {
 
 var STEP5_OPT_CE_INSTALLED = {
   label: "App Stores are already installed in 3.1.0, but you may want to visit them to check for updates and to see what's new.",
-  content: "<p><button type='button' class='continue-btn' onclick='wosaGoto(6)'>Continue to Step 6 &rarr;</button></p>"
+  content: "<p>Developer Mode is already turned on too, in case you ever want to install homebrew apps directly.</p>" +
+    "<p><button type='button' class='continue-btn' onclick='wosaGoto(6)'>Continue to Step 6 &rarr;</button></p>"
 };
 
 var STEP5_NODE = {
