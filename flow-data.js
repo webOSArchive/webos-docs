@@ -202,8 +202,61 @@ function wosaDeviceIconLabel(i) {
   return "<img class='device-icon' src='" + DEVICE_CATEGORY_ICONS[i] + "' alt=''>" + DEVICE_CATEGORY_LABELS[i];
 }
 
-var STEP3_RESET_PLACEHOLDER = "<div class='callout'>If your device is currently usable, consider doing an app inventory before you reset or upgrade it &mdash; you might be carrying apps the archive is still missing. See <a href='#' onclick='wosaGoto(7); return false;'>Contribute to the Archive (Step 7)</a> for how.</div>" +
-  "<p>Doctor instructions (with the right file for your specific device and carrier) are coming soon here. In the meantime, see the <a href='https://archive.org/details/webOSDoctors'>archived webOS Doctors</a> and their readme to find the right file, then run it the same way as deviceTool: <code>java -jar NAMEOFDOCTOR.jar</code>.</p>";
+var STEP3_DOCTOR_INTRO = "<div class='callout'>If your device is currently usable, consider doing an app inventory before you reset or upgrade it &mdash; you might be carrying apps the archive is still missing. See <a href='#' onclick='wosaGoto(7); return false;'>Contribute to the Archive (Step 7)</a> for how.</div>" +
+  "<p>Running a Doctor wipes the device back to stock, so back up anything on it you want to keep first. Get your device into recovery mode the same way <a href='#' onclick='wosaGoto(4); return false;'>Step 4</a> describes for your device, but run the matching Doctor file below instead of deviceTool: <code>java -jar NAMEOFDOCTOR.jar</code>.</p>" +
+  "<p>Download the matching file for your device and carrier from the <a href='https://archive.org/details/webOSDoctors'>archived webOS Doctors</a>:</p>";
+
+var STEP3_DOCTOR_NOTE_SUPER = "<p class='note'>&ldquo;Super Doctor&rdquo; files are community-updated to install a newer webOS version than the device originally shipped with; the rest restore the last official release for that carrier.</p>";
+
+var STEP3_DOCTOR_OLDER_PHONE = STEP3_DOCTOR_INTRO +
+  "<ul>" +
+  "<li><code>webosdoctorp100ewwbellmo.jar</code> &mdash; Pre on Bell Mobility (to 1.4.5)</li>" +
+  "<li><code>webosdoctorp100ewwsprint.jar</code> &mdash; Pre on Sprint (to 1.4.5)</li>" +
+  "<li><code>webosdoctorp100ueu-wr.jar</code> &mdash; Pre on O2 or Movistar (to 1.4.5)</li>" +
+  "<li><code>webosdoctorp101ewwatt.jar</code> &mdash; Pre Plus on AT&amp;T (to 1.4.5)</li>" +
+  "<li><code>webosdoctorp101ewwverizonwireless-1.4.5.1.jar</code> &mdash; Pre Plus on Verizon (to 1.4.5.1)</li>" +
+  "<li><code>webosdoctorp101ueu-wr.jar</code> &mdash; Pre Plus on O2, Movistar, or SFR France (to 2.1.0)</li>" +
+  "<li><code>webosdoctorp101ueude-wr.jar</code> &mdash; Pre Plus on Vodafone (to 2.1.0)</li>" +
+  "<li><code>webosdoctorp121ewwatt.jar</code> &mdash; Pixi Plus on AT&amp;T (to 1.4.5)</li>" +
+  "<li><code>webosdoctorp121ewweu-wr.jar</code> &mdash; Pixi Plus on EU carriers (to 1.4.5)</li>" +
+  "<li><code>webosdoctorp121ewwverizonwireless.jar</code> &mdash; Pixi Plus on Verizon (to 1.4.5)</li>" +
+  "<li><code>webosdoctorp121pixiplus-att-2.1.0.jar</code> &mdash; Super Doctor, Pixi Plus on AT&amp;T (to 2.2.1)</li>" +
+  "<li><code>webosdoctorp121pixiplus-verizon-2.1.0.jar</code> &mdash; Super Doctor, Pixi Plus on Verizon (to 2.2.1)</li>" +
+  "<li><code>webosdoctorp200ewwsprint.jar</code> &mdash; Pixi on Sprint (to 1.4.5)</li>" +
+  "</ul>" +
+  STEP3_DOCTOR_NOTE_SUPER;
+
+var STEP3_DOCTOR_LATER_PHONE = STEP3_DOCTOR_INTRO +
+  "<ul>" +
+  "<li><code>webosdoctorp102verizonwireless.jar</code> &mdash; Pre 2 on Verizon (to 2.1.0)</li>" +
+  "<li><code>webosdoctorp224pre2-verizon-2.2.4.jar</code> &mdash; Super Doctor, Pre 2 on Verizon (to 2.2.4)</li>" +
+  "<li><code>webosdoctorp224pre2wr.jar</code> &mdash; Pre 2 unlocked, or on SFR France / Rogers (to 2.2.4)</li>" +
+  "<li><code>webosdoctorp224mantaatt-pre3.jar</code> &mdash; Pre 3 on AT&amp;T (to 2.2.4)</li>" +
+  "<li><code>webosdoctorp224mantaverizon.jar</code> &mdash; Pre 3 on Verizon (to 2.2.4)</li>" +
+  "<li><code>webosdoctorp224mantawr.jar</code> &mdash; Pre 3 unlocked, or EU/ROW carriers (to 2.2.4)</li>" +
+  "<li><code>webosdoctorp160unaatt-veer.jar</code> &mdash; Veer on AT&amp;T (to 2.1.1)</li>" +
+  "<li><code>webosdoctorp160unawr.jar</code> &mdash; Veer on EU carriers (to 2.1.1)</li>" +
+  "<li><code>webosdoctorp160unaatt-2.2.4.jar</code> &mdash; Super Doctor, Veer on AT&amp;T (to 2.2.4)</li>" +
+  "<li><code>webosdoctorp160unawr-2.2.4.jar</code> &mdash; Super Doctor, Veer on EU carriers (to 2.2.4)</li>" +
+  "</ul>" +
+  STEP3_DOCTOR_NOTE_SUPER;
+
+var STEP3_DOCTOR_TOUCHPAD_RESET = STEP3_DOCTOR_INTRO +
+  "<ul>" +
+  "<li><code>webosdoctorp305hstnhatt.jar</code> &mdash; TouchPad 10&quot; AT&amp;T (3.0.5)</li>" +
+  "<li><code>webosdoctorp305hstnhwifi.jar</code> &mdash; TouchPad 10&quot; 16/32/64GB WiFi (3.0.5)</li>" +
+  "</ul>";
+
+var STEP3_DOCTOR_TOUCHPAD_CE = STEP3_DOCTOR_INTRO +
+  "<ul>" +
+  "<li><code>webosdoctorp310hstnh-ce-600070.jar</code> &mdash; TouchPad 10&quot; AT&amp;T (3.1.0 Community Edition)</li>" +
+  "<li><code>webosdoctorp310hstnhatt-ce-600071.jar</code> &mdash; TouchPad 10&quot; 16/32/64GB WiFi (3.1.0 Community Edition)</li>" +
+  "</ul>";
+
+var STEP3_DOCTOR_TOUCHPAD_GO = STEP3_DOCTOR_INTRO +
+  "<ul>" +
+  "<li><code>webosdoctoropal3gatt-3.0.5.jar</code> &mdash; TouchPad Go 7&quot; all radios (3.0.5)</li>" +
+  "</ul>";
 
 var STEP3_NODE = {
   q: "Which best describes your device?",
@@ -219,7 +272,7 @@ var STEP3_NODE = {
           },
           {
             label: "Reset it to stock / wipe it",
-            content: STEP3_RESET_PLACEHOLDER
+            content: STEP3_DOCTOR_OLDER_PHONE
           }
         ]
       }
@@ -235,7 +288,7 @@ var STEP3_NODE = {
           },
           {
             label: "Reset or upgrade it",
-            content: STEP3_RESET_PLACEHOLDER
+            content: STEP3_DOCTOR_LATER_PHONE
           }
         ]
       }
@@ -251,11 +304,11 @@ var STEP3_NODE = {
           },
           {
             label: "Reset it to stock",
-            content: STEP3_RESET_PLACEHOLDER
+            content: STEP3_DOCTOR_TOUCHPAD_RESET
           },
           {
             label: "Upgrade to webOS 3.1.0 Community Edition",
-            content: "<p class='note'>The Community Edition doctor leaves the device activated &mdash; Step 4 becomes a quick on-device confirmation instead of the usual recovery-mode/deviceTool dance.</p>" + STEP3_RESET_PLACEHOLDER
+            content: "<p class='note'>The Community Edition doctor leaves the device activated &mdash; Step 4 becomes a quick on-device confirmation instead of the usual recovery-mode/deviceTool dance.</p>" + STEP3_DOCTOR_TOUCHPAD_CE
           }
         ]
       }
@@ -271,7 +324,7 @@ var STEP3_NODE = {
           },
           {
             label: "Reset it to stock",
-            content: STEP3_RESET_PLACEHOLDER
+            content: STEP3_DOCTOR_TOUCHPAD_GO
           }
         ]
       }
