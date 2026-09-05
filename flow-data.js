@@ -514,6 +514,7 @@ var STEP5_NODE = {
 
 var STEP6_NODE = {
   q: "Which best describes your device?",
+  info: "<div class='callout'>Set your device's clock before doing anything else here. This matters more than it sounds like it should: TLS certificate checks are based on the date, so a wrong clock causes connection errors and failures on nearly every secure site. Launch the built-in <strong>Date &amp; Time</strong> app, and set the date, time, and timezone as close to reality as you can. On webOS 2.2.4 and 3.0.5, the Modern TLS Updates below keep it synced automatically from then on &mdash; older devices need the Clock Sync app instead, noted under Older Phone.</div>",
   options: [
     {
       label: wosaDeviceIconLabel(0),
@@ -521,8 +522,9 @@ var STEP6_NODE = {
         "<ul>" +
         "<li>In Preware, search for <strong>Root Certs Update</strong> and install it &mdash; this fixes the out-of-date certificate trust store.</li>" +
         "<li>Install the <a href='http://www.webosarchive.org/activation/org.webosinternals.openssl-updater_0.9.8-6_armv7.ipk'>OpenSSL Updater</a> via WOSQI &mdash; it won't get you to the modern web, but it widens what still connects over HTTPS.</li>" +
+        "<li>There's no automatic clock sync at this webOS version &mdash; install the <a href='http://appcatalog.webosarchive.org/app/ClockSync'>Clock Sync</a> app to keep the date accurate on a schedule, so TLS connections that do work don't fail on a drifted clock.</li>" +
         "<li>For what's left over plain HTTP, DuckDuckGo Lite, <a href='http://68k.news/'>68k.news</a>, and <a href='http://www.frogfind.com/'>FrogFind</a> are good starting points.</li>" +
-        "<li>Install the <a href='http://appcatalog.webosarchive.org/app/ClassicEmulator'>Classic Emulator</a> for a huge catalog of vintage PalmOS apps and games.</li>" +
+        "<li>Install the <a href='http://appcatalog.webosarchive.org/app/ClassicEmulator'>Classic Emulator</a> for a huge catalog of vintage <strong>PalmOS</strong> apps and games.</li>" +
         "</ul>" +
         "<p><button type='button' class='continue-btn' onclick='wosaGoto(7)'>Continue to Step 7 &rarr;</button></p>"
     },
@@ -564,44 +566,41 @@ var STEP7_NODE = {
   topics: [
     {
       label: "Websites &amp; Browsing",
-      content: "<p>More and more websites are moving to newer encryption over HTTPS as the only way in. On webOS 2.2.4 and above, the <a href='#' onclick='wosaGoto(6); return false;'>Modern TLS Updates</a> solve this outright; on older devices you're more limited. Here are some common sites that still work, or ways to work around the ones that don't:</p>" +
-        "<p><strong>Google</strong>'s website no longer works. Try <a href='https://duckduckgo.com/html'>DuckDuckGo Lite</a> instead.</p>" +
-        "<p><strong>YouTube</strong>'s website no longer works, but there's an app for that called MeTube (see Games &amp; Apps below), or you can try a retro-friendly <a href='https://invidious.io/'>Invidious</a> provider.</p>" +
-        "<p><img src='images/reddit.png' align='right' style='padding-left: 8px'><strong>Reddit</strong> still works once your device can reach HTTPS, via <a href='http://old.reddit.com'>old.reddit.com</a> or the excellent IAmA Reddit app. Reddit videos can also be watched in MeTube.</p>" +
+      content: "<p>More and more websites are moving to newer encryption over HTTPS as the only way in. On webOS 2.2.4 and above, the <a href='#' onclick='wosaGoto(6); return false;'>Modern TLS Updates</a> solve this outright; on older devices you're more limited. Here are some common things you can still do in the 2011-era web, or the equivalent apps:</p>" +
+        "<p><strong>Google</strong>'s website no longer works. Try <a href='https://duckduckgo.com/html' target='_blank'>DuckDuckGo Lite</a> instead.</p>" +
+        "<p><strong>YouTube</strong>'s website no longer works, but there's an app for that called <a href='https://appcatalog.webosarchive.org/app/MeTube' target='_blank'>MeTube</a>, that also plays Reddit and Dailymotion videos." +
+        "<p><img src='images/reddit.png' align='right' style='padding-left: 8px'><strong>Reddit</strong> still works with a newer Browser, old in the stock browser via <a href='http://reddit.wosa.link'>reddit.wosa.link</a> or the still-maintained <a href='https://appcatalog.webosarchive.org/app/IAmAReddit' target='_blank'>IAmA Reddit</a> app. Reddit videos can also be watched in MeTube.</p>" +
         "<p><strong>Wikipedia</strong> works great once you have HTTPS. For older devices, webOS Archive provides a &ldquo;tiny&rdquo; version at <a href='http://wikipedia.webosarchive.org'>wikipedia.webosarchive.org</a>.</p>" +
-        "<p><strong>RSS:</strong> many sites can be reached through their RSS feed using the FeedSpider app, and a free service like <a href='http://www.inoreader.com'>InoReader</a>.</p>" +
-        "<p><strong>Google News:</strong> retro-computer enthusiast Action Retro built an excellent text-only Google News web app that works on almost anything &mdash; check out <a href='http://68k.news/'>68k.news</a>.</p>" +
-        "<p><strong>Text-Only Web:</strong> many popular sites have a text-only version that works well on retro devices. Sijmen J. Mulder keeps a good list at <a href='http://sjmulder.nl/en/textonly.html'>sjmulder.nl/en/textonly.html</a>.</p>" +
-        "<p><strong>FrogFind:</strong> also by Action Retro, is a <a href='http://www.frogfind.com/'>search engine for older devices</a> that renders a simplified version of most sites in its results.</p>" +
-        "<p>For anything else, <a href='https://github.com/tenox7/wrp'>Web Rendering Proxy (WRP)</a> uses Chrome on a PC you run yourself to render pages as images, sidestepping SSL/JS/HTML issues entirely &mdash; no video or interactive content, but a lot of the modern web becomes viewable.</p>"
+        "<p><strong>RSS:</strong> many sites can be reached through their RSS feed using the <a href='https://appcatalog.webosarchive.org/showMuseum.php?search=feedspider' target='_blank'>FeedSpider</a> app, and a free service like <a href='http://www.inoreader.com'>InoReader</a>.</p>" +
+        "<p><strong>Google News:</strong> retro-computer enthusiast Action Retro built an excellent text-only Google News web app that works on almost anything &mdash; check out <a href='http://68k.news/'>68k.news</a>. On Touchpad, check out <a href='https://appcatalog.webosarchive.org/app/WorldToday' target='_blank'>World Today</a> and <a href='https://appcatalog.webosarchive.org/app/CableNews' target='_blank'>Cable News</a>.</p>"
     },
     {
       label: "Email, Calendars &amp; Contacts",
       content: "<img src='images/touchpad-pim.png' align='right' width='300' style='width:300px; padding-left: 8px'>" +
         "<p>webOS has a first-class email client (arguably the best Exchange client for any Linux) that still works in some cases. Success varies with the server infrastructure.</p>" +
-        "<p><strong>IMAP and POP mail</strong> still work, provided the server's encryption is compatible with webOS.</p>" +
+        "<p><strong>IMAP and POP mail</strong> work great, although many require <a href='#' onclick='wosaGoto(6); return false;'>Modern TLS</a>.</p>" +
         "<p><strong>Exchange Web Access:</strong> private and hosted Exchange servers that provide EAS can still be used.</p>" +
         "<p><strong>Office365:</strong> Microsoft has moved to modern authentication, including an OAuth sign-in page that can't be rendered on webOS. As a work-around, <a href='https://davmail.sourceforge.net/'>DavMail</a> lets you run a proxy on a PC or server using non-proprietary standards.</p>" +
         "<p><strong>Gmail:</strong> add it as a plain IMAP account using a <a href='https://myaccount.google.com/apppasswords'>Google App Password</a> rather than your normal password (this requires 2-Step Verification).</p>" +
-        "<p><img src='images/zoho.png' align='right' width='128' style='width:128px; padding-left: 8px'><strong>Zoho</strong> provides a cost-effective, full-featured alternative to Office365 and Google, with support for custom domains and Exchange ActiveSync. It works perfectly with webOS, no hacks required &mdash; webOS Archive's top recommendation if you have a choice in mail providers.</p>" +
+        "<p><strong>Zoho</strong> provides a cost-effective, full-featured alternative to Office365 and Google, with support for custom domains and Exchange ActiveSync. It works perfectly with webOS, no hacks required &mdash; webOS Archive's top recommendation if you have a choice in mail providers.</p>" +
         "<p><strong>iCloud:</strong> you may be able to get IMAP access to your iCloud inbox.</p>" +
-        "<p>The Calendar app on webOS is still one of the best out there, particularly on the TouchPad's extra screen real estate. <strong>Exchange Web Access</strong> works the same as mail; <strong>Zoho</strong> syncs via EAS too. For a one-way sync of a public calendar (Google, iCloud, Outlook.com, Canvas), install <strong>WebCal Sync</strong> from the App Museum.</p>" +
-        "<p><img src='images/caldav.png' align='right' width='128' style='width:128px; padding-left: 8px'>If you host your own calendar and contacts in a WebDAV-compatible service like ownCloud or NextCloud, the <strong>C+Dav</strong> app does a one-way or two-way sync.</p>"
+        "<p><img src='images/caldav.png' width='128' style='width:128px; padding-right: 14px; float:left;'>The Calendar app on webOS is still one of the best out there, particularly on the TouchPad's extra screen real estate. <strong>Exchange Web Access</strong> works the same as mail; <strong>Zoho</strong> syncs via EAS too. For a one-way sync of a public calendar (Google, iCloud, Outlook.com, Canvas), install <a href='https://appcatalog.webosarchive.org/app/webCalSync' target='_blank'>WebCal Sync</a> from the App Museum.</p>" +
+        "<p>If you host your own calendar and contacts in a WebDAV-compatible service like ownCloud or NextCloud, the <strong>C+Dav</strong> app does a one-way or two-way sync.</p>"
     },
     {
       label: "Games &amp; Apps",
-      content: "<img src='images/angrybirds.jpg' align='right' style='padding-left: 8px'>" +
-        "<p>webOS had a great library of games, and you don't have to worry about in-app-purchases and spyware &mdash; just great mobile classics, including offerings from big publishers like Gameloft and EA. You'll find plenty in the <a href='http://appcatalog.webosarchive.org/showMuseum.php?category=Games&count=1030'>games section of the App Museum</a>, including Angry Birds, SCUMMVM, The Sims 3, Snes9X EX, Assassin's Creed, Oregon Trail, and Miriel.</p>" +
-        "<p><img src='images/metube-icon.png' align='right' style='padding-left: 8px'><strong>Watch (Some) Videos:</strong> YouTube doesn't officially support webOS, but thanks to the open source community it's still available &mdash; MeTube fetches short YouTube videos on demand. FlixNet plays Public Domain movies from archive.org, and Plex for webOS streams from your own server (no transcoding, so only natively-supported formats).</p>" +
-        "<p><img src='images/retropodcasts.png'></p>" +
+      content: "<img src='images/angrybirds.png' align='right' style='padding-left: 8px'>" +
+        "<p><strong>Play on!</strong> webOS has a great library of games, and you don't have to worry about in-app-purchases and spyware &mdash; just great mobile classics, including offerings from big publishers like Gameloft and EA. You'll find plenty in the <a href='http://appcatalog.webosarchive.org/showMuseum.php?category=Games&count=1030'>games section of the App Museum</a>, including Angry Birds, SCUMMVM, The Sims 3, Snes9X EX, Assassin's Creed, Oregon Trail, and Miriel.</p>" +
+        "<p><strong>Watch (Some) Videos:</strong> YouTube doesn't officially support webOS, but thanks to the open source community it's still available &mdash; <a href='https://appcatalog.webosarchive.org/app/MeTube' target='_blank'>MeTube</a> fetches short YouTube videos on demand. <a href='https://appcatalog.webosarchive.org/app/Flixnet' target='_blank'>FlixNet</a> and <a href='https://appcatalog.webosarchive.org/app/NovaCast' target='_blank'>NovaCast</a> play Public Domain movies from archive.org, and <a href='https://appcatalog.webosarchive.org/app/PlexforwebOS' target='_blank'>Plex for webOS</a> streams from your own media server.</p>" +
         "<p><strong>Podcasts:</strong> a TouchPad in Touchstone with a Bluetooth speaker, or a little Pre or Veer in your pocket, makes a great podcast player. The webOS Archive <a href='http://podcasts.webosarchive.org'>Podcast Directory</a> solves the HTTPS problem many podcasts now require.</p>" +
-        "<p><img src='images/LampsPrePhoto.png' style='width:300px'></p>" +
+        "<p><img src='images/retropodcasts.png'></p>" +
         "<p><strong>The Ultimate Night Stand App:</strong> Philips Hue lights are some of the best smart bulbs out there, and a little Pre or Veer &mdash; or even a TouchPad &mdash; makes a great companion, letting you control them in a dark room without a smart speaker listening to you sleep. <strong>One Night Stand</strong> turns your device into a light controller with a tap.</p>" +
-        "<p><strong>Rock Out:</strong> Pandora and third-party Pandora apps still work. On TouchPad, <strong>Retune</strong> remote-controls Apple Music/iTunes, including HomePods and AppleTVs.</p>" +
-        "<p><img src='images/kindle.png' align='right' style='padding-left: 8px'><strong>Read a Book:</strong> the TouchPad makes a great reading device. Amazon's <strong>Kindle Beta</strong> app is fully functional &mdash; watch for a One-Time Password on your second login attempt. <strong>Papyrus eReader</strong> is a modern take on DRM-free ePub reading, derived from the Kindle app and an older indie project.</p>" +
+        "<p><img src='images/LampsPrePhoto.png' style='width:300px'></p>" +
+        "<p><strong>Rock Out:</strong> <a href='https://appcatalog.webosarchive.org/showMuseum.php?search=pandora' target='_blank'>Pandora and third-party Pandora</a> apps still work. On TouchPad, <a href='https://appcatalog.webosarchive.org/app/Jukie' target='_blank'>Jukie</a> streams Apple Music, while <a href='https://appcatalog.webosarchive.org/app/Retune' target='_blank'>Retune</a> remote-controls iTunes, including HomePods and AppleTVs.</p>" +
+        "<p><strong>Read a Book:</strong> the TouchPad makes a great reading device. <a href='https://appcatalog.webosarchive.org/app/PapyruseReader' target='_blank'>Papyrus eReader</a> is a fresh take on DRM-free ePub reading, derived from the Kindle app and an older indie project, and available on Touchpad <i>and</i> modern devices as a <a href='https://papyrus.wosa.link' target='_blank'>Progressive Web App (PWA)</a>.</p>" +
         "<p><strong>Be an Exhibitionist:</strong> webOS 2.0 and up have an Exhibition mode that shows content continuously while docked &mdash; a photo slideshow, or Accuweather's gorgeous weather Exhibition.</p>" +
-        "<p><strong>Remote Control:</strong> the App Museum has apps for remotely controlling Windows, Mac and Linux machines via Splashtop, Remote Desktop, or VNC, plus Roku and iTunes remotes.</p>" +
-        "<p><img src='images/palm-logo.png' align='right' style='padding-left: 8px'><strong>Classic:</strong> the Classic Emulator gives you access to a huge catalog of vintage PalmOS apps and games. Install Classic Emulator from the App Museum, plus (webOS 2.0+) Classic Container via WOSQI. It expires weekly &mdash; run it in Airplane Mode, and when it expires, delete <code>/usr/lib/palmos/expired.rgba</code> from a shell to re-arm it.</p>" +
+        "<p><img src='images/ExhibitionMode.png'></p>" +
+        "<p><img src='images/palm-logo.png' align='right' style='padding-left: 8px'><strong>Classic:</strong> the Classic Emulator gives you access to a huge catalog of vintage <strong>PalmOS</strong> apps and games. Install <a href='https://appcatalog.webosarchive.org/app/Classic' target='_blank'>Classic Emulator from the App Museum</a>, plus (webOS 2.0+) Classic Container via WOSQI. It expires weekly &mdash; run it in Airplane Mode, and when it expires, delete <code>/usr/lib/palmos/expired.rgba</code> from a shell to re-arm it.</p>" +
         "<p><strong>Make Something New:</strong> webOS is an easy platform to learn to develop on, especially with modern AI tools. See <a href='#' onclick='wosaGoto(8); return false;'>Dev &amp; Hack (Step 8)</a> to get started.</p>"
     },
     {
@@ -609,8 +608,8 @@ var STEP7_NODE = {
       content: "<img src='images/discord.png' align='right' style='padding-left: 8px'>" +
         "<p>There's still an active webOS community, swapping notes on devices and patches, and even building new apps.</p>" +
         "<p><strong>Discord + SimpleChat:</strong> the most active community of webOS users is on a modern webOS app called SimpleChat, which is also connected to a <a href='http://www.webosarchive.org/discord'>Discord server</a>. Join in the conversation from both old and new devices.</p>" +
-        "<p><img src='images/twitter.png' align='right' style='padding-left: 8px'><strong>Bluesky:</strong> webOS Archive has officially eXited Twitter, but you can follow along on <a href='https://bsky.app/profile/webosarchive.org'>Bluesky</a>.</p>" +
-        "<p><strong>Fediverse + RSS:</strong> webOS Archive is on <a href='https://palm.weboslives.eu/users/webosarchive'>Mastodon</a>, thanks to a community-hosted server, and also followable via RSS with FeedSpider.</p>" +
+        "<p><strong>Social Media:</strong> webOS Archive is on <a href='https://bsky.app/profile/webosarchive.org' target='_blank'>Bluesky</a>, in the <a href='https://palm.weboslives.eu/users/webosarchive' target='_blank'>Fediverse</a>, and on <a href='https://x.com/webOSArchive' target='_blank'>X/Twitter</a>.</p>" +
+        "<p><strong>Pivot + RSS:</strong> New and archived webOS news can be followed in your browser, or RSS reader at <a href='https://www.webosarchive.org/news' target='_top'>webosarchive.org/news</a></p>" +
         "<p><strong>Forums:</strong> the old webOS Nation forums have been archived by the Wayback Machine, with a handy shortcut at <a href='http://forums.webosarchive.org'>forums.webosarchive.org</a>. In 2023, the community started rebuilding at the <a href='https://forums.weboslives.eu/'>webOS Lives Forums</a>.</p>"
     },
     {
@@ -665,16 +664,16 @@ var STEP8_NODE = {
         "</ul>"
     }
   ],
-  after: "<p>That's the whole flow &mdash; thanks for exploring webOS.</p><p><a href='#' onclick='wosaReset(); return false;'>Start Over</a></p>"
+  after: "<p>There's so much more to discover with webOS -- we couldn't document it all here. Dive in, <a href='https://www.webosarchive.org/discord'>join the community</a>, or build something new!</p><p><button type='button' class='continue-btn' onclick='wosaReset()'>Start Over</button></p>"
 };
 
 var FLOW = [
   { id: 1, title: "Computer Setup", node: STEP1_NODE },
-  { id: 2, title: "Is Your Device Healthy?", node: STEP2_NODE },
+  { id: 2, title: "Determine Device State", node: STEP2_NODE },
   { id: 3, title: "Identify Your Device", node: STEP3_NODE },
-  { id: 4, title: "Activate", node: STEP4_NODE },
+  { id: 4, title: "Activate Your Device", node: STEP4_NODE },
   { id: 5, title: "Install App Stores", node: STEP5_NODE },
   { id: 6, title: "What Your Device Can Do", node: STEP6_NODE },
   { id: 7, title: "Things to Try", node: STEP7_NODE },
-  { id: 8, title: "Dev & Hack", node: STEP8_NODE }
+  { id: 8, title: "Dev and Hack webOS", node: STEP8_NODE }
 ];

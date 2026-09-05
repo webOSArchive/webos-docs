@@ -83,9 +83,45 @@ body {
 
 /* overflow:hidden here (rather than a fixed margin-left) makes this
    box shrink to sit beside the floated icon without wrapping under
-   it -- an old, widely-supported alternative to flexbox. */
+   it -- an old, widely-supported alternative to flexbox. Both floats
+   above it in source order, so it correctly shrinks around both. */
 .site-header-text {
   overflow: hidden;
+}
+
+.header-actions {
+  float: right;
+}
+
+.header-btn {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  padding: 7px 14px 7px 8px;
+  background-color: #eeeeee;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#dcdcda));
+  background-image: -webkit-linear-gradient(top, #f8f8f8, #dcdcda);
+  background-image: linear-gradient(to bottom, #f8f8f8, #dcdcda);
+  border: 1px solid #b3b3b1;
+  border-radius: 5px;
+  color: #333333;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.header-btn:active {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dcdcda), to(#f8f8f8));
+  background-image: -webkit-linear-gradient(top, #dcdcda, #f8f8f8);
+  background-image: linear-gradient(to bottom, #dcdcda, #f8f8f8);
+}
+
+.header-btn img {
+  width: 36px;
+  height: 36px;
+  vertical-align: middle;
+  margin-right: 7px;
 }
 
 #site-header h1 {
@@ -95,10 +131,20 @@ body {
   margin: 0 0 3px 0;
 }
 
+/* hidden by default (tiniest screens, e.g. Pre3 at 480px) so the
+   header/icon/button row doesn't get too cramped -- shown again once
+   there's room, at the same breakpoint .content-inner already uses */
 #site-header .tagline {
+  display: none;
   color: #5a5a5a;
   margin: 0;
   font-size: 14px;
+}
+
+@media (min-width: 481px) {
+  #site-header .tagline {
+    display: block;
+  }
 }
 
 #controls {
@@ -219,7 +265,7 @@ body {
    Height comes from the #app img rule above (auto, aspect-preserving). */
 .disclosure {
   float: right;
-  width: 28px;
+  width: 36px;
   margin-left: 8px;
   margin-top: 3px;
 }
