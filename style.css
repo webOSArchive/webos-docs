@@ -69,6 +69,25 @@ body {
   box-sizing: border-box;
 }
 
+/* clearfix so the header's height includes the floated icon */
+#site-header .content-inner {
+  overflow: hidden;
+}
+
+#site-icon {
+  float: left;
+  width: 44px;
+  height: 44px;
+  margin: 0 12px 0 0;
+}
+
+/* overflow:hidden here (rather than a fixed margin-left) makes this
+   box shrink to sit beside the floated icon without wrapping under
+   it -- an old, widely-supported alternative to flexbox. */
+.site-header-text {
+  overflow: hidden;
+}
+
 #site-header h1 {
   font-size: 23px;
   font-weight: normal;
