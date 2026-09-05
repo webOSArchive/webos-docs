@@ -13,7 +13,7 @@
    whatever scheme they require. */
 
 var STEP1_NODE = {
-  q: "From a command line on your computer, run:",
+  q: "Make sure your computer can talk to a webOS device. From a command line on your computer, run:",
   code: "novacom -l",
   info: "<p>This lists any webOS devices connected over USB. An empty result is fine &mdash; it just means nothing's plugged in yet. What matters is whether the computer recognizes the command at all.</p>",
   options: [
