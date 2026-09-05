@@ -379,6 +379,21 @@ function wosaRender() {
   wosaAnimateFrom = null;
 }
 
+/* Some steps assume earlier steps were just completed (e.g. Step 5's
+   default question assumes you just ran Step 4's deviceTool). Someone
+   arriving via a direct #step-N link skipped all of that, so a step
+   can declare a deepLinkDefault -- a path prefix to pre-answer instead
+   of the bare question -- applied only when the step has no answer
+   yet, so it never overrides real in-flow progress. */
+function wosaApplyDeepLinkDefault(step) {
+  if (!step.deepLinkDefault) { return; }
+  var path = wosaGetPath(step.id);
+  if (path.length > 0) { return; }
+  for (var i = 0; i < step.deepLinkDefault.length; i++) {
+    wosaChoose(step.id, i, step.deepLinkDefault[i]);
+  }
+}
+
 /* Deep-linking: a URL ending in #step-5 expands that step and scrolls
    to it on load, reusing the same "step-N" id every step card already
    has (see wosaRenderStepCard) and the existing expand+scroll behavior
@@ -387,9 +402,10 @@ function wosaHandleInitialHash() {
   var match = /^#step-(\d+)$/.exec(window.location.hash);
   if (!match) { return; }
   var stepId = parseInt(match[1], 10);
-  if (wosaFindStep(stepId)) {
-    wosaGoto(stepId);
-  }
+  var step = wosaFindStep(stepId);
+  if (!step) { return; }
+  wosaApplyDeepLinkDefault(step);
+  wosaGoto(stepId);
 }
 
 wosaRender();

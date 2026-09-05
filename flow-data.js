@@ -673,7 +673,14 @@ var FLOW = [
   { id: 2, title: "Determine Device State", node: STEP2_NODE },
   { id: 3, title: "Identify Your Device", node: STEP3_NODE },
   { id: 4, title: "Activate Your Device", node: STEP4_NODE },
-  { id: 5, title: "Install App Stores", node: STEP5_NODE },
+  /* deepLinkDefault: someone jumping straight in via a #step-5 link
+     can't be assumed to have just come from Step 4's deviceTool, so
+     default to the "No, it was already activated" path -- surfacing
+     the Developer Mode instructions -- rather than the bare question.
+     Only applied when the step hasn't been answered yet (see
+     wosaApplyDeepLinkDefault in app.js), so it never overrides real
+     in-flow progress. */
+  { id: 5, title: "Install App Stores", node: STEP5_NODE, deepLinkDefault: [1] },
   { id: 6, title: "What Your Device Can Do", node: STEP6_NODE },
   { id: 7, title: "Things to Try", node: STEP7_NODE },
   { id: 8, title: "Dev and Hack webOS", node: STEP8_NODE }
