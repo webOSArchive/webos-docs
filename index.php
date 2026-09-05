@@ -17,6 +17,17 @@ if ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') ||
 }
 $wosaMenuHtml = @file_get_contents($wosaProtocol . "www.webosarchive.org/menu.php?content=docs");
 $wosaHasMenu = ($wosaMenuHtml !== false && trim($wosaMenuHtml) !== "");
+
+/* Cache-busting version query string for our own static assets, based
+ * on each file's last-modified time. Without this, a CDN (or browser)
+ * happily keeps serving a stale cached copy of e.g. css/wosa-menu.css
+ * under its unchanged URL after we deploy a fix -- this way every
+ * edit gets a new URL automatically, no manual purge or version bump
+ * required. */
+function wosaAssetVer($path) {
+    $mtime = @filemtime(__DIR__ . "/" . $path);
+    return $path . "?v=" . ($mtime ? $mtime : "0");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en"<?php echo $wosaHasMenu ? ' class="wosa-has-menu"' : ''; ?>>
@@ -41,8 +52,8 @@ $wosaHasMenu = ($wosaMenuHtml !== false && trim($wosaMenuHtml) !== "");
 <meta name="twitter:description" content="Everything you need to set up, activate, and get the most out of your legacy webOS device.">
 <meta name="twitter:image" content="https://docs.webosarchive.org/images/og-image.png">
 
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="css/wosa-menu.css">
+<link rel="stylesheet" href="<?php echo wosaAssetVer('style.css'); ?>">
+<link rel="stylesheet" href="<?php echo wosaAssetVer('css/wosa-menu.css'); ?>">
 </head>
 <body>
 
@@ -87,7 +98,7 @@ $wosaHasMenu = ($wosaMenuHtml !== false && trim($wosaMenuHtml) !== "");
   </div>
 </div>
 
-<script src="flow-data.js"></script>
-<script src="app.js"></script>
+<script src="<?php echo wosaAssetVer('flow-data.js'); ?>"></script>
+<script src="<?php echo wosaAssetVer('app.js'); ?>"></script>
 </body>
 </html>
