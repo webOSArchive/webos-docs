@@ -158,10 +158,11 @@ body {
 }
 
 /* hidden by default so the header/icon row doesn't get cramped or wrap
-   awkwardly beside the icon -- shown again only once there's genuinely
-   comfortable room, at the same breakpoint the desktop content width
-   cap kicks in. A phone or a narrowed desktop window both just get the
-   title alone. */
+   awkwardly beside the icon -- shown again once the header-actions
+   buttons have already dropped to their own row (the same 600px
+   breakpoint as .header-actions-inline), which leaves the title row
+   enough width for the tagline too. A phone or a narrowed desktop
+   window below that just get the title alone. */
 #site-header .tagline {
   display: none;
   color: #5a5a5a;
@@ -169,7 +170,7 @@ body {
   font-size: 14px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 700px) {
   #site-header .tagline {
     display: block;
   }

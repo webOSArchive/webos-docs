@@ -437,10 +437,10 @@ var STEP4_NODE = {
 var STEP5_WOSQI_NODE = {
   q: "Install WOSQI, Preware, and an App Store.",
   info: "<ul>" +
-    "<li><img src='images/wosqi-32.png' style='width:32px;height:32px;vertical-align:middle;margin-right: 6px;'>Download <a href='http://www.webosarchive.org/activation/webOSQuickInstall-4.6.0.jar'>webOS Quick Install (WOSQI) 4.6.0</a> and run it: <code>java -jar webOSQuickInstall-4.6.0.jar</code> (double-clicking the jar also works in some environments). With your device plugged in normally (not USB Drive mode), WOSQI should see it.</li>" +
-    "<li><img src='images/preware.png' style='width:32px;height:32px;vertical-align:middle;margin-right: 6px;'>Download <a href='http://www.webosarchive.org/activation/org.webosinternals.preware_1.9.18_arm.ipk'>Preware 1.9.18</a>, drag it onto the WOSQI window (or use the + button), and press Install. This is the original homebrew app store and gives you access to almost everything else.</li>" +
+    "<li><img src='images/wosqi-32.png' style='width:32px;height:32px;vertical-align:middle;margin-right: 6px;'>Download <a href='http://www.webosarchive.org/activation/webOSQuickInstall-4.6.0.jar'>webOS Quick Install (WOSQI) 4.6.0</a> and run it on your computer: <code>java -jar webOSQuickInstall-4.6.0.jar</code> (double-clicking the jar also works in some environments). With your device plugged in normally (not USB Drive mode), WOSQI should see it.</li>" +
+    "<li><img src='images/preware.png' style='width:32px;height:32px;vertical-align:middle;margin-right: 6px;'>Download <a href='http://www.webosarchive.org/activation/org.webosinternals.preware_1.9.18_arm.ipk'>Preware 1.9.18</a>, drag it onto the WOSQI window (or use the + button), and press Install. This is the original homebrew app store and gives you access to almost everything else on your device.</li>" +
     "<li><img src='images/app-museum.png' style='width:32px;height:32px;vertical-align:middle;margin-right: 6px;'>Install an App Store the same way: <a href='https://appcatalog.webosarchive.org/?latest'>download the App Catalog or App Museum II</a> and drag it onto WOSQI. App Catalog is the restored original store (best for webOS 2.2.4/3.0.5+); App Museum II works on any Enyo-capable device, including LuneOS.</li>" +
-    "<li>webOS 1.x devices can skip WOSQI for the app store step &mdash; just open <a href='http://appcatalog.webosarchive.org'>appcatalog.webosarchive.org</a> in the built-in browser instead.</li>" +
+    "<li>webOS 1.x devices can open <a href='http://appcatalog.webosarchive.org'>appcatalog.webosarchive.org</a> in the built-in browser and use Preware.</li>" +
     "</ul>",
   options: [
     {
