@@ -605,7 +605,7 @@ var STEP7_NODE = {
     },
     {
       label: "Join the Community",
-      content: "<img src='images/discord.png' align='right' style='padding-left: 8px'>" +
+      content: "<img src='images/discord.png' align='right' style='padding-right: 18px'>" +
         "<p>There's still an active webOS community, swapping notes on devices and patches, and even building new apps.</p>" +
         "<p><strong>Discord + SimpleChat:</strong> the most active community of webOS users is on a modern webOS app called SimpleChat, which is also connected to a <a href='http://www.webosarchive.org/discord'>Discord server</a>. Join in the conversation from both old and new devices.</p>" +
         "<p><strong>Social Media:</strong> webOS Archive is on <a href='https://bsky.app/profile/webosarchive.org' target='_blank'>Bluesky</a>, in the <a href='https://palm.weboslives.eu/users/webosarchive' target='_blank'>Fediverse</a>, and on <a href='https://x.com/webOSArchive' target='_blank'>X/Twitter</a>.</p>" +
@@ -614,7 +614,7 @@ var STEP7_NODE = {
     },
     {
       label: "Patches and Hacks",
-      content: "<img src='images/patch.png' align='right' width='128' style='width:128px; padding-left: 8px'>" +
+      content: "<img src='images/patch.png' align='right' width='64' style='width:128px; padding-left: 8px'>" +
         "<p>webOS was an extremely customizable operating system, with community-created patches for a wide variety of modifications. Most patches can still be found in <a href='#' onclick='wosaGoto(5); return false;'>Preware</a> and should be installed from there, since they were created by contemporaneous developers.</p>" +
         "<p>webOS Archive has produced a series of patches that hide dead pre-installed apps that stopped working after HP's servers shut down, for a tidier Launcher. These are meant to be installed with WOSQI from a PC, <em>not</em> from within Preware.</p>" +
         "<p><strong>Hardware mods</strong> (advanced, requires micro-soldering): community member Alan Morford has guides to <a href='https://pivotce.com/2024/09/25/guide-converting-the-touchpads-micro-usb-port-to-usb-c/'>converting the TouchPad's micro-USB port to USB-C</a> and <a href='https://pivotce.com/2024/12/05/guide-create-an-original-barrel-charging-wire-for-your-hp-touchpad/'>building a warning-free charging cable</a>.</p>"
