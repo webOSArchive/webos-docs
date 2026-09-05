@@ -89,15 +89,34 @@ body {
   overflow: hidden;
 }
 
-.header-actions {
+/* Two copies of the same buttons (rendered once each by index.php):
+   .header-actions-inline sits beside the title on wider screens, where
+   there's room, via the same float-right-then-shrink-wrap trick as the
+   icon above. .header-actions-stacked is a full-width row that drops
+   below the title on narrow screens, so buttons never get squeezed
+   into (or overlap) the title. Only one of the two is ever visible. */
+.header-actions-inline {
+  display: none;
+}
+
+.header-actions-stacked {
   clear: both;
   margin-top: 12px;
+}
+
+@media (min-width: 600px) {
+  .header-actions-inline {
+    display: block;
+    float: right;
+  }
+  .header-actions-stacked {
+    display: none;
+  }
 }
 
 .header-btn {
   display: inline-block;
   vertical-align: middle;
-  margin: 0 10px 8px 0;
   padding: 7px 14px 7px 8px;
   background-color: #eeeeee;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#dcdcda));
@@ -110,6 +129,14 @@ body {
   font-size: 14px;
   font-weight: bold;
   white-space: nowrap;
+}
+
+.header-actions-stacked .header-btn {
+  margin: 0 10px 8px 0;
+}
+
+.header-actions-inline .header-btn {
+  margin: 0 0 8px 10px;
 }
 
 .header-btn:active {

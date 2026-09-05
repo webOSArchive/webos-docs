@@ -28,6 +28,25 @@ function wosaAssetVer($path) {
     $mtime = @filemtime(__DIR__ . "/" . $path);
     return $path . "?v=" . ($mtime ? $mtime : "0");
 }
+
+/* Header action buttons (Drivers/Firmware, etc). Defined once here and
+ * rendered twice below -- once in the inline row that sits beside the
+ * title on wider screens, once in the stacked row that drops below the
+ * title on narrow ones -- so adding a button only means editing this
+ * array, not keeping two hand-written copies in sync. */
+$wosaHeaderButtons = array(
+    array('href' => 'http://stacks.webosarchive.org/activation/drivers/', 'icon' => 'images/drivers.png', 'label' => 'Drivers'),
+    array('href' => 'https://archive.org/details/webOSDoctors', 'icon' => 'images/firmware.png', 'label' => 'Firmware'),
+);
+function wosaRenderHeaderButtons($buttons) {
+    $html = '';
+    foreach ($buttons as $b) {
+        $html .= '<a class="header-btn" href="' . htmlspecialchars($b['href']) . '">'
+            . '<img src="' . htmlspecialchars($b['icon']) . '" alt="Download ' . htmlspecialchars($b['label']) . '" title="Download ' . htmlspecialchars($b['label']) . '">'
+            . htmlspecialchars($b['label']) . '</a>';
+    }
+    return $html;
+}
 ?>
 <!DOCTYPE html>
 <html lang="en"<?php echo $wosaHasMenu ? ' class="wosa-has-menu"' : ''; ?>>
@@ -64,16 +83,12 @@ function wosaAssetVer($path) {
 <div id="site-header">
   <div class="content-inner">
     <img id="site-icon" src="images/help-book-icon.png" alt="">
+    <div class="header-actions header-actions-inline"><?php echo wosaRenderHeaderButtons($wosaHeaderButtons); ?></div>
     <div class="site-header-text">
       <h1>webOS Docs</h1>
       <p class="tagline">Everything you need to set up, activate, and get the most out of your legacy webOS device.</p>
     </div>
-    <div class="header-actions">
-      <a class="header-btn" href="http://stacks.webosarchive.org/activation/drivers/">
-        <img src="images/drivers.png" alt="Download Drivers" title="Download Drivers" target="_blank">Drivers</a>
-      <a class="header-btn" href="https://archive.org/details/webOSDoctors">
-        <img src="images/firmware.png" alt="Download Firmware" title="Download Firmware" target="_blank">Firmware</a>
-    </div>
+    <div class="header-actions header-actions-stacked"><?php echo wosaRenderHeaderButtons($wosaHeaderButtons); ?></div>
   </div>
 </div>
 
