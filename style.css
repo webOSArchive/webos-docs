@@ -90,13 +90,14 @@ body {
 }
 
 .header-actions {
-  float: right;
+  clear: both;
+  margin-top: 12px;
 }
 
 .header-btn {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 10px;
+  margin: 0 10px 8px 0;
   padding: 7px 14px 7px 8px;
   background-color: #eeeeee;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#dcdcda));
@@ -131,9 +132,11 @@ body {
   margin: 0 0 3px 0;
 }
 
-/* hidden by default (tiniest screens, e.g. Pre3 at 480px) so the
-   header/icon/button row doesn't get too cramped -- shown again once
-   there's room, at the same breakpoint .content-inner already uses */
+/* hidden by default so the header/icon row doesn't get cramped or wrap
+   awkwardly beside the icon -- shown again only once there's genuinely
+   comfortable room, at the same breakpoint the desktop content width
+   cap kicks in. A phone or a narrowed desktop window both just get the
+   title alone. */
 #site-header .tagline {
   display: none;
   color: #5a5a5a;
@@ -141,7 +144,7 @@ body {
   font-size: 14px;
 }
 
-@media (min-width: 481px) {
+@media (min-width: 1024px) {
   #site-header .tagline {
     display: block;
   }

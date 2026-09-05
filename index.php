@@ -64,15 +64,15 @@ function wosaAssetVer($path) {
 <div id="site-header">
   <div class="content-inner">
     <img id="site-icon" src="images/help-book-icon.png" alt="">
+    <div class="site-header-text">
+      <h1>webOS Docs</h1>
+      <p class="tagline">Everything you need to set up, activate, and get the most out of your legacy webOS device.</p>
+    </div>
     <div class="header-actions">
       <a class="header-btn" href="http://stacks.webosarchive.org/activation/drivers/">
         <img src="images/drivers.png" alt="Download Drivers" title="Download Drivers" target="_blank">Drivers</a>
       <a class="header-btn" href="https://archive.org/details/webOSDoctors">
         <img src="images/firmware.png" alt="Download Firmware" title="Download Firmware" target="_blank">Firmware</a>
-    </div>
-    <div class="site-header-text">
-      <h1>webOS Docs</h1>
-      <p class="tagline">Everything you need to set up, activate, and get the most out of your legacy webOS device.</p>
     </div>
   </div>
 </div>
