@@ -514,7 +514,7 @@ var STEP5_NODE = {
 
 var STEP6_NODE = {
   q: "Which best describes your device?",
-  info: "<div class='callout'>Set your device's clock before doing anything else here. This matters more than it sounds like it should: TLS certificate checks are based on the date, so a wrong clock causes connection errors and failures on nearly every secure site. Launch the built-in <strong>Date &amp; Time</strong> app, and set the date, time, and timezone as close to reality as you can. On webOS 2.2.4 and 3.0.5, the Modern TLS Updates below keep it synced automatically from then on &mdash; older devices need the Clock Sync app instead, noted under Older Phone.</div>",
+  info: "<div class='callout'>Set your device's clock before doing anything else here: TLS certificate checks are based on the date, so a wrong clock causes connection errors and failures on nearly every secure site.</div>",
   options: [
     {
       label: wosaDeviceIconLabel(0),
@@ -541,7 +541,7 @@ var STEP6_NODE = {
     },
     {
       label: wosaDeviceIconLabel(2),
-      content: "<p>Your TouchPad can speak modern TLS natively.</p>" +
+      content: "<p>Your TouchPad can speak modern TLS natively, starting at webOS 3.0.5.</p>" +
         "<ul>" +
         "<li>In Preware, add the modernize feed if needed: <code>http://stacks.webosarchive.org/feeds/modernize/ipkgs/</code> (Compressed/gzip on), then Update Feeds.</li>" +
         "<li>Search for <strong>TLS 1.3 Updates (TouchPad)</strong> and install it. This covers browser/app/mail/curl/download-manager TLS, current root certs, automatic clock sync, the restored App Catalog, plus the restored on-device Help, USB Settings, and Bluetooth gamepad support.</li>" +
@@ -631,6 +631,7 @@ var STEP7_NODE = {
         "<p>Many apps are still missing from the Museum. If you have a device with apps that might be unique, follow these steps to pull an inventory, so we can check for anything the archive needs.</p>" +
         "<p>Once you have Preware on your device, the easiest way is to install <strong>App Scanner</strong> from the App Catalog or App Museum II &mdash; it automatically inventories your device and compares against the list of missing apps.</p>" +
         "<p>Or do it manually: with Java and novacom set up (<a href='#' onclick='wosaGoto(1); return false;'>Step 1</a>), connect your device (stay in regular mode, not USB Drive mode) and run <code>java -jar webos-tools.jar palm-log -l</code> (Windows) or <code>java -jar ./webos-tools.jar palm-log -l</code> (Mac/Linux) to get a full list of installed apps.</p>" +
+        "<p><strong><a href='https://stacks.webosarchive.org/activation/webos-tools.jar' target='_blank'>Download webos-tools.jar</a></strong></p>" +
         "<p>Share the list in the Community section above &mdash; if anything's unique, you can back it up over a shell with <code>cp -R /media/cryptofs/apps/usr/palm/applications/&lt;app-id&gt; /media/internal</code>, then copy it off in USB Drive mode.</p>"
     }
   ],
