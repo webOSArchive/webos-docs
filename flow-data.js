@@ -614,7 +614,7 @@ var STEP7_NODE = {
     },
     {
       label: "Patches and Hacks",
-      content: "<img src='images/patch.png' align='right' width='64' style='width:64px; padding-right: 8px'>" +
+      content: "<img src='images/patch.png' align='right' width='64' style='width:64px; padding-right: 18px'>" +
         "<p>webOS was an extremely customizable operating system, with community-created patches for a wide variety of modifications. Most patches can still be found in <a href='#' onclick='wosaGoto(5); return false;'>Preware</a> and should be installed from there, since they were created by contemporaneous developers.</p>" +
         "<p>webOS Archive has produced a series of patches that hide dead pre-installed apps that stopped working after HP's servers shut down, for a tidier Launcher. These are meant to be installed with WOSQI from a PC, <em>not</em> from within Preware.</p>" +
         "<p><strong>Hardware mods</strong> (advanced, requires micro-soldering): community member Alan Morford has guides to <a href='https://pivotce.com/2024/09/25/guide-converting-the-touchpads-micro-usb-port-to-usb-c/'>converting the TouchPad's micro-USB port to USB-C</a> and <a href='https://pivotce.com/2024/12/05/guide-create-an-original-barrel-charging-wire-for-your-hp-touchpad/'>building a warning-free charging cable</a>.</p>"
@@ -627,7 +627,7 @@ var STEP7_NODE = {
     },
     {
       label: "Contribute to the Archive",
-      content: "<img src='images/appscanner.png' align='right' style='padding-left: 8px'>" +
+      content: "<img src='images/appscanner.png' align='right' style='padding-right: 18px'>" +
         "<p>Many apps are still missing from the Museum. If you have a device with apps that might be unique, follow these steps to pull an inventory, so we can check for anything the archive needs.</p>" +
         "<p>Once you have Preware on your device, the easiest way is to install <strong>App Scanner</strong> from the App Catalog or App Museum II &mdash; it automatically inventories your device and compares against the list of missing apps.</p>" +
         "<p>Or do it manually: with Java and novacom set up (<a href='#' onclick='wosaGoto(1); return false;'>Step 1</a>), connect your device (stay in regular mode, not USB Drive mode) and run <code>java -jar webos-tools.jar palm-log -l</code> (Windows) or <code>java -jar ./webos-tools.jar palm-log -l</code> (Mac/Linux) to get a full list of installed apps.</p>" +
