@@ -102,6 +102,7 @@ body {
 .header-actions-stacked {
   clear: both;
   margin-top: 12px;
+  text-align: right;
 }
 
 @media (min-width: 600px) {
@@ -131,10 +132,7 @@ body {
   white-space: nowrap;
 }
 
-.header-actions-stacked .header-btn {
-  margin: 0 10px 8px 0;
-}
-
+.header-actions-stacked .header-btn,
 .header-actions-inline .header-btn {
   margin: 0 0 8px 10px;
 }

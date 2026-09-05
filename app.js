@@ -379,4 +379,18 @@ function wosaRender() {
   wosaAnimateFrom = null;
 }
 
+/* Deep-linking: a URL ending in #step-5 expands that step and scrolls
+   to it on load, reusing the same "step-N" id every step card already
+   has (see wosaRenderStepCard) and the existing expand+scroll behavior
+   wosaGoto uses for in-page jumps. */
+function wosaHandleInitialHash() {
+  var match = /^#step-(\d+)$/.exec(window.location.hash);
+  if (!match) { return; }
+  var stepId = parseInt(match[1], 10);
+  if (wosaFindStep(stepId)) {
+    wosaGoto(stepId);
+  }
+}
+
 wosaRender();
+wosaHandleInitialHash();
