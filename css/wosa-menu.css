@@ -1,0 +1,31 @@
+/*
+ * Placement for the webOS Archive top-nav bar, fetched and inlined
+ * server-side by index.php (see the PHP block at the top of that file).
+ *
+ * The bar is fixed to the top of the viewport at 45px tall (matching the
+ * upstream .menu-wrapper height). Unlike the old docs site's ReadTheDocs
+ * theme, this site has no fixed sidebar to adjust -- everything here is a
+ * normal top-to-bottom flow, so all we need is to push the whole page down
+ * by 45px, and only when the fetch actually succeeded (index.php only adds
+ * the .wosa-has-menu class in that case), so a failed fetch leaves no gap.
+ */
+#wosa-menu-mount {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 45px;
+  z-index: 500;
+  background: #2d2d2d;        /* fallback fill until menu.css paints */
+}
+
+/* Allow the menu's hover dropdowns to spill below the 45px bar. */
+#wosa-menu-mount .menu-wrapper,
+#wosa-menu-mount .wosaMenu {
+  overflow: visible;
+}
+
+/* Reserve space for the bar only after a successful load. */
+.wosa-has-menu body {
+  padding-top: 45px;
+}

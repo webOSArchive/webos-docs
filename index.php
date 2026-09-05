@@ -1,5 +1,25 @@
+<?php
+/*
+ * Fetches the shared webOS Archive top nav server-side and inlines it
+ * directly into this page, rather than via a client-side XHR (which
+ * would need CORS headers www.webosarchive.org doesn't send).
+ *
+ * Fetched over the SAME protocol this request arrived on, so legacy
+ * http-only devices stay on http and modern devices get https -- we
+ * never force a protocol upgrade. Mirrors the protocol logic the old
+ * docs site's menu.php used.
+ */
+if ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') ||
+    (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && strtolower($_SERVER['HTTP_X_FORWARDED_PROTO']) === 'https')) {
+    $wosaProtocol = "https://";
+} else {
+    $wosaProtocol = "http://";
+}
+$wosaMenuHtml = @file_get_contents($wosaProtocol . "www.webosarchive.org/menu.php?content=docs");
+$wosaHasMenu = ($wosaMenuHtml !== false && trim($wosaMenuHtml) !== "");
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"<?php echo $wosaHasMenu ? ' class="wosa-has-menu"' : ''; ?>>
 <head>
 <meta charset="utf-8">
 <title>webOS Archive Docs</title>
@@ -22,8 +42,13 @@
 <meta name="twitter:image" content="https://docs.webosarchive.org/images/og-image.png">
 
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/wosa-menu.css">
 </head>
 <body>
+
+<?php if ($wosaHasMenu): ?>
+<div id="wosa-menu-mount"><?php echo $wosaMenuHtml; ?></div>
+<?php endif; ?>
 
 <div id="site-header">
   <div class="content-inner">

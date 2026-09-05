@@ -551,7 +551,7 @@ var STEP6_NODE = {
     },
     {
       label: wosaDeviceIconLabel(3),
-      content: "<p>Your TouchPad Go can speak modern TLS natively, same as the 10&quot; TouchPad.</p>" +
+      content: "<p>Your TouchPad Go can speak modern TLS natively, starting at webOS 3.0.5.</p>" +
         "<ul>" +
         "<li>In Preware, add the modernize feed if needed: <code>http://stacks.webosarchive.org/feeds/modernize/ipkgs/</code> (Compressed/gzip on), then Update Feeds.</li>" +
         "<li>Search for <strong>TLS 1.3 Updates (TouchPad)</strong> and install it &mdash; the same package covers both TouchPad sizes.</li>" +
