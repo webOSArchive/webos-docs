@@ -203,7 +203,7 @@ function wosaDeviceIconLabel(i) {
 }
 
 var STEP3_DOCTOR_INTRO = "<div class='callout'>If your device is currently usable, consider doing an app inventory before you reset or upgrade it &mdash; you might be carrying apps the archive is still missing. See <a href='#' onclick='wosaGoto(7); return false;'>Contribute to the Archive (Step 7)</a> for how.</div>" +
-  "<p>Running a Doctor wipes the device back to stock, so back up anything on it you want to keep first. Get your device into recovery mode the same way <a href='#' onclick='wosaGoto(4); return false;'>Step 4</a> describes for your device, but run the matching Doctor file below instead of deviceTool: <code>java -jar NAMEOFDOCTOR.jar</code>.</p>" +
+  "<p>Running a Doctor wipes the device back to legacy stock condition, so back up anything on it you want to keep first. Get your device into recovery mode the same way <a href='#' onclick='wosaGoto(4); return false;'>Step 4</a> describes for your device, but run the matching Doctor file below instead of deviceTool: <code>java -jar NAMEOFDOCTOR.jar</code>.</p>" +
   "<p>Download the matching file for your device and carrier from the <a href='https://archive.org/details/webOSDoctors'>archived webOS Doctors</a>:</p>";
 
 var STEP3_DOCTOR_NOTE_SUPER = "<p class='note'>&ldquo;Super Doctor&rdquo; files are community-updated to install a newer webOS version than the device originally shipped with; the rest restore the last official release for that carrier.</p>";
@@ -300,7 +300,9 @@ var STEP3_NODE = {
         options: [
           {
             label: "Just activate it (it boots fine, just stuck at setup)",
-            content: "<p><button type='button' class='continue-btn' onclick='wosaGoto(4)'>Continue to Step 4 &rarr;</button></p>"
+            content: "<p class='note'>The Community Edition upgrade is the recommended path.</p><p>Upgrading to 3.1.0 automates activation, and addresses many legacy OS challenges. Consider upgrading, instead of just activating.</p>" + 
+            "<button type='button' class='opt-btn' onclick='wosaGoto(4)'><img class='chevron' src='images/chevron.png' alt=''>I just want to activate the legacy OS.</button>"
+            
           },
           {
             label: "Reset it to stock",
