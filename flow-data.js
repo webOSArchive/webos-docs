@@ -609,7 +609,7 @@ var STEP7_NODE = {
         "<p>There's still an active webOS community, swapping notes on devices and patches, and even building new apps.</p>" +
         "<p><strong>Discord + SimpleChat:</strong> the most active community of webOS users is on a modern webOS app called SimpleChat, which is also connected to a <a href='http://www.webosarchive.org/discord'>Discord server</a>. Join in the conversation from both old and new devices.</p>" +
         "<p><strong>Social Media:</strong> webOS Archive is on <a href='https://bsky.app/profile/webosarchive.org' target='_blank'>Bluesky</a>, in the <a href='https://palm.weboslives.eu/users/webosarchive' target='_blank'>Fediverse</a>, and on <a href='https://x.com/webOSArchive' target='_blank'>X/Twitter</a>.</p>" +
-        "<p><strong>Pivot + RSS:</strong> New and archived webOS news can be followed in your browser, or RSS reader at <a href='https://www.webosarchive.org/news' target='_top'>webosarchive.org/news</a></p>" +
+        "<p><strong>Pivot + RSS:</strong> New and archived webOS news can be followed in your browser, or RSS reader at <a href='https://www.webosarchive.org/pivot' target='_top'>webosarchive.org/pivot</a></p>" +
         "<p><strong>Forums:</strong> the old webOS Nation forums have been archived by the Wayback Machine, with a handy shortcut at <a href='http://forums.webosarchive.org'>forums.webosarchive.org</a>. In 2023, the community started rebuilding at the <a href='https://forums.weboslives.eu/'>webOS Lives Forums</a>.</p>"
     },
     {
