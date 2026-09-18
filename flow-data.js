@@ -615,9 +615,9 @@ var STEP7_NODE = {
     {
       label: "Patches and Hacks",
       content: "<img src='images/patch.png' align='right' width='64' style='width:64px; padding-right: 18px'>" +
-        "<p>webOS was an extremely customizable operating system, with community-created patches for a wide variety of modifications. Most patches can still be found in <a href='#' onclick='wosaGoto(5); return false;'>Preware</a> and should be installed from there, since they were created by contemporaneous developers.</p>" +
+        "<p>webOS was an extremely customizable operating system, with community-created patches for a wide variety of modifications. Most patches can still be found in Preware and should be installed from there, since they were created by contemporaneous developers.</p>" +
         "<p>webOS Archive has produced a series of patches that hide dead pre-installed apps that stopped working after HP's servers shut down, for a tidier Launcher. These are meant to be installed with WOSQI from a PC, <em>not</em> from within Preware.</p>" +
-        "<p><strong>Hardware mods</strong> (advanced, requires micro-soldering): community member Alan Morford has guides to <a href='https://pivotce.com/2024/09/25/guide-converting-the-touchpads-micro-usb-port-to-usb-c/'>converting the TouchPad's micro-USB port to USB-C</a> and <a href='https://pivotce.com/2024/12/05/guide-create-an-original-barrel-charging-wire-for-your-hp-touchpad/'>building a warning-free charging cable</a>.</p>"
+        "<p><strong>Hardware mods</strong> (advanced, requires micro-soldering): community member Alan Morford has guides to <a href='https://www.webosarchive.org/pivot/2024/09/25/guide-converting-the-touchpads-micro-usb-port-to-usb-c/'>converting the TouchPad's micro-USB port to USB-C</a> and <a href='https://www.webosarchive.org/pivot/2024/12/05/guide-create-an-original-barrel-charging-wire-for-your-hp-touchpad/'>building a warning-free charging cable</a>.</p>"
     },
     {
       label: "Shell Access",
