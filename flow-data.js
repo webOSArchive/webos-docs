@@ -202,7 +202,17 @@ function wosaDeviceIconLabel(i) {
   return "<img class='device-icon' src='" + DEVICE_CATEGORY_ICONS[i] + "' alt=''>" + DEVICE_CATEGORY_LABELS[i];
 }
 
-var STEP3_DOCTOR_INTRO = "<div class='callout'>If your device is currently usable, consider doing an app inventory before you reset or upgrade it &mdash; you might be carrying apps the archive is still missing. See <a href='#' onclick='wosaGoto(7); return false;'>Contribute to the Archive (Step 7)</a> for how.</div>" +
+/* Shared by every Step 3 Doctor path. The stock/reset paths build on
+   STEP3_DOCTOR_INTRO below, which points at Step 4 for recovery mode --
+   Step 4 still shows those steps on that path, since a stock Doctor
+   leaves the device needing deviceTool afterward anyway. The Community
+   Edition path can't do that: once it's picked, wosaIsCEUpgrade() makes
+   Step 4 drop its recovery-mode/deviceTool instructions entirely, so
+   STEP3_DOCTOR_TOUCHPAD_CE inlines recovery mode and the Doctor run
+   itself instead of pointing anywhere. */
+var STEP3_DOCTOR_CALLOUT = "<div class='callout'>If your device is currently usable, consider doing an app inventory before you reset or upgrade it &mdash; you might be carrying apps the archive is still missing. See <a href='#' onclick='wosaGoto(7); return false;'>Contribute to the Archive (Step 7)</a> for how.</div>";
+
+var STEP3_DOCTOR_INTRO = STEP3_DOCTOR_CALLOUT +
   "<p>Running a Doctor wipes the device back to legacy stock condition, so back up anything on it you want to keep first. Get your device into recovery mode the same way <a href='#' onclick='wosaGoto(4); return false;'>Step 4</a> describes for your device, but run the matching Doctor file below instead of deviceTool: <code>java -jar NAMEOFDOCTOR.jar</code>.</p>" +
   "<p>Download the matching file for your device and carrier from the <a href='https://archive.org/details/webOSDoctors'>archived webOS Doctors</a>:</p>";
 
@@ -247,11 +257,28 @@ var STEP3_DOCTOR_TOUCHPAD_RESET = STEP3_DOCTOR_INTRO +
   "<li><code>webosdoctorp305hstnhwifi.jar</code> &mdash; TouchPad 10&quot; 16/32/64GB WiFi (3.0.5)</li>" +
   "</ul>";
 
-var STEP3_DOCTOR_TOUCHPAD_CE = STEP3_DOCTOR_INTRO +
+var STEP3_DOCTOR_TOUCHPAD_CE = "<p class='note'>The Community Edition Doctor activates the device for you, so once it finishes, <a href='#' onclick='wosaGoto(4); return false;'>Step 4</a> is just a quick on-device confirmation.</p>" +
+  STEP3_DOCTOR_CALLOUT +
+  "<p>Running a Doctor wipes the device, so back up anything on it you want to keep first. This one replaces the original OS with webOS 3.1.0 Community Edition.</p>" +
+  "<p>Download the matching file for your TouchPad from the <a href='https://archive.org/details/webOSDoctors'>archived webOS Doctors</a>:</p>" +
   "<ul>" +
   "<li><code>webosdoctorp310hstnh-ce-600070.jar</code> &mdash; TouchPad 10&quot; AT&amp;T (3.1.0 Community Edition)</li>" +
   "<li><code>webosdoctorp310hstnhatt-ce-600071.jar</code> &mdash; TouchPad 10&quot; 16/32/64GB WiFi (3.1.0 Community Edition)</li>" +
-  "</ul>";
+  "</ul>" +
+  "<p><strong>Get the TouchPad into recovery mode.</strong> Connect a good quality micro-USB cable directly between the TouchPad and your computer &mdash; not through a hub. (OEM cables are recognizable by a small silver indented circle near the connector.)</p>" +
+  "<ol>" +
+  "<li>Hold Home + Power to force a reboot, and keep holding.</li>" +
+  "<li>As soon as it restarts, release Power and Home, and hold Volume Up.</li>" +
+  "<li>Keep holding Volume Up until you see the USB symbol.</li>" +
+  "</ol>" +
+  "<p><strong>Run the Doctor.</strong> Make sure <a href='#' onclick='wosaGoto(1); return false;'>Step 1</a> (Java + drivers) is done first.</p>" +
+  "<ol>" +
+  "<li>From a command line, navigate to the folder you downloaded the Doctor to.</li>" +
+  "<li>Run: <code>java -jar NAMEOFDOCTOR.jar</code> &mdash; replace <code>NAMEOFDOCTOR</code> with the file you downloaded. On some systems, double-clicking the .jar also works.</li>" +
+  "<li>Follow the prompts, then wait while it flashes and reboots the TouchPad &mdash; this can take a while. Don't unplug it until it's finished.</li>" +
+  "</ol>" +
+  "<p class='note'>If the Doctor doesn't detect your device, the novacom driver probably isn't working &mdash; double check <a href='#' onclick='wosaGoto(1); return false;'>Step 1</a>.</p>" +
+  "<p><button type='button' class='continue-btn' onclick='wosaGoto(4)'>Continue to Step 4 &rarr;</button></p>";
 
 var STEP3_DOCTOR_TOUCHPAD_GO = STEP3_DOCTOR_INTRO +
   "<ul>" +
@@ -310,7 +337,7 @@ var STEP3_NODE = {
           },
           {
             label: "Upgrade to webOS 3.1.0 Community Edition",
-            content: "<p class='note'>The Community Edition doctor leaves the device activated &mdash; Step 4 becomes a quick on-device confirmation instead of the usual recovery-mode/deviceTool dance.</p>" + STEP3_DOCTOR_TOUCHPAD_CE
+            content: STEP3_DOCTOR_TOUCHPAD_CE
           }
         ]
       }
@@ -403,7 +430,7 @@ function wosaIsCEUpgrade() {
 
 var STEP4_OPT_CE_COMPLETE = {
   label: "Complete the setup wizard on-device to finish activation.",
-  content: "<p>The Community Edition doctor already leaves your device activated &mdash; no deviceTool or recovery mode needed.</p>" +
+  content: "<p>The Community Edition Doctor you ran in <a href='#' onclick='wosaGoto(3); return false;'>Step 3</a> already leaves your device activated &mdash; nothing more to run from your computer, and no recovery mode needed.</p>" +
     "<p><button type='button' class='continue-btn' onclick='wosaGoto(5)'>Continue to Step 5 &rarr;</button></p>"
 };
 
