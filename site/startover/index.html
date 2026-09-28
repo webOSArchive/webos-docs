@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Start Over - webOS Docs</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../css/wosa-fonts.css" rel="stylesheet" />
+        <link href="../css/wosa-menu.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Start Over";
+        var mkdocs_page_input_path = "startover.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> webOS Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../activate/">Activating a webOS Device</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../appstores/">Installing Apps on your webOS Device</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../setup-path/">Getting Ready</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../modern-tls/">Modern TLS Updates</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Using Your Device</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../browsers/">Browsing the Web</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../email/">Email, Calendars & Contacts</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Older Devices (before webOS 2.2.4)</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../online/">Getting Online</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../proxysetup/">Using a SSL Proxy</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../thingstotry/">Things To Try</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../community/">Join the Community</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Taking Control</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../timesync/">Time Synchronization</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../patches/">Patches and Hacks</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../hosts/">Update Hosts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../bash/">Shell Access</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sdkpdk/">Build Your Own Apps</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../emulator/">Emulation</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Disater Recovery</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../pinbypass/">Locked Out</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../doctor/">Call the Doctor</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Start Over</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#download-the-toolbox">Download the Toolbox</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#running-the-doctor">Running the Doctor</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#pc-environment">PC Environment</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#touchpad-environment">Touchpad Environment</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#running-the-toolbox">Running the Toolbox</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#alternate-instructions">Alternate Instructions</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tprestore/">Touchpad Rescue</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Archival</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../appinventory/">App Inventory</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../appbackup/">App Backup</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">webOS Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Disater Recovery</li>
+      <li class="breadcrumb-item active">Start Over</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="touchpad-toolbox">Touchpad Toolbox</h1>
+<p>While most software issues can be fixed with a <a href="../doctor/">trip to the doctor</a>, if you (or some previous owner) had been experimenting with alternate OSes, like LuneOS or Android (or both!) and find yourself in a situation where you can't boot and can't doctor, but you <em>can</em> get the device to <a href="../tprestore/">power on</a>, the Touchpad Toolbox is here to save the day!</p>
+<p>The Touchpad Toolbox loads a minimal environment into memory during a rescue boot, and allows you to wipe partitions and start over. You may also use this tool for other kids of experiments -- those will not be documented here, but if you mess up, these instructions should help you start over!</p>
+<p>These instructions are provided for quick reference, no guarantee is implied.</p>
+<h2 id="download-the-toolbox">Download the Toolbox</h2>
+<p>The Touchpad Toolbox originated with <a href="https://xdaforums.com/m/jcsullins.2763462/" target="_blank">jcsullins</a> on the XDA Forums, where many cool things happen. As of this writing, those links still work, so <a href="https://xdaforums.com/t/tools-touchpad-toolbox-updated-2015-02-25.2756314/" target="_blank">start with the XDA post</a>.</p>
+<p>If those links go stale, webOS Archive has a back-up of the essential <a href="https://www.webosarchive.org/activation/TPToolbox-2015-01-08-v42.zip">zip archive here</a>.</p>
+<h2 id="running-the-doctor">Running the Doctor</h2>
+<h3 id="pc-environment">PC Environment</h3>
+<p>Ensure you have the novacom drivers working on your PC. See the <a href="../activate/#prepare-your-computer">Prepare Your Computer</a> section of the Activation instructions.</p>
+<p>The Toolbox has startup scripts that run in most Mac, Windows and Linux environments -- even as of 2026. If one OS doesn't work, try another -- the script will need access to your PC's USB ports, so may need elevated privileges.</p>
+<h3 id="touchpad-environment">Touchpad Environment</h3>
+<p>Regardless of the software state of your Touchpad, if it powers on, you can probably run the toolbox. But start by powering it off...</p>
+<ul>
+<li>Connect a known-good USB cable between your Touchpad and the PC where you have the Toolbox installed</li>
+<li>With the power off, press and continue to hold the Volume Up button on your Touchpad</li>
+<li>With the Volume Up button still held down, press the Power button until the screen lights up (usually about 5 seconds)</li>
+<li>When the USB symbol appears on the screen, release all buttons</li>
+</ul>
+<h3 id="running-the-toolbox">Running the Toolbox</h3>
+<ul>
+<li>On your PC, run the appropriate <code>tptb_</code> startup script for your OS -- its best to do this from a Terminal/Command Prompt.</li>
+<li>If all goes well, the Toolbox will "install" on the Touchpad and boot into its environment<ul>
+<li>If something goes wrong, check that <code>novacom</code> and <code>novacomd</code> can run on your PC (<a href="../activate/#prepare-your-computer">re-visit instructions</a>) and try another USB cable</li>
+</ul>
+</li>
+<li>Once it starts, use the hardware Volume keys and Home button on your Touchpad to make and confirm selections</li>
+<li>For a true "Start Over", select "Complete Data Reset" and confirm it multiple times</li>
+<li>Once the the data reset completes, select "Create webOS Volumes" and confirm that action as well</li>
+<li>Finally reboot the device back into recovery mode (hold Volume up while powering up), and run the appropriate <a href="../doctor/">Doctor</a> for your device. For <em>most</em> Touchpads, you'll want <code>webosdoctorp305hstnhwifi.jar</code></li>
+</ul>
+<h2 id="alternate-instructions">Alternate Instructions</h2>
+<p>This process is similar to the steps involved in <a href="https://www.rootzwiki.com/threads/rom-guide-how-to-install-android-5-x-x-4-4-x-with-jcsullins-tptoolbox-the-super-easy-way.179730/" target="_blank">Installing Android</a> on your Touchpad.</p>
+<p>Community member <a href="https://forums.weboslives.eu/u/neon" target="_blank">neon</a> also refreshed the <a href="https://forums.weboslives.eu/d/21-android-on-the-hp-touchpad-a-hopefully-more-streamlined-guide" target="_blank">Android install documentation on the <a href="https://forums.weboslives.eu/" target="_blank">webOS Lives forums</a> in 2023.</p>
+              
+            </div>
+          </div><footer>
+    
+      <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        
+          <a href="../tprestore/" class="btn btn-neutral float-right" title="Touchpad Rescue">Next <span class="icon icon-circle-arrow-right"></span></a>
+        
+        
+          <a href="../doctor/" class="btn btn-neutral" title="Call the Doctor"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        
+      </div>
+    
+  
+    <hr/>
+  
+    <div role="contentinfo">
+      <!-- Copyright etc -->
+      
+    </div>
+  
+    <small><a href="https://github.com/webosarchive/webos-docs" target="_blank">webOS Docs</a> is an open source project of <a href="http://www.webosarchive.org" target="_top">webOS Archive</a></small>
+    <script>
+      // When the page is served over https, upgrade any absolute http:// links
+      // so we don't trigger mixed-content or needless redirects. (Pages are now
+      // served directly at their real paths, so no reverse-proxy link rewriting
+      // is needed -- MkDocs's relative links resolve natively.)
+      var myURL = document.getElementsByTagName('a');
+      for(var i=0; i<myURL.length; i++) {
+        var currLink = (myURL[i].getAttribute('href'));
+        if (currLink && location.protocol == "https:" && currLink.indexOf("http://") != -1) {
+          newUrl = currLink.replace("http://", "https://");
+          if (window.location.host.indexOf("localhost") == -1) {
+            myURL[i].setAttribute('href', newUrl);
+          }
+        }
+      }
+    </script>
+  </footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../js/wosa-menu.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

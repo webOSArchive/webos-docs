@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Shell Access - webOS Docs</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../css/wosa-fonts.css" rel="stylesheet" />
+        <link href="../css/wosa-menu.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Shell Access";
+        var mkdocs_page_input_path = "bash.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> webOS Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../activate/">Activating a webOS Device</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../appstores/">Installing Apps on your webOS Device</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../setup-path/">Getting Ready</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../modern-tls/">Modern TLS Updates</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Using Your Device</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../browsers/">Browsing the Web</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../email/">Email, Calendars & Contacts</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Older Devices (before webOS 2.2.4)</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../online/">Getting Online</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../proxysetup/">Using a SSL Proxy</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../thingstotry/">Things To Try</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../community/">Join the Community</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Taking Control</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../timesync/">Time Synchronization</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../patches/">Patches and Hacks</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../hosts/">Update Hosts</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Shell Access</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#on-device">On Device</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#installing-xecutah">Installing Xecutah</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#launching-the-shell">Launching the Shell</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#customize-the-shell">Customize the Shell</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#remote">Remote</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#developer-tools">Developer Tools</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ssh-access">SSH Access</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sdkpdk/">Build Your Own Apps</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../emulator/">Emulation</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Disater Recovery</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../pinbypass/">Locked Out</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../doctor/">Call the Doctor</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../startover/">Start Over</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tprestore/">Touchpad Rescue</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Archival</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../appinventory/">App Inventory</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../appbackup/">App Backup</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">webOS Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Taking Control</li>
+      <li class="breadcrumb-item active">Shell Access</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="shell-access">Shell Access</h1>
+<p>webOS may have a beautiful user interface, and easy Javascript-based programming environment, but underneath all that is a powerful Linux-based operating system. While normally you wouldn't see this layer, unlocking the command line gives you the ability to control your device in fun and helpful ways.</p>
+<p>There's no jailbreaking required, all the steps can be performed right from your device, using bits found in Preware. These instructions assume you've aleady completed <a href="../appstores/">installing the App Stores</a>.</p>
+<h2 id="on-device">On Device</h2>
+<h3 id="installing-xecutah">Installing Xecutah</h3>
+<ul>
+<li>Launch Preware on your device and wait while it syncs</li>
+<li>From the built-in Search feature, type: xecutah</li>
+<li>Tap in the Xecutah search result</li>
+<li>Tap install</li>
+<li>When prompted, confirm that the pre-requisite apps should also be installed</li>
+</ul>
+<h3 id="launching-the-shell">Launching the Shell</h3>
+<p>Although multiple apps will be installed, the only one you can actually use is Xecutah -- don't delete the other apps, they are used by Xecutah.</p>
+<ul>
+<li>Tap the Xecutah icon from the Launcher of your webOS device</li>
+<li>Give it a few seconds to startup</li>
+<li>On the TouchPad, you will need to tap with three fingers on the screen to bring up the keyboard<ul>
+<li>Tapping again with three fingers will hide the keyboard again</li>
+<li>Type <code>clear</code> at any time if the screen gets too full</li>
+</ul>
+</li>
+<li>Try typing some commands:<ul>
+<li><code>ls</code> will list the contents of the current directory</li>
+<li><code>cd ..</code> will move up one directory</li>
+<li><code>cd /media/internal</code> will move to the Internal storage directory that you see when you connect your webOS device to a computer</li>
+</ul>
+</li>
+</ul>
+<h3 id="customize-the-shell">Customize the Shell</h3>
+<p>The Tweaks App, and corresponding tweaks, all found in Preware, can be used to customize the shell, including reserving space for the keyboard so you don't have to keep clearing the screen.</p>
+<h2 id="remote">Remote</h2>
+<h3 id="developer-tools">Developer Tools</h3>
+<p>The official Developer Tools allow shell access from a USB-connected PC or Mac, using the command line. More information about the Developer Tools can be found at the restored <a href="http://sdk.webosarchive.org/docs/docs.html#dev-guide/tools.html" target="_top">SDK Archive</a>.</p>
+<h3 id="ssh-access">SSH Access</h3>
+<p>The Homebrew Community has built and published the OpenSSH server for webOS. The necessary components can be found and installed from <a href="../appstores/#install-preware">Preware</a> on your device.</p>
+              
+            </div>
+          </div><footer>
+    
+      <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        
+          <a href="../sdkpdk/" class="btn btn-neutral float-right" title="Build Your Own Apps">Next <span class="icon icon-circle-arrow-right"></span></a>
+        
+        
+          <a href="../hosts/" class="btn btn-neutral" title="Update Hosts"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        
+      </div>
+    
+  
+    <hr/>
+  
+    <div role="contentinfo">
+      <!-- Copyright etc -->
+      
+    </div>
+  
+    <small><a href="https://github.com/webosarchive/webos-docs" target="_blank">webOS Docs</a> is an open source project of <a href="http://www.webosarchive.org" target="_top">webOS Archive</a></small>
+    <script>
+      // When the page is served over https, upgrade any absolute http:// links
+      // so we don't trigger mixed-content or needless redirects. (Pages are now
+      // served directly at their real paths, so no reverse-proxy link rewriting
+      // is needed -- MkDocs's relative links resolve natively.)
+      var myURL = document.getElementsByTagName('a');
+      for(var i=0; i<myURL.length; i++) {
+        var currLink = (myURL[i].getAttribute('href'));
+        if (currLink && location.protocol == "https:" && currLink.indexOf("http://") != -1) {
+          newUrl = currLink.replace("http://", "https://");
+          if (window.location.host.indexOf("localhost") == -1) {
+            myURL[i].setAttribute('href', newUrl);
+          }
+        }
+      }
+    </script>
+  </footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../js/wosa-menu.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

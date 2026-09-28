@@ -1,0 +1,65 @@
+/*
+ * Font fix for the vendored theme.css.
+ *
+ * theme.css lists "Roboto Slab" (headings) and "Lato" (body) in its font
+ * stacks, but its @font-face rules point at ../fonts/RobotoSlab/... and
+ * ../fonts/Lato/... -- paths/filenames that MkDocs's readthedocs theme does
+ * not ship. The actual font files live in css/fonts/ under different names,
+ * so the web fonts 404 and text falls back to a serif (Georgia) / Arial.
+ *
+ * Re-declare the faces here against the files that ARE present. This file is
+ * loaded after theme.css (via extra_css), so these working sources win.
+ * Paths are relative to this file at css/wosa-fonts.css -> css/fonts/...
+ */
+
+/* Headings */
+@font-face {
+  font-family: "Roboto Slab";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("fonts/Roboto-Slab-Regular.woff2") format("woff2"),
+       url("fonts/Roboto-Slab-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("fonts/Roboto-Slab-Bold.woff2") format("woff2"),
+       url("fonts/Roboto-Slab-Bold.woff") format("woff");
+}
+
+/* Body */
+@font-face {
+  font-family: "Lato";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("fonts/lato-normal.woff2") format("woff2"),
+       url("fonts/lato-normal.woff") format("woff");
+}
+@font-face {
+  font-family: "Lato";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("fonts/lato-bold.woff2") format("woff2"),
+       url("fonts/lato-bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Lato";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("fonts/lato-normal-italic.woff2") format("woff2"),
+       url("fonts/lato-normal-italic.woff") format("woff");
+}
+@font-face {
+  font-family: "Lato";
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+  src: url("fonts/lato-bold-italic.woff2") format("woff2"),
+       url("fonts/lato-bold-italic.woff") format("woff");
+}

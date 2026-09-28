@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Email, Calendars & Contacts - webOS Docs</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../css/wosa-fonts.css" rel="stylesheet" />
+        <link href="../css/wosa-menu.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Email, Calendars \u0026 Contacts";
+        var mkdocs_page_input_path = "email.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> webOS Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../activate/">Activating a webOS Device</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../appstores/">Installing Apps on your webOS Device</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../setup-path/">Getting Ready</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../modern-tls/">Modern TLS Updates</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Using Your Device</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../browsers/">Browsing the Web</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Email, Calendars & Contacts</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#email">Email</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#imap-and-pop-mail">IMAP and POP mail</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#exchange-web-access">Exchange Web Access</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#office365-aka-microsoft365">Office365 (aka Microsoft365)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#gmail">Gmail</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#zoho">Zoho</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#icloud">iCloud</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#calendars-and-contacts">Calendars and Contacts</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#exchange-web-access_1">Exchange Web Access</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#zoho_1">Zoho</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#public-calendars">Public Calendars</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#caldav-and-carddav">CalDav and CardDav</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Older Devices (before webOS 2.2.4)</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../online/">Getting Online</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../proxysetup/">Using a SSL Proxy</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../thingstotry/">Things To Try</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../community/">Join the Community</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Taking Control</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../timesync/">Time Synchronization</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../patches/">Patches and Hacks</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../hosts/">Update Hosts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../bash/">Shell Access</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sdkpdk/">Build Your Own Apps</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../emulator/">Emulation</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Disater Recovery</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../pinbypass/">Locked Out</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../doctor/">Call the Doctor</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../startover/">Start Over</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tprestore/">Touchpad Rescue</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Archival</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../appinventory/">App Inventory</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../appbackup/">App Backup</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">webOS Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Using Your Device</li>
+      <li class="breadcrumb-item active">Email, Calendars & Contacts</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="syncing-email-calendars-and-contacts">Syncing Email, Calendars and Contacts</h1>
+<p><img src="../images/touchpad-pim.png" align="right" width="300" style="width:300px; padding-left: 8px"></p>
+<p>webOS has a first-class email client (arguably the best Exchange client for any Linux) that still works in some cases. Success is varied, depending on the server infrastructure.</p>
+<blockquote>
+<p><strong>Encryption note:</strong> the connection tips below assume your device can already speak modern encryption. On <strong>webOS 2.2.4 or 3.0.5</strong>, that means you've run the <a href="../modern-tls/">Modern TLS Updates</a> — with those in place, secure mail servers connect directly and you can ignore the OpenSSL-updater and proxy suggestions here. On <a href="../online/">older devices</a>, use the <a href="../online/#dealing-with-encryption">OpenSSL updater</a> and/or a <a href="../proxysetup/">proxy</a> as noted.</p>
+</blockquote>
+<h2 id="email">Email</h2>
+<h4 id="imap-and-pop-mail">IMAP and POP mail</h4>
+<p>POP and IMAP servers still work, provided the server's encryption method is compatible with webOS. The <a href="../modern-tls/">Modern TLS Updates</a> handle this on webOS 2.2.4 and 3.0.5; on <a href="../online/">older devices</a>, run the <a href="http://www.webosarchive.org/activation/org.webosinternals.openssl-updater_0.9.8-6_armv7.ipk">OpenSSL Updater for webOS</a> to improve your odds of connecting.</p>
+<h4 id="exchange-web-access">Exchange Web Access</h4>
+<p>Private and hosted Exchange servers that provide EAS (Exchange Active Sync) can still be used. On webOS 2.2.4 and 3.0.5 the <a href="../modern-tls/">Modern TLS Updates</a> are enough; on <a href="../online/">older devices</a>, you'll need a <a href="../proxysetup/">SSL-bump proxy</a> enabled.</p>
+<h4 id="office365-aka-microsoft365">Office365 (aka Microsoft365)</h4>
+<p>Microsoft has moved to "modern authentication," including an OAuth sign-in page that cannot be rendered on webOS devices. Attempts to request exceptions, even for paid accounts, have been met with hositility. As a work-around, <a href="https://davmail.sourceforge.net/" target="_blank">you can use DavMail on a PC or server to proxy access to your Office365 inbox using non-proprietary standards</a>.</p>
+<h4 id="gmail">Gmail</h4>
+<p>Gmail's built-in account type relies on Google's OAuth sign-in flow, which can't be rendered on webOS. The way around it is to add Gmail as a plain <strong>IMAP</strong> account using a <a href="https://myaccount.google.com/apppasswords" target="_blank">Google App Password</a> rather than your normal password. Generate one at <a href="https://myaccount.google.com/apppasswords" target="_blank">myaccount.google.com/apppasswords</a>, then enter it on the device in place of your password (App Passwords require 2-Step Verification to be enabled on your Google account).</p>
+<p>That combination used to fail anyway, with a misleading "certificate is not trusted" message (error 4010) — webOS mis-verified Gmail's certificate, which uses an ECDSA key that the original mail stack doesn't handle. <strong>This was fixed in 2026</strong>: the <a href="../modern-tls/">Modern TLS Updates</a> include a mail patch that resolves it, so Gmail IMAP signs in normally on webOS 2.2.4 and 3.0.5. If you're seeing error 4010, you're on an older version of the updates — run <a href="../modern-tls/">Modern TLS Updates</a> again to pick up the current one.</p>
+<p>Further background on <a href="https://forums.weboslives.eu/d/34-getting-gmail-working-in-2023/6" target="_blank">connecting webOS to Gmail is available in the webOS Lives Forums</a>.</p>
+<h4 id="zoho">Zoho</h4>
+<p><a href="https://mail.zoho.com" target="_blank"><img src="../images/zoho.png" align="right" width="300" style="width:128px; padding-left: 8px"></a><a href="https://mail.zoho.com" target="_blank">Zoho</a> provides a cost-effective and full-featured alternative to Office365 and Google, with support for custom domains and Exchange ActiveSync. It works perfectly with webOS, with no hacks, work-arounds or modifications. If you have a choice in mail providers, webOS Archive highly recommends checking it out.</p>
+<h4 id="icloud">iCloud</h4>
+<p>You may be able to get IMAP access to your iCloud inbox. On webOS 2.2.4 and 3.0.5 the <a href="../modern-tls/">Modern TLS Updates</a> cover this; on <a href="../online/">older devices</a>, run the <a href="http://www.webosarchive.org/activation/org.webosinternals.openssl-updater_0.9.8-6_armv7.ipk">OpenSSL Updater for webOS</a> first.</p>
+<h2 id="calendars-and-contacts">Calendars and Contacts</h2>
+<p>The Calendar app on webOS is still one of the best out there -- particularly with the extra Touchpad screen real estate. As with email, service providers are continuing to lock down their environments in ways that webOS cannot support, but some of this can be resolved by leveraging web standards.</p>
+<h4 id="exchange-web-access_1">Exchange Web Access</h4>
+<p>As with mail, Private and hosted Exchange servers that provide EAS (Exchange Active Sync) can still be used — on webOS 2.2.4 and 3.0.5 with the <a href="../modern-tls/">Modern TLS Updates</a>, or on <a href="../online/">older devices</a> with a <a href="../proxysetup/">SSL-bump proxy</a> enabled. Calendars and Contacts will sync seamlessly in a bi-directional fashion.</p>
+<h4 id="zoho_1">Zoho</h4>
+<p><a href="https://calendar.zoho.com" target="_blank">Zoho</a> syncs via Exchange ActiveSync, and works without compromise on webOS.</p>
+<h4 id="public-calendars">Public Calendars</h4>
+<p><img src="https://appcatalog.webosarchive.org/AppImages/1005826/icon-256.png" align="right" width="128" style="width:128px; padding-left: 8px">
+In 2026, support was added for syncing Public calendar URLs to TouchPad (and possibly Pre3) via a Synergy app called webCal Sync.</p>
+<p>Most Cloud providers (including Google, iCloud, Office365/Outlook.com, and Canvas) supporting sharing via a URL. Although the method of sharing this URL differs between providers (some have a separate secret and public URL, some have limitations set by an administrator), if you can get a .ICS link out of your provider, that doesn't require authentication, you can do a one-way sync to get that calendar on to your device:</p>
+<ul>
+<li>Install <a href="https://appcatalog.webosarchive.org/app/webCalSync" target="_top">WebCal Sync</a> from the App Museum</li>
+<li>Create a placeholder account and calendar in the built-in Accounts app</li>
+<li>Use the WebCal Sync app to set the calendars you want to sync, one at a time with a test sync after each</li>
+<li>Calendars successfully added will automatically sync every 15 minutes if your device is online</li>
+</ul>
+<p>If your Cloud service does not provide a method for publishing, but does work in Microsoft Outlook for Windows, you can use <a href="https://davmail.sourceforge.net/" target="_blank">DavMail</a> to publish calendar data to a service that does.</p>
+<h4 id="caldav-and-carddav">CalDav and CardDav</h4>
+<p><img src="../images/caldav.png" align="right" width="128" style="width:128px; padding-left: 8px">
+If you host your own Calendar and Contact data in a webDav-compatible service, like ownCloud or NextCloud, you can do a one-way or two-way sync with that service, using the C+Dav app.</p>
+<p>C+Dav supports a wide variety of WebDav providers, and was updated in 2026.</p>
+<ul>
+<li><a href="https://github.com/codepoet80/org.webosports.service.contacts.carddav/releases" target="_blank">Download the latest Release</a></li>
+</ul>
+<p>To learn more, <a href="https://webos-ports.org/wiki/C+_Dav_Synergy_Connector" target="_blank">visit the webOS Ports wiki</a>.</p>
+              
+            </div>
+          </div><footer>
+    
+      <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        
+          <a href="../online/" class="btn btn-neutral float-right" title="Getting Online">Next <span class="icon icon-circle-arrow-right"></span></a>
+        
+        
+          <a href="../browsers/" class="btn btn-neutral" title="Browsing the Web"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        
+      </div>
+    
+  
+    <hr/>
+  
+    <div role="contentinfo">
+      <!-- Copyright etc -->
+      
+    </div>
+  
+    <small><a href="https://github.com/webosarchive/webos-docs" target="_blank">webOS Docs</a> is an open source project of <a href="http://www.webosarchive.org" target="_top">webOS Archive</a></small>
+    <script>
+      // When the page is served over https, upgrade any absolute http:// links
+      // so we don't trigger mixed-content or needless redirects. (Pages are now
+      // served directly at their real paths, so no reverse-proxy link rewriting
+      // is needed -- MkDocs's relative links resolve natively.)
+      var myURL = document.getElementsByTagName('a');
+      for(var i=0; i<myURL.length; i++) {
+        var currLink = (myURL[i].getAttribute('href'));
+        if (currLink && location.protocol == "https:" && currLink.indexOf("http://") != -1) {
+          newUrl = currLink.replace("http://", "https://");
+          if (window.location.host.indexOf("localhost") == -1) {
+            myURL[i].setAttribute('href', newUrl);
+          }
+        }
+      }
+    </script>
+  </footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../js/wosa-menu.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>App Inventory - webOS Docs</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../css/wosa-fonts.css" rel="stylesheet" />
+        <link href="../css/wosa-menu.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "App Inventory";
+        var mkdocs_page_input_path = "appinventory.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> webOS Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../activate/">Activating a webOS Device</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../appstores/">Installing Apps on your webOS Device</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../setup-path/">Getting Ready</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../modern-tls/">Modern TLS Updates</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Using Your Device</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../browsers/">Browsing the Web</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../email/">Email, Calendars & Contacts</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Older Devices (before webOS 2.2.4)</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../online/">Getting Online</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../proxysetup/">Using a SSL Proxy</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../thingstotry/">Things To Try</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../community/">Join the Community</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Taking Control</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../timesync/">Time Synchronization</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../patches/">Patches and Hacks</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../hosts/">Update Hosts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../bash/">Shell Access</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sdkpdk/">Build Your Own Apps</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../emulator/">Emulation</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Disater Recovery</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../pinbypass/">Locked Out</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../doctor/">Call the Doctor</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../startover/">Start Over</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tprestore/">Touchpad Rescue</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Archival</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">App Inventory</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#easy-way">Easy Way</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#manual-way">Manual Way</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#step-1-connect-to-your-device">Step 1: Connect to your Device</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-2-put-your-device-in-dev-mode">Step 2: Put Your Device in Dev Mode</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-3-connect-your-device-to-your-computer">Step 3: Connect your Device to your Computer</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-4-open-a-command-window-on-your-computer">Step 4: Open a Command Window on your Computer</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-5-download-minimal-sdk-tools-to-your-computer">Step 5: Download Minimal SDK Tools to your Computer</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-6-get-an-app-inventory">Step 6: Get an App Inventory</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-7-send-your-inventory">Step 7: Send your Inventory</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../appbackup/">App Backup</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">webOS Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Archival</li>
+      <li class="breadcrumb-item active">App Inventory</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="extracting-an-app-inventory">Extracting an App Inventory</h1>
+<p>Many apps are still missing from the Museum! If you have a device with apps that you might be interested in contributing to the Museum, follow these steps to pull an inventory off the device, so we can check for uniqueness...</p>
+<h2 id="easy-way">Easy Way</h2>
+<p><img src="../images/appscanner.png" align="right" style="padding-left: 8px;">Once you have <a href="../appstores/">Preware</a> on your device, you can install an App that will automatically inventory your device, and compare your installed apps to the list of missing apps.</p>
+<p>If you have the App Catalog or App Museum II installed, search for:
+<code>App Scanner</code></p>
+<p>If you only have Preware installed, you can the Museum in the built-in web-browser and click Direct Link under Download:
+<a href="https://appcatalog.webosarchive.org/app/webOSAppScanner" target="_blank">https://appcatalog.webosarchive.org/app/webOSAppScanner</a></p>
+<hr />
+<h2 id="manual-way">Manual Way</h2>
+<p>In these instructions, the "device" is your webOS device (Pre, Touchpad, etc...) and a "computer" means a Mac or PC running Windows, OSX/macOS or Ubuntu.</p>
+<h3 id="step-1-connect-to-your-device">Step 1: Connect to your Device</h3>
+<p>Follow the "Prepare Your Computer" steps on this <a href="../activate/#prepare-your-computer">activation page</a> to install Java and the Novacom drivers. (It may look like a lot, but its just different options for different environments -- you only need to install one Java, and one Novacom.)</p>
+<p><em>Note: you do not have to follow the other steps on the page, but it won't hurt your device if you do.</em></p>
+<h3 id="step-2-put-your-device-in-dev-mode">Step 2: Put Your Device in Dev Mode</h3>
+<p>Follow the "Activate Developer Mode" steps on this <a href="../sdkpdk/#activate-developer-mode">build your own apps page</a> to allow you to issue commands from your computer to the device. You'll type the code for your device's OS from the home screen of your device with no apps open.</p>
+<p><em>Note: you do not have to follow the other steps on the page, but you can if you wish.</em></p>
+<h3 id="step-3-connect-your-device-to-your-computer">Step 3: Connect your Device to your Computer</h3>
+<p>Plug a micro-USB cable into your device connected to your computer. After a few seconds, the device should ask if you want to go into USB Drive mode -- do <em>not</em> do this. Stay in regular mode.</p>
+<h3 id="step-4-open-a-command-window-on-your-computer">Step 4: Open a Command Window on your Computer</h3>
+<p>On your computer, open a command line or terminal window:</p>
+<ul>
+<li>On a Mac, launch the Terminal program from the Applications &gt; Utilities folder.</li>
+<li>On Windows, hold the Windows key on your keyboard down and press R. Then type <code>cmd</code> and hit enter.</li>
+<li>I'll assume if you're running Ubuntu that you know how to find a shell ;-)</li>
+</ul>
+<p>Now let's find your working directory:</p>
+<ul>
+<li>On Windows, type <code>echo %cd%</code></li>
+<li>On Mac or Ubuntu, type <code>echo $PWD</code></li>
+</ul>
+<p>The output will tell you what folder you're working in. Remember this for the next step.</p>
+<h3 id="step-5-download-minimal-sdk-tools-to-your-computer">Step 5: Download Minimal SDK Tools to your Computer</h3>
+<p>Download this Java jar file: <a href="https://www.webosarchive.org/activation/webos-tools.jar" target="_blank">https://www.webosarchive.org/activation/webos-tools.jar</a> which contains minimal SDK tools.</p>
+<p>Copy, move or save this file into the same folder you found during step 4.</p>
+<p><em>Note: If you've previously installed the full SDK, you don't need this step.</em></p>
+<h3 id="step-6-get-an-app-inventory">Step 6: Get an App Inventory</h3>
+<p>From the command line on your computer opened in step 4, using the Java file downloaded in step 5, and with the device connected to your computer on step 3, you're ready to run this command:</p>
+<p><strong>Windows</strong>: <code>java -jar webos-tools.jar palm-log -l</code></p>
+<p><strong>Mac or Ubuntu</strong>: <code>java -jar ./webos-tools.jar palm-log -l</code></p>
+<p>If it works, you'll get a list of all the apps installed on your device, including AppId, Version and Title. Copy and paste this list into a text file or message!</p>
+<h3 id="step-7-send-your-inventory">Step 7: Send your Inventory</h3>
+<p>Contact the <a href="../community/">Community</a> to share your Inventory. </p>
+<p>If you have anything unique, proceed to <a href="../appbackup/">App Backup</a> to learng how to extract your unique apps for archival!</p>
+              
+            </div>
+          </div><footer>
+    
+      <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        
+          <a href="../appbackup/" class="btn btn-neutral float-right" title="App Backup">Next <span class="icon icon-circle-arrow-right"></span></a>
+        
+        
+          <a href="../tprestore/" class="btn btn-neutral" title="Touchpad Rescue"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        
+      </div>
+    
+  
+    <hr/>
+  
+    <div role="contentinfo">
+      <!-- Copyright etc -->
+      
+    </div>
+  
+    <small><a href="https://github.com/webosarchive/webos-docs" target="_blank">webOS Docs</a> is an open source project of <a href="http://www.webosarchive.org" target="_top">webOS Archive</a></small>
+    <script>
+      // When the page is served over https, upgrade any absolute http:// links
+      // so we don't trigger mixed-content or needless redirects. (Pages are now
+      // served directly at their real paths, so no reverse-proxy link rewriting
+      // is needed -- MkDocs's relative links resolve natively.)
+      var myURL = document.getElementsByTagName('a');
+      for(var i=0; i<myURL.length; i++) {
+        var currLink = (myURL[i].getAttribute('href'));
+        if (currLink && location.protocol == "https:" && currLink.indexOf("http://") != -1) {
+          newUrl = currLink.replace("http://", "https://");
+          if (window.location.host.indexOf("localhost") == -1) {
+            myURL[i].setAttribute('href', newUrl);
+          }
+        }
+      }
+    </script>
+  </footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../js/wosa-menu.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

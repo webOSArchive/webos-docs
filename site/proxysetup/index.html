@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Using a SSL Proxy - webOS Docs</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../css/wosa-fonts.css" rel="stylesheet" />
+        <link href="../css/wosa-menu.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Using a SSL Proxy";
+        var mkdocs_page_input_path = "proxysetup.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> webOS Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../activate/">Activating a webOS Device</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../appstores/">Installing Apps on your webOS Device</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../setup-path/">Getting Ready</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../modern-tls/">Modern TLS Updates</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Using Your Device</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../browsers/">Browsing the Web</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../email/">Email, Calendars & Contacts</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Older Devices (before webOS 2.2.4)</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../online/">Getting Online</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Using a SSL Proxy</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#proxy-options">Proxy Options</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#self-hosted-proxy">Self-Hosted Proxy</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#on-device-proxy">On-Device Proxy</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#webone-proxy">WebOne Proxy</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#device-setup">Device Setup</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#easy-install">Easy Install</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#manual-configuration">Manual Configuration</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#adding-the-certificate">Adding the Certificate</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#configure-the-proxy">Configure the Proxy</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../thingstotry/">Things To Try</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../community/">Join the Community</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Taking Control</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../timesync/">Time Synchronization</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../patches/">Patches and Hacks</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../hosts/">Update Hosts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../bash/">Shell Access</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sdkpdk/">Build Your Own Apps</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../emulator/">Emulation</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Disater Recovery</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../pinbypass/">Locked Out</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../doctor/">Call the Doctor</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../startover/">Start Over</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tprestore/">Touchpad Rescue</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Archival</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../appinventory/">App Inventory</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../appbackup/">App Backup</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">webOS Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Older Devices (before webOS 2.2.4)</li>
+      <li class="breadcrumb-item active">Using a SSL Proxy</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="proxy-setup">Proxy Setup</h1>
+<blockquote>
+<p><strong>Most people no longer need this page.</strong> An SSL-bump proxy used to be the only way to get a webOS device onto the encrypted web. On <strong>webOS 2.2.4 and 3.0.5</strong> — every TouchPad, and any Pre3, Veer or Pre 2 at 2.2.4 — the <a href="../modern-tls/">Modern TLS Updates</a> do the job natively, and better. Start there.</p>
+</blockquote>
+<p>A proxy is worth setting up in two remaining cases:</p>
+<ul>
+<li><strong>You want the extras.</strong> The webOS Archive proxy does more than encryption: it redirects Google searches to DuckDuckGo Lite, quiets the bogus <a href="../online/#hot-spot-detection">Hot Spot detection</a>, and can host the original on-device Help content.</li>
+<li><strong>You'd rather not patch the device.</strong> The TLS Updates modify system files. If you want your device left stock, a proxy is the hands-off alternative.</li>
+</ul>
+<p>Note the awkward gap: the API to set a proxy wasn't added for most devices until webOS 2.2.4 (2.2.0 on Pre3) — so the <a href="../online/">older devices</a> that can't run the TLS Updates mostly can't run a proxy either. On an original Pre or Pixi, neither option is available. If you're on a Pre 2 or Veer it IS possible to update them to webOS 2.2.4 with a Super Doctor — many are archived and ready to run, see <a href="../doctor/">Call the Doctor</a> — and once you've done that, the <a href="../modern-tls/">TLS Updates</a> are the easier finish.</p>
+<p>Fair warning: SSL-bumping defeats the security of modern encryption, and shouldn't be used for anything highly private.</p>
+<p><strong>Important Note</strong> Make sure the time on your device is at least close to accurate. Certificates are based on dates, so if your internal clock is wrong, you will get errors!</p>
+<h2 id="proxy-options">Proxy Options</h2>
+<p>A few options are well tested, and work well on webOS 2.2.4 and higher. The choice is partially dictated by your device and home network environment.</p>
+<h3 id="self-hosted-proxy">Self-Hosted Proxy</h3>
+<p>webOS Archive provides a free, easily installed self-hosting Squid Proxy that handles all the encryption issues for you. You'll need a computer that's always on to act as the proxy server. Linux and macOS are supported easily, Windows is supported through WSL (Windows Subsystem for Linux). This option also provides the ability to host the original Help content, restoring the on-device Help system.</p>
+<p>Grab the latest release on the <a href="https://github.com/webOSArchive/squid-sslbump-for-webos/releases" target="_blank">webOS Archive GitHub</a> and <a href="https://github.com/webOSArchive/squid-sslbump-for-webos/blob/main/README.md" target="_blank">review the Readme</a> to get started running the server.</p>
+<h3 id="on-device-proxy">On-Device Proxy</h3>
+<p>For Pre3 and TouchPad, you can run a proxy right on your device. <a href="https://gitlab.com/nizovn/com.nizovn.squid" target="_blank">Nizovn's Squid SSL Bump App</a> can be installed adding the modernization feed to Preware:</p>
+<p>Add the following feed in the Preware "Manage Feeds" menu option, then "Update Feeds":
+<code>http://stacks.webosarchive.org/feeds/modernize/ipkgs/</code></p>
+<p>Search for Squid and install it, and its dependencies. Once installed, you'll need to generate and install the certificate.</p>
+<h3 id="webone-proxy">WebOne Proxy</h3>
+<p>If the other two options are too complex for you, check out the WebOne proxy, which runs on Windows, Mac and Linux: <a href="https://github.com/atauenis/webone" target="_blank">WebOne on GitHub</a></p>
+<h2 id="device-setup">Device Setup</h2>
+<p>Once you have a Proxy server running, you'll need to configure the device to use it. For most options, this involves two steps:</p>
+<ul>
+<li>Installing the proxy's certificate</li>
+<li>Configuring the proxy server</li>
+</ul>
+<p>While the details will be slightly different, these steps are usually required.</p>
+<h3 id="easy-install">Easy Install</h3>
+<p><img alt="webOS Archive Proxy" src="../images/proxyicon.png" /></p>
+<p>If you're using webOS 2.2.4 or higher, The easiest way to get started is with the NEW <strong>webOS Archive Proxy</strong> app.
+To download, install an <a href="../appstores/">App Store</a> and search for "Proxy".</p>
+<p>Or use the <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?app=1005768" target="_top">direct download</a> and install it yourself.</p>
+<h3 id="manual-configuration">Manual Configuration</h3>
+<p>If Easy Install doesn't work for you, or you still get certificate prompts, you can do all the steps manually. Make sure you start from a clean slate by removing any existing certs shown in the Certificate Manager app, and deleting downloaded certs from <code>/media/internal/</code>.</p>
+<p>Also, it never hurts to do a full reboot between clean-up and manual install.</p>
+<h4 id="adding-the-certificate">Adding the Certificate</h4>
+<p>Your proxy server provides a certificate you must install in order to bypass certificate warnings from other websites: one certificate that covers the whole Internet!</p>
+<ul>
+<li>On your computer, download the cert:<ul>
+<li><code>http://&lt;yourserverip&gt;:3129/cert</code></li>
+</ul>
+</li>
+<li>Plug your webOS device into your computer with a USB cable, and enter USB Disk mode on the device</li>
+<li>Copy the cert you downloaded onto root directory of the USB device</li>
+<li>Launch the built-in webOS app "Device Info"</li>
+<li>From the menu in the top left corner, choose "Certificate Manager..."</li>
+<li>Press the "+" button at the bottom of the screen</li>
+<li>Select the new cert</li>
+<li>When prompted, choose the green button to "Trust" the cert</li>
+<li>Reboot your webOS device</li>
+</ul>
+<p><img alt="Certificate Manager" src="../images/certmanager.png" /></p>
+<h4 id="configure-the-proxy">Configure the Proxy</h4>
+<p>A Proxy switch app adds a feature to webOS allowing you to turn on (and off) a global proxy. Once activated, this proxy works for any app on the device -- including email!</p>
+<ul>
+<li>Install a Proxy app<ul>
+<li>Install the app <strong>webOS Archive Proxy</strong> app from App Museum II, or <a href="http://appcatalog.webosarchive.org/showMuseumDetails.php?app=1005768" target="_top">download directly here</a>.</li>
+<li>Install the app <strong>Proxy Set Basic</strong> from Preware, or <a href="http://www.webosarchive.org/proxy/com.palm.com.verusora.touchpad.proxysetbasic_1.1.1_all.ipk" target="_top">download directly here</a>.</li>
+</ul>
+</li>
+<li>Launch the app, and configure the fields as follows:</li>
+<li>Server: <code>&lt;yourserverip&gt;</code></li>
+<li>Port: <code>3128</code></li>
+<li>Press the "Set" button at the bottom</li>
+</ul>
+<p>With your proxy configured, you should be able to open almost any modern webpage. But even with connectivity established, you may find that some web pages don't work well on your device -- the web has evolved since webOS was first born! </p>
+              
+            </div>
+          </div><footer>
+    
+      <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        
+          <a href="../thingstotry/" class="btn btn-neutral float-right" title="Things To Try">Next <span class="icon icon-circle-arrow-right"></span></a>
+        
+        
+          <a href="../online/" class="btn btn-neutral" title="Getting Online"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        
+      </div>
+    
+  
+    <hr/>
+  
+    <div role="contentinfo">
+      <!-- Copyright etc -->
+      
+    </div>
+  
+    <small><a href="https://github.com/webosarchive/webos-docs" target="_blank">webOS Docs</a> is an open source project of <a href="http://www.webosarchive.org" target="_top">webOS Archive</a></small>
+    <script>
+      // When the page is served over https, upgrade any absolute http:// links
+      // so we don't trigger mixed-content or needless redirects. (Pages are now
+      // served directly at their real paths, so no reverse-proxy link rewriting
+      // is needed -- MkDocs's relative links resolve natively.)
+      var myURL = document.getElementsByTagName('a');
+      for(var i=0; i<myURL.length; i++) {
+        var currLink = (myURL[i].getAttribute('href'));
+        if (currLink && location.protocol == "https:" && currLink.indexOf("http://") != -1) {
+          newUrl = currLink.replace("http://", "https://");
+          if (window.location.host.indexOf("localhost") == -1) {
+            myURL[i].setAttribute('href', newUrl);
+          }
+        }
+      }
+    </script>
+  </footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../js/wosa-menu.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

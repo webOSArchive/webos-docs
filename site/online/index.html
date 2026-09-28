@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Getting Online - webOS Docs</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../css/wosa-fonts.css" rel="stylesheet" />
+        <link href="../css/wosa-menu.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Getting Online";
+        var mkdocs_page_input_path = "online.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> webOS Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../activate/">Activating a webOS Device</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../appstores/">Installing Apps on your webOS Device</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../setup-path/">Getting Ready</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../modern-tls/">Modern TLS Updates</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Using Your Device</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../browsers/">Browsing the Web</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../email/">Email, Calendars & Contacts</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Older Devices (before webOS 2.2.4)</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Getting Online</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#first-can-you-upgrade-instead">First: Can You Upgrade Instead?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#what-to-expect">What to Expect</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#updating-certificates">Updating Certificates</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#dealing-with-encryption">Dealing with Encryption</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#hot-spot-detection">Hot Spot Detection</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#what-next">What Next</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#alternate-instructions">Alternate Instructions</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../proxysetup/">Using a SSL Proxy</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../thingstotry/">Things To Try</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../community/">Join the Community</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Taking Control</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../timesync/">Time Synchronization</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../patches/">Patches and Hacks</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../hosts/">Update Hosts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../bash/">Shell Access</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sdkpdk/">Build Your Own Apps</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../emulator/">Emulation</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Disater Recovery</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../pinbypass/">Locked Out</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../doctor/">Call the Doctor</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../startover/">Start Over</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tprestore/">Touchpad Rescue</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Archival</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../appinventory/">App Inventory</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../appbackup/">App Backup</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">webOS Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Older Devices (before webOS 2.2.4)</li>
+      <li class="breadcrumb-item active">Getting Online</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="getting-online-older-devices">Getting Online — Older Devices</h1>
+<p><em>This page is for devices running </em><em>older than webOS 2.2.4</em><em>: the webOS 1.x line (Pre, Pre Plus, Pixi), and any Veer or Pre 2 still on its original 2.2.0 / 2.1.0 firmware. On </em><em>webOS 2.2.4 or 3.0.5</em><em> — any TouchPad, and Pre3, Veer or Pre 2 that's been upgraded — use <a href="../modern-tls/">Modern TLS Updates</a> instead. It replaces everything on this page.</em></p>
+<p>This section assumes you've completed the previous steps to <a href="../activate/">activate your device</a>, and <a href="../appstores/">install Preware</a>.<br>
+It also assumes you've joined a WiFi network using the built-in Settings, that your WiFi network has Internet access, and that you've <a href="../setup-path/#set-the-date-time-first">set the date and time</a>.</p>
+<h2 id="first-can-you-upgrade-instead">First: Can You Upgrade Instead?</h2>
+<p>If you have a <strong>Veer</strong> or a <strong>Pre 2</strong>, the single best thing you can do is get it to <strong>webOS 2.2.4</strong>. That isn't just a version number — it's the point where native modern TLS becomes available, and everything on this page stops being necessary.</p>
+<p>The upgrade is done with an unofficial <strong>Super Doctor</strong>, and many have already been built and archived, so in most cases it's a download-and-run rather than a build-it-yourself job. See <a href="../doctor/">Call the Doctor</a> for where to find the right one for your device and carrier, and how to run it. (If nothing archived matches your carrier, a Super Doctor can still be built from <a href="https://github.com/webos-internals/meta-doctor/" target="_blank">meta-doctor</a>.)</p>
+<p>A <strong>Pre3</strong> already ships with 2.2.4, so it should go straight to <a href="../modern-tls/">Modern TLS Updates</a>.</p>
+<p>For the webOS <strong>1.x</strong> devices (Pre, Pre Plus, Pixi) there's no upgrade path, and the rest of this page is for you. The built-in web browser is dated, and has some real limitations, but with a little help there's still a lot you can do online!</p>
+<h2 id="what-to-expect">What to Expect</h2>
+<p>Modern TLS isn't available below 2.2.4, and neither is the <a href="../proxysetup/">proxy</a> work-around — the API a proxy switcher needs wasn't added to webOS until 2.2.4 (2.2.0 on the Pre3). In practice that means these devices are <strong>limited to what they can reach over plain HTTP</strong>, plus whatever older HTTPS a site still accepts after a certificate update.</p>
+<p>That's more than it sounds like. Plenty of the retro-friendly web is still reachable, and several of the <a href="../thingstotry/">things to try</a> work fine over HTTP.</p>
+<h2 id="updating-certificates">Updating Certificates</h2>
+<p>The root certificates used to establish trust on the Internet are out-of-date in webOS and need to be updated. Fortunately, the community has made it really easy to solve this problem!</p>
+<ul>
+<li>On your device, launch Preware, and wait for it to update sources.</li>
+<li>Search for "Certs" using Preware's built-in search tool<ul>
+<li>On a phone, just start typing</li>
+<li>On a TouchPad, use the Search icon in the toolbar at the top of the main scene</li>
+</ul>
+</li>
+<li>Find the app "Root Certs Update" in the search results, tap on it</li>
+<li>Hit the Install button, and wait while it installs and runs the necessary scripts (this process takes a few minutes!)<ul>
+<li>If you have trouble with the app method, try downloading <a href="https://github.com/Herrie82/webOS-rootcerts/raw/refs/heads/main/com.palm_.rootcertsupdate_1.0-5_all.ipk">Root Certs Update 1.0.5 from Herrie82</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="dealing-with-encryption">Dealing with Encryption</h2>
+<p>Since webOS was released, encryption standards have changed, and some sites and services have become inaccessible.</p>
+<p>You can partially improve the situation by installing a SSL update. This is discussed on the <a href="http://stacks.webosarchive.org/forums/Zero%20to%20Google%20in%202020%20-%20step%20by%20step%20-%20webOS%20Nation%20Forums.html" target="_blank">Forums</a>, but for brevity, downloading and installing <a href="http://www.webosarchive.org/activation/org.webosinternals.openssl-updater_0.9.8-6_armv7.ipk">OpenSSL Updater for webOS</a> via <a href="../appstores/">webOS Quick Install</a> is all you need. It won't get you to the modern web, but it widens what still connects.</p>
+<p>Without a proxy or modern TLS, your access to the web is significantly limited — and so is your access to some Preware files, since many have moved to HTTPS. This can result in errors during install. As a work-around for Preware issues, look at the end of the error message for the URL of the file -- you can then download that on your computer, and use <a href="../appstores/">webOS Quick Install</a> to "sideload" to your device. Community member Nomad84 also maintains <a href="https://github.com/h8pewou/legacy-webos-feeds/blob/main/README.md" target="_blank">HTTP-only Preware feeds</a> that avoid the problem entirely.</p>
+<p>If your device is a Pre3 on 2.2.0, you <em>are</em> able to run a <a href="../proxysetup/">proxy</a> — but upgrading to 2.2.4 and running the <a href="../modern-tls/">TLS Updates</a> is a better use of the effort.</p>
+<p>For the earliest webOS devices, you can run the <a href="https://palmdb.net/app/opera-mini" target="_blank">Opera Mini</a> browser in <a href="../thingstotry/#classic">Classic</a> to get around encryption problems on web pages.</p>
+<p>With or without modern encryption, there's still lots of interesting things you can do with your devices...</p>
+<h2 id="hot-spot-detection">Hot Spot Detection</h2>
+<p>When you join (or re-join) a WiFi network, webOS may incorrectly notify you that a Hot Spot has been detected and ask you to log-in. The captive portal detection webOS used depended on a server that's long gone. Modifying your <a href="../hosts/">hosts</a> file eliminates these notifications on any device. (If you happen to be running the <a href="../proxysetup/">self-host proxy</a>, it handles this for you.)</p>
+<h2 id="what-next">What Next</h2>
+<p>Now that you're online, check out a <a href="../thingstotry/">few of the things you can do with your webOS device</a>.</p>
+<h2 id="alternate-instructions">Alternate Instructions</h2>
+<p>This documentation attempts to update and simplify information available from older, archived sources. You may find that material to be useful as reference:</p>
+<ul>
+<li><a href="http://stacks.webosarchive.org/forums/Zero%20to%20Google%20in%202020%20-%20step%20by%20step%20-%20webOS%20Nation%20Forums.html" target="_blank">Zero to Google in 2020</a></li>
+<li><a href="https://pivotce.com/2014/10/21/guide-coming-back-to-webos-in-2014-part-1/" target="_blank">Coming Back to webOS in 2014</a></li>
+</ul>
+              
+            </div>
+          </div><footer>
+    
+      <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        
+          <a href="../proxysetup/" class="btn btn-neutral float-right" title="Using a SSL Proxy">Next <span class="icon icon-circle-arrow-right"></span></a>
+        
+        
+          <a href="../email/" class="btn btn-neutral" title="Email, Calendars & Contacts"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        
+      </div>
+    
+  
+    <hr/>
+  
+    <div role="contentinfo">
+      <!-- Copyright etc -->
+      
+    </div>
+  
+    <small><a href="https://github.com/webosarchive/webos-docs" target="_blank">webOS Docs</a> is an open source project of <a href="http://www.webosarchive.org" target="_top">webOS Archive</a></small>
+    <script>
+      // When the page is served over https, upgrade any absolute http:// links
+      // so we don't trigger mixed-content or needless redirects. (Pages are now
+      // served directly at their real paths, so no reverse-proxy link rewriting
+      // is needed -- MkDocs's relative links resolve natively.)
+      var myURL = document.getElementsByTagName('a');
+      for(var i=0; i<myURL.length; i++) {
+        var currLink = (myURL[i].getAttribute('href'));
+        if (currLink && location.protocol == "https:" && currLink.indexOf("http://") != -1) {
+          newUrl = currLink.replace("http://", "https://");
+          if (window.location.host.indexOf("localhost") == -1) {
+            myURL[i].setAttribute('href', newUrl);
+          }
+        }
+      }
+    </script>
+  </footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../js/wosa-menu.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Emulation - webOS Docs</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../css/wosa-fonts.css" rel="stylesheet" />
+        <link href="../css/wosa-menu.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Emulation";
+        var mkdocs_page_input_path = "emulator.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> webOS Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../activate/">Activating a webOS Device</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../appstores/">Installing Apps on your webOS Device</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../setup-path/">Getting Ready</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../modern-tls/">Modern TLS Updates</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Using Your Device</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../browsers/">Browsing the Web</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../email/">Email, Calendars & Contacts</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Older Devices (before webOS 2.2.4)</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../online/">Getting Online</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../proxysetup/">Using a SSL Proxy</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../thingstotry/">Things To Try</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../community/">Join the Community</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Taking Control</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../timesync/">Time Synchronization</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../patches/">Patches and Hacks</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../hosts/">Update Hosts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../bash/">Shell Access</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sdkpdk/">Build Your Own Apps</a>
+                  </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Emulation</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#usage-notes">Usage Notes</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#keyboard-shortcuts">Keyboard Shortcuts</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#limitations">Limitations</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#preware">Preware</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Disater Recovery</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../pinbypass/">Locked Out</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../doctor/">Call the Doctor</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../startover/">Start Over</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tprestore/">Touchpad Rescue</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Archival</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../appinventory/">App Inventory</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../appbackup/">App Backup</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">webOS Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Emulation</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="emulator">Emulator</h1>
+<p>The webOS SDK originally provided an emulator for development purposes, with disk images for major releases of the OS. Unfortunately, these were delivered as Java JARs with a corresponding tool to generate the VM in specific versions of VirtualBox.</p>
+<p>To make things easier in a modern era, <a href="http://www.webosarchive.org" target="_blank">webOS Archive</a> has re-packaged the SDK emulator as an OVA Virtual Appliance that should work on current versions of VirtualBox (and probably other virtualization tools) on current operating systems. This appliance emulates a webOS Touchpad device, with many <a href="#limitations">limitations</a>. If you wish to emulate other webOS devices, you may wish to explore the <a href="http://sdk.webosarchive.org" target="_blank">SDK</a>.</p>
+<p><strong><a href="https://github.com/webOSArchive/webos-emulator/releases" target="_top">Download from GitHub</a></strong></p>
+<p><img alt="OVA Creation" src="../images/emulator.png" /></p>
+<h2 id="usage-notes">Usage Notes</h2>
+<p>The emulator includes a <a href="https://sdk.webosarchive.org/docs/docs.html#dev-guide/tools/radio-simulator.html" target="_blank">Radio Simulator</a> that lets you simulate events in the guest OS.</p>
+<h3 id="keyboard-shortcuts">Keyboard Shortcuts</h3>
+<p>You can simulate some hardware events and states with keyboard shortcuts:</p>
+<ul>
+<li>End (use Fn+Right Arrow on a Mac): Opens and closes the launcher</li>
+<li>Esc: Performs the back gesture (or swipe back)</li>
+<li>Home (use Fn+Left Arrow on a Mac): Minimizes and maximizes the card</li>
+<li>Left/Right Arrow: Switches the application left or right in the Card view</li>
+<li>F5: Simulate shaking (Not implemented)</li>
+<li>F6: Simulate "up" (12:00 or normal) orientation</li>
+<li>F7: Simulate "down" (6:00) orientation</li>
+<li>F8: Simulate "right" (3:00) orientation</li>
+<li>F9: Simulate "left" (9:00) orientation</li>
+</ul>
+<h2 id="limitations">Limitations</h2>
+<p>Since its dervied from the SDK emulator, all the limitations of that emulator apply. From the SDK:</p>
+<hr />
+<blockquote>
+<p>Currently, the Emulator does not support the following:</p>
+<ul>
+<li>Accelerometer live data (does support orientation and shaking events)</li>
+<li>Audio</li>
+<li>Bluetooth (UI and any interface-specific APIs do not work in the Emulator)</li>
+<li>Camera</li>
+<li>Gesture area</li>
+<li>Multi-touch</li>
+<li>Sound</li>
+<li>Video</li>
+<li>Wi-Fi (UI and any interface-specific APIs do not work in the Emulator but, with a desktop connection, network connectivity does.)</li>
+</ul>
+</blockquote>
+<hr />
+<p>Additionally, webOS in a modern era is heavily dependent on a <a href="http://www.webosarchive.org/proxy">SSL-bump proxy</a> to get around the limitations of its ancient SSL-stack. Unfortunately, the proxy-setting system calls do not appear to be present in the emulated OS, meaning that <strong>HTTPS is not available in the emulator.</strong></p>
+<hr />
+<blockquote>
+<p><strong><em>NOTE:</em></strong> advanced users may be able to <a href="https://webos-internals.org/wiki/Tutorials_Linux_Emulator_Networking_Proxy_Firewall" target="_blank">manually setup a proxy following these instructions</a>.</p>
+</blockquote>
+<hr />
+<p>Finally, while most webOS SDK apps were cross-platform, some advanced apps and services, and many PDK apps, were processor-specific. As the emulator provides an x86 environment to the guest OS, anything compiled for the hardware-native ARM platform will not work on the emulator.</p>
+<h3 id="preware">Preware</h3>
+<p>Preware needs to be compiled differently for the emulator. The required <a href="http://www.webosarchive.org/activation">i686 build can be found here</a>.</p>
+              
+            </div>
+          </div><footer>
+    
+      <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        
+          <a href="../pinbypass/" class="btn btn-neutral float-right" title="Locked Out">Next <span class="icon icon-circle-arrow-right"></span></a>
+        
+        
+          <a href="../sdkpdk/" class="btn btn-neutral" title="Build Your Own Apps"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        
+      </div>
+    
+  
+    <hr/>
+  
+    <div role="contentinfo">
+      <!-- Copyright etc -->
+      
+    </div>
+  
+    <small><a href="https://github.com/webosarchive/webos-docs" target="_blank">webOS Docs</a> is an open source project of <a href="http://www.webosarchive.org" target="_top">webOS Archive</a></small>
+    <script>
+      // When the page is served over https, upgrade any absolute http:// links
+      // so we don't trigger mixed-content or needless redirects. (Pages are now
+      // served directly at their real paths, so no reverse-proxy link rewriting
+      // is needed -- MkDocs's relative links resolve natively.)
+      var myURL = document.getElementsByTagName('a');
+      for(var i=0; i<myURL.length; i++) {
+        var currLink = (myURL[i].getAttribute('href'));
+        if (currLink && location.protocol == "https:" && currLink.indexOf("http://") != -1) {
+          newUrl = currLink.replace("http://", "https://");
+          if (window.location.host.indexOf("localhost") == -1) {
+            myURL[i].setAttribute('href', newUrl);
+          }
+        }
+      }
+    </script>
+  </footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../js/wosa-menu.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -3,6 +3,12 @@
 
 var STORAGE_KEY = "wosaHelpFlowState2";
 
+/* Saved progress is forgotten after this much inactivity, so a return
+   visit days later starts fresh instead of dropping someone mid-flow
+   at steps they don't remember reaching. Every save (and every load of
+   still-fresh state) restamps savedAt, so it's a sliding window. */
+var STATE_MAX_AGE_MS = 2 * 60 * 60 * 1000;
+
 /* Every step card is always visible; collapsedSteps just tracks which
    ones are collapsed to their header. Step 1 starts open, the rest
    start collapsed -- expand as you go, or jump straight to any step. */
@@ -22,7 +28,9 @@ function wosaLoadState() {
       var raw = window.localStorage.getItem(STORAGE_KEY);
       if (raw) {
         var parsed = JSON.parse(raw);
-        if (parsed && parsed.path && parsed.collapsedSteps) {
+        var age = new Date().getTime() - (parsed && parsed.savedAt);
+        if (parsed && parsed.path && parsed.collapsedSteps &&
+            age >= 0 && age < STATE_MAX_AGE_MS) {
           if (parsed.deviceFilter === undefined) { parsed.deviceFilter = null; }
           return parsed;
         }
@@ -35,6 +43,7 @@ function wosaLoadState() {
 }
 
 var wosaState = wosaLoadState();
+wosaSaveState();
 
 /* Transient (not persisted, not part of wosaState): set by wosaChoose
    right before it calls wosaRender(), so wosaRenderNode knows which
@@ -47,6 +56,7 @@ var wosaAnimateFrom = null;
 function wosaSaveState() {
   try {
     if (window.localStorage) {
+      wosaState.savedAt = new Date().getTime();
       window.localStorage.setItem(STORAGE_KEY, JSON.stringify(wosaState));
     }
   } catch (e) {

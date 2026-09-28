@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Activating a webOS Device - webOS Docs</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../css/wosa-fonts.css" rel="stylesheet" />
+        <link href="../css/wosa-menu.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Activating a webOS Device";
+        var mkdocs_page_input_path = "activate.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> webOS Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Activating a webOS Device</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#prepare-your-computer">Prepare Your Computer</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#download-the-tool">Download the Tool</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#prepare-your-device">Prepare Your Device</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#phones-except-veer">Phones (except Veer)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#touchpad-and-veer">TouchPad and Veer</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#run-the-activation-tool">Run the Activation Tool</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#join-wifi">Join WiFi</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#video-tutorial">Video Tutorial</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#what-next">What Next</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#alternate-instructions">Alternate Instructions</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../appstores/">Installing Apps on your webOS Device</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../setup-path/">Getting Ready</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../modern-tls/">Modern TLS Updates</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Using Your Device</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../browsers/">Browsing the Web</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../email/">Email, Calendars & Contacts</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Older Devices (before webOS 2.2.4)</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../online/">Getting Online</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../proxysetup/">Using a SSL Proxy</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../thingstotry/">Things To Try</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../community/">Join the Community</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Taking Control</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../timesync/">Time Synchronization</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../patches/">Patches and Hacks</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../hosts/">Update Hosts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../bash/">Shell Access</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sdkpdk/">Build Your Own Apps</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../emulator/">Emulation</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Disater Recovery</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../pinbypass/">Locked Out</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../doctor/">Call the Doctor</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../startover/">Start Over</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tprestore/">Touchpad Rescue</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Archival</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../appinventory/">App Inventory</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../appbackup/">App Backup</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">webOS Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Getting Started</li>
+      <li class="breadcrumb-item active">Activating a webOS Device</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="activating-a-webos-device">Activating a webOS Device</h1>
+<p>The Palm/HP activation services have been down a long time, but that doesn't mean your beautiful phone or tablet are dead! With a little effort, you can use the tools HP left behind to activate your device...</p>
+<hr />
+<blockquote>
+<p><strong><em>NOTE:</em></strong> If you've done this before and just want the files, <a href="http://www.webosarchive.org/activation" target="_blank">download here</a>.</p>
+</blockquote>
+<hr />
+<p><em>For Touchpads that won't turn on at all, community member <a href="../tprestore/">M.A.Touchpad has written a restoration guide</a> that you may find useful.</em></p>
+<h2 id="prepare-your-computer">Prepare Your Computer</h2>
+<p>First you will need the novacom driver for your computer. Many platforms are supported, including modern macOS, thanks to a recent re-write of the driver:</p>
+<ul>
+<li>Windows 32-bit (Tested on Windows 7): <a href="http://www.webosarchive.org/activation/drivers/novacom-win-32/">Installer MSI</a></li>
+<li>Windows 64-bit (Tested on Windows 10 and 11): <a href="http://www.webosarchive.org/activation/drivers/novacom-win-64/">Installer MSI</a></li>
+<li>macOS 32-bit (Tested up to Mojave): <a href="http://www.webosarchive.org/activation/drivers/novacom-osx-32/">Installer PKG</a></li>
+<li>macOS 64-bit (For Catalina and up, including Apple Silicon): <a href="http://www.webosarchive.org/activation/drivers/novacom-macos-64/">Installer PKG</a></li>
+<li>Linux 32-bit (Tested on Ubuntu): <a href="http://www.webosarchive.org/activation/drivers/novacom-linux-32/">DEB Package</a></li>
+<li>Linux 64-bit (Tested on Ubuntu): <a href="http://www.webosarchive.org/activation/drivers/novacom-linux-64/">DEB Package</a></li>
+</ul>
+<p>Activation tools work on Mac, Linux and Windows, but require Java to be installed:</p>
+<ul>
+<li>Install Java 8 for Windows: <a href="https://www.java.com/download/ie_manual.jsp" target="_blank">https://www.java.com/download/ie_manual.jsp</a></li>
+<li>Install Java for Mac: <a href="https://support.apple.com/en-us/HT204036" target="_blank">https://support.apple.com/en-us/HT204036</a></li>
+<li>Install Java 8 for Linux: <a href="https://www.fosstechnix.com/install-oracle-java-8-on-ubuntu-20-04/" target="_blank">https://www.fosstechnix.com/install-oracle-java-8-on-ubuntu-20-04/</a></li>
+</ul>
+<p>Make sure you have a good quality micro USB cable connected directly to your computer (not to a hub.) The OEM cables are your best bet (they're recognizable by a silver indented circle near USB connectors.)</p>
+<h2 id="download-the-tool">Download the Tool</h2>
+<ul>
+<li><a href="http://www.webosarchive.org/activation/devicetool/devicetool.jar">devicetool</a> For webOS 1.x Devices (Pre, Pixi, Pre Plus)</li>
+<li><a href="http://www.webosarchive.org/activation/devicetool/devicetool2.jar">devicetool2</a> For webOS 2.x and 3.x Devices (Pre 2, Pre3, Veer and TouchPad)</li>
+<li><a href="http://www.webosarchive.org/activation/devicetool/devicetoolAIO.jar">devicetool All-in-One</a> Community created all-in-one, works all of the above, plus TouchPad Go</li>
+</ul>
+<h2 id="prepare-your-device">Prepare Your Device</h2>
+<p>Reboot your device into recovery mode...</p>
+<h3 id="phones-except-veer">Phones (except Veer)</h3>
+<ul>
+<li>Plug the USB cable into your computer. Do not connect the other end to your device yet.</li>
+<li>Remove the battery from the device.</li>
+<li>Hold down the device's volume up button.</li>
+<li>Insert the USB cable into the device.</li>
+<li>Re-insert the battery.</li>
+<li>Release the volume up button.</li>
+</ul>
+<h3 id="touchpad-and-veer">TouchPad and Veer</h3>
+<ul>
+<li>Reboot the device<ul>
+<li>On TouchPad, hold the home and power buttons to force a reboot -- keep holding</li>
+<li>On Veer, power down completely. Wait a few seconds with no buttons pressed, then press and keep holding the power button to power back on</li>
+</ul>
+</li>
+<li>As soon as the device restarts, let go of the Power (and Home, on TouchPad) and hold the Volume Up button</li>
+<li>Keep holding the Volume Up button until you see the USB symbol</li>
+</ul>
+<h2 id="run-the-activation-tool">Run the Activation Tool</h2>
+<p>You'll need a command line in your operating system of choice. On a Mac or Ubuntu, this is called Terminal. On Windows, press the Windows key and type "command" and hit enter.</p>
+<ul>
+<li>Using your command line, navigate to the directory where you downloaded the Doctor tool.</li>
+<li>Run the command for the tool you downloaded: <ul>
+<li>webOS 1.x: <code>java -jar devicetool.jar</code></li>
+<li>webOS 2+: <code>java -jar devicetool2.jar</code></li>
+<li>All-in-One: <code>java -jar devicetoolAIO.jar</code></li>
+</ul>
+</li>
+<li>Wait while the device is updated and rebooted</li>
+</ul>
+<p>If the activation tool doesn't work, the most likely issue is that the novacom driver isn't working. Go back to <a href="#prepare-your-computer">Prepare Your Computer</a> and make sure you've followed all the steps for your platform.</p>
+<h2 id="join-wifi">Join WiFi</h2>
+<p>Once the device restarts, it will have bypassed activation, and you're ready to begin using it.<br>
+Use the built-in settings to join your WiFi -- webOS works with 2.4ghz WiFi networks and all common wireless security schemes, including WPA.</p>
+<h2 id="video-tutorial">Video Tutorial</h2>
+<p>A video showing activation and <a href="../appstores/">app installation</a> is available on YouTube...</p>
+<p><a href="https://www.youtube.com/watch?v=-ieDXW8yA5c" target="_blank"><img alt="Video Tutorial" src="../images/videotutorial.png" /></a></p>
+<h2 id="what-next">What Next</h2>
+<p>Now that you've activated your device, you might want to <a href="../appstores/">install some apps</a>!</p>
+<h2 id="alternate-instructions">Alternate Instructions</h2>
+<p>This documentation attempts to update and simplify information available from older, archived sources. You may find that material to be useful as reference:</p>
+<ul>
+<li><a href="http://stacks.webosarchive.org/forums/Bypass%20Activation%20%5BwebOS%201.x%5D%20webOS%20Nation.html" target="_blank">WebOS Nation Bypass Activation webOS 1.0</a></li>
+<li><a href="http://stacks.webosarchive.org/forums/Bypass%20Activation%20%5BwebOS%202.x%5D%20webOS%20Nation.html" target="_blank">WebOS Nation Bypass Activation webOS 2.0</a></li>
+<li><a href="https://h30434.www3.hp.com/t5/Tablets-and-Mobile-Devices-Archive-Read-Only/How-to-use-the-webOS-Doctor-on-the-TouchPad/td-p/2186473" target="_blank">Archived HP Forum Post</a></li>
+</ul>
+              
+            </div>
+          </div><footer>
+    
+      <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        
+          <a href="../appstores/" class="btn btn-neutral float-right" title="Installing Apps on your webOS Device">Next <span class="icon icon-circle-arrow-right"></span></a>
+        
+        
+          <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        
+      </div>
+    
+  
+    <hr/>
+  
+    <div role="contentinfo">
+      <!-- Copyright etc -->
+      
+    </div>
+  
+    <small><a href="https://github.com/webosarchive/webos-docs" target="_blank">webOS Docs</a> is an open source project of <a href="http://www.webosarchive.org" target="_top">webOS Archive</a></small>
+    <script>
+      // When the page is served over https, upgrade any absolute http:// links
+      // so we don't trigger mixed-content or needless redirects. (Pages are now
+      // served directly at their real paths, so no reverse-proxy link rewriting
+      // is needed -- MkDocs's relative links resolve natively.)
+      var myURL = document.getElementsByTagName('a');
+      for(var i=0; i<myURL.length; i++) {
+        var currLink = (myURL[i].getAttribute('href'));
+        if (currLink && location.protocol == "https:" && currLink.indexOf("http://") != -1) {
+          newUrl = currLink.replace("http://", "https://");
+          if (window.location.host.indexOf("localhost") == -1) {
+            myURL[i].setAttribute('href', newUrl);
+          }
+        }
+      }
+    </script>
+  </footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../js/wosa-menu.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
