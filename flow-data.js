@@ -55,8 +55,11 @@ var STEP1_NODE = {
             content: "<p>Install Java first &mdash; novacom itself depends on it.</p>" +
               "<ul>" +
               "<li>Java 8 &mdash; <a href='https://www.fosstechnix.com/install-oracle-java-8-on-ubuntu-20-04/'>install guide</a></li>" +
-              "<li>novacom driver &mdash; <a href='http://www.webosarchive.org/activation/drivers/novacom-linux-32/'>32-bit</a> or <a href='http://www.webosarchive.org/activation/drivers/novacom-linux-64/'>64-bit</a> DEB package (tested on Ubuntu)</li>" +
-              "</ul>" +
+              "<li>Install novacom driver: <ul>" +
+                "<li>Legacy Ubuntu Drivers: <a href='http://www.webosarchive.org/activation/drivers/novacom-linux'>DEB package</a> (tested on Ubuntu 14)</li>" +
+                "<li>Modern systemd-based Linux: <a href='https://github.com/webOSArchive/webos-sdk-redux#installation-all-parts'>Install script from GitHub</a></li>" +
+                "<li>Other modern Linux: <a href='https://sdk.webosarchive.org/#linux'>SDK Instructions</a> (read carefully!)</li>" +
+              "</ul></ul>" +
               "<p>Use a good quality micro USB cable plugged directly into your computer, not a hub.</p>" +
               "<p>Once installed, try <code>novacom -l</code> again.</p>" +
               "<p><button type='button' class='continue-btn' onclick='wosaGoto(2)'>Continue to Step 2 &rarr;</button></p>"
