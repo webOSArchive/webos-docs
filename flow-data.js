@@ -31,7 +31,7 @@ var STEP1_NODE = {
             label: "Windows",
             content: "<p>You'll need two things &mdash; install Java first, since novacom itself depends on it.</p>" +
               "<ul>" +
-              "<li>Java 8 &mdash; <a href='https://www.java.com/download/ie_manual.jsp'>download here</a></li>" +
+              "<li>Java 8 &mdash; <a href='https://www.java.com/download/ie_manual.jsp'>download here</a> (the Windows installer checks specifically for Java 8)</li>" +
               "<li>novacom driver &mdash; <a href='http://www.webosarchive.org/activation/drivers/novacom-win-32/'>32-bit</a> (tested on Windows 7) or <a href='http://www.webosarchive.org/activation/drivers/novacom-win-64/'>64-bit</a> (tested on Windows 10/11)</li>" +
               "</ul>" +
               "<p>Use a good quality micro USB cable plugged directly into your computer, not a hub &mdash; OEM cables have a small silver indented circle near the connector.</p>" +
@@ -42,10 +42,10 @@ var STEP1_NODE = {
             label: "macOS",
             content: "<p>Modern macOS (Catalina and later, including Apple Silicon) needs a community-rebuilt driver. Install Java first &mdash; novacom itself depends on it.</p>" +
               "<ol>" +
-              "<li>Install <a href='https://support.apple.com/en-us/HT204036'>Java</a>.</li>" +
               "<li>Install <a href='https://brew.sh/'>Homebrew</a>, then run <code>brew install libusb libusb-compat</code> in Terminal.</li>" +
+              "<li>Install Java: <code>brew install openjdk</code></li>" +
               "<li>Download and run the <a href='http://www.webosarchive.org/activation/drivers/novacom-macos-64/'>64-bit driver installer</a>. (On very old macOS up to Mojave, use the <a href='http://www.webosarchive.org/activation/drivers/novacom-osx-32/'>32-bit installer</a> instead.)</li>" +
-              "<li>macOS will probably block the installer at first &mdash; approve it under System Preferences &rarr; Security.</li>" +
+              "<li>If macOS blocks the installer at first &mdash; approve it under System Preferences &rarr; Security.</li>" +
               "</ol>" +
               "<p>Test it: plug in your device with a good cable and run <code>novacom -l</code> in Terminal.</p>" +
               "<p><button type='button' class='continue-btn' onclick='wosaGoto(2)'>Continue to Step 2 &rarr;</button></p>"
@@ -54,8 +54,10 @@ var STEP1_NODE = {
             label: "Linux",
             content: "<p>Install Java first &mdash; novacom itself depends on it.</p>" +
               "<ul>" +
-              "<li>Java 8 &mdash; <a href='https://www.fosstechnix.com/install-oracle-java-8-on-ubuntu-20-04/'>install guide</a></li>" +
-              "<li>Install novacom driver: <ul>" +
+              "<li>Install Java: <ul>" +
+              "<li>Java 8 for Legacy Installs &mdash; <a href='https://www.fosstechnix.com/install-oracle-java-8-on-ubuntu-20-04/'>install guide</a></li>" +
+              "<li>Latest Java for Modern installs &mdash; eg: <code>sudo apt install default-jre</code> or <code>sudo dnf install java-latest-openjdk</code></li>" +
+              "</ul><li>Install novacom driver: <ul>" +
                 "<li>Legacy Ubuntu Drivers: <a href='http://www.webosarchive.org/activation/drivers/novacom-linux'>DEB package</a> (tested on Ubuntu 14)</li>" +
                 "<li>Modern systemd-based Linux: <a href='https://github.com/webOSArchive/webos-sdk-redux#installation-all-parts'>Install script from GitHub</a></li>" +
                 "<li>Other modern Linux: <a href='https://sdk.webosarchive.org/#linux'>SDK Instructions</a> (read carefully!)</li>" +
